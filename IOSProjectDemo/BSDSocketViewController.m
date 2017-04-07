@@ -23,7 +23,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self BSDSocketSevertTCPServices];
+    [self BSDSocketClientTCPServices];
+    
+//    getpeername
+   // [self BSDSocketSevertTCPServices];
     // Do any additional setup after loading the view.
 }
 
@@ -50,11 +53,17 @@
 - (void)BSDSocketClientTCPServices
 {
     int socketFileDescriper = socket(AF_INET,SOCK_STREAM, 0);
+    
+    
+    
     if(socketFileDescriper==-1)
     {
         NSLog(@"socket创建失败");
         return;
     }
+    struct sockaddr_in sa;
+    int len = sizeof(sa);
+ 
     struct sockaddr_in serverAddress;
     bzero(&serverAddress, sizeof(serverAddress));
     serverAddress.sin_family = AF_INET;

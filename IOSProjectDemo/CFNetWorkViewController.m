@@ -25,6 +25,17 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)httpRequestTest
+{
+    //使用cfnetworking 进行网络的请求
+    CFHTTPMessageRef messageRef = CFHTTPMessageCreateRequest(kCFAllocatorDefault, "GET",(__bridge CFURLRef _Nonnull)([NSURL URLWithString:@""]),kCFHTTPVersion2_0);
+    
+    
+    
+    
+    
+}
+
 /*
 #pragma mark - Navigation
 
