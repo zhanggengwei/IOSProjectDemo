@@ -15,6 +15,8 @@
 		4059BE111E972C0A0067C1F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4059BE0F1E972C0A0067C1F3 /* LaunchScreen.storyboard */; };
 		4059BE1A1E972EB70067C1F3 /* BSDSocketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4059BE191E972EB70067C1F3 /* BSDSocketViewController.m */; };
 		4059BE1D1E973B730067C1F3 /* CFNetWorkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4059BE1C1E973B730067C1F3 /* CFNetWorkViewController.m */; };
+		4059BE221E97777A0067C1F3 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 4059BE1F1E97777A0067C1F3 /* GCDAsyncSocket.m */; };
+		4059BE231E97777A0067C1F3 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 4059BE211E97777A0067C1F3 /* GCDAsyncUdpSocket.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,10 @@
 		4059BE191E972EB70067C1F3 /* BSDSocketViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSDSocketViewController.m; sourceTree = "<group>"; };
 		4059BE1B1E973B730067C1F3 /* CFNetWorkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFNetWorkViewController.h; sourceTree = "<group>"; };
 		4059BE1C1E973B730067C1F3 /* CFNetWorkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFNetWorkViewController.m; sourceTree = "<group>"; };
+		4059BE1E1E97777A0067C1F3 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		4059BE1F1E97777A0067C1F3 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		4059BE201E97777A0067C1F3 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		4059BE211E97777A0067C1F3 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +70,10 @@
 		4059BE001E972C0A0067C1F3 /* IOSProjectDemo */ = {
 			isa = PBXGroup;
 			children = (
+				4059BE1E1E97777A0067C1F3 /* GCDAsyncSocket.h */,
+				4059BE1F1E97777A0067C1F3 /* GCDAsyncSocket.m */,
+				4059BE201E97777A0067C1F3 /* GCDAsyncUdpSocket.h */,
+				4059BE211E97777A0067C1F3 /* GCDAsyncUdpSocket.m */,
 				4059BE041E972C0A0067C1F3 /* AppDelegate.h */,
 				4059BE051E972C0A0067C1F3 /* AppDelegate.m */,
 				4059BE071E972C0A0067C1F3 /* ViewController.h */,
@@ -161,9 +171,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4059BE221E97777A0067C1F3 /* GCDAsyncSocket.m in Sources */,
 				4059BE1D1E973B730067C1F3 /* CFNetWorkViewController.m in Sources */,
 				4059BE091E972C0A0067C1F3 /* ViewController.m in Sources */,
 				4059BE1A1E972EB70067C1F3 /* BSDSocketViewController.m in Sources */,
+				4059BE231E97777A0067C1F3 /* GCDAsyncUdpSocket.m in Sources */,
 				4059BE061E972C0A0067C1F3 /* AppDelegate.m in Sources */,
 				4059BE031E972C0A0067C1F3 /* main.m in Sources */,
 			);
