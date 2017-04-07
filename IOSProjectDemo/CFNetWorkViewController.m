@@ -8,6 +8,50 @@
 
 #import "CFNetWorkViewController.h"
 #import <CFNetwork/CFNetwork.h>
+#import <sys/socket.h>
+
+static void myCFReadStreamClientCallBack1(CFReadStreamRef stream, CFStreamEventType type, void *clientCallBackInfo)
+{
+     CFHTTPMessageRef response = (CFHTTPMessageRef)clientCallBackInfo;
+    switch (type)
+    {
+        case kCFStreamEventEndEncountered:{
+            CFIndex statusCode = CFHTTPMessageGetResponseStatusCode(response);
+          
+                CFDataRef responseData = CFHTTPMessageCopyBody(response);
+                CFStringRef responseWebPage = CFStringCreateWithBytes(kCFAllocatorDefault, CFDataGetBytePtr(responseData), CFDataGetLength(responseData), kCFStringEncodingUTF8, YES);
+                NSLog(@"方式2:\n%@", responseWebPage);
+                CFRelease(responseData);
+                CFRelease(responseWebPage);
+            break;
+        }
+        case kCFStreamEventHasBytesAvailable:
+        {
+            CFTypeRef message =
+            CFReadStreamCopyProperty(stream, kCFStreamPropertyHTTPResponseHeader);
+            NSDictionary* httpHeaders =
+            (__bridge NSDictionary *)CFHTTPMessageCopyAllHeaderFields((CFHTTPMessageRef)message);
+            NSLog(@"dic:%@",httpHeaders);
+            CFRelease(message);
+            UInt8 buffer[2048];
+            //回调读取数据时，读取的都是body的内容，response header自动被封装处理好的。
+            CFIndex length = CFReadStreamRead(stream, buffer, sizeof(buffer));        CFHTTPMessageAppendBytes(response, buffer, length);
+            
+            
+            
+            break;
+        }
+        case kCFStreamEventErrorOccurred:
+            CFReadStreamUnscheduleFromRunLoop(stream, CFRunLoopGetCurrent(), kCFRunLoopCommonModes);
+            CFReadStreamClose(stream);
+            CFRelease(stream);
+            stream = NULL;
+            break;
+            
+        default:
+            break;
+    }
+}
 
 @interface CFNetWorkViewController ()
 
@@ -17,6 +61,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self httpRequestTest];
+    
     // Do any additional setup after loading the view.
 }
 
@@ -28,12 +74,25 @@
 - (void)httpRequestTest
 {
     //使用cfnetworking 进行网络的请求
+ 
+    CFURLRef myURL = CFURLCreateWithString(kCFAllocatorDefault,CFSTR("https://www.baidu.com/"), NULL);// note: release
+    CFHTTPMessageRef messageRef = CFHTTPMessageCreateRequest(kCFAllocatorDefault,CFSTR("GET"),myURL,kCFHTTPVersion2_0);
+    CFReadStreamRef requestReadStream = CFReadStreamCreateForHTTPRequest(kCFAllocatorDefault, messageRef);// note: release
+    CFHTTPMessageRef response = CFHTTPMessageCreateEmpty(kCFAllocatorDefault, false);
+    CFStreamClientContext clientContext = {0, response, NULL, NULL, NULL};
+    CFOptionFlags flags = kCFStreamEventHasBytesAvailable | kCFStreamEventEndEncountered | kCFStreamEventErrorOccurred;
+    Boolean result = CFReadStreamSetClient(requestReadStream, flags, myCFReadStreamClientCallBack1, &clientContext);
     
-    CFHTTPMessageRef messageRef = CFHTTPMessageCreateRequest(kCFAllocatorDefault,"GET",(__bridge CFURLRef _Nonnull)([NSURL URLWithString:@""]),kCFHTTPVersion2_0);
-    CFReadStreamRef readStreamRef = cfread
-    CFStreamCreatePairWithSocket
     
-    
+    if (result) {
+        CFReadStreamScheduleWithRunLoop(requestReadStream, CFRunLoopGetCurrent(), kCFRunLoopCommonModes);
+        if (CFReadStreamOpen(requestReadStream)) {
+            CFRunLoopRun();
+        } else {
+            CFReadStreamUnscheduleFromRunLoop(requestReadStream, CFRunLoopGetCurrent(), kCFRunLoopCommonModes);
+        }
+    }
+    CFRelease(messageRef);
     
 }
 
