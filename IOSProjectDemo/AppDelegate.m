@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "CFNetWorkViewController.h"
+#import "RuntimeViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -17,7 +17,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    self.window.rootViewController = [CFNetWorkViewController new];
+    self.window.rootViewController = [RuntimeViewController new];
     self.window.backgroundColor = [UIColor whiteColor];
     return YES;
 }
