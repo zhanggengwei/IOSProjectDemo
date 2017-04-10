@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "RuntimeViewController.h"
+#import "ToolsPlist.h"
 
 #import "AddressBookHandle.h"
 
@@ -22,7 +23,11 @@
     // Override point for customization after application launch.
     self.window.rootViewController = [RuntimeViewController new];
     self.window.backgroundColor = [UIColor whiteColor];
-    [[AddressBookHandle new]loadContacts];
+//    [[AddressBookHandle new]loadContacts];
+    
+     NSLog(@"dict == %@",[[ToolsPlist new]loadPlistDict]);
+     
+    
     
     return YES;
 }

@@ -25,6 +25,7 @@
     unsigned int count = 0;
     objc_property_t * propertyList = class_copyPropertyList(self.class, &count);
     
+    
     NSMutableString * printString =[NSMutableString stringWithString:@"{"];
     
     for (int i = 0; i < count; i++)

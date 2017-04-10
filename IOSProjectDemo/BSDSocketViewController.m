@@ -151,6 +151,39 @@
     
 }
 
++ (void)getLocalAddress
+{
+    struct ifaddrs * address = NULL;
+    struct ifaddrs * tempAddress = NULL;
+    int flag = getifaddrs(&address);
+    if(flag==-1)
+    {
+        NSLog(@"print _error %s",__func__);
+        return;
+    }
+    tempAddress = address;
+    
+    while (tempAddress)
+    {
+        if(tempAddress->ifa_addr->sa_family == AF_INET)
+        {
+            
+            if ([[NSString stringWithUTF8String:tempAddress->ifa_name] isEqualToString:@"en0"])
+            {
+                
+            NSString * address = [NSString stringWithUTF8String:inet_ntoa(((struct sockaddr_in *)tempAddress->ifa_addr)->sin_addr)];
+            NSLog(@"%@",address);
+            }
+            
+            
+        }
+        tempAddress = tempAddress->ifa_next;
+    }
+    free(address);
+    
+    
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
