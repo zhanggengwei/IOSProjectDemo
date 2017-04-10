@@ -8,6 +8,9 @@
 
 #import "AppDelegate.h"
 #import "RuntimeViewController.h"
+
+#import "AddressBookHandle.h"
+
 @interface AppDelegate ()
 
 @end
@@ -19,6 +22,8 @@
     // Override point for customization after application launch.
     self.window.rootViewController = [RuntimeViewController new];
     self.window.backgroundColor = [UIColor whiteColor];
+    [[AddressBookHandle new]loadContacts];
+    
     return YES;
 }
 
