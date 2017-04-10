@@ -30,6 +30,11 @@
     // 并发队列的创建方法
      dispatch_queue_t queue= dispatch_queue_create("test.queue", DISPATCH_QUEUE_CONCURRENT);
  
+                   并发队列	            串行队列	主队列
+ 同步(sync)	没有开启新线程，串行执行任务	没有开启新线程，串行执行任务	没有开启新线程，串行执行任务
+ 异步(async)	有开启新线程，并发执行任务	有开启新线程(1条)，串行执行任务	没有开启新线程，串行执行任务
+
+ 
  
  */
 
