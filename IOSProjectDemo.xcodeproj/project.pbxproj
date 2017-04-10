@@ -21,10 +21,10 @@
 		4059BE291E9783E40067C1F3 /* ObjectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4059BE281E9783E40067C1F3 /* ObjectModel.m */; };
 		4059BE2C1E9789220067C1F3 /* VDContactsStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 4059BE2B1E9789220067C1F3 /* VDContactsStore.m */; };
 		4059BE2F1E97892F0067C1F3 /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4059BE2E1E97892F0067C1F3 /* Contacts.framework */; };
-		4059BE321E9B1F010067C1F3 /* NSObject+PrintTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 4059BE311E9B1F010067C1F3 /* NSObject+PrintTools.m */; };
 		4059BE351E9B31FF0067C1F3 /* AddressBookHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 4059BE341E9B31FF0067C1F3 /* AddressBookHandle.m */; };
 		4059BE381E9B516B0067C1F3 /* ToolsPlist.m in Sources */ = {isa = PBXBuildFile; fileRef = 4059BE371E9B516B0067C1F3 /* ToolsPlist.m */; };
 		4059BE3B1E9B529B0067C1F3 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4059BE391E9B529B0067C1F3 /* Model.xcdatamodeld */; };
+		4059BE481E9B671C0067C1F3 /* GCDDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4059BE471E9B671C0067C1F3 /* GCDDemo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,13 +53,13 @@
 		4059BE2A1E9789220067C1F3 /* VDContactsStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDContactsStore.h; sourceTree = "<group>"; };
 		4059BE2B1E9789220067C1F3 /* VDContactsStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDContactsStore.m; sourceTree = "<group>"; };
 		4059BE2E1E97892F0067C1F3 /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
-		4059BE301E9B1F010067C1F3 /* NSObject+PrintTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+PrintTools.h"; sourceTree = "<group>"; };
-		4059BE311E9B1F010067C1F3 /* NSObject+PrintTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+PrintTools.m"; sourceTree = "<group>"; };
 		4059BE331E9B31FF0067C1F3 /* AddressBookHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressBookHandle.h; sourceTree = "<group>"; };
 		4059BE341E9B31FF0067C1F3 /* AddressBookHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressBookHandle.m; sourceTree = "<group>"; };
 		4059BE361E9B516B0067C1F3 /* ToolsPlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolsPlist.h; sourceTree = "<group>"; };
 		4059BE371E9B516B0067C1F3 /* ToolsPlist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToolsPlist.m; sourceTree = "<group>"; };
 		4059BE3A1E9B529B0067C1F3 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		4059BE461E9B671C0067C1F3 /* GCDDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDDemo.h; sourceTree = "<group>"; };
+		4059BE471E9B671C0067C1F3 /* GCDDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDDemo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +94,6 @@
 		4059BE001E972C0A0067C1F3 /* IOSProjectDemo */ = {
 			isa = PBXGroup;
 			children = (
-				4059BE301E9B1F010067C1F3 /* NSObject+PrintTools.h */,
-				4059BE311E9B1F010067C1F3 /* NSObject+PrintTools.m */,
 				4059BE1E1E97777A0067C1F3 /* GCDAsyncSocket.h */,
 				4059BE1F1E97777A0067C1F3 /* GCDAsyncSocket.m */,
 				4059BE201E97777A0067C1F3 /* GCDAsyncUdpSocket.h */,
@@ -124,6 +122,8 @@
 				4059BE361E9B516B0067C1F3 /* ToolsPlist.h */,
 				4059BE371E9B516B0067C1F3 /* ToolsPlist.m */,
 				4059BE391E9B529B0067C1F3 /* Model.xcdatamodeld */,
+				4059BE461E9B671C0067C1F3 /* GCDDemo.h */,
+				4059BE471E9B671C0067C1F3 /* GCDDemo.m */,
 			);
 			path = IOSProjectDemo;
 			sourceTree = "<group>";
@@ -227,10 +227,10 @@
 				4059BE1A1E972EB70067C1F3 /* BSDSocketViewController.m in Sources */,
 				4059BE231E97777A0067C1F3 /* GCDAsyncUdpSocket.m in Sources */,
 				4059BE261E9783CB0067C1F3 /* RuntimeViewController.m in Sources */,
-				4059BE321E9B1F010067C1F3 /* NSObject+PrintTools.m in Sources */,
 				4059BE061E972C0A0067C1F3 /* AppDelegate.m in Sources */,
 				4059BE291E9783E40067C1F3 /* ObjectModel.m in Sources */,
 				4059BE031E972C0A0067C1F3 /* main.m in Sources */,
+				4059BE481E9B671C0067C1F3 /* GCDDemo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,7 +357,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.popoteam.iosDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "IOSProjectDemo-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -374,7 +374,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.popoteam.iosDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "IOSProjectDemo-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

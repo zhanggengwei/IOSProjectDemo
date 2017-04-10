@@ -1,5 +1,5 @@
 //
-//  NSObject+PrintTools.h
+//  GCDDemo.h
 //  IOSProjectDemo
 //
 //  Created by Donald on 17/4/10.
@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSObject (PrintTools)
+@interface GCDDemo : NSObject
 
 @end
