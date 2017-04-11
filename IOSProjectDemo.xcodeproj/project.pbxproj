@@ -25,6 +25,8 @@
 		4059BE381E9B516B0067C1F3 /* ToolsPlist.m in Sources */ = {isa = PBXBuildFile; fileRef = 4059BE371E9B516B0067C1F3 /* ToolsPlist.m */; };
 		4059BE3B1E9B529B0067C1F3 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4059BE391E9B529B0067C1F3 /* Model.xcdatamodeld */; };
 		4059BE481E9B671C0067C1F3 /* GCDDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4059BE471E9B671C0067C1F3 /* GCDDemo.m */; };
+		4059BE4E1E9CADCB0067C1F3 /* runtime.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4059BE4D1E9CADCB0067C1F3 /* runtime.strings */; };
+		4059BE511E9CB07D0067C1F3 /* WIFIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4059BE501E9CB07D0067C1F3 /* WIFIViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +62,9 @@
 		4059BE3A1E9B529B0067C1F3 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		4059BE461E9B671C0067C1F3 /* GCDDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDDemo.h; sourceTree = "<group>"; };
 		4059BE471E9B671C0067C1F3 /* GCDDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDDemo.m; sourceTree = "<group>"; };
+		4059BE4D1E9CADCB0067C1F3 /* runtime.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = runtime.strings; sourceTree = "<group>"; };
+		4059BE4F1E9CB07D0067C1F3 /* WIFIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WIFIViewController.h; sourceTree = "<group>"; };
+		4059BE501E9CB07D0067C1F3 /* WIFIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WIFIViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +119,8 @@
 				4059BE2B1E9789220067C1F3 /* VDContactsStore.m */,
 				4059BE331E9B31FF0067C1F3 /* AddressBookHandle.h */,
 				4059BE341E9B31FF0067C1F3 /* AddressBookHandle.m */,
+				4059BE4F1E9CB07D0067C1F3 /* WIFIViewController.h */,
+				4059BE501E9CB07D0067C1F3 /* WIFIViewController.m */,
 				4059BE0A1E972C0A0067C1F3 /* Main.storyboard */,
 				4059BE0D1E972C0A0067C1F3 /* Assets.xcassets */,
 				4059BE0F1E972C0A0067C1F3 /* LaunchScreen.storyboard */,
@@ -124,6 +131,7 @@
 				4059BE391E9B529B0067C1F3 /* Model.xcdatamodeld */,
 				4059BE461E9B671C0067C1F3 /* GCDDemo.h */,
 				4059BE471E9B671C0067C1F3 /* GCDDemo.m */,
+				4059BE4D1E9CADCB0067C1F3 /* runtime.strings */,
 			);
 			path = IOSProjectDemo;
 			sourceTree = "<group>";
@@ -207,6 +215,7 @@
 				4059BE111E972C0A0067C1F3 /* LaunchScreen.storyboard in Resources */,
 				4059BE0E1E972C0A0067C1F3 /* Assets.xcassets in Resources */,
 				4059BE0C1E972C0A0067C1F3 /* Main.storyboard in Resources */,
+				4059BE4E1E9CADCB0067C1F3 /* runtime.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +226,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4059BE511E9CB07D0067C1F3 /* WIFIViewController.m in Sources */,
 				4059BE2C1E9789220067C1F3 /* VDContactsStore.m in Sources */,
 				4059BE221E97777A0067C1F3 /* GCDAsyncSocket.m in Sources */,
 				4059BE1D1E973B730067C1F3 /* CFNetWorkViewController.m in Sources */,

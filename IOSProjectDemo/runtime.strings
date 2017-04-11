@@ -1,0 +1,53 @@
+//获取类定义
+//Objective-C动态运行库会自动注册我们代码中定义的所有的类。我们也可以在运行时创建类定义并使用objc_addClass函数来注册它们。runtime提供了一系列函数来获取类定义相关的信息，这些函数主要包括：
+//
+//// 获取已注册的类定义的列表
+//int objc_getClassList ( Class *buffer, int bufferCount );
+//
+//// 创建并返回一个指向所有已注册类的指针列表
+//Class * objc_copyClassList ( unsigned int *outCount );
+//
+//// 返回指定类的类定义
+//Class objc_lookUpClass ( const char *name );
+//Class objc_getClass ( const char *name );
+//Class objc_getRequiredClass ( const char *name );
+//
+//// 返回指定类的元类
+//Class objc_getMetaClass ( const char *name );
+//objc_getClassList函数：获取已注册的类定义的列表。我们不能假设从该函数中获取的类对象是继承自NSObject体系的，所以在这些类上调用方法是，都应该先检测一下这个方法是否在这个类中实现。
+//
+//下面代码演示了该函数的用法：
+//
+//int numClasses;
+//Class * classes = NULL;
+//numClasses = objc_getClassList(NULL, 0);
+//if (numClasses > 0) {
+//    classes = malloc(sizeof(Class) * numClasses);
+//    numClasses = objc_getClassList(classes, numClasses);
+//    
+//    NSLog(@"number of classes: %d", numClasses);
+//    
+//    for (int i = 0; i < numClasses; i++) {
+//        
+//        Class cls = classes[i];
+//        NSLog(@"class name: %s", class_getName(cls));
+//    }
+//    
+//    free(classes);
+//}
+//
+//2014-10-23 16:20:52.589 RuntimeTest[8437:188589] number of classes: 1282
+//2014-10-23 16:20:52.589 RuntimeTest[8437:188589] class name: DDTokenRegexp
+//2014-10-23 16:20:52.590 RuntimeTest[8437:188589] class name: _NSMostCommonKoreanCharsKeySet
+//2014-10-23 16:20:52.590 RuntimeTest[8437:188589] class name: OS_xpc_dictionary
+//2014-10-23 16:20:52.590 RuntimeTest[8437:188589] class name: NSFileCoordinator
+//2014-10-23 16:20:52.590 RuntimeTest[8437:188589] class name: NSAssertionHandler
+//2014-10-23 16:20:52.590 RuntimeTest[8437:188589] class name: PFUbiquityTransactionLogMigrator
+//2014-10-23 16:20:52.591 RuntimeTest[8437:188589] class name: NSNotification
+//2014-10-23 16:20:52.591 RuntimeTest[8437:188589] class name: NSKeyValueNilSetEnumerator
+//2014-10-23 16:20:52.591 RuntimeTest[8437:188589] class name: OS_tcp_connection_tls_session
+//2014-10-23 16:20:52.591 RuntimeTest[8437:188589] class name: _PFRoutines
+//......还有大量输出
+//获取类定义的方法有三个：objc_lookUpClass, objc_getClass和objc_getRequiredClass。如果类在运行时未注册，则objc_lookUpClass会返回nil，而objc_getClass会调用类处理回调，并再次确认类是否注册，如果确认未注册，再返回nil。而objc_getRequiredClass函数的操作与objc_getClass相同，只不过如果没有找到类，则会杀死进程。
+//
+//objc_getMetaClass函数：如果指定的类没有注册，则该函数会调用类处理回调，并再次确认类是否注册，如果确认未注册，再返回nil。不过，每个类定义都必须有一个有效的元类定义，所以这个函数总是会返回一个元类定义，不管它是否有效。

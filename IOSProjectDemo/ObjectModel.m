@@ -102,7 +102,7 @@
         
     }
     free(methodsList);
-    struct objc_category cat;
+//    struct objc_category cat;
     
     
     //尝试调用私有方法

@@ -13,6 +13,7 @@
 #import "AddressBookHandle.h"
 #import "ViewController.h"
 #import "ObjectModel.h"
+#import "WIFIViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -22,7 +23,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    self.window.rootViewController = [RuntimeViewController new];
+    self.window.rootViewController = [WIFIViewController new];
     self.window.backgroundColor = [UIColor whiteColor];
 //    [[VDContactsStore new]loadDataContacts];
 //    
@@ -31,7 +32,7 @@
 //    
     [[ObjectModel new]logIvarMethods];
 
-    
+//    NSInvocation
     
    
     
