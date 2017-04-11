@@ -13,6 +13,7 @@
 #import <arpa/inet.h>
 #import <unistd.h>
 #import <ifaddrs.h>
+#import <SystemConfiguration/CaptiveNetwork.h>
 
 @implementation HIYHelper
 + (NSString *)getLocalAddress
