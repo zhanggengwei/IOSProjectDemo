@@ -37,6 +37,7 @@
 		4059BE711E9CD37E0067C1F3 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4059BE701E9CD37E0067C1F3 /* CFNetwork.framework */; };
 		4059BE751E9CD9D20067C1F3 /* HTTPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4059BE741E9CD9D20067C1F3 /* HTTPServer.m */; };
 		4059BE781E9CD9F20067C1F3 /* WebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 4059BE771E9CD9F20067C1F3 /* WebSocket.m */; };
+		4059BE7B1E9CDA2F0067C1F3 /* HIYHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4059BE7A1E9CDA2F0067C1F3 /* HIYHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -93,6 +94,8 @@
 		4059BE741E9CD9D20067C1F3 /* HTTPServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPServer.m; sourceTree = "<group>"; };
 		4059BE761E9CD9F20067C1F3 /* WebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebSocket.h; sourceTree = "<group>"; };
 		4059BE771E9CD9F20067C1F3 /* WebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebSocket.m; sourceTree = "<group>"; };
+		4059BE791E9CDA2F0067C1F3 /* HIYHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HIYHelper.h; sourceTree = "<group>"; };
+		4059BE7A1E9CDA2F0067C1F3 /* HIYHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HIYHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +213,8 @@
 				4059BE741E9CD9D20067C1F3 /* HTTPServer.m */,
 				4059BE761E9CD9F20067C1F3 /* WebSocket.h */,
 				4059BE771E9CD9F20067C1F3 /* WebSocket.m */,
+				4059BE791E9CDA2F0067C1F3 /* HIYHelper.h */,
+				4059BE7A1E9CDA2F0067C1F3 /* HIYHelper.m */,
 			);
 			path = WifiUploadDemo;
 			sourceTree = "<group>";
@@ -356,6 +361,7 @@
 				4059BE5D1E9CCFEE0067C1F3 /* AppDelegate.m in Sources */,
 				4059BE5A1E9CCFEE0067C1F3 /* main.m in Sources */,
 				4059BE751E9CD9D20067C1F3 /* HTTPServer.m in Sources */,
+				4059BE7B1E9CDA2F0067C1F3 /* HIYHelper.m in Sources */,
 				4059BE781E9CD9F20067C1F3 /* WebSocket.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
