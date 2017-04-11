@@ -19,7 +19,25 @@
     //NSLog(@"wifiName ==%@",[WIFIViewController getWifiName]);
     [self.class currentNetworkType];
     
+    __strong NSObject * yourString =  [NSObject new];
+
     
+    __weak NSObject * myString = yourString;
+    
+    
+    
+    __unsafe_unretained NSObject *theirString = myString;
+    
+    yourString = nil;
+    
+    
+    
+    
+    NSLog(@"yourString:%p --- :%@",yourString,yourString);
+    
+    NSLog(@"myString:%p --- :%@",myString,myString);
+    
+    NSLog(@"theirString:%p --- :%@",theirString,theirString);
     // Do any additional setup after loading the view.
 }
 + (NSString *)getWifiName

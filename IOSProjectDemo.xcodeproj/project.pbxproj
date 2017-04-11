@@ -27,6 +27,16 @@
 		4059BE481E9B671C0067C1F3 /* GCDDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4059BE471E9B671C0067C1F3 /* GCDDemo.m */; };
 		4059BE4E1E9CADCB0067C1F3 /* runtime.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4059BE4D1E9CADCB0067C1F3 /* runtime.strings */; };
 		4059BE511E9CB07D0067C1F3 /* WIFIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4059BE501E9CB07D0067C1F3 /* WIFIViewController.m */; };
+		4059BE5A1E9CCFEE0067C1F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4059BE591E9CCFEE0067C1F3 /* main.m */; };
+		4059BE5D1E9CCFEE0067C1F3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4059BE5C1E9CCFEE0067C1F3 /* AppDelegate.m */; };
+		4059BE601E9CCFEE0067C1F3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4059BE5F1E9CCFEE0067C1F3 /* ViewController.m */; };
+		4059BE631E9CCFEE0067C1F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4059BE611E9CCFEE0067C1F3 /* Main.storyboard */; };
+		4059BE651E9CCFEE0067C1F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4059BE641E9CCFEE0067C1F3 /* Assets.xcassets */; };
+		4059BE681E9CCFEE0067C1F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4059BE661E9CCFEE0067C1F3 /* LaunchScreen.storyboard */; };
+		4059BE6F1E9CD2AA0067C1F3 /* HTTPMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4059BE6E1E9CD2AA0067C1F3 /* HTTPMessage.m */; };
+		4059BE711E9CD37E0067C1F3 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4059BE701E9CD37E0067C1F3 /* CFNetwork.framework */; };
+		4059BE751E9CD9D20067C1F3 /* HTTPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4059BE741E9CD9D20067C1F3 /* HTTPServer.m */; };
+		4059BE781E9CD9F20067C1F3 /* WebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 4059BE771E9CD9F20067C1F3 /* WebSocket.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +75,24 @@
 		4059BE4D1E9CADCB0067C1F3 /* runtime.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = runtime.strings; sourceTree = "<group>"; };
 		4059BE4F1E9CB07D0067C1F3 /* WIFIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WIFIViewController.h; sourceTree = "<group>"; };
 		4059BE501E9CB07D0067C1F3 /* WIFIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WIFIViewController.m; sourceTree = "<group>"; };
+		4059BE561E9CCFEE0067C1F3 /* WifiUploadDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WifiUploadDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4059BE591E9CCFEE0067C1F3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4059BE5B1E9CCFEE0067C1F3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4059BE5C1E9CCFEE0067C1F3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4059BE5E1E9CCFEE0067C1F3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4059BE5F1E9CCFEE0067C1F3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4059BE621E9CCFEE0067C1F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4059BE641E9CCFEE0067C1F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4059BE671E9CCFEE0067C1F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4059BE691E9CCFEE0067C1F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4059BE6D1E9CD2AA0067C1F3 /* HTTPMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPMessage.h; sourceTree = "<group>"; };
+		4059BE6E1E9CD2AA0067C1F3 /* HTTPMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPMessage.m; sourceTree = "<group>"; };
+		4059BE701E9CD37E0067C1F3 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		4059BE721E9CD96F0067C1F3 /* HTTPResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPResponse.h; sourceTree = "<group>"; };
+		4059BE731E9CD9D20067C1F3 /* HTTPServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPServer.h; sourceTree = "<group>"; };
+		4059BE741E9CD9D20067C1F3 /* HTTPServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPServer.m; sourceTree = "<group>"; };
+		4059BE761E9CD9F20067C1F3 /* WebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebSocket.h; sourceTree = "<group>"; };
+		4059BE771E9CD9F20067C1F3 /* WebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebSocket.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +104,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4059BE531E9CCFEE0067C1F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4059BE711E9CD37E0067C1F3 /* CFNetwork.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -83,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				4059BE001E972C0A0067C1F3 /* IOSProjectDemo */,
+				4059BE571E9CCFEE0067C1F3 /* WifiUploadDemo */,
 				4059BDFF1E972C0A0067C1F3 /* Products */,
 				4059BE2D1E97892F0067C1F3 /* Frameworks */,
 			);
@@ -92,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				4059BDFE1E972C0A0067C1F3 /* IOSProjectDemo.app */,
+				4059BE561E9CCFEE0067C1F3 /* WifiUploadDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -147,9 +185,41 @@
 		4059BE2D1E97892F0067C1F3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4059BE701E9CD37E0067C1F3 /* CFNetwork.framework */,
 				4059BE2E1E97892F0067C1F3 /* Contacts.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4059BE571E9CCFEE0067C1F3 /* WifiUploadDemo */ = {
+			isa = PBXGroup;
+			children = (
+				4059BE5B1E9CCFEE0067C1F3 /* AppDelegate.h */,
+				4059BE5C1E9CCFEE0067C1F3 /* AppDelegate.m */,
+				4059BE5E1E9CCFEE0067C1F3 /* ViewController.h */,
+				4059BE5F1E9CCFEE0067C1F3 /* ViewController.m */,
+				4059BE611E9CCFEE0067C1F3 /* Main.storyboard */,
+				4059BE641E9CCFEE0067C1F3 /* Assets.xcassets */,
+				4059BE661E9CCFEE0067C1F3 /* LaunchScreen.storyboard */,
+				4059BE691E9CCFEE0067C1F3 /* Info.plist */,
+				4059BE581E9CCFEE0067C1F3 /* Supporting Files */,
+				4059BE721E9CD96F0067C1F3 /* HTTPResponse.h */,
+				4059BE6D1E9CD2AA0067C1F3 /* HTTPMessage.h */,
+				4059BE6E1E9CD2AA0067C1F3 /* HTTPMessage.m */,
+				4059BE731E9CD9D20067C1F3 /* HTTPServer.h */,
+				4059BE741E9CD9D20067C1F3 /* HTTPServer.m */,
+				4059BE761E9CD9F20067C1F3 /* WebSocket.h */,
+				4059BE771E9CD9F20067C1F3 /* WebSocket.m */,
+			);
+			path = WifiUploadDemo;
+			sourceTree = "<group>";
+		};
+		4059BE581E9CCFEE0067C1F3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4059BE591E9CCFEE0067C1F3 /* main.m */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +242,23 @@
 			productReference = 4059BDFE1E972C0A0067C1F3 /* IOSProjectDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
+		4059BE551E9CCFEE0067C1F3 /* WifiUploadDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4059BE6A1E9CCFEE0067C1F3 /* Build configuration list for PBXNativeTarget "WifiUploadDemo" */;
+			buildPhases = (
+				4059BE521E9CCFEE0067C1F3 /* Sources */,
+				4059BE531E9CCFEE0067C1F3 /* Frameworks */,
+				4059BE541E9CCFEE0067C1F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WifiUploadDemo;
+			productName = WifiUploadDemo;
+			productReference = 4059BE561E9CCFEE0067C1F3 /* WifiUploadDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -185,6 +272,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = R6B5BG54J2;
 						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+					4059BE551E9CCFEE0067C1F3 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = R6B5BG54J2;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -203,6 +295,7 @@
 			projectRoot = "";
 			targets = (
 				4059BDFD1E972C0A0067C1F3 /* IOSProjectDemo */,
+				4059BE551E9CCFEE0067C1F3 /* WifiUploadDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -216,6 +309,16 @@
 				4059BE0E1E972C0A0067C1F3 /* Assets.xcassets in Resources */,
 				4059BE0C1E972C0A0067C1F3 /* Main.storyboard in Resources */,
 				4059BE4E1E9CADCB0067C1F3 /* runtime.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4059BE541E9CCFEE0067C1F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4059BE681E9CCFEE0067C1F3 /* LaunchScreen.storyboard in Resources */,
+				4059BE651E9CCFEE0067C1F3 /* Assets.xcassets in Resources */,
+				4059BE631E9CCFEE0067C1F3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,6 +347,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4059BE521E9CCFEE0067C1F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4059BE601E9CCFEE0067C1F3 /* ViewController.m in Sources */,
+				4059BE6F1E9CD2AA0067C1F3 /* HTTPMessage.m in Sources */,
+				4059BE5D1E9CCFEE0067C1F3 /* AppDelegate.m in Sources */,
+				4059BE5A1E9CCFEE0067C1F3 /* main.m in Sources */,
+				4059BE751E9CD9D20067C1F3 /* HTTPServer.m in Sources */,
+				4059BE781E9CD9F20067C1F3 /* WebSocket.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
@@ -259,6 +375,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				4059BE101E972C0A0067C1F3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		4059BE611E9CCFEE0067C1F3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4059BE621E9CCFEE0067C1F3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4059BE661E9CCFEE0067C1F3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4059BE671E9CCFEE0067C1F3 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -389,6 +521,30 @@
 			};
 			name = Release;
 		};
+		4059BE6B1E9CCFEE0067C1F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = R6B5BG54J2;
+				INFOPLIST_FILE = WifiUploadDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.popoteam.demo.WifiUploadDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4059BE6C1E9CCFEE0067C1F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = R6B5BG54J2;
+				INFOPLIST_FILE = WifiUploadDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.popoteam.demo.WifiUploadDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -409,6 +565,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		4059BE6A1E9CCFEE0067C1F3 /* Build configuration list for PBXNativeTarget "WifiUploadDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4059BE6B1E9CCFEE0067C1F3 /* Debug */,
+				4059BE6C1E9CCFEE0067C1F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 
