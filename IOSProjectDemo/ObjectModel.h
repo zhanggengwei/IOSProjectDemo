@@ -15,6 +15,7 @@
 @property (nonatomic,strong) NSString * passWord;
 
 - (void)printModelAddress;
+- (void)logIvarMethods;
 
 
 @end

@@ -11,7 +11,8 @@
 #import "ToolsPlist.h"
 #import "VDContactsStore.h"
 #import "AddressBookHandle.h"
-
+#import "ViewController.h"
+#import "ObjectModel.h"
 @interface AppDelegate ()
 
 @end
@@ -23,13 +24,16 @@
     // Override point for customization after application launch.
     self.window.rootViewController = [RuntimeViewController new];
     self.window.backgroundColor = [UIColor whiteColor];
-    [[VDContactsStore new]loadDataContacts];
+//    [[VDContactsStore new]loadDataContacts];
+//    
+//     NSLog(@"dict == %@",[NSObject new]);
+//     [[VDContactsStore new]loadDataContacts];
+//    
+    [[ObjectModel new]logIvarMethods];
+
     
-     NSLog(@"dict == %@",[NSObject new]);
-     [[VDContactsStore new]loadDataContacts];
     
-    
-    
+   
     
     return YES;
 }
