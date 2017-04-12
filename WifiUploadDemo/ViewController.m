@@ -10,7 +10,7 @@
  
  */
 #import "ViewController.h"
-
+#import "HIYHelper.h"
 @interface ViewController ()
 
 @end
@@ -19,6 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [HIYHelper getWifiName];
     // Do any additional setup after loading the view, typically from a nib.
 }
 

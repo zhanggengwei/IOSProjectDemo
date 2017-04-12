@@ -21,6 +21,7 @@
     struct ifaddrs * interface = NULL;
     struct ifaddrs * temp = interface;
     int flag = getifaddrs(&interface);
+    char * addressString = NULL;
     if(flag==0)
     {
         while (temp)
@@ -30,7 +31,7 @@
             {
                 //char		*inet_ntoa(struct in_addr);
                  struct sockaddr_in * address = (struct sockaddr_in *)temp->ifa_addr;
-                 char * addressString = inet_ntoa(address->sin_addr);
+                 addressString = inet_ntoa(address->sin_addr);
             }
             temp = temp->ifa_next;
         }
@@ -40,13 +41,30 @@
             interface = NULL;
         }
     }
-    return @"";
+    return [NSString stringWithFormat:@"%s",addressString];
     
     
 }
 
 + (NSString *)getWifiName
 {
-    
+    NSString * wifiName = nil;
+    CFArrayRef array = CNCopySupportedInterfaces();
+    if(array==NULL)
+    {
+        NSLog(@"error");
+        return @"";
+    }
+    for (int i = 0; i < CFArrayGetCount(array); i++)
+    {
+        CFDictionaryRef dict = CNCopyCurrentNetworkInfo(CFArrayGetValueAtIndex(array,i));
+        if(dict)
+        {
+            wifiName = CFDictionaryGetValue(dict, kCNNetworkInfoKeySSID);
+            CFRelease(dict);
+        }
+    }
+    CFRelease(array);
+    return wifiName;
 }
 @end
