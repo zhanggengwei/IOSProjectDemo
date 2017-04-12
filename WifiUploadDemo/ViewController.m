@@ -61,7 +61,7 @@
 
 - (void)setupServer {
     SGWiFiUploadManager *mgr = [SGWiFiUploadManager sharedManager];
-    BOOL success = [mgr startHTTPServerAtPort:10000];
+    BOOL success = [mgr startHTTPServerAtPort:9191];
     if (success) {
         [mgr setFileUploadStartCallback:^(NSString *fileName, NSString *savePath) {
             NSLog(@"File %@ Upload Start", fileName);

@@ -29,11 +29,15 @@
             
             if(temp->ifa_addr->sa_family == AF_INET)
             {
-                //char		*inet_ntoa(struct in_addr);
-                 struct sockaddr_in * address = (struct sockaddr_in *)temp->ifa_addr;
-                 addressString = inet_ntoa(address->sin_addr);
-                
-                 NSLog(@"address==%s",addressString);
+                if ([[NSString stringWithUTF8String:temp->ifa_name] isEqualToString:@"en0"])
+                {
+                    //char		*inet_ntoa(struct in_addr);
+                    struct sockaddr_in * address = (struct sockaddr_in *)temp->ifa_addr;
+                    addressString = inet_ntoa(address->sin_addr);
+                    
+                    NSLog(@"address==%s",addressString);
+                }
+               
             }
             temp = temp->ifa_next;
         }
