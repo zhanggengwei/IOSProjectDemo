@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>IOSRequestTools.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
 		<key>WifiUploadDemo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -33,6 +38,11 @@
 			<true/>
 		</dict>
 		<key>40A276CB1E9E29C700421E5A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>40D4C0431E9F4E4E00C6DE0F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

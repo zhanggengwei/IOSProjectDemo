@@ -69,6 +69,14 @@
 		40A276DE1E9E29C700421E5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40A276DC1E9E29C700421E5A /* LaunchScreen.storyboard */; };
 		40A276E71E9E29F000421E5A /* mongoose.c in Sources */ = {isa = PBXBuildFile; fileRef = 40A276E31E9E29F000421E5A /* mongoose.c */; };
 		40A276E81E9E29F000421E5A /* MongooseDaemon.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A276E61E9E29F000421E5A /* MongooseDaemon.m */; };
+		40D4C0481E9F4E4E00C6DE0F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D4C0471E9F4E4E00C6DE0F /* main.m */; };
+		40D4C04B1E9F4E4E00C6DE0F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D4C04A1E9F4E4E00C6DE0F /* AppDelegate.m */; };
+		40D4C04E1E9F4E4E00C6DE0F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D4C04D1E9F4E4E00C6DE0F /* ViewController.m */; };
+		40D4C0511E9F4E4E00C6DE0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40D4C04F1E9F4E4E00C6DE0F /* Main.storyboard */; };
+		40D4C0531E9F4E4E00C6DE0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40D4C0521E9F4E4E00C6DE0F /* Assets.xcassets */; };
+		40D4C0561E9F4E4E00C6DE0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40D4C0541E9F4E4E00C6DE0F /* LaunchScreen.storyboard */; };
+		40D4C05E1E9F4E8800C6DE0F /* RequestManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40D4C05C1E9F4E8800C6DE0F /* RequestManager.cpp */; };
+		40D4C0611E9F519800C6DE0F /* HTTPRequestMessage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40D4C05F1E9F519800C6DE0F /* HTTPRequestMessage.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -185,6 +193,20 @@
 		40A276E41E9E29F000421E5A /* mongoose.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mongoose.h; sourceTree = "<group>"; };
 		40A276E51E9E29F000421E5A /* MongooseDaemon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MongooseDaemon.h; sourceTree = "<group>"; };
 		40A276E61E9E29F000421E5A /* MongooseDaemon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MongooseDaemon.m; sourceTree = "<group>"; };
+		40D4C0441E9F4E4E00C6DE0F /* IOSRequestTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSRequestTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		40D4C0471E9F4E4E00C6DE0F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		40D4C0491E9F4E4E00C6DE0F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		40D4C04A1E9F4E4E00C6DE0F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		40D4C04C1E9F4E4E00C6DE0F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		40D4C04D1E9F4E4E00C6DE0F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		40D4C0501E9F4E4E00C6DE0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		40D4C0521E9F4E4E00C6DE0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		40D4C0551E9F4E4E00C6DE0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		40D4C0571E9F4E4E00C6DE0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40D4C05C1E9F4E8800C6DE0F /* RequestManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RequestManager.cpp; sourceTree = "<group>"; };
+		40D4C05D1E9F4E8800C6DE0F /* RequestManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = RequestManager.hpp; sourceTree = "<group>"; };
+		40D4C05F1E9F519800C6DE0F /* HTTPRequestMessage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HTTPRequestMessage.cpp; sourceTree = "<group>"; };
+		40D4C0601E9F519800C6DE0F /* HTTPRequestMessage.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = HTTPRequestMessage.hpp; sourceTree = "<group>"; };
 		53DA42DF7B329D8DF1F5D79B /* libPods-WifiUploadDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WifiUploadDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -213,6 +235,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		40D4C0411E9F4E4E00C6DE0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -222,6 +251,7 @@
 				4059BE001E972C0A0067C1F3 /* IOSProjectDemo */,
 				4059BE571E9CCFEE0067C1F3 /* WifiUploadDemo */,
 				40A276CD1E9E29C700421E5A /* mongoose.c mongoose.h MongooseDaemon.h MongooseDaemonDemo */,
+				40D4C0451E9F4E4E00C6DE0F /* IOSRequestTools */,
 				4059BDFF1E972C0A0067C1F3 /* Products */,
 				4059BE2D1E97892F0067C1F3 /* Frameworks */,
 				F071578F376586321FF43817 /* Pods */,
@@ -234,6 +264,7 @@
 				4059BDFE1E972C0A0067C1F3 /* IOSProjectDemo.app */,
 				4059BE561E9CCFEE0067C1F3 /* WifiUploadDemo.app */,
 				40A276CC1E9E29C700421E5A /* mongoose.c mongoose.h MongooseDaemon.h MongooseDaemonDemo.app */,
+				40D4C0441E9F4E4E00C6DE0F /* IOSRequestTools.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -463,6 +494,42 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		40D4C0451E9F4E4E00C6DE0F /* IOSRequestTools */ = {
+			isa = PBXGroup;
+			children = (
+				40D4C05B1E9F4E7000C6DE0F /* HTTPRequest */,
+				40D4C0491E9F4E4E00C6DE0F /* AppDelegate.h */,
+				40D4C04A1E9F4E4E00C6DE0F /* AppDelegate.m */,
+				40D4C04C1E9F4E4E00C6DE0F /* ViewController.h */,
+				40D4C04D1E9F4E4E00C6DE0F /* ViewController.m */,
+				40D4C04F1E9F4E4E00C6DE0F /* Main.storyboard */,
+				40D4C0521E9F4E4E00C6DE0F /* Assets.xcassets */,
+				40D4C0541E9F4E4E00C6DE0F /* LaunchScreen.storyboard */,
+				40D4C0571E9F4E4E00C6DE0F /* Info.plist */,
+				40D4C0461E9F4E4E00C6DE0F /* Supporting Files */,
+			);
+			path = IOSRequestTools;
+			sourceTree = "<group>";
+		};
+		40D4C0461E9F4E4E00C6DE0F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				40D4C0471E9F4E4E00C6DE0F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		40D4C05B1E9F4E7000C6DE0F /* HTTPRequest */ = {
+			isa = PBXGroup;
+			children = (
+				40D4C05C1E9F4E8800C6DE0F /* RequestManager.cpp */,
+				40D4C05D1E9F4E8800C6DE0F /* RequestManager.hpp */,
+				40D4C05F1E9F519800C6DE0F /* HTTPRequestMessage.cpp */,
+				40D4C0601E9F519800C6DE0F /* HTTPRequestMessage.hpp */,
+			);
+			path = HTTPRequest;
+			sourceTree = "<group>";
+		};
 		F071578F376586321FF43817 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -529,6 +596,23 @@
 			productReference = 40A276CC1E9E29C700421E5A /* mongoose.c mongoose.h MongooseDaemon.h MongooseDaemonDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
+		40D4C0431E9F4E4E00C6DE0F /* IOSRequestTools */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40D4C05A1E9F4E4E00C6DE0F /* Build configuration list for PBXNativeTarget "IOSRequestTools" */;
+			buildPhases = (
+				40D4C0401E9F4E4E00C6DE0F /* Sources */,
+				40D4C0411E9F4E4E00C6DE0F /* Frameworks */,
+				40D4C0421E9F4E4E00C6DE0F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IOSRequestTools;
+			productName = IOSRequestTools;
+			productReference = 40D4C0441E9F4E4E00C6DE0F /* IOSRequestTools.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -554,6 +638,11 @@
 						DevelopmentTeam = R6B5BG54J2;
 						ProvisioningStyle = Automatic;
 					};
+					40D4C0431E9F4E4E00C6DE0F = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = R6B5BG54J2;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 4059BDF91E972C0A0067C1F3 /* Build configuration list for PBXProject "IOSProjectDemo" */;
@@ -572,6 +661,7 @@
 				4059BDFD1E972C0A0067C1F3 /* IOSProjectDemo */,
 				4059BE551E9CCFEE0067C1F3 /* WifiUploadDemo */,
 				40A276CB1E9E29C700421E5A /* mongoose.c mongoose.h MongooseDaemon.h MongooseDaemonDemo */,
+				40D4C0431E9F4E4E00C6DE0F /* IOSRequestTools */,
 			);
 		};
 /* End PBXProject section */
@@ -608,6 +698,16 @@
 				40A276DE1E9E29C700421E5A /* LaunchScreen.storyboard in Resources */,
 				40A276DB1E9E29C700421E5A /* Assets.xcassets in Resources */,
 				40A276D91E9E29C700421E5A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40D4C0421E9F4E4E00C6DE0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40D4C0561E9F4E4E00C6DE0F /* LaunchScreen.storyboard in Resources */,
+				40D4C0531E9F4E4E00C6DE0F /* Assets.xcassets in Resources */,
+				40D4C0511E9F4E4E00C6DE0F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -729,6 +829,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		40D4C0401E9F4E4E00C6DE0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40D4C04E1E9F4E4E00C6DE0F /* ViewController.m in Sources */,
+				40D4C04B1E9F4E4E00C6DE0F /* AppDelegate.m in Sources */,
+				40D4C0481E9F4E4E00C6DE0F /* main.m in Sources */,
+				40D4C05E1E9F4E8800C6DE0F /* RequestManager.cpp in Sources */,
+				40D4C0611E9F519800C6DE0F /* HTTPRequestMessage.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
@@ -776,6 +888,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				40A276DD1E9E29C700421E5A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		40D4C04F1E9F4E4E00C6DE0F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40D4C0501E9F4E4E00C6DE0F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		40D4C0541E9F4E4E00C6DE0F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40D4C0551E9F4E4E00C6DE0F /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -960,6 +1088,30 @@
 			};
 			name = Release;
 		};
+		40D4C0581E9F4E4E00C6DE0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = R6B5BG54J2;
+				INFOPLIST_FILE = IOSRequestTools/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.popoteam.demo.IOSRequestTools;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		40D4C0591E9F4E4E00C6DE0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = R6B5BG54J2;
+				INFOPLIST_FILE = IOSRequestTools/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.popoteam.demo.IOSRequestTools;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -995,6 +1147,15 @@
 			buildConfigurations = (
 				40A276E01E9E29C700421E5A /* Debug */,
 				40A276E11E9E29C700421E5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40D4C05A1E9F4E4E00C6DE0F /* Build configuration list for PBXNativeTarget "IOSRequestTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40D4C0581E9F4E4E00C6DE0F /* Debug */,
+				40D4C0591E9F4E4E00C6DE0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
