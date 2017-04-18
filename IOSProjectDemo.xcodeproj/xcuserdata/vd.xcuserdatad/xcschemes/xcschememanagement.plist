@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>IOSProjectDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>IOSRequestTools.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>IOSSocketServer.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
+		<key>WifiUploadDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>mongoose.c mongoose.h MongooseDaemon.h MongooseDaemonDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>4059BDFD1E972C0A0067C1F3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4059BE551E9CCFEE0067C1F3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>40A276CB1E9E29C700421E5A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>40D4C0431E9F4E4E00C6DE0F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>750B00B71EA4F99D00ED074A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>750B00CF1EA4F99D00ED074A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>750B00DA1EA4F99D00ED074A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

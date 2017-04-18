@@ -77,7 +77,40 @@
 		40D4C0561E9F4E4E00C6DE0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40D4C0541E9F4E4E00C6DE0F /* LaunchScreen.storyboard */; };
 		40D4C05E1E9F4E8800C6DE0F /* RequestManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40D4C05C1E9F4E8800C6DE0F /* RequestManager.cpp */; };
 		40D4C0611E9F519800C6DE0F /* HTTPRequestMessage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40D4C05F1E9F519800C6DE0F /* HTTPRequestMessage.cpp */; };
+		750B00BC1EA4F99D00ED074A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 750B00BB1EA4F99D00ED074A /* main.m */; };
+		750B00BF1EA4F99D00ED074A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 750B00BE1EA4F99D00ED074A /* AppDelegate.m */; };
+		750B00C21EA4F99D00ED074A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 750B00C11EA4F99D00ED074A /* ViewController.m */; };
+		750B00C51EA4F99D00ED074A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 750B00C31EA4F99D00ED074A /* Main.storyboard */; };
+		750B00C71EA4F99D00ED074A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 750B00C61EA4F99D00ED074A /* Assets.xcassets */; };
+		750B00CA1EA4F99D00ED074A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 750B00C81EA4F99D00ED074A /* LaunchScreen.storyboard */; };
+		750B00D51EA4F99D00ED074A /* IOSSocketServerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 750B00D41EA4F99D00ED074A /* IOSSocketServerTests.m */; };
+		750B00E01EA4F99D00ED074A /* IOSSocketServerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 750B00DF1EA4F99D00ED074A /* IOSSocketServerUITests.m */; };
+		750B00F81EA4F9D600ED074A /* file.html in Resources */ = {isa = PBXBuildFile; fileRef = 750B00EB1EA4F9D600ED074A /* file.html */; };
+		750B00F91EA4F9D600ED074A /* HTTPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 750B00ED1EA4F9D600ED074A /* HTTPServer.m */; };
+		750B00FA1EA4F9D600ED074A /* create_socket.c in Sources */ = {isa = PBXBuildFile; fileRef = 750B00EF1EA4F9D600ED074A /* create_socket.c */; };
+		750B00FB1EA4F9D600ED074A /* handle_client.c in Sources */ = {isa = PBXBuildFile; fileRef = 750B00F01EA4F9D600ED074A /* handle_client.c */; };
+		750B00FC1EA4F9D600ED074A /* lhttp.c in Sources */ = {isa = PBXBuildFile; fileRef = 750B00F11EA4F9D600ED074A /* lhttp.c */; };
+		750B00FD1EA4F9D600ED074A /* send_response.c in Sources */ = {isa = PBXBuildFile; fileRef = 750B00F31EA4F9D600ED074A /* send_response.c */; };
+		750B00FE1EA4F9D600ED074A /* index.htm in Resources */ = {isa = PBXBuildFile; fileRef = 750B00F51EA4F9D600ED074A /* index.htm */; };
+		750B00FF1EA4F9D600ED074A /* ServerTool.c in Sources */ = {isa = PBXBuildFile; fileRef = 750B00F61EA4F9D600ED074A /* ServerTool.c */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		750B00D11EA4F99D00ED074A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4059BDF61E972C0A0067C1F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 750B00B71EA4F99D00ED074A;
+			remoteInfo = IOSSocketServer;
+		};
+		750B00DC1EA4F99D00ED074A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4059BDF61E972C0A0067C1F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 750B00B71EA4F99D00ED074A;
+			remoteInfo = IOSSocketServer;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1185BB74CCFB3F9C4AFC7DBB /* Pods-WifiUploadDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WifiUploadDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-WifiUploadDemo/Pods-WifiUploadDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -208,6 +241,33 @@
 		40D4C05F1E9F519800C6DE0F /* HTTPRequestMessage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HTTPRequestMessage.cpp; sourceTree = "<group>"; };
 		40D4C0601E9F519800C6DE0F /* HTTPRequestMessage.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = HTTPRequestMessage.hpp; sourceTree = "<group>"; };
 		53DA42DF7B329D8DF1F5D79B /* libPods-WifiUploadDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WifiUploadDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		750B00B81EA4F99D00ED074A /* IOSSocketServer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSSocketServer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		750B00BB1EA4F99D00ED074A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		750B00BD1EA4F99D00ED074A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		750B00BE1EA4F99D00ED074A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		750B00C01EA4F99D00ED074A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		750B00C11EA4F99D00ED074A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		750B00C41EA4F99D00ED074A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		750B00C61EA4F99D00ED074A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		750B00C91EA4F99D00ED074A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		750B00CB1EA4F99D00ED074A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		750B00D01EA4F99D00ED074A /* IOSSocketServerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOSSocketServerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		750B00D41EA4F99D00ED074A /* IOSSocketServerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOSSocketServerTests.m; sourceTree = "<group>"; };
+		750B00D61EA4F99D00ED074A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		750B00DB1EA4F99D00ED074A /* IOSSocketServerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOSSocketServerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		750B00DF1EA4F99D00ED074A /* IOSSocketServerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOSSocketServerUITests.m; sourceTree = "<group>"; };
+		750B00E11EA4F99D00ED074A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		750B00EB1EA4F9D600ED074A /* file.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = file.html; sourceTree = "<group>"; };
+		750B00EC1EA4F9D600ED074A /* HTTPServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPServer.h; sourceTree = "<group>"; };
+		750B00ED1EA4F9D600ED074A /* HTTPServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPServer.m; sourceTree = "<group>"; };
+		750B00EF1EA4F9D600ED074A /* create_socket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = create_socket.c; sourceTree = "<group>"; };
+		750B00F01EA4F9D600ED074A /* handle_client.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = handle_client.c; sourceTree = "<group>"; };
+		750B00F11EA4F9D600ED074A /* lhttp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lhttp.c; sourceTree = "<group>"; };
+		750B00F21EA4F9D600ED074A /* lhttp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lhttp.h; sourceTree = "<group>"; };
+		750B00F31EA4F9D600ED074A /* send_response.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = send_response.c; sourceTree = "<group>"; };
+		750B00F51EA4F9D600ED074A /* index.htm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.htm; sourceTree = "<group>"; };
+		750B00F61EA4F9D600ED074A /* ServerTool.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ServerTool.c; sourceTree = "<group>"; };
+		750B00F71EA4F9D600ED074A /* ServerTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerTool.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,6 +302,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		750B00B51EA4F99D00ED074A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		750B00CD1EA4F99D00ED074A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		750B00D81EA4F99D00ED074A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -252,6 +333,9 @@
 				4059BE571E9CCFEE0067C1F3 /* WifiUploadDemo */,
 				40A276CD1E9E29C700421E5A /* mongoose.c mongoose.h MongooseDaemon.h MongooseDaemonDemo */,
 				40D4C0451E9F4E4E00C6DE0F /* IOSRequestTools */,
+				750B00B91EA4F99D00ED074A /* IOSSocketServer */,
+				750B00D31EA4F99D00ED074A /* IOSSocketServerTests */,
+				750B00DE1EA4F99D00ED074A /* IOSSocketServerUITests */,
 				4059BDFF1E972C0A0067C1F3 /* Products */,
 				4059BE2D1E97892F0067C1F3 /* Frameworks */,
 				F071578F376586321FF43817 /* Pods */,
@@ -265,6 +349,9 @@
 				4059BE561E9CCFEE0067C1F3 /* WifiUploadDemo.app */,
 				40A276CC1E9E29C700421E5A /* mongoose.c mongoose.h MongooseDaemon.h MongooseDaemonDemo.app */,
 				40D4C0441E9F4E4E00C6DE0F /* IOSRequestTools.app */,
+				750B00B81EA4F99D00ED074A /* IOSSocketServer.app */,
+				750B00D01EA4F99D00ED074A /* IOSSocketServerTests.xctest */,
+				750B00DB1EA4F99D00ED074A /* IOSSocketServerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -530,6 +617,75 @@
 			path = HTTPRequest;
 			sourceTree = "<group>";
 		};
+		750B00B91EA4F99D00ED074A /* IOSSocketServer */ = {
+			isa = PBXGroup;
+			children = (
+				750B00EB1EA4F9D600ED074A /* file.html */,
+				750B00EC1EA4F9D600ED074A /* HTTPServer.h */,
+				750B00ED1EA4F9D600ED074A /* HTTPServer.m */,
+				750B00EE1EA4F9D600ED074A /* lhttp */,
+				750B00F61EA4F9D600ED074A /* ServerTool.c */,
+				750B00F71EA4F9D600ED074A /* ServerTool.h */,
+				750B00BD1EA4F99D00ED074A /* AppDelegate.h */,
+				750B00BE1EA4F99D00ED074A /* AppDelegate.m */,
+				750B00C01EA4F99D00ED074A /* ViewController.h */,
+				750B00C11EA4F99D00ED074A /* ViewController.m */,
+				750B00C31EA4F99D00ED074A /* Main.storyboard */,
+				750B00C61EA4F99D00ED074A /* Assets.xcassets */,
+				750B00C81EA4F99D00ED074A /* LaunchScreen.storyboard */,
+				750B00CB1EA4F99D00ED074A /* Info.plist */,
+				750B00BA1EA4F99D00ED074A /* Supporting Files */,
+			);
+			path = IOSSocketServer;
+			sourceTree = "<group>";
+		};
+		750B00BA1EA4F99D00ED074A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				750B00BB1EA4F99D00ED074A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		750B00D31EA4F99D00ED074A /* IOSSocketServerTests */ = {
+			isa = PBXGroup;
+			children = (
+				750B00D41EA4F99D00ED074A /* IOSSocketServerTests.m */,
+				750B00D61EA4F99D00ED074A /* Info.plist */,
+			);
+			path = IOSSocketServerTests;
+			sourceTree = "<group>";
+		};
+		750B00DE1EA4F99D00ED074A /* IOSSocketServerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				750B00DF1EA4F99D00ED074A /* IOSSocketServerUITests.m */,
+				750B00E11EA4F99D00ED074A /* Info.plist */,
+			);
+			path = IOSSocketServerUITests;
+			sourceTree = "<group>";
+		};
+		750B00EE1EA4F9D600ED074A /* lhttp */ = {
+			isa = PBXGroup;
+			children = (
+				750B00EF1EA4F9D600ED074A /* create_socket.c */,
+				750B00F01EA4F9D600ED074A /* handle_client.c */,
+				750B00F11EA4F9D600ED074A /* lhttp.c */,
+				750B00F21EA4F9D600ED074A /* lhttp.h */,
+				750B00F31EA4F9D600ED074A /* send_response.c */,
+				750B00F41EA4F9D600ED074A /* www */,
+			);
+			path = lhttp;
+			sourceTree = "<group>";
+		};
+		750B00F41EA4F9D600ED074A /* www */ = {
+			isa = PBXGroup;
+			children = (
+				750B00F51EA4F9D600ED074A /* index.htm */,
+			);
+			path = www;
+			sourceTree = "<group>";
+		};
 		F071578F376586321FF43817 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -613,6 +769,59 @@
 			productReference = 40D4C0441E9F4E4E00C6DE0F /* IOSRequestTools.app */;
 			productType = "com.apple.product-type.application";
 		};
+		750B00B71EA4F99D00ED074A /* IOSSocketServer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 750B00E81EA4F99D00ED074A /* Build configuration list for PBXNativeTarget "IOSSocketServer" */;
+			buildPhases = (
+				750B00B41EA4F99D00ED074A /* Sources */,
+				750B00B51EA4F99D00ED074A /* Frameworks */,
+				750B00B61EA4F99D00ED074A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IOSSocketServer;
+			productName = IOSSocketServer;
+			productReference = 750B00B81EA4F99D00ED074A /* IOSSocketServer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		750B00CF1EA4F99D00ED074A /* IOSSocketServerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 750B00E91EA4F99D00ED074A /* Build configuration list for PBXNativeTarget "IOSSocketServerTests" */;
+			buildPhases = (
+				750B00CC1EA4F99D00ED074A /* Sources */,
+				750B00CD1EA4F99D00ED074A /* Frameworks */,
+				750B00CE1EA4F99D00ED074A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				750B00D21EA4F99D00ED074A /* PBXTargetDependency */,
+			);
+			name = IOSSocketServerTests;
+			productName = IOSSocketServerTests;
+			productReference = 750B00D01EA4F99D00ED074A /* IOSSocketServerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		750B00DA1EA4F99D00ED074A /* IOSSocketServerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 750B00EA1EA4F99D00ED074A /* Build configuration list for PBXNativeTarget "IOSSocketServerUITests" */;
+			buildPhases = (
+				750B00D71EA4F99D00ED074A /* Sources */,
+				750B00D81EA4F99D00ED074A /* Frameworks */,
+				750B00D91EA4F99D00ED074A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				750B00DD1EA4F99D00ED074A /* PBXTargetDependency */,
+			);
+			name = IOSSocketServerUITests;
+			productName = IOSSocketServerUITests;
+			productReference = 750B00DB1EA4F99D00ED074A /* IOSSocketServerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -643,6 +852,20 @@
 						DevelopmentTeam = R6B5BG54J2;
 						ProvisioningStyle = Automatic;
 					};
+					750B00B71EA4F99D00ED074A = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+					};
+					750B00CF1EA4F99D00ED074A = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 750B00B71EA4F99D00ED074A;
+					};
+					750B00DA1EA4F99D00ED074A = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 750B00B71EA4F99D00ED074A;
+					};
 				};
 			};
 			buildConfigurationList = 4059BDF91E972C0A0067C1F3 /* Build configuration list for PBXProject "IOSProjectDemo" */;
@@ -662,6 +885,9 @@
 				4059BE551E9CCFEE0067C1F3 /* WifiUploadDemo */,
 				40A276CB1E9E29C700421E5A /* mongoose.c mongoose.h MongooseDaemon.h MongooseDaemonDemo */,
 				40D4C0431E9F4E4E00C6DE0F /* IOSRequestTools */,
+				750B00B71EA4F99D00ED074A /* IOSSocketServer */,
+				750B00CF1EA4F99D00ED074A /* IOSSocketServerTests */,
+				750B00DA1EA4F99D00ED074A /* IOSSocketServerUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -708,6 +934,32 @@
 				40D4C0561E9F4E4E00C6DE0F /* LaunchScreen.storyboard in Resources */,
 				40D4C0531E9F4E4E00C6DE0F /* Assets.xcassets in Resources */,
 				40D4C0511E9F4E4E00C6DE0F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		750B00B61EA4F99D00ED074A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				750B00F81EA4F9D600ED074A /* file.html in Resources */,
+				750B00CA1EA4F99D00ED074A /* LaunchScreen.storyboard in Resources */,
+				750B00C71EA4F99D00ED074A /* Assets.xcassets in Resources */,
+				750B00C51EA4F99D00ED074A /* Main.storyboard in Resources */,
+				750B00FE1EA4F9D600ED074A /* index.htm in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		750B00CE1EA4F99D00ED074A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		750B00D91EA4F99D00ED074A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -841,7 +1093,52 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		750B00B41EA4F99D00ED074A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				750B00FD1EA4F9D600ED074A /* send_response.c in Sources */,
+				750B00C21EA4F99D00ED074A /* ViewController.m in Sources */,
+				750B00FF1EA4F9D600ED074A /* ServerTool.c in Sources */,
+				750B00BF1EA4F99D00ED074A /* AppDelegate.m in Sources */,
+				750B00FA1EA4F9D600ED074A /* create_socket.c in Sources */,
+				750B00F91EA4F9D600ED074A /* HTTPServer.m in Sources */,
+				750B00FB1EA4F9D600ED074A /* handle_client.c in Sources */,
+				750B00FC1EA4F9D600ED074A /* lhttp.c in Sources */,
+				750B00BC1EA4F99D00ED074A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		750B00CC1EA4F99D00ED074A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				750B00D51EA4F99D00ED074A /* IOSSocketServerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		750B00D71EA4F99D00ED074A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				750B00E01EA4F99D00ED074A /* IOSSocketServerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		750B00D21EA4F99D00ED074A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 750B00B71EA4F99D00ED074A /* IOSSocketServer */;
+			targetProxy = 750B00D11EA4F99D00ED074A /* PBXContainerItemProxy */;
+		};
+		750B00DD1EA4F99D00ED074A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 750B00B71EA4F99D00ED074A /* IOSSocketServer */;
+			targetProxy = 750B00DC1EA4F99D00ED074A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4059BE0A1E972C0A0067C1F3 /* Main.storyboard */ = {
@@ -904,6 +1201,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				40D4C0551E9F4E4E00C6DE0F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		750B00C31EA4F99D00ED074A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				750B00C41EA4F99D00ED074A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		750B00C81EA4F99D00ED074A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				750B00C91EA4F99D00ED074A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -1112,6 +1425,86 @@
 			};
 			name = Release;
 		};
+		750B00E21EA4F99D00ED074A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				INFOPLIST_FILE = IOSSocketServer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.VD.IOSSocketServer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		750B00E31EA4F99D00ED074A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				INFOPLIST_FILE = IOSSocketServer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.VD.IOSSocketServer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		750B00E41EA4F99D00ED074A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				INFOPLIST_FILE = IOSSocketServerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.VD.IOSSocketServerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IOSSocketServer.app/IOSSocketServer";
+			};
+			name = Debug;
+		};
+		750B00E51EA4F99D00ED074A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				INFOPLIST_FILE = IOSSocketServerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.VD.IOSSocketServerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IOSSocketServer.app/IOSSocketServer";
+			};
+			name = Release;
+		};
+		750B00E61EA4F99D00ED074A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				INFOPLIST_FILE = IOSSocketServerUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.VD.IOSSocketServerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = IOSSocketServer;
+			};
+			name = Debug;
+		};
+		750B00E71EA4F99D00ED074A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				INFOPLIST_FILE = IOSSocketServerUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.VD.IOSSocketServerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = IOSSocketServer;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1156,6 +1549,31 @@
 			buildConfigurations = (
 				40D4C0581E9F4E4E00C6DE0F /* Debug */,
 				40D4C0591E9F4E4E00C6DE0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		750B00E81EA4F99D00ED074A /* Build configuration list for PBXNativeTarget "IOSSocketServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				750B00E21EA4F99D00ED074A /* Debug */,
+				750B00E31EA4F99D00ED074A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		750B00E91EA4F99D00ED074A /* Build configuration list for PBXNativeTarget "IOSSocketServerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				750B00E41EA4F99D00ED074A /* Debug */,
+				750B00E51EA4F99D00ED074A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		750B00EA1EA4F99D00ED074A /* Build configuration list for PBXNativeTarget "IOSSocketServerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				750B00E61EA4F99D00ED074A /* Debug */,
+				750B00E71EA4F99D00ED074A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

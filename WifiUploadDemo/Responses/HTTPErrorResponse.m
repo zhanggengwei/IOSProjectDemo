@@ -21,7 +21,7 @@
 }
 
 - (void)setOffset:(UInt64)offset {
-    ;
+    
 }
 
 - (NSData*) readDataOfLength:(NSUInteger)length {

@@ -796,6 +796,7 @@ static inline NSUInteger WS_PAYLOAD_LENGTH(UInt8 frame)
 
 - (void)socketDidDisconnect:(GCDAsyncSocket *)sock withError:(NSError *)error
 {
+    
     HTTPLogTrace2(@"%@[%p]: socketDidDisconnect:withError: %@", THIS_FILE, self, error);
     
     [self didClose];
