@@ -783,6 +783,8 @@ find_callback(struct mg_context *ctx, bool_t is_auth,
 		}
 	}
 	pthread_mutex_unlock(&ctx->bind_mutex);
+    //pthread_mutex_destroy(&ctx->bind_mutex);
+    
 
 	return (found);
 }
