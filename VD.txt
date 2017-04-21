@@ -1,0 +1,5 @@
+RGB(value)/
+   (value&0xff0000)>>16
+   (value&0xff00)>>8
+   (value&0xff)
+颜色的16进制转换成十进制的颜色空间
