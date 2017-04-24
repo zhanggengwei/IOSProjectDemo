@@ -136,6 +136,8 @@
 		75127A6E1EAE39E50074143C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75127A6D1EAE39E50074143C /* Assets.xcassets */; };
 		75127A711EAE39E50074143C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75127A6F1EAE39E50074143C /* LaunchScreen.storyboard */; };
 		75127A931EAE3A280074143C /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 75127A921EAE3A280074143C /* index.html */; };
+		75127A961EAE5E980074143C /* JSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75127A951EAE5E980074143C /* JSViewController.m */; };
+		75127A991EAE5EE30074143C /* WKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75127A981EAE5EE30074143C /* WKWebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -393,6 +395,10 @@
 		75127A771EAE39E50074143C /* WebViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75127A821EAE39E50074143C /* WebViewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75127A921EAE3A280074143C /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		75127A941EAE5E980074143C /* JSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSViewController.h; sourceTree = "<group>"; };
+		75127A951EAE5E980074143C /* JSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSViewController.m; sourceTree = "<group>"; };
+		75127A971EAE5EE30074143C /* WKWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebViewController.h; sourceTree = "<group>"; };
+		75127A981EAE5EE30074143C /* WKWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -997,6 +1003,10 @@
 				75127A651EAE39E50074143C /* AppDelegate.m */,
 				75127A671EAE39E50074143C /* ViewController.h */,
 				75127A681EAE39E50074143C /* ViewController.m */,
+				75127A971EAE5EE30074143C /* WKWebViewController.h */,
+				75127A981EAE5EE30074143C /* WKWebViewController.m */,
+				75127A941EAE5E980074143C /* JSViewController.h */,
+				75127A951EAE5E980074143C /* JSViewController.m */,
 				75127A6A1EAE39E50074143C /* Main.storyboard */,
 				75127A6D1EAE39E50074143C /* Assets.xcassets */,
 				75127A6F1EAE39E50074143C /* LaunchScreen.storyboard */,
@@ -1775,7 +1785,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75127A991EAE5EE30074143C /* WKWebViewController.m in Sources */,
 				75127A691EAE39E50074143C /* ViewController.m in Sources */,
+				75127A961EAE5E980074143C /* JSViewController.m in Sources */,
 				75127A661EAE39E50074143C /* AppDelegate.m in Sources */,
 				75127A631EAE39E50074143C /* main.m in Sources */,
 			);
@@ -2631,6 +2643,7 @@
 				75127A8B1EAE39E50074143C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		75127A8C1EAE39E50074143C /* Build configuration list for PBXNativeTarget "WebViewDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -2639,6 +2652,7 @@
 				75127A8E1EAE39E50074143C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		75127A8F1EAE39E50074143C /* Build configuration list for PBXNativeTarget "WebViewDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -2647,6 +2661,7 @@
 				75127A911EAE39E50074143C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
