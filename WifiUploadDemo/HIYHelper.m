@@ -8,10 +8,11 @@
 
 #import "HIYHelper.h"
 #import <netdb.h>
-#import <sys/socket.h>
 #import <netinet/in.h>
 #import <arpa/inet.h>
 #import <unistd.h>
+#import <sys/socket.h>
+
 #import <ifaddrs.h>
 #import <SystemConfiguration/CaptiveNetwork.h>
 

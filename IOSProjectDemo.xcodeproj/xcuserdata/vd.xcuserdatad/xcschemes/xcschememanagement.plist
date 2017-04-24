@@ -4,6 +4,21 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>AnimaterView.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>10</integer>
+		</dict>
+		<key>IOSC++Demo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>12</integer>
+		</dict>
+		<key>IOSCoreDataDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
 		<key>IOSProjectDemo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -19,6 +34,16 @@
 			<key>orderHint</key>
 			<integer>7</integer>
 		</dict>
+		<key>NSURLProtrocalDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>9</integer>
+		</dict>
+		<key>PThreadDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>11</integer>
+		</dict>
 		<key>WifiUploadDemo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -32,6 +57,31 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>4041C0771EA9E0AB0013A70C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4041C0951EA9E1CD0013A70C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4041C0B31EA9E1ED0013A70C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4041C0D61EA9F7940013A70C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4041C1501EADAA690013A70C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>4059BDFD1E972C0A0067C1F3</key>
 		<dict>
 			<key>primary</key>

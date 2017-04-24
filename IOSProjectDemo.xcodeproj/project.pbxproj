@@ -121,8 +121,6 @@
 		750B00C51EA4F99D00ED074A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 750B00C31EA4F99D00ED074A /* Main.storyboard */; };
 		750B00C71EA4F99D00ED074A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 750B00C61EA4F99D00ED074A /* Assets.xcassets */; };
 		750B00CA1EA4F99D00ED074A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 750B00C81EA4F99D00ED074A /* LaunchScreen.storyboard */; };
-		750B00D51EA4F99D00ED074A /* IOSSocketServerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 750B00D41EA4F99D00ED074A /* IOSSocketServerTests.m */; };
-		750B00E01EA4F99D00ED074A /* IOSSocketServerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 750B00DF1EA4F99D00ED074A /* IOSSocketServerUITests.m */; };
 		750B00F81EA4F9D600ED074A /* file.html in Resources */ = {isa = PBXBuildFile; fileRef = 750B00EB1EA4F9D600ED074A /* file.html */; };
 		750B00F91EA4F9D600ED074A /* HTTPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 750B00ED1EA4F9D600ED074A /* HTTPServer.m */; };
 		750B00FA1EA4F9D600ED074A /* create_socket.c in Sources */ = {isa = PBXBuildFile; fileRef = 750B00EF1EA4F9D600ED074A /* create_socket.c */; };
@@ -349,11 +347,7 @@
 		750B00C91EA4F99D00ED074A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		750B00CB1EA4F99D00ED074A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		750B00D01EA4F99D00ED074A /* IOSSocketServerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOSSocketServerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		750B00D41EA4F99D00ED074A /* IOSSocketServerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOSSocketServerTests.m; sourceTree = "<group>"; };
-		750B00D61EA4F99D00ED074A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		750B00DB1EA4F99D00ED074A /* IOSSocketServerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOSSocketServerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		750B00DF1EA4F99D00ED074A /* IOSSocketServerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOSSocketServerUITests.m; sourceTree = "<group>"; };
-		750B00E11EA4F99D00ED074A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		750B00EB1EA4F9D600ED074A /* file.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = file.html; sourceTree = "<group>"; };
 		750B00EC1EA4F9D600ED074A /* HTTPServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPServer.h; sourceTree = "<group>"; };
 		750B00ED1EA4F9D600ED074A /* HTTPServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPServer.m; sourceTree = "<group>"; };
@@ -595,8 +589,6 @@
 				40A276CD1E9E29C700421E5A /* mongoose.c mongoose.h MongooseDaemon.h MongooseDaemonDemo */,
 				40D4C0451E9F4E4E00C6DE0F /* IOSRequestTools */,
 				750B00B91EA4F99D00ED074A /* IOSSocketServer */,
-				750B00D31EA4F99D00ED074A /* IOSSocketServerTests */,
-				750B00DE1EA4F99D00ED074A /* IOSSocketServerUITests */,
 				4041C0791EA9E0AB0013A70C /* IOSCoreDataDemo */,
 				4041C0971EA9E1CE0013A70C /* NSURLProtrocalDemo */,
 				4041C0B51EA9E1ED0013A70C /* AnimaterView */,
@@ -916,24 +908,6 @@
 				750B00BB1EA4F99D00ED074A /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		750B00D31EA4F99D00ED074A /* IOSSocketServerTests */ = {
-			isa = PBXGroup;
-			children = (
-				750B00D41EA4F99D00ED074A /* IOSSocketServerTests.m */,
-				750B00D61EA4F99D00ED074A /* Info.plist */,
-			);
-			path = IOSSocketServerTests;
-			sourceTree = "<group>";
-		};
-		750B00DE1EA4F99D00ED074A /* IOSSocketServerUITests */ = {
-			isa = PBXGroup;
-			children = (
-				750B00DF1EA4F99D00ED074A /* IOSSocketServerUITests.m */,
-				750B00E11EA4F99D00ED074A /* Info.plist */,
-			);
-			path = IOSSocketServerUITests;
 			sourceTree = "<group>";
 		};
 		750B00EE1EA4F9D600ED074A /* lhttp */ = {
@@ -1608,7 +1582,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				750B00D51EA4F99D00ED074A /* IOSSocketServerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1616,7 +1589,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				750B00E01EA4F99D00ED074A /* IOSSocketServerUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
