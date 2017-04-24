@@ -44,6 +44,11 @@
 			<key>orderHint</key>
 			<integer>11</integer>
 		</dict>
+		<key>WebViewDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>13</integer>
+		</dict>
 		<key>WifiUploadDemo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -113,6 +118,21 @@
 			<true/>
 		</dict>
 		<key>750B00DA1EA4F99D00ED074A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>75127A5E1EAE39E50074143C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>75127A761EAE39E50074143C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>75127A811EAE39E50074143C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
