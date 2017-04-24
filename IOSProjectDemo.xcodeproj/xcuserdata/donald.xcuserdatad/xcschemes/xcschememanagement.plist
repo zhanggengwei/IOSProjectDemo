@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>10</integer>
 		</dict>
+		<key>C++Tools.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>12</integer>
+		</dict>
 		<key>IOSCoreDataDemo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -68,6 +73,11 @@
 			<true/>
 		</dict>
 		<key>4041C0D61EA9F7940013A70C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4041C0F71EAD98C90013A70C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
