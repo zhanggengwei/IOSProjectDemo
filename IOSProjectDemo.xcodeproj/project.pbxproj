@@ -37,14 +37,6 @@
 		4041C0E71EA9F7940013A70C /* PThreadDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4041C0E51EA9F7940013A70C /* PThreadDemo.xcdatamodeld */; };
 		4041C0E91EA9F7950013A70C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4041C0E81EA9F7940013A70C /* Assets.xcassets */; };
 		4041C0EC1EA9F7950013A70C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4041C0EA1EA9F7950013A70C /* LaunchScreen.storyboard */; };
-		4041C0FC1EAD98C90013A70C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4041C0FB1EAD98C90013A70C /* main.m */; };
-		4041C0FF1EAD98C90013A70C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4041C0FE1EAD98C90013A70C /* AppDelegate.m */; };
-		4041C1021EAD98C90013A70C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4041C1011EAD98C90013A70C /* ViewController.m */; };
-		4041C1051EAD98C90013A70C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4041C1031EAD98C90013A70C /* Main.storyboard */; };
-		4041C1081EAD98C90013A70C /* C__Tools.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4041C1061EAD98C90013A70C /* C__Tools.xcdatamodeld */; };
-		4041C10A1EAD98C90013A70C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4041C1091EAD98C90013A70C /* Assets.xcassets */; };
-		4041C10D1EAD98C90013A70C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4041C10B1EAD98C90013A70C /* LaunchScreen.storyboard */; };
-		4041C1141EAD98EA0013A70C /* VDColor.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4041C1121EAD98EA0013A70C /* VDColor.mm */; };
 		4059BE031E972C0A0067C1F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4059BE021E972C0A0067C1F3 /* main.m */; };
 		4059BE061E972C0A0067C1F3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4059BE051E972C0A0067C1F3 /* AppDelegate.m */; };
 		4059BE091E972C0A0067C1F3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4059BE081E972C0A0067C1F3 /* ViewController.m */; };
@@ -198,18 +190,6 @@
 		4041C0EB1EA9F7950013A70C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4041C0ED1EA9F7950013A70C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4041C0F81EAD98C90013A70C /* C++Tools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "C++Tools.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4041C0FB1EAD98C90013A70C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4041C0FD1EAD98C90013A70C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		4041C0FE1EAD98C90013A70C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4041C1001EAD98C90013A70C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4041C1011EAD98C90013A70C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		4041C1041EAD98C90013A70C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		4041C1071EAD98C90013A70C /* C__Tools.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = C__Tools.xcdatamodel; sourceTree = "<group>"; };
-		4041C1091EAD98C90013A70C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4041C10C1EAD98C90013A70C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		4041C10E1EAD98C90013A70C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4041C1121EAD98EA0013A70C /* VDColor.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VDColor.mm; sourceTree = "<group>"; };
-		4041C1131EAD98EA0013A70C /* VDColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDColor.h; sourceTree = "<group>"; };
 		4059BDFE1E972C0A0067C1F3 /* IOSProjectDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSProjectDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4059BE021E972C0A0067C1F3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4059BE041E972C0A0067C1F3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -556,33 +536,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		4041C0F91EAD98C90013A70C /* C++Tools */ = {
-			isa = PBXGroup;
-			children = (
-				4041C0FD1EAD98C90013A70C /* AppDelegate.h */,
-				4041C0FE1EAD98C90013A70C /* AppDelegate.m */,
-				4041C1001EAD98C90013A70C /* ViewController.h */,
-				4041C1011EAD98C90013A70C /* ViewController.m */,
-				4041C1031EAD98C90013A70C /* Main.storyboard */,
-				4041C1091EAD98C90013A70C /* Assets.xcassets */,
-				4041C10B1EAD98C90013A70C /* LaunchScreen.storyboard */,
-				4041C10E1EAD98C90013A70C /* Info.plist */,
-				4041C1061EAD98C90013A70C /* C__Tools.xcdatamodeld */,
-				4041C0FA1EAD98C90013A70C /* Supporting Files */,
-				4041C1121EAD98EA0013A70C /* VDColor.mm */,
-				4041C1131EAD98EA0013A70C /* VDColor.h */,
-			);
-			path = "C++Tools";
-			sourceTree = "<group>";
-		};
-		4041C0FA1EAD98C90013A70C /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				4041C0FB1EAD98C90013A70C /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		4059BDF51E972C0A0067C1F3 = {
 			isa = PBXGroup;
 			children = (
@@ -598,7 +551,6 @@
 				4041C0971EA9E1CE0013A70C /* NSURLProtrocalDemo */,
 				4041C0B51EA9E1ED0013A70C /* AnimaterView */,
 				4041C0D81EA9F7940013A70C /* PThreadDemo */,
-				4041C0F91EAD98C90013A70C /* C++Tools */,
 				4059BDFF1E972C0A0067C1F3 /* Products */,
 				4059BE2D1E97892F0067C1F3 /* Frameworks */,
 				F071578F376586321FF43817 /* Pods */,
@@ -1321,9 +1273,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4041C10D1EAD98C90013A70C /* LaunchScreen.storyboard in Resources */,
-				4041C10A1EAD98C90013A70C /* Assets.xcassets in Resources */,
-				4041C1051EAD98C90013A70C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1497,11 +1446,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4041C1141EAD98EA0013A70C /* VDColor.mm in Sources */,
-				4041C1021EAD98C90013A70C /* ViewController.m in Sources */,
-				4041C0FF1EAD98C90013A70C /* AppDelegate.m in Sources */,
-				4041C0FC1EAD98C90013A70C /* main.m in Sources */,
-				4041C1081EAD98C90013A70C /* C__Tools.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1692,22 +1636,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				4041C0EB1EA9F7950013A70C /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		4041C1031EAD98C90013A70C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4041C1041EAD98C90013A70C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		4041C10B1EAD98C90013A70C /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4041C10C1EAD98C90013A70C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -2256,6 +2184,7 @@
 				4041C1101EAD98C90013A70C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4059BDF91E972C0A0067C1F3 /* Build configuration list for PBXProject "IOSProjectDemo" */ = {
 			isa = XCConfigurationList;
@@ -2369,16 +2298,6 @@
 			);
 			currentVersion = 4041C0E61EA9F7940013A70C /* PThreadDemo.xcdatamodel */;
 			path = PThreadDemo.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-		4041C1061EAD98C90013A70C /* C__Tools.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				4041C1071EAD98C90013A70C /* C__Tools.xcdatamodel */,
-			);
-			currentVersion = 4041C1071EAD98C90013A70C /* C__Tools.xcdatamodel */;
-			path = C__Tools.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
