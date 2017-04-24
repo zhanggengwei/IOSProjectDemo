@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "Student.hpp"
+#import "VDImage.hpp"
 @interface ViewController ()
 
 @end
@@ -16,7 +16,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    Student stu = Student();
+    char file[] = "/Users/donald/Documents/IOSProjectDemo/IOSC++Demo/签名.png";
+    VDImage image = VDImage(file);
+    
+    image.printFileContent();
+    
     
 
     

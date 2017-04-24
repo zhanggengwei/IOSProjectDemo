@@ -44,7 +44,8 @@
 		4041C1611EADAA6A0013A70C /* IOSC__Demo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4041C15F1EADAA6A0013A70C /* IOSC__Demo.xcdatamodeld */; };
 		4041C1631EADAA6A0013A70C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4041C1621EADAA6A0013A70C /* Assets.xcassets */; };
 		4041C1661EADAA6A0013A70C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4041C1641EADAA6A0013A70C /* LaunchScreen.storyboard */; };
-		4041C1701EADB57A0013A70C /* Student.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4041C16E1EADB57A0013A70C /* Student.cpp */; };
+		4041C1731EADB8F10013A70C /* VDImage.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4041C1711EADB8F10013A70C /* VDImage.mm */; };
+		4041C1751EADBA990013A70C /* 签名.png in Resources */ = {isa = PBXBuildFile; fileRef = 4041C1741EADBA990013A70C /* 签名.png */; };
 		4059BE031E972C0A0067C1F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4059BE021E972C0A0067C1F3 /* main.m */; };
 		4059BE061E972C0A0067C1F3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4059BE051E972C0A0067C1F3 /* AppDelegate.m */; };
 		4059BE091E972C0A0067C1F3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4059BE081E972C0A0067C1F3 /* ViewController.m */; };
@@ -208,8 +209,9 @@
 		4041C1621EADAA6A0013A70C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4041C1651EADAA6A0013A70C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4041C1671EADAA6A0013A70C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4041C16E1EADB57A0013A70C /* Student.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Student.cpp; sourceTree = "<group>"; };
-		4041C16F1EADB57A0013A70C /* Student.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Student.hpp; sourceTree = "<group>"; };
+		4041C1711EADB8F10013A70C /* VDImage.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VDImage.mm; sourceTree = "<group>"; };
+		4041C1721EADB8F10013A70C /* VDImage.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = VDImage.hpp; sourceTree = "<group>"; };
+		4041C1741EADBA990013A70C /* 签名.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "签名.png"; sourceTree = "<group>"; };
 		4059BDFE1E972C0A0067C1F3 /* IOSProjectDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSProjectDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4059BE021E972C0A0067C1F3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4059BE041E972C0A0067C1F3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -559,6 +561,7 @@
 		4041C1521EADAA690013A70C /* IOSC++Demo */ = {
 			isa = PBXGroup;
 			children = (
+				4041C1741EADBA990013A70C /* 签名.png */,
 				4041C1561EADAA690013A70C /* AppDelegate.h */,
 				4041C1571EADAA690013A70C /* AppDelegate.mm */,
 				4041C1591EADAA690013A70C /* ViewController.h */,
@@ -569,8 +572,8 @@
 				4041C1671EADAA6A0013A70C /* Info.plist */,
 				4041C15F1EADAA6A0013A70C /* IOSC__Demo.xcdatamodeld */,
 				4041C1531EADAA690013A70C /* Supporting Files */,
-				4041C16E1EADB57A0013A70C /* Student.cpp */,
-				4041C16F1EADB57A0013A70C /* Student.hpp */,
+				4041C1711EADB8F10013A70C /* VDImage.mm */,
+				4041C1721EADB8F10013A70C /* VDImage.hpp */,
 			);
 			path = "IOSC++Demo";
 			sourceTree = "<group>";
@@ -1321,6 +1324,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4041C1751EADBA990013A70C /* 签名.png in Resources */,
 				4041C1661EADAA6A0013A70C /* LaunchScreen.storyboard in Resources */,
 				4041C1631EADAA6A0013A70C /* Assets.xcassets in Resources */,
 				4041C15E1EADAA6A0013A70C /* Main.storyboard in Resources */,
@@ -1500,7 +1504,7 @@
 				4041C1611EADAA6A0013A70C /* IOSC__Demo.xcdatamodeld in Sources */,
 				4041C15B1EADAA6A0013A70C /* ViewController.mm in Sources */,
 				4041C1581EADAA690013A70C /* AppDelegate.mm in Sources */,
-				4041C1701EADB57A0013A70C /* Student.cpp in Sources */,
+				4041C1731EADB8F10013A70C /* VDImage.mm in Sources */,
 				4041C1551EADAA690013A70C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2265,6 +2269,7 @@
 				4041C16A1EADAA6A0013A70C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4059BDF91E972C0A0067C1F3 /* Build configuration list for PBXProject "IOSProjectDemo" */ = {
 			isa = XCConfigurationList;
