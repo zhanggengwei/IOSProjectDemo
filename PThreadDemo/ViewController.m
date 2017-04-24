@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import <pthread.h>
+
 static int a = 500;
 @interface ViewController ()
 
@@ -28,6 +29,8 @@ void * function(void * p)
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+   
+    
     pthread_t Athread = NULL;
     pthread_t Bthread = NULL;
     
@@ -37,13 +40,13 @@ void * function(void * p)
     
     pthread_mutex_init(&lock, NULL);
     pthread_mutex_lock(&lock);
-    pthread_create(&Bthread, NULL,function, "b");
+//    pthread_create(&Bthread, NULL,function, "b");
     pthread_join(Bthread, NULL);
     pthread_mutex_unlock(&lock);
     pthread_mutex_destroy(&lock);
     
     
-    pthread_create(&Athread, NULL,function, "a");
+   // pthread_create(&Athread, NULL,function, "a");
     pthread_join(Athread, NULL);//
     
     
