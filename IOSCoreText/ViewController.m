@@ -25,18 +25,26 @@
     self.textView.editable = NO;
     
     NSTextAttachment * attchment = [[NSTextAttachment alloc]init];
-    attchment.bounds = CGRectMake(440,100, 200, 300);
+    attchment.bounds = CGRectMake(0,0,100, 100);
     attchment.image = [UIImage imageNamed:@"个人主页.png"];
     attchment.ImageURL = @"http://img4.imgtn.bdimg.com/it/u=819201812,3553302270&fm=23&gp=0.jpg";
  
-    NSMutableAttributedString * string = [[NSMutableAttributedString alloc]initWithAttributedString:[NSAttributedString attributedStringWithAttachment:attchment]];
+  __block  NSMutableAttributedString * string = [[NSMutableAttributedString alloc]initWithAttributedString:[NSAttributedString attributedStringWithAttachment:attchment]];
     self.textView.attributedText = string;
+    NSMutableParagraphStyle * style = [NSMutableParagraphStyle new];
+    style.lineSpacing = 10;
+    //style.alignment = NSTextAlignmentCenter;
+    
+    
     [attchment loadImageURl:attchment.ImageURL withBlock:^(UIImage *image, NSError *error) {
         if(!error){
             attchment.image = image;
-            NSAttributedString * string = [NSAttributedString attributedStringWithAttachment:attchment];
+            string = [[NSMutableAttributedString alloc]initWithAttributedString:[NSAttributedString attributedStringWithAttachment:attchment]];
+            [string appendAttributedString:string];
+            [string setAttributes:@{NSAttachmentAttributeName:attchment} range:NSMakeRange(0, string.length)];
+            [string setAttributes:@{NSParagraphStyleAttributeName:style} range:NSMakeRange(0, string.length)];
+            
             self.textView.attributedText = string;
-            //[string endEditing];
             
         }
     }];
