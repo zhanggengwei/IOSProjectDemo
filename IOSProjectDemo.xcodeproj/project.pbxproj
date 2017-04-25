@@ -138,6 +138,7 @@
 		40E63DB31EAF33CA00136773 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40E63DB21EAF33CA00136773 /* Assets.xcassets */; };
 		40E63DB61EAF33CA00136773 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40E63DB41EAF33CA00136773 /* LaunchScreen.storyboard */; };
 		40E63DBD1EAF340300136773 /* ActivityFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 40E63DBC1EAF340300136773 /* ActivityFlowLayout.m */; };
+		40E63DC21EAF523D00136773 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 40E63DC11EAF523D00136773 /* CollectionViewCell.m */; };
 		750B00BC1EA4F99D00ED074A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 750B00BB1EA4F99D00ED074A /* main.m */; };
 		750B00BF1EA4F99D00ED074A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 750B00BE1EA4F99D00ED074A /* AppDelegate.m */; };
 		750B00C21EA4F99D00ED074A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 750B00C11EA4F99D00ED074A /* ViewController.m */; };
@@ -424,6 +425,8 @@
 		40E63DBB1EAF340300136773 /* ActivityFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityFlowLayout.h; sourceTree = "<group>"; };
 		40E63DBC1EAF340300136773 /* ActivityFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityFlowLayout.m; sourceTree = "<group>"; };
 		40E63DBF1EAF37F500136773 /* Layout.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Layout.pch; sourceTree = "<group>"; };
+		40E63DC01EAF523D00136773 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		40E63DC11EAF523D00136773 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
 		53DA42DF7B329D8DF1F5D79B /* libPods-WifiUploadDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WifiUploadDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		750B00B81EA4F99D00ED074A /* IOSSocketServer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSSocketServer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		750B00BB1EA4F99D00ED074A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -1111,6 +1114,8 @@
 				40E63DB71EAF33CA00136773 /* Info.plist */,
 				40E63DA61EAF33CA00136773 /* Supporting Files */,
 				40E63DBF1EAF37F500136773 /* Layout.pch */,
+				40E63DC01EAF523D00136773 /* CollectionViewCell.h */,
+				40E63DC11EAF523D00136773 /* CollectionViewCell.m */,
 			);
 			path = UICollectionViewFlowLayout;
 			sourceTree = "<group>";
@@ -2109,6 +2114,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				40E63DAE1EAF33CA00136773 /* ViewController.m in Sources */,
+				40E63DC21EAF523D00136773 /* CollectionViewCell.m in Sources */,
 				40E63DAB1EAF33CA00136773 /* AppDelegate.m in Sources */,
 				40E63DBD1EAF340300136773 /* ActivityFlowLayout.m in Sources */,
 				40E63DA81EAF33CA00136773 /* main.m in Sources */,

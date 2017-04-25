@@ -38,30 +38,13 @@
     return self;
 }
 
-- (void)fillterItemFrames:(NSArray *)array
-{
-    
-    NSInteger min = array.count - 1;
 
-    for (NSInteger i = 0; i < array.count; i++)
-    {
-        ActivityModel * model = array[i];
-        if(min>i)
-        {
-            min = i;
-            
-        }
-    }
-   
-    
-}
 
 - (void)prepareLayout
 {
     if([self.delegate respondsToSelector:@selector(modelLayoutArr)])
     {
         _modelArray = [self.delegate modelLayoutArr];
-        [self fillterItemFrames:_modelArray];
         
     }
     for (NSInteger i = _layoutAttributesArray.count; i < _modelArray.count; i++)
