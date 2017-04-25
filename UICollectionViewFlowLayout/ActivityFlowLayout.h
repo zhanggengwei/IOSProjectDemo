@@ -10,8 +10,6 @@
 
 @protocol ActivityModelProtrol <NSObject>
 
-@property (nonatomic,assign) CGFloat imageWidth;//default 0.5 width
-@property (nonatomic,assign) CGFloat imageHeight;
 @property (nonatomic,assign) CGRect  itemframe;
 
 @end

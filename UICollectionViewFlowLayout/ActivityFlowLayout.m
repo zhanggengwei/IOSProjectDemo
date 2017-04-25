@@ -11,7 +11,7 @@
 
 @implementation ActivityModel
 
-@synthesize itemframe,imageWidth,imageHeight;
+@synthesize itemframe;
 
 
 @end
@@ -19,34 +19,84 @@
 @implementation ActivityFlowLayout
 {
     NSArray * _modelArray;
+    NSMutableArray * _layoutAttributesArray;
     CGFloat _lineSpaceing;
     CGFloat _itemSpaceing;
-    NSIndexPath * _minPositionYIndex;
+    CGFloat _maxHeight;
+    
+    
+}
+
+- (instancetype)init
+{
+    self = [super init];
+    if(self)
+    {
+        _modelArray = [NSArray new];
+        _layoutAttributesArray = [NSMutableArray new];
+    }
+    return self;
+}
+
+- (void)fillterItemFrames:(NSArray *)array
+{
+    
+    NSInteger min = array.count - 1;
+
+    for (NSInteger i = 0; i < array.count; i++)
+    {
+        ActivityModel * model = array[i];
+        if(min>i)
+        {
+            min = i;
+            
+        }
+    }
+   
     
 }
 
 - (void)prepareLayout
 {
+    if([self.delegate respondsToSelector:@selector(modelLayoutArr)])
+    {
+        _modelArray = [self.delegate modelLayoutArr];
+        [self fillterItemFrames:_modelArray];
+        
+    }
+    for (NSInteger i = _layoutAttributesArray.count; i < _modelArray.count; i++)
+    {
+     
+        ActivityModel * model = _modelArray[i];
+        NSIndexPath * indexpath = [NSIndexPath indexPathForItem:i inSection:0];
+        UICollectionViewLayoutAttributes * attributes = [self layoutAttributesForItemAtIndexPath:indexpath];
+        attributes.frame = model.itemframe;
+        [_layoutAttributesArray addObject:attributes];
+        
+    }
+    
     
 }
 - (nullable NSArray<__kindof UICollectionViewLayoutAttributes *> *)layoutAttributesForElementsInRect:(CGRect)rect
 {
+   
     
+    return _layoutAttributesArray;
     
-    return nil;
 }
 - (nullable UICollectionViewLayoutAttributes *)layoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    return nil;
+    UICollectionViewLayoutAttributes * attributes = [super layoutAttributesForItemAtIndexPath:indexPath];
     
-}
-- (nullable UICollectionViewLayoutAttributes *)layoutAttributesForSupplementaryViewOfKind:(NSString *)elementKind atIndexPath:(NSIndexPath *)indexPath
-{
-    return nil;
-}
-- (nullable UICollectionViewLayoutAttributes *)layoutAttributesForDecorationViewOfKind:(NSString*)elementKind atIndexPath:(NSIndexPath *)indexPath
-{
-    return nil;
+    ActivityModel * model = _modelArray[indexPath.row];
+    if(model==nil)
+    {
+        NSLog(@"%s",__FUNCTION__);
+        return  attributes;
+    }
+    attributes.frame = model.itemframe;
+    _maxHeight = MAX(_maxHeight,CGRectGetMaxY(model.itemframe));
+    return attributes;
 }
 
 - (BOOL)shouldInvalidateLayoutForBoundsChange:(CGRect)newBounds
@@ -54,25 +104,10 @@
     return YES;
     
 }
-- (UICollectionViewLayoutInvalidationContext *)invalidationContextForBoundsChange:(CGRect)newBounds
+- (CGSize)collectionViewContentSize
 {
-    return nil;
-}
-- (BOOL)shouldInvalidateLayoutForPreferredLayoutAttributes:(UICollectionViewLayoutAttributes *)preferredAttributes withOriginalAttributes:(UICollectionViewLayoutAttributes *)originalAttributes
-{
-    return YES;
-}
-- (UICollectionViewLayoutInvalidationContext *)invalidationContextForPreferredLayoutAttributes:(UICollectionViewLayoutAttributes *)preferredAttributes withOriginalAttributes:(UICollectionViewLayoutAttributes *)originalAttributes
-{
-    return nil;
-}
-
-- (CGPoint)targetContentOffsetForProposedContentOffset:(CGPoint)proposedContentOffset withScrollingVelocity:(CGPoint)velocity
-{
-    return  CGPointZero;
-}
-- (CGPoint)targetContentOffsetForProposedContentOffset:(CGPoint)proposedContentOffset
-{
-    return  CGPointZero;
+    
+    return CGSizeMake(SCREEN_WIDTH,_maxHeight);
+    
 }
 @end
