@@ -1,13 +1,13 @@
 //
 //  AppDelegate.m
-//  WebViewDemo
+//  rongchat
 //
-//  Created by VD on 2017/4/24.
+//  Created by Donald on 17/4/25.
 //  Copyright © 2017年 Susu. All rights reserved.
 //
 
 #import "AppDelegate.h"
-#import "WKWebViewController.h"
+
 @interface AppDelegate ()
 
 @end
@@ -17,8 +17,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    self.window.rootViewController = [WKWebViewController new];
     return YES;
 }
 
