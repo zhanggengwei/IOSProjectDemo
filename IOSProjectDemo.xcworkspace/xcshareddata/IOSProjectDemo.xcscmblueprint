@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "4CBBF52C7E5BF35CA679D8F18EA15CD847303362",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "4CBBF52C7E5BF35CA679D8F18EA15CD847303362" : 9223372036854775807,
+    "ABDB6E56F92CA43E9BED8A675018B1454CAEDFB7" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "FE4EE830-7017-4E7D-B3DF-7DCEBE9A0C6F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "4CBBF52C7E5BF35CA679D8F18EA15CD847303362" : "IOSProjectDemo\/",
+    "ABDB6E56F92CA43E9BED8A675018B1454CAEDFB7" : "IOSProjectDemo\/rongchat\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "IOSProjectDemo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "IOSProjectDemo.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/zhanggengwei\/IOSProjectDemo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4CBBF52C7E5BF35CA679D8F18EA15CD847303362"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/zhanggengwei\/rongchat.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "ABDB6E56F92CA43E9BED8A675018B1454CAEDFB7"
+    }
+  ]
+}

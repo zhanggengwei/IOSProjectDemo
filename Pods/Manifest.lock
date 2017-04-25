@@ -1,4 +1,31 @@
 PODS:
+  - AFNetworking (2.5.4):
+    - AFNetworking/NSURLConnection (= 2.5.4)
+    - AFNetworking/NSURLSession (= 2.5.4)
+    - AFNetworking/Reachability (= 2.5.4)
+    - AFNetworking/Security (= 2.5.4)
+    - AFNetworking/Serialization (= 2.5.4)
+    - AFNetworking/UIKit (= 2.5.4)
+  - AFNetworking/NSURLConnection (2.5.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.5.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.5.4)
+  - AFNetworking/Security (2.5.4)
+  - AFNetworking/Serialization (2.5.4)
+  - AFNetworking/UIKit (2.5.4):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - AMapFoundation (1.4.0)
+  - AMapLocation (2.1.1):
+    - AMapFoundation (~> 1.2)
+  - AMapSearch (4.2.0):
+    - AMapFoundation (~> 1.0)
+  - Bugly (2.4.7)
   - CocoaAsyncSocket (7.6.0)
   - CocoaLumberjack (3.1.0):
     - CocoaLumberjack/Default (= 3.1.0)
@@ -6,15 +33,114 @@ PODS:
   - CocoaLumberjack/Default (3.1.0)
   - CocoaLumberjack/Extensions (3.1.0):
     - CocoaLumberjack/Default
+  - DACircularProgress (2.3.1)
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
+  - iAppInfos (0.2.1)
+  - ICEVersionUpdate (1.0.0)
+  - IQKeyboardManager (3.3.7)
+  - LBXAlertAction (1.0.3)
+  - LBXScan (1.1.1):
+    - ZXingObjC (~> 3.0)
+  - MagicalRecord (2.3.2):
+    - MagicalRecord/Core (= 2.3.2)
+  - MagicalRecord/Core (2.3.2)
+  - Mantle (2.0.7):
+    - Mantle/extobjc (= 2.0.7)
+  - Mantle/extobjc (2.0.7)
+  - Masonry (0.6.4)
+  - MBProgressHUD (0.8)
+  - MD5Digest (1.1.0)
+  - MJRefresh (3.1.12)
+  - ODRefreshControl (1.2)
+  - PinYin4Objc (1.1.1)
+  - pop (1.0.9)
+  - RongCloudIMLib (2.7.3.1)
+  - SDWebImage (3.7.6):
+    - SDWebImage/Core (= 3.7.6)
+  - SDWebImage/Core (3.7.6)
+  - SFHFKeychainUtils (0.0.1)
+  - UIView+FrameEx (0.0.1)
+  - WActionSheet (0.0.3)
+  - YYCache (1.0.4)
+  - YYImage (1.0.4):
+    - YYImage/Core (= 1.0.4)
+  - YYImage/Core (1.0.4)
+  - YYWebImage (1.0.5):
+    - YYCache
+    - YYImage
+  - ZXingObjC (3.1.0):
+    - ZXingObjC/All (= 3.1.0)
+  - ZXingObjC/All (3.1.0)
+  - ZYCornerRadius (1.0.2)
 
 DEPENDENCIES:
+  - AFNetworking (~> 2.5.1)
+  - AMapLocation (~> 2.1.1)
+  - AMapSearch (~> 4.2.0)
+  - Bugly (~> 2.4.2)
   - CocoaAsyncSocket (~> 7.6.0)
   - CocoaLumberjack (~> 3.1.0)
+  - DACircularProgress (~> 2.3.1)
+  - FMDB
+  - iAppInfos (~> 0.2.1)
+  - ICEVersionUpdate (~> 1.0.0)
+  - IQKeyboardManager
+  - LBXAlertAction
+  - LBXScan
+  - MagicalRecord (~> 2.3.0)
+  - Mantle (~> 2.0.6)
+  - Masonry (~> 0.6.1)
+  - MBProgressHUD (= 0.8)
+  - MD5Digest (~> 1.1.0)
+  - MJRefresh (~> 3.1.12)
+  - ODRefreshControl (~> 1.2)
+  - PinYin4Objc (~> 1.1.1)
+  - pop (~> 1.0.9)
+  - RongCloudIMLib (~> 2.7.3)
+  - SDWebImage (~> 3.7.1)
+  - SFHFKeychainUtils (~> 0.0.1)
+  - UIView+FrameEx (~> 0.0.1)
+  - WActionSheet (~> 0.0.3)
+  - YYWebImage (~> 1.0.5)
+  - ZYCornerRadius
 
 SPEC CHECKSUMS:
+  AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
+  AMapFoundation: 458974f46a39df8407fd818ab83d2630d494c726
+  AMapLocation: dd203f76b034ef5cb546600f4e1ffad2a3a14072
+  AMapSearch: 788020fca7ed18819e8bc2bfca716a6775a05ada
+  Bugly: 2c256069145f550171907c5cb1c0f84ad291f6c1
   CocoaAsyncSocket: b9d5589f07baf9de8f34cc25abd4fcba28f13805
   CocoaLumberjack: 8311463ddf9ee86a06ef92a071dd656c89244500
+  DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  iAppInfos: 090ecd9a694be25968bbdbdbff97841b301a9107
+  ICEVersionUpdate: 28cbd6aecca9f9eb79afb853a066bd5abccb5e39
+  IQKeyboardManager: 249c3946acf61345c18b038eb50863fe2793e3a8
+  LBXAlertAction: e904f511f0e44fde323e056691d7a8a99d71faba
+  LBXScan: dfb4d8ae8e4cff2aa0c9e1771e43954dce1469a9
+  MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
+  Mantle: bc40bb061d8c2c6fb48d5083e04d928c3b7f73d9
+  Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
+  MBProgressHUD: 8688c331cb64702283be37ab8d7d329cdd25f251
+  MD5Digest: fea371215507cfcdc3c9633d02cffc7fd075ebc3
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  ODRefreshControl: 907e6149d72dde488d5917ccfabee5bd8d711a20
+  PinYin4Objc: 3fa9673610368330e2dfb688b1d19a35c3930a78
+  pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
+  RongCloudIMLib: f12607ef8e6d84e08e1411bed0fc4879383747b4
+  SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
+  SFHFKeychainUtils: 9576b411a79a058f4d5381ace6f3242b9a62e664
+  UIView+FrameEx: ab0c53e158ef0621d7b0b0a26626e175ac17e471
+  WActionSheet: d940181cdbc9bfcea8edfe6f7dc707070166fc46
+  YYCache: 8105b6638f5e849296c71f331ff83891a4942952
+  YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
+  YYWebImage: 5f7f36aee2ae293f016d418c7d6ba05c4863e928
+  ZXingObjC: bf15b3814f7a105b6d99f47da2333c93a063650a
+  ZYCornerRadius: f0af817be7805b5c63d793042ca7a03f81e14069
 
-PODFILE CHECKSUM: 25fc3db36043027e4f960c47c0e4fe35d4b379d6
+PODFILE CHECKSUM: 0ee69d8c51c4aa771c2fce3665fcbbc7dd8ce72c
 
 COCOAPODS: 1.0.1

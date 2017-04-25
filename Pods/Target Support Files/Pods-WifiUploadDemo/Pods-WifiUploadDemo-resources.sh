@@ -79,6 +79,16 @@ EOM
       ;;
   esac
 }
+if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_resource "IQKeyboardManager/IQKeyBoardManager/Resources/IQKeyboardManager.bundle"
+  install_resource "MJRefresh/MJRefresh/MJRefresh.bundle"
+  install_resource "PinYin4Objc/PinYin4Objc/Resources/unicode_to_hanyu_pinyin.txt"
+fi
+if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_resource "IQKeyboardManager/IQKeyBoardManager/Resources/IQKeyboardManager.bundle"
+  install_resource "MJRefresh/MJRefresh/MJRefresh.bundle"
+  install_resource "PinYin4Objc/PinYin4Objc/Resources/unicode_to_hanyu_pinyin.txt"
+fi
 
 mkdir -p "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"
 rsync -avr --copy-links --no-relative --exclude '*/.svn/*' --files-from="$RESOURCES_TO_COPY" / "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"
