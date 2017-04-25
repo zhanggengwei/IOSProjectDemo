@@ -8,18 +8,23 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol ActivityModel <NSObject>
+@protocol ActivityModelProtrol <NSObject>
 
-@property (nonatomic,assign) CGFloat imageWidth;//default
+@property (nonatomic,assign) CGFloat imageWidth;//default 0.5 width
 @property (nonatomic,assign) CGFloat imageHeight;
+@property (nonatomic,assign) CGRect  itemframe;
+
+@end
+
+
+@interface ActivityModel : NSObject<ActivityModelProtrol>
 
 
 @end
 
 @protocol ActivityFlowLayoutDelegate <NSObject>
 
-- (NSArray<ActivityModel> *)modelLayoutArr;
-
+- (NSArray<ActivityModelProtrol> *)modelLayoutArr;
 
 @end
 

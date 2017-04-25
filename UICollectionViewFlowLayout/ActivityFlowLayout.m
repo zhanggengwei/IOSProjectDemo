@@ -9,7 +9,21 @@
 
 #import "ActivityFlowLayout.h"
 
+@implementation ActivityModel
+
+@synthesize itemframe,imageWidth,imageHeight;
+
+
+@end
+
 @implementation ActivityFlowLayout
+{
+    NSArray * _modelArray;
+    CGFloat _lineSpaceing;
+    CGFloat _itemSpaceing;
+    NSIndexPath * _minPositionYIndex;
+    
+}
 
 - (void)prepareLayout
 {
@@ -17,6 +31,8 @@
 }
 - (nullable NSArray<__kindof UICollectionViewLayoutAttributes *> *)layoutAttributesForElementsInRect:(CGRect)rect
 {
+    
+    
     return nil;
 }
 - (nullable UICollectionViewLayoutAttributes *)layoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath
@@ -44,7 +60,7 @@
 }
 - (BOOL)shouldInvalidateLayoutForPreferredLayoutAttributes:(UICollectionViewLayoutAttributes *)preferredAttributes withOriginalAttributes:(UICollectionViewLayoutAttributes *)originalAttributes
 {
-    return nil;
+    return YES;
 }
 - (UICollectionViewLayoutInvalidationContext *)invalidationContextForPreferredLayoutAttributes:(UICollectionViewLayoutAttributes *)preferredAttributes withOriginalAttributes:(UICollectionViewLayoutAttributes *)originalAttributes
 {

@@ -423,7 +423,7 @@
 		40E63DB71EAF33CA00136773 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40E63DBB1EAF340300136773 /* ActivityFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityFlowLayout.h; sourceTree = "<group>"; };
 		40E63DBC1EAF340300136773 /* ActivityFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityFlowLayout.m; sourceTree = "<group>"; };
-		40E63DBE1EAF358D00136773 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		40E63DBF1EAF37F500136773 /* Layout.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Layout.pch; sourceTree = "<group>"; };
 		53DA42DF7B329D8DF1F5D79B /* libPods-WifiUploadDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WifiUploadDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		750B00B81EA4F99D00ED074A /* IOSSocketServer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSSocketServer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		750B00BB1EA4F99D00ED074A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -1110,7 +1110,7 @@
 				40E63DB41EAF33CA00136773 /* LaunchScreen.storyboard */,
 				40E63DB71EAF33CA00136773 /* Info.plist */,
 				40E63DA61EAF33CA00136773 /* Supporting Files */,
-				40E63DBE1EAF358D00136773 /* PrefixHeader.pch */,
+				40E63DBF1EAF37F500136773 /* Layout.pch */,
 			);
 			path = UICollectionViewFlowLayout;
 			sourceTree = "<group>";
@@ -2826,8 +2826,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = R6B5BG54J2;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/UICollectionViewFlowLayout/Layout.pch";
 				INFOPLIST_FILE = UICollectionViewFlowLayout/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.popoteam.demo.UICollectionViewFlowLayout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2839,8 +2841,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = R6B5BG54J2;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/UICollectionViewFlowLayout/Layout.pch";
 				INFOPLIST_FILE = UICollectionViewFlowLayout/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.popoteam.demo.UICollectionViewFlowLayout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
