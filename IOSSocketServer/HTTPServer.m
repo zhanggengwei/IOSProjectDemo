@@ -26,8 +26,6 @@
 
 - (void)startPort:(NSString *)port
 {
- 
-    NSString * conent = [[NSString alloc]initWithContentsOfFile:@"/Users/vd/Documents/IOSProjectDemo/IOSSocketServer/file.html" encoding:NSUTF8StringEncoding error:nil];
     
     if(self.severStart)
     {
@@ -46,8 +44,8 @@
     memset(&serverSocket, 0, sizeof(serverSocket));
     
     serverSocket.sin_family = AF_INET;
-    serverSocket.sin_port = htons(9094);
-    serverSocket.sin_addr.s_addr = inet_addr("192.168.1.5");
+    serverSocket.sin_port = htons(9090);
+    //serverSocket.sin_addr.s_addr = inet_addr("192.168.1.5");
     int flag = bind(self.serverDecriper,(const struct sockaddr *)&serverSocket, sizeof(serverSocket));
     
     if(flag == -1)
@@ -80,10 +78,9 @@
             printf( "对方IP：%s ", inet_ntoa(sa.sin_addr));
             printf( "对方PORT：%d ", ntohs(sa.sin_port));
         }
-        char buff[] = "HTTP/1.1 200 OK Date: Sat, 31 Dec 2005 23:59:59 GMT Content-Type: text/html;charset=ISO-8859-1 Content-Length: 122";
-             
-             
-             
+        char buff[1024];
+        sprintf(buff, "HTTP/1.1 404 \r\nServer: my lhttp server\r\nContent-Type: text/html\r\nContent-Length: %d\r\n\r\n%s", (int)strlen("<html><h1>Not Found</h1></html>"), "<html><h1>Not Found</h1></html>");
+        send(clientFileDescriper, buff, strlen(buff), 0);
         send(clientFileDescriper,buff,sizeof(buff), 0);
         
         NSLog(@"接收成功 %d，client IP：%zd", clientFileDescriper, clientAddress);
