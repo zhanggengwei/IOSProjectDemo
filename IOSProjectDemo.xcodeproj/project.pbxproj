@@ -185,7 +185,6 @@
 		75127A6E1EAE39E50074143C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75127A6D1EAE39E50074143C /* Assets.xcassets */; };
 		75127A711EAE39E50074143C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75127A6F1EAE39E50074143C /* LaunchScreen.storyboard */; };
 		75127A931EAE3A280074143C /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 75127A921EAE3A280074143C /* index.html */; };
-		75127A961EAE5E980074143C /* JSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75127A951EAE5E980074143C /* JSViewController.m */; };
 		75127A991EAE5EE30074143C /* WKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75127A981EAE5EE30074143C /* WKWebViewController.m */; };
 		FD98DA538BF055E77D793337 /* libPods-UICollectionViewFlowLayout.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33289B72BF352F7B01A8E128 /* libPods-UICollectionViewFlowLayout.a */; };
 		FF63C56809F689E363C324A8 /* libPods-IOSCoreText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C66CEBBA9ED31E70FCFCB09 /* libPods-IOSCoreText.a */; };
@@ -525,8 +524,6 @@
 		75127A771EAE39E50074143C /* WebViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75127A821EAE39E50074143C /* WebViewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75127A921EAE3A280074143C /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
-		75127A941EAE5E980074143C /* JSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSViewController.h; sourceTree = "<group>"; };
-		75127A951EAE5E980074143C /* JSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSViewController.m; sourceTree = "<group>"; };
 		75127A971EAE5EE30074143C /* WKWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebViewController.h; sourceTree = "<group>"; };
 		75127A981EAE5EE30074143C /* WKWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewController.m; sourceTree = "<group>"; };
 		B1BFA8B5C1E3F574B2A0AD59 /* Pods-IOSCoreText.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSCoreText.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IOSCoreText/Pods-IOSCoreText.debug.xcconfig"; sourceTree = "<group>"; };
@@ -1310,8 +1307,6 @@
 				75127A681EAE39E50074143C /* ViewController.m */,
 				75127A971EAE5EE30074143C /* WKWebViewController.h */,
 				75127A981EAE5EE30074143C /* WKWebViewController.m */,
-				75127A941EAE5E980074143C /* JSViewController.h */,
-				75127A951EAE5E980074143C /* JSViewController.m */,
 				75127A6A1EAE39E50074143C /* Main.storyboard */,
 				75127A6D1EAE39E50074143C /* Assets.xcassets */,
 				75127A6F1EAE39E50074143C /* LaunchScreen.storyboard */,
@@ -2390,7 +2385,6 @@
 			files = (
 				75127A991EAE5EE30074143C /* WKWebViewController.m in Sources */,
 				75127A691EAE39E50074143C /* ViewController.m in Sources */,
-				75127A961EAE5E980074143C /* JSViewController.m in Sources */,
 				75127A661EAE39E50074143C /* AppDelegate.m in Sources */,
 				40E63D7C1EAF1D7C00136773 /* DisplayWebViewController.m in Sources */,
 				75127A631EAE39E50074143C /* main.m in Sources */,

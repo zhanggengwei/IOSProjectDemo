@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "WKWebViewController.h"
+#import "DisplayWebViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -18,7 +18,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
-    self.window.rootViewController = [WKWebViewController new];
+    self.window.rootViewController = [[UINavigationController alloc]initWithRootViewController: [DisplayWebViewController new]];
+    
     return YES;
 }
 

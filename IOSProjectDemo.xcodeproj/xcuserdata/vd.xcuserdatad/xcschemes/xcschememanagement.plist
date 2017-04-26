@@ -19,6 +19,11 @@
 			<key>orderHint</key>
 			<integer>8</integer>
 		</dict>
+		<key>IOSCoreText.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>15</integer>
+		</dict>
 		<key>IOSProjectDemo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -44,6 +49,11 @@
 			<key>orderHint</key>
 			<integer>11</integer>
 		</dict>
+		<key>UICollectionViewFlowLayout.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>16</integer>
+		</dict>
 		<key>WebViewDemo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -58,6 +68,11 @@
 		<dict>
 			<key>orderHint</key>
 			<integer>2</integer>
+		</dict>
+		<key>rongchat.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>14</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -103,6 +118,21 @@
 			<true/>
 		</dict>
 		<key>40D4C0431E9F4E4E00C6DE0F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>40E63D611EAF181100136773</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>40E63D801EAF1E5000136773</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>40E63DA31EAF33CA00136773</key>
 		<dict>
 			<key>primary</key>
 			<true/>
