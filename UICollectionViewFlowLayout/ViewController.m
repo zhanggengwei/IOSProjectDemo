@@ -25,16 +25,16 @@
     model1.itemframe = CGRectMake(0,0,2.0/3 * SCREEN_WIDTH, 2.0/3 * SCREEN_HEIGHT);
     
     ActivityModel * model2 = [ActivityModel new];
-    model2.itemframe = CGRectMake(2.0/3 * SCREEN_WIDTH,0,1.0/3 * SCREEN_WIDTH, 1/3 * SCREEN_HEIGHT);
+    model2.itemframe = CGRectMake(2.0/3 * SCREEN_WIDTH,0,1.0/3 * SCREEN_WIDTH, 1.0/3 * SCREEN_HEIGHT);
     
     ActivityModel * model3 = [ActivityModel new];
-    model3.itemframe = CGRectMake(2.0/3 * SCREEN_WIDTH,1.0/3 * SCREEN_HEIGHT,1/3 * SCREEN_WIDTH, 1/3 * SCREEN_HEIGHT);
+    model3.itemframe = CGRectMake(2.0/3 * SCREEN_WIDTH,1.0/3 * SCREEN_HEIGHT,1.0/3 * SCREEN_WIDTH, 1.0/3 * SCREEN_HEIGHT);
     ActivityModel * model4 = [ActivityModel new];
-    model4.itemframe = CGRectMake(0,2.0/3 *SCREEN_HEIGHT ,1.0/3 * SCREEN_WIDTH, 1/3 * SCREEN_HEIGHT);
+    model4.itemframe = CGRectMake(0,2.0/3 *SCREEN_HEIGHT ,1.0/3 * SCREEN_WIDTH, 1.0/3 * SCREEN_HEIGHT);
     ActivityModel * model5 = [ActivityModel new];
-    model5.itemframe = CGRectMake(1.0/3 * SCREEN_WIDTH,1.0/3 *SCREEN_HEIGHT,1/3 * SCREEN_WIDTH, 2/3 * SCREEN_HEIGHT);
+    model5.itemframe = CGRectMake(1.0/3 * SCREEN_WIDTH,2.0/3 *SCREEN_HEIGHT,1.0/3 * SCREEN_WIDTH, 2.0/3 * SCREEN_HEIGHT);
     ActivityModel * model6 = [ActivityModel new];
-    model6.itemframe = CGRectMake(2.0/3 * SCREEN_WIDTH,1.0/3 *SCREEN_HEIGHT,1/3 * SCREEN_WIDTH, 2/3 * SCREEN_HEIGHT);
+    model6.itemframe = CGRectMake(2.0/3 * SCREEN_WIDTH,2.0/3 *SCREEN_HEIGHT,1.0/3 * SCREEN_WIDTH, 1.0/3 * SCREEN_HEIGHT);
     self.modelArray = [NSMutableArray<ActivityModelProtrol> new];
     [self.modelArray addObject:model1];
      [self.modelArray addObject:model2];
