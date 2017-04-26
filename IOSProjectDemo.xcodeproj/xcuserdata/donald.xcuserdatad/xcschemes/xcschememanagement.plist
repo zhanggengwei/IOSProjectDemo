@@ -54,10 +54,15 @@
 			<key>orderHint</key>
 			<integer>8</integer>
 		</dict>
+		<key>TinderDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>47</integer>
+		</dict>
 		<key>UICollectionViewFlowLayout.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>44</integer>
+			<integer>14</integer>
 		</dict>
 		<key>WebViewDemo.xcscheme</key>
 		<dict>
@@ -123,6 +128,11 @@
 			<true/>
 		</dict>
 		<key>40A276CB1E9E29C700421E5A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>40CA02921EB08957003363E9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
