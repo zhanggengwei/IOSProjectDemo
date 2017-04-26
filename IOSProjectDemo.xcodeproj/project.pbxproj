@@ -139,6 +139,10 @@
 		40E63DB61EAF33CA00136773 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40E63DB41EAF33CA00136773 /* LaunchScreen.storyboard */; };
 		40E63DBD1EAF340300136773 /* ActivityFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 40E63DBC1EAF340300136773 /* ActivityFlowLayout.m */; };
 		40E63DC21EAF523D00136773 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 40E63DC11EAF523D00136773 /* CollectionViewCell.m */; };
+		40E63DCA1EB03D4600136773 /* JKRFallsLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 40E63DC41EB03D4600136773 /* JKRFallsLayout.m */; };
+		40E63DCB1EB03D4600136773 /* JKRShop.m in Sources */ = {isa = PBXBuildFile; fileRef = 40E63DC61EB03D4600136773 /* JKRShop.m */; };
+		40E63DCC1EB03D4600136773 /* JKRShopCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 40E63DC81EB03D4600136773 /* JKRShopCell.m */; };
+		40E63DCD1EB03D4600136773 /* JKRShopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40E63DC91EB03D4600136773 /* JKRShopCell.xib */; };
 		750B00BC1EA4F99D00ED074A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 750B00BB1EA4F99D00ED074A /* main.m */; };
 		750B00BF1EA4F99D00ED074A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 750B00BE1EA4F99D00ED074A /* AppDelegate.m */; };
 		750B00C21EA4F99D00ED074A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 750B00C11EA4F99D00ED074A /* ViewController.m */; };
@@ -162,6 +166,7 @@
 		75127A931EAE3A280074143C /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 75127A921EAE3A280074143C /* index.html */; };
 		75127A961EAE5E980074143C /* JSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75127A951EAE5E980074143C /* JSViewController.m */; };
 		75127A991EAE5EE30074143C /* WKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75127A981EAE5EE30074143C /* WKWebViewController.m */; };
+		FD98DA538BF055E77D793337 /* libPods-UICollectionViewFlowLayout.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33289B72BF352F7B01A8E128 /* libPods-UICollectionViewFlowLayout.a */; };
 		FF63C56809F689E363C324A8 /* libPods-IOSCoreText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C66CEBBA9ED31E70FCFCB09 /* libPods-IOSCoreText.a */; };
 /* End PBXBuildFile section */
 
@@ -199,6 +204,7 @@
 /* Begin PBXFileReference section */
 		1185BB74CCFB3F9C4AFC7DBB /* Pods-WifiUploadDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WifiUploadDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-WifiUploadDemo/Pods-WifiUploadDemo.release.xcconfig"; sourceTree = "<group>"; };
 		12D43C8C8507263FDC167B9F /* Pods-WifiUploadDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WifiUploadDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WifiUploadDemo/Pods-WifiUploadDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		33289B72BF352F7B01A8E128 /* libPods-UICollectionViewFlowLayout.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UICollectionViewFlowLayout.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C66CEBBA9ED31E70FCFCB09 /* libPods-IOSCoreText.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IOSCoreText.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4041C0781EA9E0AB0013A70C /* IOSCoreDataDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSCoreDataDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4041C07B1EA9E0AB0013A70C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -427,7 +433,15 @@
 		40E63DBF1EAF37F500136773 /* Layout.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Layout.pch; sourceTree = "<group>"; };
 		40E63DC01EAF523D00136773 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
 		40E63DC11EAF523D00136773 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		40E63DC31EB03D4600136773 /* JKRFallsLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKRFallsLayout.h; sourceTree = "<group>"; };
+		40E63DC41EB03D4600136773 /* JKRFallsLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKRFallsLayout.m; sourceTree = "<group>"; };
+		40E63DC51EB03D4600136773 /* JKRShop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKRShop.h; sourceTree = "<group>"; };
+		40E63DC61EB03D4600136773 /* JKRShop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKRShop.m; sourceTree = "<group>"; };
+		40E63DC71EB03D4600136773 /* JKRShopCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKRShopCell.h; sourceTree = "<group>"; };
+		40E63DC81EB03D4600136773 /* JKRShopCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKRShopCell.m; sourceTree = "<group>"; };
+		40E63DC91EB03D4600136773 /* JKRShopCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JKRShopCell.xib; sourceTree = "<group>"; };
 		53DA42DF7B329D8DF1F5D79B /* libPods-WifiUploadDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WifiUploadDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FF6F11B4C5E31018870632F /* Pods-UICollectionViewFlowLayout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UICollectionViewFlowLayout.release.xcconfig"; path = "Pods/Target Support Files/Pods-UICollectionViewFlowLayout/Pods-UICollectionViewFlowLayout.release.xcconfig"; sourceTree = "<group>"; };
 		750B00B81EA4F99D00ED074A /* IOSSocketServer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSSocketServer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		750B00BB1EA4F99D00ED074A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		750B00BD1EA4F99D00ED074A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -470,6 +484,7 @@
 		75127A981EAE5EE30074143C /* WKWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewController.m; sourceTree = "<group>"; };
 		B1BFA8B5C1E3F574B2A0AD59 /* Pods-IOSCoreText.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSCoreText.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IOSCoreText/Pods-IOSCoreText.debug.xcconfig"; sourceTree = "<group>"; };
 		C0C6A0A4E4182E95404EAE19 /* Pods-IOSCoreText.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSCoreText.release.xcconfig"; path = "Pods/Target Support Files/Pods-IOSCoreText/Pods-IOSCoreText.release.xcconfig"; sourceTree = "<group>"; };
+		D0FDDB57AF705162EAD2668D /* Pods-UICollectionViewFlowLayout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UICollectionViewFlowLayout.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UICollectionViewFlowLayout/Pods-UICollectionViewFlowLayout.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -558,6 +573,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD98DA538BF055E77D793337 /* libPods-UICollectionViewFlowLayout.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -838,6 +854,7 @@
 				4059BE2E1E97892F0067C1F3 /* Contacts.framework */,
 				53DA42DF7B329D8DF1F5D79B /* libPods-WifiUploadDemo.a */,
 				3C66CEBBA9ED31E70FCFCB09 /* libPods-IOSCoreText.a */,
+				33289B72BF352F7B01A8E128 /* libPods-UICollectionViewFlowLayout.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1102,6 +1119,13 @@
 		40E63DA51EAF33CA00136773 /* UICollectionViewFlowLayout */ = {
 			isa = PBXGroup;
 			children = (
+				40E63DC31EB03D4600136773 /* JKRFallsLayout.h */,
+				40E63DC41EB03D4600136773 /* JKRFallsLayout.m */,
+				40E63DC51EB03D4600136773 /* JKRShop.h */,
+				40E63DC61EB03D4600136773 /* JKRShop.m */,
+				40E63DC71EB03D4600136773 /* JKRShopCell.h */,
+				40E63DC81EB03D4600136773 /* JKRShopCell.m */,
+				40E63DC91EB03D4600136773 /* JKRShopCell.xib */,
 				40E63DA91EAF33CA00136773 /* AppDelegate.h */,
 				40E63DAA1EAF33CA00136773 /* AppDelegate.m */,
 				40E63DAC1EAF33CA00136773 /* ViewController.h */,
@@ -1217,6 +1241,8 @@
 				1185BB74CCFB3F9C4AFC7DBB /* Pods-WifiUploadDemo.release.xcconfig */,
 				B1BFA8B5C1E3F574B2A0AD59 /* Pods-IOSCoreText.debug.xcconfig */,
 				C0C6A0A4E4182E95404EAE19 /* Pods-IOSCoreText.release.xcconfig */,
+				D0FDDB57AF705162EAD2668D /* Pods-UICollectionViewFlowLayout.debug.xcconfig */,
+				5FF6F11B4C5E31018870632F /* Pods-UICollectionViewFlowLayout.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -1421,9 +1447,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 40E63DB81EAF33CA00136773 /* Build configuration list for PBXNativeTarget "UICollectionViewFlowLayout" */;
 			buildPhases = (
+				39D515B8FE0F8C5942A5FA10 /* [CP] Check Pods Manifest.lock */,
 				40E63DA01EAF33CA00136773 /* Sources */,
 				40E63DA11EAF33CA00136773 /* Frameworks */,
 				40E63DA21EAF33CA00136773 /* Resources */,
+				F6DEF096287511A24B6C9BD7 /* [CP] Embed Pods Frameworks */,
+				DD25D4787103DEFC745E5AC6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1800,6 +1829,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				40E63DB61EAF33CA00136773 /* LaunchScreen.storyboard in Resources */,
+				40E63DCD1EB03D4600136773 /* JKRShopCell.xib in Resources */,
 				40E63DB31EAF33CA00136773 /* Assets.xcassets in Resources */,
 				40E63DB11EAF33CA00136773 /* Main.storyboard in Resources */,
 			);
@@ -1874,6 +1904,21 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		39D515B8FE0F8C5942A5FA10 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		B5A461628B463C7FC1909915 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1889,6 +1934,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IOSCoreText/Pods-IOSCoreText-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		DD25D4787103DEFC745E5AC6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UICollectionViewFlowLayout/Pods-UICollectionViewFlowLayout-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		E8031448D850E63668AE925F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1902,6 +1962,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F6DEF096287511A24B6C9BD7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UICollectionViewFlowLayout/Pods-UICollectionViewFlowLayout-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F96AE6D7C491ABF819CE21FA /* [CP] Copy Pods Resources */ = {
@@ -2114,7 +2189,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				40E63DAE1EAF33CA00136773 /* ViewController.m in Sources */,
+				40E63DCC1EB03D4600136773 /* JKRShopCell.m in Sources */,
 				40E63DC21EAF523D00136773 /* CollectionViewCell.m in Sources */,
+				40E63DCB1EB03D4600136773 /* JKRShop.m in Sources */,
+				40E63DCA1EB03D4600136773 /* JKRFallsLayout.m in Sources */,
 				40E63DAB1EAF33CA00136773 /* AppDelegate.m in Sources */,
 				40E63DBD1EAF340300136773 /* ActivityFlowLayout.m in Sources */,
 				40E63DA81EAF33CA00136773 /* main.m in Sources */,
@@ -2829,6 +2907,7 @@
 		};
 		40E63DB91EAF33CA00136773 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0FDDB57AF705162EAD2668D /* Pods-UICollectionViewFlowLayout.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = R6B5BG54J2;
@@ -2844,6 +2923,7 @@
 		};
 		40E63DBA1EAF33CA00136773 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FF6F11B4C5E31018870632F /* Pods-UICollectionViewFlowLayout.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = R6B5BG54J2;
@@ -3139,6 +3219,7 @@
 				40E63DBA1EAF33CA00136773 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		750B00E81EA4F99D00ED074A /* Build configuration list for PBXNativeTarget "IOSSocketServer" */ = {
 			isa = XCConfigurationList;

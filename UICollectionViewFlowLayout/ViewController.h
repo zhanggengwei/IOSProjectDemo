@@ -1,9 +1,9 @@
 //
 //  ViewController.h
-//  UICollectionViewFlowLayout
+//  JKRFallsDemo
 //
-//  Created by Donald on 17/4/25.
-//  Copyright © 2017年 Susu. All rights reserved.
+//  Created by Lucky on 16/3/22.
+//  Copyright © 2016年 Lucky. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

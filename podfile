@@ -10,13 +10,13 @@ pod 'MagicalRecord', '~> 2.3.0'
 pod 'Mantle', '~> 2.0.6'
 pod 'FMDB'
 pod 'YYWebImage', '~> 1.0.5'
-
+pod 'MJExtension', '~> 3.0.13'
 # UI
 pod 'MBProgressHUD', '0.8'
 pod 'Masonry', '~> 0.6.1'
 pod 'ODRefreshControl', '~> 1.2'
 pod 'WActionSheet', '~> 0.0.3'
-pod 'RongCloudIMLib', '~> 2.7.3'
+pod 'RongCloudIM', '~> 2.8.9'
 pod 'UIView+FrameEx', '~> 0.0.1'
 pod 'SFHFKeychainUtils', '~> 0.0.1'
 pod 'MD5Digest', '~> 1.1.0'
@@ -48,5 +48,8 @@ target 'WifiUploadDemo' do
 end
 
 target 'IOSCoreText' do
+end
+
+target 'UICollectionViewFlowLayout' do
 end
 

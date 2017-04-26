@@ -1,96 +1,131 @@
 //
 //  ViewController.m
-//  UICollectionViewFlowLayout
+//  JKRFallsDemo
 //
-//  Created by Donald on 17/4/25.
-//  Copyright © 2017年 Susu. All rights reserved.
+//  Created by Lucky on 16/3/22.
+//  Copyright © 2016年 Lucky. All rights reserved.
 //
 
 #import "ViewController.h"
-#import "ActivityFlowLayout.h"
-#import "CollectionViewCell.h"
-@interface ViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,ActivityFlowLayoutDelegate>
+#import "JKRFallsLayout.h"
+#import <MJExtension.h>
+#import <MJRefresh.h>
+#import "JKRShopCell.h"
+#import "JKRShop.h"
 
-@property (nonatomic,strong) UICollectionView * collectionView;
-@property (nonatomic,strong) NSMutableArray<ActivityModelProtrol> * modelArray;
+@interface ViewController ()<UICollectionViewDataSource, JKRFallsLayoutDelegate>
+
+@property (nonatomic, weak) UICollectionView *collectionView;
+
+@property (nonatomic, strong) NSMutableArray *shops;
 
 @end
 
 @implementation ViewController
 
+static NSString *const ID = @"shop";
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-  
-    ActivityModel * model1 = [ActivityModel new];
-    model1.itemframe = CGRectMake(0,0,2.0/3 * SCREEN_WIDTH, 2.0/3 * SCREEN_HEIGHT);
-    
-    ActivityModel * model2 = [ActivityModel new];
-    model2.itemframe = CGRectMake(2.0/3 * SCREEN_WIDTH,0,1.0/3 * SCREEN_WIDTH, 1.0/3 * SCREEN_HEIGHT);
-    
-    ActivityModel * model3 = [ActivityModel new];
-    model3.itemframe = CGRectMake(2.0/3 * SCREEN_WIDTH,1.0/3 * SCREEN_HEIGHT,1.0/3 * SCREEN_WIDTH, 1.0/3 * SCREEN_HEIGHT);
-    ActivityModel * model4 = [ActivityModel new];
-    model4.itemframe = CGRectMake(0,2.0/3 *SCREEN_HEIGHT ,1.0/3 * SCREEN_WIDTH, 1.0/3 * SCREEN_HEIGHT);
-    ActivityModel * model5 = [ActivityModel new];
-    model5.itemframe = CGRectMake(1.0/3 * SCREEN_WIDTH,2.0/3 *SCREEN_HEIGHT,1.0/3 * SCREEN_WIDTH, 2.0/3 * SCREEN_HEIGHT);
-    ActivityModel * model6 = [ActivityModel new];
-    model6.itemframe = CGRectMake(2.0/3 * SCREEN_WIDTH,2.0/3 *SCREEN_HEIGHT,1.0/3 * SCREEN_WIDTH, 1.0/3 * SCREEN_HEIGHT);
-    self.modelArray = [NSMutableArray<ActivityModelProtrol> new];
-    [self.modelArray addObject:model1];
-     [self.modelArray addObject:model2];
-     [self.modelArray addObject:model3];
-    [self.modelArray addObject:model4];
-     [self.modelArray addObject:model5];
-     [self.modelArray addObject:model6];
-    
-    ActivityFlowLayout * layout = [[ActivityFlowLayout alloc]init];
-    layout.delegate = self;
-    
-    layout.scrollDirection = UICollectionViewScrollDirectionVertical;
-    self.collectionView = [[UICollectionView alloc]initWithFrame:self.view.bounds collectionViewLayout:layout];
-    [self.view addSubview:self.collectionView];
-    
+    [self setupCollectionView];
+    [self setupRefresh];
+}
+
+#pragma mark - 创建collectionView
+- (void)setupCollectionView
+{
+    JKRFallsLayout *fallsLayout = [[JKRFallsLayout alloc] init];
+    fallsLayout.delegate = self;
+    UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:fallsLayout];
+    [self.view addSubview:collectionView];
+    _collectionView = collectionView;
+    collectionView.dataSource = self;
+    [collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([JKRShopCell class]) bundle:nil] forCellWithReuseIdentifier:ID];
+}
+
+#pragma mark - 创建上下拉刷新
+- (void)setupRefresh
+{
+    self.collectionView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewShops)];
+    self.collectionView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreShops)];
     self.collectionView.backgroundColor = [UIColor whiteColor];
-    
-    [self.collectionView registerClass:[CollectionViewCell class] forCellWithReuseIdentifier:NSStringFromClass([CollectionViewCell class])];
-    self.collectionView.delegate = self;
-    self.collectionView.dataSource = self;
-    
-    
-    // Do any additional setup after loading the view, typically from a nib.
+    [self.collectionView.mj_header beginRefreshing];
 }
 
+#pragma mark - 加载下拉数据
+- (void)loadNewShops
+{
+    __weak typeof(self) weakSelf = self;
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        NSArray *shops = [JKRShop mj_objectArrayWithFilename:@"1.plist"];
+        [weakSelf.shops removeAllObjects];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [weakSelf.collectionView reloadData];
+            [weakSelf.shops addObjectsFromArray:shops];
+            [weakSelf.collectionView.mj_header endRefreshing];
+            [weakSelf.collectionView reloadData];
+        });
+    });
+}
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+#pragma mark - 加载上拉数据
+- (void)loadMoreShops
 {
-    NSLog(@" %s",__func__);
-    return 6;
+    __weak typeof(self) weakSelf = self;
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        NSArray *shops = [JKRShop mj_objectArrayWithFilename:@"1.plist"];
+        [weakSelf.shops addObjectsFromArray:shops];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [weakSelf.collectionView.mj_footer endRefreshing];
+            [weakSelf.collectionView reloadData];
+        });
+    });
 }
-- (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
-{
-    NSLog(@" %s",__func__);
-    CollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([CollectionViewCell class]) forIndexPath:indexPath];
-    cell.backgroundColor= [UIColor redColor];
-    NSLog(@"cell == %@",cell);
-    cell.layer.borderWidth = 4;
-    
-    return cell;
-    
-}
+
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
-     NSLog(@" %s",__func__);
-     return 1;
-    
-}
-- (NSArray<ActivityModelProtrol> *)modelLayoutArr
-{
-    return self.modelArray;
+    return 1;
 }
 
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
+    self.collectionView.mj_footer.hidden = self.shops.count == 0;
+    return self.shops.count;
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    JKRShopCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:ID forIndexPath:indexPath];
+    if (self.shops && self.shops.count >= indexPath.item+1) cell.shop = self.shops[indexPath.item];
+    return cell;
+}
+
+- (CGFloat)columnMarginInFallsLayout:(JKRFallsLayout *)fallsLayout
+{
+    return 5;
+}
+
+- (CGFloat)rowMarginInFallsLayout:(JKRFallsLayout *)fallsLayout
+{
+    return 5;
+}
+
+- (CGFloat)columnCountInFallsLayout:(JKRFallsLayout *)fallsLayout
+{
+    return 4;
+}
+
+- (UIEdgeInsets)edgeInsetsInFallsLayout:(JKRFallsLayout *)fallsLayout
+{
+    return UIEdgeInsetsMake(20, 10, 20, 10);
+}
+
+- (NSMutableArray *)shops
+{
+    if (!_shops) {
+        _shops = [NSMutableArray array];
+    }
+    return _shops;
+}
 
 @end
