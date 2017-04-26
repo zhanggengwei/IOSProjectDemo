@@ -107,6 +107,9 @@
 		40A276DE1E9E29C700421E5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40A276DC1E9E29C700421E5A /* LaunchScreen.storyboard */; };
 		40A276E71E9E29F000421E5A /* mongoose.c in Sources */ = {isa = PBXBuildFile; fileRef = 40A276E31E9E29F000421E5A /* mongoose.c */; };
 		40A276E81E9E29F000421E5A /* MongooseDaemon.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A276E61E9E29F000421E5A /* MongooseDaemon.m */; };
+		40CA02881EB0545D003363E9 /* PPSURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 40CA02851EB0545D003363E9 /* PPSURLProtocol.m */; };
+		40CA02891EB0545D003363E9 /* PPSURLSessionConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 40CA02871EB0545D003363E9 /* PPSURLSessionConfiguration.m */; };
+		40CA028B1EB06B7E003363E9 /* 1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 40CA028A1EB06B7E003363E9 /* 1.plist */; };
 		40D4C0481E9F4E4E00C6DE0F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D4C0471E9F4E4E00C6DE0F /* main.m */; };
 		40D4C04B1E9F4E4E00C6DE0F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D4C04A1E9F4E4E00C6DE0F /* AppDelegate.m */; };
 		40D4C04E1E9F4E4E00C6DE0F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D4C04D1E9F4E4E00C6DE0F /* ViewController.m */; };
@@ -376,6 +379,11 @@
 		40A276E41E9E29F000421E5A /* mongoose.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mongoose.h; sourceTree = "<group>"; };
 		40A276E51E9E29F000421E5A /* MongooseDaemon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MongooseDaemon.h; sourceTree = "<group>"; };
 		40A276E61E9E29F000421E5A /* MongooseDaemon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MongooseDaemon.m; sourceTree = "<group>"; };
+		40CA02841EB0545D003363E9 /* PPSURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPSURLProtocol.h; sourceTree = "<group>"; };
+		40CA02851EB0545D003363E9 /* PPSURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPSURLProtocol.m; sourceTree = "<group>"; };
+		40CA02861EB0545D003363E9 /* PPSURLSessionConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPSURLSessionConfiguration.h; sourceTree = "<group>"; };
+		40CA02871EB0545D003363E9 /* PPSURLSessionConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPSURLSessionConfiguration.m; sourceTree = "<group>"; };
+		40CA028A1EB06B7E003363E9 /* 1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 1.plist; sourceTree = "<group>"; };
 		40D4C0441E9F4E4E00C6DE0F /* IOSRequestTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSRequestTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40D4C0471E9F4E4E00C6DE0F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		40D4C0491E9F4E4E00C6DE0F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -650,6 +658,7 @@
 		4041C0971EA9E1CE0013A70C /* NSURLProtrocalDemo */ = {
 			isa = PBXGroup;
 			children = (
+				40CA02831EB0545D003363E9 /* Monitor */,
 				4041C09B1EA9E1CE0013A70C /* AppDelegate.h */,
 				4041C09C1EA9E1CE0013A70C /* AppDelegate.m */,
 				4041C09E1EA9E1CE0013A70C /* ViewController.h */,
@@ -1026,6 +1035,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		40CA02831EB0545D003363E9 /* Monitor */ = {
+			isa = PBXGroup;
+			children = (
+				40CA02841EB0545D003363E9 /* PPSURLProtocol.h */,
+				40CA02851EB0545D003363E9 /* PPSURLProtocol.m */,
+				40CA02861EB0545D003363E9 /* PPSURLSessionConfiguration.h */,
+				40CA02871EB0545D003363E9 /* PPSURLSessionConfiguration.m */,
+			);
+			path = Monitor;
+			sourceTree = "<group>";
+		};
 		40D4C0451E9F4E4E00C6DE0F /* IOSRequestTools */ = {
 			isa = PBXGroup;
 			children = (
@@ -1140,6 +1160,7 @@
 				40E63DBF1EAF37F500136773 /* Layout.pch */,
 				40E63DC01EAF523D00136773 /* CollectionViewCell.h */,
 				40E63DC11EAF523D00136773 /* CollectionViewCell.m */,
+				40CA028A1EB06B7E003363E9 /* 1.plist */,
 			);
 			path = UICollectionViewFlowLayout;
 			sourceTree = "<group>";
@@ -1828,6 +1849,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40CA028B1EB06B7E003363E9 /* 1.plist in Resources */,
 				40E63DB61EAF33CA00136773 /* LaunchScreen.storyboard in Resources */,
 				40E63DCD1EB03D4600136773 /* JKRShopCell.xib in Resources */,
 				40E63DB31EAF33CA00136773 /* Assets.xcassets in Resources */,
@@ -2046,6 +2068,8 @@
 				4041C09D1EA9E1CE0013A70C /* AppDelegate.m in Sources */,
 				4041C0A61EA9E1CE0013A70C /* NSURLProtrocalDemo.xcdatamodeld in Sources */,
 				4041C09A1EA9E1CE0013A70C /* main.m in Sources */,
+				40CA02881EB0545D003363E9 /* PPSURLProtocol.m in Sources */,
+				40CA02891EB0545D003363E9 /* PPSURLSessionConfiguration.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

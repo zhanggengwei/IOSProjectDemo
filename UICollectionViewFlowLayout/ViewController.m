@@ -112,7 +112,7 @@ static NSString *const ID = @"shop";
 
 - (CGFloat)columnCountInFallsLayout:(JKRFallsLayout *)fallsLayout
 {
-    return 4;
+    return 3;
 }
 
 - (UIEdgeInsets)edgeInsetsInFallsLayout:(JKRFallsLayout *)fallsLayout
