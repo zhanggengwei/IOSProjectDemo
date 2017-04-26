@@ -110,6 +110,7 @@
 		40CA02881EB0545D003363E9 /* PPSURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 40CA02851EB0545D003363E9 /* PPSURLProtocol.m */; };
 		40CA02891EB0545D003363E9 /* PPSURLSessionConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 40CA02871EB0545D003363E9 /* PPSURLSessionConfiguration.m */; };
 		40CA028B1EB06B7E003363E9 /* 1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 40CA028A1EB06B7E003363E9 /* 1.plist */; };
+		40CA028E1EB07A23003363E9 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40CA028D1EB07A23003363E9 /* TestViewController.m */; };
 		40D4C0481E9F4E4E00C6DE0F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D4C0471E9F4E4E00C6DE0F /* main.m */; };
 		40D4C04B1E9F4E4E00C6DE0F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D4C04A1E9F4E4E00C6DE0F /* AppDelegate.m */; };
 		40D4C04E1E9F4E4E00C6DE0F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D4C04D1E9F4E4E00C6DE0F /* ViewController.m */; };
@@ -384,6 +385,8 @@
 		40CA02861EB0545D003363E9 /* PPSURLSessionConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPSURLSessionConfiguration.h; sourceTree = "<group>"; };
 		40CA02871EB0545D003363E9 /* PPSURLSessionConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPSURLSessionConfiguration.m; sourceTree = "<group>"; };
 		40CA028A1EB06B7E003363E9 /* 1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 1.plist; sourceTree = "<group>"; };
+		40CA028C1EB07A23003363E9 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		40CA028D1EB07A23003363E9 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		40D4C0441E9F4E4E00C6DE0F /* IOSRequestTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSRequestTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40D4C0471E9F4E4E00C6DE0F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		40D4C0491E9F4E4E00C6DE0F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -1150,6 +1153,8 @@
 				40E63DAA1EAF33CA00136773 /* AppDelegate.m */,
 				40E63DAC1EAF33CA00136773 /* ViewController.h */,
 				40E63DAD1EAF33CA00136773 /* ViewController.m */,
+				40CA028C1EB07A23003363E9 /* TestViewController.h */,
+				40CA028D1EB07A23003363E9 /* TestViewController.m */,
 				40E63DBB1EAF340300136773 /* ActivityFlowLayout.h */,
 				40E63DBC1EAF340300136773 /* ActivityFlowLayout.m */,
 				40E63DAF1EAF33CA00136773 /* Main.storyboard */,
@@ -2218,6 +2223,7 @@
 				40E63DCB1EB03D4600136773 /* JKRShop.m in Sources */,
 				40E63DCA1EB03D4600136773 /* JKRFallsLayout.m in Sources */,
 				40E63DAB1EAF33CA00136773 /* AppDelegate.m in Sources */,
+				40CA028E1EB07A23003363E9 /* TestViewController.m in Sources */,
 				40E63DBD1EAF340300136773 /* ActivityFlowLayout.m in Sources */,
 				40E63DA81EAF33CA00136773 /* main.m in Sources */,
 			);

@@ -21,6 +21,15 @@
 /// collectionView边距
 - (UIEdgeInsets)edgeInsetsInFallsLayout:(JKRFallsLayout *)fallsLayout;
 
+- (CGSize)collectionCellItemSize;
+
+//--------------------
+//   0 0 0 0
+//    0   0
+//
+//--------------------
+
+
 @end
 
 @interface JKRFallsLayout : UICollectionViewLayout
