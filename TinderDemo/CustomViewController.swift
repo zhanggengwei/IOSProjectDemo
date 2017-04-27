@@ -1,25 +1,39 @@
 //
-//  RightViewController.swift
+//  CustomViewController.swift
 //  IOSProjectDemo
 //
-//  Created by Donald on 17/4/26.
+//  Created by Donald on 17/4/27.
 //  Copyright © 2017年 Susu. All rights reserved.
 //
 
 import UIKit
 
-class RightViewController: CustomViewController {
+public enum TinderDirection : Int
+{
+    case TinderTabBarDirectionLeft
+    case TinderTabBarDirectionRight
+}
+
+class CustomViewController: UIViewController {
+    public var width:Int =  Int(UIScreen.main.bounds.size.width);
+    public var height:Int = Int(UIScreen.main.bounds.size.height);
+    public func distanceChangeChanged(displacement: Float,direction:TinderDirection) {
+        
+        
+    }
+    public func distanceEndChanged() {
+        
+        
+    }
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "RightViewController"
-        self.view.backgroundColor = UIColor.white
-        
+       
+
         // Do any additional setup after loading the view.
     }
-    override func distanceChangeChanged(displacement: Float, direction: TinderDirection) {
-        
-    }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		3BEF6FC7D9FC2646019967B2 /* libPods-WifiUploadDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53DA42DF7B329D8DF1F5D79B /* libPods-WifiUploadDemo.a */; };
+		4024B9E61EB18C4D00968A33 /* tinder-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4024B9E41EB18C4D00968A33 /* tinder-2.png */; };
+		4024B9E71EB18C4D00968A33 /* tinder.png in Resources */ = {isa = PBXBuildFile; fileRef = 4024B9E51EB18C4D00968A33 /* tinder.png */; };
+		4024B9E91EB18D4700968A33 /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4024B9E81EB18D4700968A33 /* CustomViewController.swift */; };
+		4024B9EB1EB19EAC00968A33 /* UIButton+BackImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4024B9EA1EB19EAC00968A33 /* UIButton+BackImage.swift */; };
 		4041C07C1EA9E0AB0013A70C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4041C07B1EA9E0AB0013A70C /* main.m */; };
 		4041C07F1EA9E0AB0013A70C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4041C07E1EA9E0AB0013A70C /* AppDelegate.m */; };
 		4041C0821EA9E0AB0013A70C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4041C0811EA9E0AB0013A70C /* ViewController.m */; };
@@ -220,6 +224,10 @@
 		12D43C8C8507263FDC167B9F /* Pods-WifiUploadDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WifiUploadDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WifiUploadDemo/Pods-WifiUploadDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		33289B72BF352F7B01A8E128 /* libPods-UICollectionViewFlowLayout.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UICollectionViewFlowLayout.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C66CEBBA9ED31E70FCFCB09 /* libPods-IOSCoreText.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IOSCoreText.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4024B9E41EB18C4D00968A33 /* tinder-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tinder-2.png"; sourceTree = "<group>"; };
+		4024B9E51EB18C4D00968A33 /* tinder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tinder.png; sourceTree = "<group>"; };
+		4024B9E81EB18D4700968A33 /* CustomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
+		4024B9EA1EB19EAC00968A33 /* UIButton+BackImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+BackImage.swift"; sourceTree = "<group>"; };
 		4041C0781EA9E0AB0013A70C /* IOSCoreDataDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSCoreDataDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4041C07B1EA9E0AB0013A70C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4041C07D1EA9E0AB0013A70C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -1083,6 +1091,9 @@
 		40CA02941EB08957003363E9 /* TinderDemo */ = {
 			isa = PBXGroup;
 			children = (
+				4024B9E81EB18D4700968A33 /* CustomViewController.swift */,
+				4024B9E41EB18C4D00968A33 /* tinder-2.png */,
+				4024B9E51EB18C4D00968A33 /* tinder.png */,
 				40CA02AF1EB094A9003363E9 /* TinderManager.swift */,
 				40CA02AD1EB08F34003363E9 /* NavTinderController.swift */,
 				40CA02951EB08957003363E9 /* AppDelegate.swift */,
@@ -1094,6 +1105,7 @@
 				40CA029C1EB08957003363E9 /* Assets.xcassets */,
 				40CA029E1EB08957003363E9 /* LaunchScreen.storyboard */,
 				40CA02A11EB08957003363E9 /* Info.plist */,
+				4024B9EA1EB19EAC00968A33 /* UIButton+BackImage.swift */,
 			);
 			path = TinderDemo;
 			sourceTree = "<group>";
@@ -1896,8 +1908,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4024B9E61EB18C4D00968A33 /* tinder-2.png in Resources */,
 				40CA02A01EB08957003363E9 /* LaunchScreen.storyboard in Resources */,
 				40CA029D1EB08957003363E9 /* Assets.xcassets in Resources */,
+				4024B9E71EB18C4D00968A33 /* tinder.png in Resources */,
 				40CA029B1EB08957003363E9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2267,12 +2281,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				40CA02A81EB0897D003363E9 /* LeftViewController.swift in Sources */,
+				4024B9EB1EB19EAC00968A33 /* UIButton+BackImage.swift in Sources */,
 				40CA02B01EB094A9003363E9 /* TinderManager.swift in Sources */,
 				40CA02AE1EB08F34003363E9 /* NavTinderController.swift in Sources */,
 				40CA02AA1EB08985003363E9 /* RightViewController.swift in Sources */,
 				40CA02961EB08957003363E9 /* AppDelegate.swift in Sources */,
 				40CA02AC1EB08A00003363E9 /* TinderViewController.swift in Sources */,
 				40CA02A61EB08975003363E9 /* HomeViewController.swift in Sources */,
+				4024B9E91EB18D4700968A33 /* CustomViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

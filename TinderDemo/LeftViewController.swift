@@ -8,18 +8,20 @@
 
 import UIKit
 
-class LeftViewController: UIViewController {
+class LeftViewController: CustomViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = NSStringFromClass(self.classForCoder);
-        self.view.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1);
+        self.title = "LeftViewController"
+        self.view.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         
         
 
         // Do any additional setup after loading the view.
     }
-
+    override func distanceChangeChanged(displacement: Float, direction: TinderDirection) {
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
