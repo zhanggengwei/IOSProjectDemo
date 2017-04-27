@@ -13,7 +13,7 @@ class LeftViewController: CustomViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "LeftViewController"
-        self.view.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        self.view.backgroundColor = UIColor.red;
         
         
 

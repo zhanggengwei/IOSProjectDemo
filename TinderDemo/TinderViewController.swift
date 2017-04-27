@@ -28,7 +28,7 @@ class TinderViewController: UIViewController,UIScrollViewDelegate {
         self.view.addSubview(scrollView)
         scrollView.isPagingEnabled = true;
         
-    
+        //self.scrollView.isScrollEnabled = false;
         let leftController = NavController(controller: LeftViewController.init());
         
         let homeController = NavController(controller: HomeViewController.init());

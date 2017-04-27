@@ -13,7 +13,7 @@ class RightViewController: CustomViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "RightViewController"
-        self.view.backgroundColor = UIColor.white
+        self.view.backgroundColor = UIColor.green
         
         // Do any additional setup after loading the view.
     }
