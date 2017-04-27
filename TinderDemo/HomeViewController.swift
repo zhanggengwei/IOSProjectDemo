@@ -34,7 +34,7 @@ class HomeViewController: CustomViewController {
         self.button.frame = CGRect.init(x:200, y: 0, width:30, height:30)
         self.navigationItem.titleView = self.button;
         self.button.setImage(UIImage.init(named: "tinder-2"), for: UIControlState.normal);
-        //self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(image: UIImage.init(named: "tinder"), style: UIBarButtonItemStyle.plain, target: nil, action: nil);
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(image: UIImage.init(named: "tinder"), style: UIBarButtonItemStyle.plain, target: nil, action: nil);
         self.button.isUserInteractionEnabled = false;
         
         //self.navigationController?.navigationBar.addSubview(self.button);

@@ -4,7 +4,15 @@
 //
 //  Created by Donald on 17/4/27.
 //  Copyright © 2017年 Susu. All rights reserved.
+//所以关于事件的链有两条：事件的 响应链 ；Hit-Testing 时事件的 传递链 。
+
+//事件响应链：由离用户最近的 View 向系统传递：
 //
+//initial view –> Super View –> …… –> View Controller –> Window –> Application –> AppDelegate
+//
+//事件传递链：由系统向离用户最近的 View 传递：
+//
+//UIKit –> active app’s event queue –> Window –> Root View –> …… –> Lowest View
 
 import UIKit
 
