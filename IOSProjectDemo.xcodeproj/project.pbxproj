@@ -12,6 +12,9 @@
 		4024B9E71EB18C4D00968A33 /* tinder.png in Resources */ = {isa = PBXBuildFile; fileRef = 4024B9E51EB18C4D00968A33 /* tinder.png */; };
 		4024B9E91EB18D4700968A33 /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4024B9E81EB18D4700968A33 /* CustomViewController.swift */; };
 		4024B9EB1EB19EAC00968A33 /* UIButton+BackImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4024B9EA1EB19EAC00968A33 /* UIButton+BackImage.swift */; };
+		4031504D1EB1E3F0009533C2 /* AnimateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4031504C1EB1E3EF009533C2 /* AnimateViewController.swift */; };
+		4031504F1EB1E55F009533C2 /* 近期活动.png in Resources */ = {isa = PBXBuildFile; fileRef = 4031504E1EB1E55F009533C2 /* 近期活动.png */; };
+		403150511EB1EB68009533C2 /* 二维码.png in Resources */ = {isa = PBXBuildFile; fileRef = 403150501EB1EB68009533C2 /* 二维码.png */; };
 		4041C07C1EA9E0AB0013A70C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4041C07B1EA9E0AB0013A70C /* main.m */; };
 		4041C07F1EA9E0AB0013A70C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4041C07E1EA9E0AB0013A70C /* AppDelegate.m */; };
 		4041C0821EA9E0AB0013A70C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4041C0811EA9E0AB0013A70C /* ViewController.m */; };
@@ -228,6 +231,9 @@
 		4024B9E51EB18C4D00968A33 /* tinder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tinder.png; sourceTree = "<group>"; };
 		4024B9E81EB18D4700968A33 /* CustomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
 		4024B9EA1EB19EAC00968A33 /* UIButton+BackImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+BackImage.swift"; sourceTree = "<group>"; };
+		4031504C1EB1E3EF009533C2 /* AnimateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimateViewController.swift; sourceTree = "<group>"; };
+		4031504E1EB1E55F009533C2 /* 近期活动.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "近期活动.png"; sourceTree = "<group>"; };
+		403150501EB1EB68009533C2 /* 二维码.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "二维码.png"; sourceTree = "<group>"; };
 		4041C0781EA9E0AB0013A70C /* IOSCoreDataDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSCoreDataDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4041C07B1EA9E0AB0013A70C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4041C07D1EA9E0AB0013A70C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -1091,6 +1097,8 @@
 		40CA02941EB08957003363E9 /* TinderDemo */ = {
 			isa = PBXGroup;
 			children = (
+				403150501EB1EB68009533C2 /* 二维码.png */,
+				4031504E1EB1E55F009533C2 /* 近期活动.png */,
 				4024B9E81EB18D4700968A33 /* CustomViewController.swift */,
 				4024B9E41EB18C4D00968A33 /* tinder-2.png */,
 				4024B9E51EB18C4D00968A33 /* tinder.png */,
@@ -1106,6 +1114,7 @@
 				40CA029E1EB08957003363E9 /* LaunchScreen.storyboard */,
 				40CA02A11EB08957003363E9 /* Info.plist */,
 				4024B9EA1EB19EAC00968A33 /* UIButton+BackImage.swift */,
+				4031504C1EB1E3EF009533C2 /* AnimateViewController.swift */,
 			);
 			path = TinderDemo;
 			sourceTree = "<group>";
@@ -1908,7 +1917,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4031504F1EB1E55F009533C2 /* 近期活动.png in Resources */,
 				4024B9E61EB18C4D00968A33 /* tinder-2.png in Resources */,
+				403150511EB1EB68009533C2 /* 二维码.png in Resources */,
 				40CA02A01EB08957003363E9 /* LaunchScreen.storyboard in Resources */,
 				40CA029D1EB08957003363E9 /* Assets.xcassets in Resources */,
 				4024B9E71EB18C4D00968A33 /* tinder.png in Resources */,
@@ -2280,6 +2291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4031504D1EB1E3F0009533C2 /* AnimateViewController.swift in Sources */,
 				40CA02A81EB0897D003363E9 /* LeftViewController.swift in Sources */,
 				4024B9EB1EB19EAC00968A33 /* UIButton+BackImage.swift in Sources */,
 				40CA02B01EB094A9003363E9 /* TinderManager.swift in Sources */,
