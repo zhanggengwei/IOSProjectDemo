@@ -71,14 +71,14 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "IOSSocketServer/FileObject.hpp"
-            timestampString = "515041131.992099"
+            filePath = "IOSSocketServer/FileObject.mm"
+            timestampString = "515050480.490242"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
-            landmarkName = "class FileObject"
-            landmarkType = "3">
+            startingLineNumber = "160"
+            endingLineNumber = "160"
+            landmarkName = "FileObject::printDirectonaryList(char * path)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

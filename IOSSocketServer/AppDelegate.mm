@@ -17,11 +17,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    char filepath[] = ".";
+    char filepath[] = "/Users/donald/Desktop/22";
     NSLog(@"%@",NSHomeDirectory());
     FileObject obj = FileObject(filepath);
-    obj.filePath();
-    obj.fileSize();
+    //obj.description();
+    obj.printDirectonaryList(filepath);
+    
     
     
     
