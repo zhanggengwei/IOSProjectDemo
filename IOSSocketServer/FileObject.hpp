@@ -21,7 +21,10 @@ public:
     char * filePath(void);
 private:
     char * path;
+    long long  updateTime;
+    long long  size;
     FILE * file;
+    
     void checkArgumentsValid();
     
 };

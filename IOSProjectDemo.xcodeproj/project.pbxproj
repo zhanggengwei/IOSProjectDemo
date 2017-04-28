@@ -167,7 +167,7 @@
 		40E63DCC1EB03D4600136773 /* JKRShopCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 40E63DC81EB03D4600136773 /* JKRShopCell.m */; };
 		40E63DCD1EB03D4600136773 /* JKRShopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40E63DC91EB03D4600136773 /* JKRShopCell.xib */; };
 		750B00BC1EA4F99D00ED074A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 750B00BB1EA4F99D00ED074A /* main.m */; };
-		750B00BF1EA4F99D00ED074A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 750B00BE1EA4F99D00ED074A /* AppDelegate.m */; };
+		750B00BF1EA4F99D00ED074A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 750B00BE1EA4F99D00ED074A /* AppDelegate.mm */; };
 		750B00C21EA4F99D00ED074A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 750B00C11EA4F99D00ED074A /* ViewController.m */; };
 		750B00C51EA4F99D00ED074A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 750B00C31EA4F99D00ED074A /* Main.storyboard */; };
 		750B00C71EA4F99D00ED074A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 750B00C61EA4F99D00ED074A /* Assets.xcassets */; };
@@ -497,7 +497,7 @@
 		750B00B81EA4F99D00ED074A /* IOSSocketServer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSSocketServer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		750B00BB1EA4F99D00ED074A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		750B00BD1EA4F99D00ED074A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		750B00BE1EA4F99D00ED074A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		750B00BE1EA4F99D00ED074A /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		750B00C01EA4F99D00ED074A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		750B00C11EA4F99D00ED074A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		750B00C41EA4F99D00ED074A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -1263,7 +1263,7 @@
 				750B00F61EA4F9D600ED074A /* ServerTool.c */,
 				750B00F71EA4F9D600ED074A /* ServerTool.h */,
 				750B00BD1EA4F99D00ED074A /* AppDelegate.h */,
-				750B00BE1EA4F99D00ED074A /* AppDelegate.m */,
+				750B00BE1EA4F99D00ED074A /* AppDelegate.mm */,
 				750B00C01EA4F99D00ED074A /* ViewController.h */,
 				750B00C11EA4F99D00ED074A /* ViewController.m */,
 				750B00C31EA4F99D00ED074A /* Main.storyboard */,
@@ -2367,7 +2367,7 @@
 				750B00C21EA4F99D00ED074A /* ViewController.m in Sources */,
 				4074D7C31EB2DDEB003F8D1D /* FileObject.mm in Sources */,
 				750B00FF1EA4F9D600ED074A /* ServerTool.c in Sources */,
-				750B00BF1EA4F99D00ED074A /* AppDelegate.m in Sources */,
+				750B00BF1EA4F99D00ED074A /* AppDelegate.mm in Sources */,
 				750B00FA1EA4F9D600ED074A /* create_socket.c in Sources */,
 				750B00F91EA4F9D600ED074A /* HTTPServer.m in Sources */,
 				750B00FB1EA4F9D600ED074A /* handle_client.c in Sources */,

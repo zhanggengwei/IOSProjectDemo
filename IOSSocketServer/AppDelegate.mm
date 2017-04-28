@@ -4,10 +4,10 @@
 //
 //  Created by VD on 2017/4/17.
 //  Copyright © 2017年 Susu. All rights reserved.
-//
+
 
 #import "AppDelegate.h"
-
+#import "FileObject.hpp"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +17,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    char filepath[] = ".";
+    NSLog(@"%@",NSHomeDirectory());
+    FileObject obj = FileObject(filepath);
+    obj.filePath();
+    obj.fileSize();
+    
+    
+    
     return YES;
 }
 
