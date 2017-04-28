@@ -124,41 +124,8 @@ void FileObject::DirectonarySize(char * filePath,long long * filesize)
 
 void  FileObject::printDirectonaryList(char * path)
 {
-    struct stat  statFile;
-    if(stat(path,&statFile)!=-1)
-    {
-        //目录
-        if(S_ISDIR(statFile.st_mode))
-        {
-            DIR * dir = opendir(path);
-            dirent * list = NULL;
-            while ((list=readdir(dir)))
-            {
-                char fileName[] = {'\0'};
-                strncpy(fileName,list->d_name,list->d_namlen);
-                printf("filename ==%s  %d\n",fileName,1);
-//                if(strcmp(fileName, ".")==0||strcmp(fileName, "..")==0)
-//                {
-//                    continue;
-//                }
-                
-//                if(list->d_type == DT_DIR)
-//                {
-//                    printf("directonaruy = %s",fileName);
-//                    //path = strcat(strcat(path,"/"),fileName);
-//                    //printDirectonaryList(path);
-//                
-//                }else
-//                {
-//                    printf("name == %s",fileName);
-//                }
-            }
-            
-            
-        }else
-        {
-            printf("name == %s",path);
-        }
-    }
+ 
+    
+        
     
 }

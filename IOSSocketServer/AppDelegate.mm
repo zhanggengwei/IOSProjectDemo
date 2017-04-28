@@ -17,7 +17,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    char filepath[] = "/Users/donald/Desktop/22";
+    char filepath[] = "/Users/donald/Desktop/HttpRequest";
     NSLog(@"%@",NSHomeDirectory());
     FileObject obj = FileObject(filepath);
     //obj.description();
