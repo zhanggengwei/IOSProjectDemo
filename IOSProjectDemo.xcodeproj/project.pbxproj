@@ -106,6 +106,8 @@
 		4059BEC21E9DF3B90067C1F3 /* SGWiFiView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4059BEBC1E9DF3B90067C1F3 /* SGWiFiView.m */; };
 		4059BEC51E9DF4990067C1F3 /* SGConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 4059BEC41E9DF4990067C1F3 /* SGConst.m */; };
 		4059BEC71E9DF58B0067C1F3 /* SGWiFiUpload.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4059BEC61E9DF58B0067C1F3 /* SGWiFiUpload.bundle */; };
+		4074D7BD1EB2DC26003F8D1D /* FileList.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4074D7BB1EB2DC26003F8D1D /* FileList.mm */; };
+		4074D7C31EB2DDEB003F8D1D /* FileObject.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4074D7C11EB2DDEB003F8D1D /* FileObject.mm */; };
 		40A276D01E9E29C700421E5A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A276CF1E9E29C700421E5A /* main.m */; };
 		40A276D31E9E29C700421E5A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A276D21E9E29C700421E5A /* AppDelegate.m */; };
 		40A276D61E9E29C700421E5A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A276D51E9E29C700421E5A /* ViewController.m */; };
@@ -389,6 +391,10 @@
 		4059BEC31E9DF4990067C1F3 /* SGConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGConst.h; sourceTree = "<group>"; };
 		4059BEC41E9DF4990067C1F3 /* SGConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGConst.m; sourceTree = "<group>"; };
 		4059BEC61E9DF58B0067C1F3 /* SGWiFiUpload.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SGWiFiUpload.bundle; sourceTree = "<group>"; };
+		4074D7BB1EB2DC26003F8D1D /* FileList.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FileList.mm; sourceTree = "<group>"; };
+		4074D7BC1EB2DC26003F8D1D /* FileList.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FileList.hpp; sourceTree = "<group>"; };
+		4074D7C11EB2DDEB003F8D1D /* FileObject.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FileObject.mm; sourceTree = "<group>"; };
+		4074D7C21EB2DDEB003F8D1D /* FileObject.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FileObject.hpp; sourceTree = "<group>"; };
 		40A276CC1E9E29C700421E5A /* mongoose.c mongoose.h MongooseDaemon.h MongooseDaemonDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mongoose.c mongoose.h MongooseDaemon.h MongooseDaemonDemo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40A276CF1E9E29C700421E5A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		40A276D11E9E29C700421E5A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -1248,6 +1254,8 @@
 		750B00B91EA4F99D00ED074A /* IOSSocketServer */ = {
 			isa = PBXGroup;
 			children = (
+				4074D7C11EB2DDEB003F8D1D /* FileObject.mm */,
+				4074D7C21EB2DDEB003F8D1D /* FileObject.hpp */,
 				750B00EB1EA4F9D600ED074A /* file.html */,
 				750B00EC1EA4F9D600ED074A /* HTTPServer.h */,
 				750B00ED1EA4F9D600ED074A /* HTTPServer.m */,
@@ -1263,6 +1271,8 @@
 				750B00C81EA4F99D00ED074A /* LaunchScreen.storyboard */,
 				750B00CB1EA4F99D00ED074A /* Info.plist */,
 				750B00BA1EA4F99D00ED074A /* Supporting Files */,
+				4074D7BB1EB2DC26003F8D1D /* FileList.mm */,
+				4074D7BC1EB2DC26003F8D1D /* FileList.hpp */,
 			);
 			path = IOSSocketServer;
 			sourceTree = "<group>";
@@ -2355,6 +2365,7 @@
 			files = (
 				750B00FD1EA4F9D600ED074A /* send_response.c in Sources */,
 				750B00C21EA4F99D00ED074A /* ViewController.m in Sources */,
+				4074D7C31EB2DDEB003F8D1D /* FileObject.mm in Sources */,
 				750B00FF1EA4F9D600ED074A /* ServerTool.c in Sources */,
 				750B00BF1EA4F99D00ED074A /* AppDelegate.m in Sources */,
 				750B00FA1EA4F9D600ED074A /* create_socket.c in Sources */,
@@ -2362,6 +2373,7 @@
 				750B00FB1EA4F9D600ED074A /* handle_client.c in Sources */,
 				750B00FC1EA4F9D600ED074A /* lhttp.c in Sources */,
 				750B00BC1EA4F99D00ED074A /* main.m in Sources */,
+				4074D7BD1EB2DC26003F8D1D /* FileList.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
