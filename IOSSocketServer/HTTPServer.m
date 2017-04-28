@@ -14,6 +14,10 @@
 #import <unistd.h>
 #import <ifaddrs.h>
 
+/*
+    sprintf(buff, "HTTP/1.1 404 \r\nServer: my lhttp server\r\nContent-Type: text/html\r\nContent-Length: %d\r\n\r\n%s", (int)strlen("<html><h1>Not Found</h1></html>"), "<html><h1>Not Found</h1></html>");
+ */
+
 @interface HTTPServer ()
 
 @property (nonatomic,assign) BOOL severStart;
@@ -44,7 +48,7 @@
     memset(&serverSocket, 0, sizeof(serverSocket));
     
     serverSocket.sin_family = AF_INET;
-    serverSocket.sin_port = htons(9090);
+    serverSocket.sin_port = htons(9000);
     //serverSocket.sin_addr.s_addr = inet_addr("192.168.1.5");
     int flag = bind(self.serverDecriper,(const struct sockaddr *)&serverSocket, sizeof(serverSocket));
     
@@ -80,7 +84,10 @@
         }
         char buff[1024];
         sprintf(buff, "HTTP/1.1 404 \r\nServer: my lhttp server\r\nContent-Type: text/html\r\nContent-Length: %d\r\n\r\n%s", (int)strlen("<html><h1>Not Found</h1></html>"), "<html><h1>Not Found</h1></html>");
-        send(clientFileDescriper, buff, strlen(buff), 0);
+             // sprintf(buff, "HTTP/1.1 404 \r\nServer: my lhttp server\r\n Content-Type: text/html\r\n Content-Length: %d\r\n\r\n%s", (int)strlen("<html><h1>Not Found</h1><table><tr><th></th></tr></table></html>"), "<html><h1>Not Found</h1></html>");
+        //send(clientFileDescriper, buff, strlen(buff), 0);
+             
+             
         send(clientFileDescriper,buff,sizeof(buff), 0);
         
         NSLog(@"接收成功 %d，client IP：%zd", clientFileDescriper, clientAddress);

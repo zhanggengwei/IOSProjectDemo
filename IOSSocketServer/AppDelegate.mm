@@ -17,7 +17,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    char filepath[] = "/Users/donald/Desktop/未命名文件夹 2"; //. 
+    char filepath[] = "/Users/donald/Desktop/js"; //.
     NSLog(@"%@",NSHomeDirectory());
     FileObject obj = FileObject(filepath);
     //obj.description();
