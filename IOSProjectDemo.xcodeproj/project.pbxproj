@@ -1790,6 +1790,7 @@
 					};
 					75127A811EAE39E50074143C = {
 						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = X3Q9DS4CWY;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 75127A5E1EAE39E50074143C;
 					};
@@ -3287,6 +3288,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				DEVELOPMENT_TEAM = X3Q9DS4CWY;
 				INFOPLIST_FILE = WebViewDemoUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -3300,6 +3302,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				DEVELOPMENT_TEAM = X3Q9DS4CWY;
 				INFOPLIST_FILE = WebViewDemoUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
