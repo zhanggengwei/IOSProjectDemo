@@ -12,6 +12,11 @@
 #include <dirent.h>
 #include <unistd.h>
 #include <string.h>
+#include <errno.h>
+#define MAX_PATH 512
+long long print_file_info(char *pathname,long long * size);
+void dir_order(char *pathname,long long * size);
+
 FileObject::FileObject(char * filePath)
 {
     
@@ -125,7 +130,57 @@ void FileObject::DirectonarySize(char * filePath,long long * filesize)
 void  FileObject::printDirectonaryList(char * path)
 {
  
+    //DIR  FILE direntn
+    long long size = 0;
+    dir_order(path,&size);
+    printf("size == %lld",size);
     
+    
+    
+}
+
+void dir_order(char *pathname,long long * size)
+{
+    DIR *dfd;
+    char name[MAX_PATH];
+    struct dirent *dp;
+    if ((dfd = opendir(pathname)) == NULL)
+    {
+        printf("dir_order: can't open %s\n %s", pathname,strerror(errno));
+        return;
+    }
+    while ((dp = readdir(dfd)) != NULL)
+    {
+        if (strncmp(dp->d_name, ".", 1) == 0)
+            continue; /* 跳过当前目录和上一层目录以及隐藏文件*/
+        if (strlen(pathname) + strlen(dp->d_name) + 2 > sizeof(name))
+        {
+            printf("dir_order: name %s %s too long\n", pathname, dp->d_name);
+        } else
+        {
+            memset(name, 0, sizeof(name));
+            sprintf(name, "%s/%s", pathname, dp->d_name);
+             *size += print_file_info(name,size);
+        }
+    }
+    closedir(dfd);
+    
+}
+long long print_file_info(char *pathname,long long * size)
+{
+    struct stat filestat;
+    if (stat(pathname, &filestat) == -1)
+    {
+        printf("cannot access the file %s", pathname);
+        return 0;
         
+    }
+    if ((filestat.st_mode & S_IFMT) == S_IFDIR)
+    {
+        dir_order(pathname,size);//
+    }
+    printf("%s %lld\n", pathname, filestat.st_size);
+    return filestat.st_size;
+    
     
 }
