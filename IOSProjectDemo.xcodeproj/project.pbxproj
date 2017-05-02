@@ -113,6 +113,12 @@
 		4074D7D31EB82492003F8D1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4074D7D11EB82492003F8D1D /* Main.storyboard */; };
 		4074D7D51EB82492003F8D1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4074D7D41EB82492003F8D1D /* Assets.xcassets */; };
 		4074D7D81EB82492003F8D1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4074D7D61EB82492003F8D1D /* LaunchScreen.storyboard */; };
+		4074D7FD1EB853AD003F8D1D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4074D7FC1EB853AD003F8D1D /* main.m */; };
+		4074D8001EB853AD003F8D1D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4074D7FF1EB853AD003F8D1D /* AppDelegate.m */; };
+		4074D8031EB853AD003F8D1D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4074D8021EB853AD003F8D1D /* ViewController.m */; };
+		4074D8061EB853AD003F8D1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4074D8041EB853AD003F8D1D /* Main.storyboard */; };
+		4074D8081EB853AD003F8D1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4074D8071EB853AD003F8D1D /* Assets.xcassets */; };
+		4074D80B1EB853AD003F8D1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4074D8091EB853AD003F8D1D /* LaunchScreen.storyboard */; };
 		40A276D01E9E29C700421E5A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A276CF1E9E29C700421E5A /* main.m */; };
 		40A276D31E9E29C700421E5A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A276D21E9E29C700421E5A /* AppDelegate.m */; };
 		40A276D61E9E29C700421E5A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A276D51E9E29C700421E5A /* ViewController.m */; };
@@ -409,6 +415,16 @@
 		4074D7D41EB82492003F8D1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4074D7D71EB82492003F8D1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4074D7D91EB82492003F8D1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4074D7F91EB853AD003F8D1D /* IOSRealm-OC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOSRealm-OC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4074D7FC1EB853AD003F8D1D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4074D7FE1EB853AD003F8D1D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4074D7FF1EB853AD003F8D1D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4074D8011EB853AD003F8D1D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4074D8021EB853AD003F8D1D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4074D8051EB853AD003F8D1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4074D8071EB853AD003F8D1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4074D80A1EB853AD003F8D1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4074D80C1EB853AD003F8D1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40A276CC1E9E29C700421E5A /* mongoose.c mongoose.h MongooseDaemon.h MongooseDaemonDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mongoose.c mongoose.h MongooseDaemon.h MongooseDaemonDemo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40A276CF1E9E29C700421E5A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		40A276D11E9E29C700421E5A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -611,6 +627,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E101AFB59727A4322C4EF170 /* libPods-IOSRealm.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4074D7F61EB853AD003F8D1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -852,6 +875,7 @@
 				40E63DA51EAF33CA00136773 /* UICollectionViewFlowLayout */,
 				40CA02941EB08957003363E9 /* TinderDemo */,
 				4074D7CC1EB82491003F8D1D /* IOSRealm */,
+				4074D7FA1EB853AD003F8D1D /* IOSRealm-OC */,
 				4059BDFF1E972C0A0067C1F3 /* Products */,
 				4059BE2D1E97892F0067C1F3 /* Frameworks */,
 				F071578F376586321FF43817 /* Pods */,
@@ -881,6 +905,7 @@
 				40E63DA41EAF33CA00136773 /* UICollectionViewFlowLayout.app */,
 				40CA02931EB08957003363E9 /* TinderDemo.app */,
 				4074D7CB1EB82491003F8D1D /* IOSRealm.app */,
+				4074D7F91EB853AD003F8D1D /* IOSRealm-OC.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1096,6 +1121,30 @@
 				4074D7D91EB82492003F8D1D /* Info.plist */,
 			);
 			path = IOSRealm;
+			sourceTree = "<group>";
+		};
+		4074D7FA1EB853AD003F8D1D /* IOSRealm-OC */ = {
+			isa = PBXGroup;
+			children = (
+				4074D7FE1EB853AD003F8D1D /* AppDelegate.h */,
+				4074D7FF1EB853AD003F8D1D /* AppDelegate.m */,
+				4074D8011EB853AD003F8D1D /* ViewController.h */,
+				4074D8021EB853AD003F8D1D /* ViewController.m */,
+				4074D8041EB853AD003F8D1D /* Main.storyboard */,
+				4074D8071EB853AD003F8D1D /* Assets.xcassets */,
+				4074D8091EB853AD003F8D1D /* LaunchScreen.storyboard */,
+				4074D80C1EB853AD003F8D1D /* Info.plist */,
+				4074D7FB1EB853AD003F8D1D /* Supporting Files */,
+			);
+			path = "IOSRealm-OC";
+			sourceTree = "<group>";
+		};
+		4074D7FB1EB853AD003F8D1D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4074D7FC1EB853AD003F8D1D /* main.m */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		40A276CD1E9E29C700421E5A /* mongoose.c mongoose.h MongooseDaemon.h MongooseDaemonDemo */ = {
@@ -1535,6 +1584,23 @@
 			productReference = 4074D7CB1EB82491003F8D1D /* IOSRealm.app */;
 			productType = "com.apple.product-type.application";
 		};
+		4074D7F81EB853AD003F8D1D /* IOSRealm-OC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4074D80D1EB853AD003F8D1D /* Build configuration list for PBXNativeTarget "IOSRealm-OC" */;
+			buildPhases = (
+				4074D7F51EB853AD003F8D1D /* Sources */,
+				4074D7F61EB853AD003F8D1D /* Frameworks */,
+				4074D7F71EB853AD003F8D1D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "IOSRealm-OC";
+			productName = "IOSRealm-OC";
+			productReference = 4074D7F91EB853AD003F8D1D /* IOSRealm-OC.app */;
+			productType = "com.apple.product-type.application";
+		};
 		40A276CB1E9E29C700421E5A /* mongoose.c mongoose.h MongooseDaemon.h MongooseDaemonDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 40A276E21E9E29C700421E5A /* Build configuration list for PBXNativeTarget "mongoose.c mongoose.h MongooseDaemon.h MongooseDaemonDemo" */;
@@ -1800,6 +1866,11 @@
 						DevelopmentTeam = R6B5BG54J2;
 						ProvisioningStyle = Automatic;
 					};
+					4074D7F81EB853AD003F8D1D = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = R6B5BG54J2;
+						ProvisioningStyle = Automatic;
+					};
 					40A276CB1E9E29C700421E5A = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = R6B5BG54J2;
@@ -1896,6 +1967,7 @@
 				40E63DA31EAF33CA00136773 /* UICollectionViewFlowLayout */,
 				40CA02921EB08957003363E9 /* TinderDemo */,
 				4074D7CA1EB82491003F8D1D /* IOSRealm */,
+				4074D7F81EB853AD003F8D1D /* IOSRealm-OC */,
 			);
 		};
 /* End PBXProject section */
@@ -1984,6 +2056,16 @@
 				4074D7D81EB82492003F8D1D /* LaunchScreen.storyboard in Resources */,
 				4074D7D51EB82492003F8D1D /* Assets.xcassets in Resources */,
 				4074D7D31EB82492003F8D1D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4074D7F71EB853AD003F8D1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4074D80B1EB853AD003F8D1D /* LaunchScreen.storyboard in Resources */,
+				4074D8081EB853AD003F8D1D /* Assets.xcassets in Resources */,
+				4074D8061EB853AD003F8D1D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2413,6 +2495,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4074D7F51EB853AD003F8D1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4074D8031EB853AD003F8D1D /* ViewController.m in Sources */,
+				4074D8001EB853AD003F8D1D /* AppDelegate.m in Sources */,
+				4074D7FD1EB853AD003F8D1D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		40A276C81E9E29C700421E5A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2700,6 +2792,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				4074D7D71EB82492003F8D1D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		4074D8041EB853AD003F8D1D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4074D8051EB853AD003F8D1D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4074D8091EB853AD003F8D1D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4074D80A1EB853AD003F8D1D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -3158,6 +3266,32 @@
 			};
 			name = Release;
 		};
+		4074D80E1EB853AD003F8D1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = R6B5BG54J2;
+				INFOPLIST_FILE = "IOSRealm-OC/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.popoteam.demo.IOSRealm-OC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4074D80F1EB853AD003F8D1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = R6B5BG54J2;
+				INFOPLIST_FILE = "IOSRealm-OC/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.popoteam.demo.IOSRealm-OC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		40A276E01E9E29C700421E5A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -3576,6 +3710,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		4074D80D1EB853AD003F8D1D /* Build configuration list for PBXNativeTarget "IOSRealm-OC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4074D80E1EB853AD003F8D1D /* Debug */,
+				4074D80F1EB853AD003F8D1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		40A276E21E9E29C700421E5A /* Build configuration list for PBXNativeTarget "mongoose.c mongoose.h MongooseDaemon.h MongooseDaemonDemo" */ = {
 			isa = XCConfigurationList;

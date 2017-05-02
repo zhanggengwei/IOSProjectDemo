@@ -57,3 +57,6 @@ end
 target 'IOSRealm' do
 end
 
+target 'IOSRealm-OC' do
+end
+
