@@ -119,6 +119,7 @@
 		4074D8061EB853AD003F8D1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4074D8041EB853AD003F8D1D /* Main.storyboard */; };
 		4074D8081EB853AD003F8D1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4074D8071EB853AD003F8D1D /* Assets.xcassets */; };
 		4074D80B1EB853AD003F8D1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4074D8091EB853AD003F8D1D /* LaunchScreen.storyboard */; };
+		4074D8121EB881CD003F8D1D /* HTTPRequestInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4074D8101EB881CD003F8D1D /* HTTPRequestInfo.cpp */; };
 		40A276D01E9E29C700421E5A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A276CF1E9E29C700421E5A /* main.m */; };
 		40A276D31E9E29C700421E5A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A276D21E9E29C700421E5A /* AppDelegate.m */; };
 		40A276D61E9E29C700421E5A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A276D51E9E29C700421E5A /* ViewController.m */; };
@@ -425,6 +426,8 @@
 		4074D8071EB853AD003F8D1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4074D80A1EB853AD003F8D1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4074D80C1EB853AD003F8D1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4074D8101EB881CD003F8D1D /* HTTPRequestInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HTTPRequestInfo.cpp; sourceTree = "<group>"; };
+		4074D8111EB881CD003F8D1D /* HTTPRequestInfo.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = HTTPRequestInfo.hpp; sourceTree = "<group>"; };
 		40A276CC1E9E29C700421E5A /* mongoose.c mongoose.h MongooseDaemon.h MongooseDaemonDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mongoose.c mongoose.h MongooseDaemon.h MongooseDaemonDemo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40A276CF1E9E29C700421E5A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		40A276D11E9E29C700421E5A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -1362,6 +1365,8 @@
 				750B00BA1EA4F99D00ED074A /* Supporting Files */,
 				4074D7BB1EB2DC26003F8D1D /* FileList.mm */,
 				4074D7BC1EB2DC26003F8D1D /* FileList.hpp */,
+				4074D8101EB881CD003F8D1D /* HTTPRequestInfo.cpp */,
+				4074D8111EB881CD003F8D1D /* HTTPRequestInfo.hpp */,
 			);
 			path = IOSSocketServer;
 			sourceTree = "<group>";
@@ -2597,6 +2602,7 @@
 				750B00F91EA4F9D600ED074A /* HTTPServer.m in Sources */,
 				750B00FB1EA4F9D600ED074A /* handle_client.c in Sources */,
 				750B00FC1EA4F9D600ED074A /* lhttp.c in Sources */,
+				4074D8121EB881CD003F8D1D /* HTTPRequestInfo.cpp in Sources */,
 				750B00BC1EA4F99D00ED074A /* main.m in Sources */,
 				4074D7BD1EB2DC26003F8D1D /* FileList.mm in Sources */,
 			);
@@ -3718,6 +3724,7 @@
 				4074D80F1EB853AD003F8D1D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		40A276E21E9E29C700421E5A /* Build configuration list for PBXNativeTarget "mongoose.c mongoose.h MongooseDaemon.h MongooseDaemonDemo" */ = {
 			isa = XCConfigurationList;

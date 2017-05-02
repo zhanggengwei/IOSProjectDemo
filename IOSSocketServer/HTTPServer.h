@@ -9,5 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface HTTPServer : NSObject
+
 - (void)startPort:(NSString *)port;
+
 @end
