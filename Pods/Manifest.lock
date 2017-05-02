@@ -57,6 +57,9 @@ PODS:
   - ODRefreshControl (1.2)
   - PinYin4Objc (1.1.1)
   - pop (1.0.9)
+  - Realm (2.6.2):
+    - Realm/Headers (= 2.6.2)
+  - Realm/Headers (2.6.2)
   - RongCloudIM (2.8.9):
     - RongCloudIM/CallKit (= 2.8.9)
     - RongCloudIM/CallLib (= 2.8.9)
@@ -118,6 +121,7 @@ DEPENDENCIES:
   - ODRefreshControl (~> 1.2)
   - PinYin4Objc (~> 1.1.1)
   - pop (~> 1.0.9)
+  - Realm
   - RongCloudIM (~> 2.8.9)
   - SDWebImage (~> 3.7.1)
   - SFHFKeychainUtils (~> 0.0.1)
@@ -151,6 +155,7 @@ SPEC CHECKSUMS:
   ODRefreshControl: 907e6149d72dde488d5917ccfabee5bd8d711a20
   PinYin4Objc: 3fa9673610368330e2dfb688b1d19a35c3930a78
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
+  Realm: 29222766425b9f831228f81b63f0e38a97a4d700
   RongCloudIM: 3ba011d67e5794d66b9723c7160fe1c6fdb9899f
   SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
   SFHFKeychainUtils: 9576b411a79a058f4d5381ace6f3242b9a62e664
@@ -162,6 +167,6 @@ SPEC CHECKSUMS:
   ZXingObjC: bf15b3814f7a105b6d99f47da2333c93a063650a
   ZYCornerRadius: f0af817be7805b5c63d793042ca7a03f81e14069
 
-PODFILE CHECKSUM: 8d86b0cf9e7f0364011e5ea5d39b0f8a09ec6255
+PODFILE CHECKSUM: 7c1aaf4e06bf4083aff29894cec8ac4c7bbbb890
 
 COCOAPODS: 1.0.1

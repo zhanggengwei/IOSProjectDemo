@@ -108,6 +108,11 @@
 		4059BEC71E9DF58B0067C1F3 /* SGWiFiUpload.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4059BEC61E9DF58B0067C1F3 /* SGWiFiUpload.bundle */; };
 		4074D7BD1EB2DC26003F8D1D /* FileList.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4074D7BB1EB2DC26003F8D1D /* FileList.mm */; };
 		4074D7C31EB2DDEB003F8D1D /* FileObject.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4074D7C11EB2DDEB003F8D1D /* FileObject.mm */; };
+		4074D7CE1EB82491003F8D1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4074D7CD1EB82491003F8D1D /* AppDelegate.swift */; };
+		4074D7D01EB82492003F8D1D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4074D7CF1EB82492003F8D1D /* ViewController.swift */; };
+		4074D7D31EB82492003F8D1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4074D7D11EB82492003F8D1D /* Main.storyboard */; };
+		4074D7D51EB82492003F8D1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4074D7D41EB82492003F8D1D /* Assets.xcassets */; };
+		4074D7D81EB82492003F8D1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4074D7D61EB82492003F8D1D /* LaunchScreen.storyboard */; };
 		40A276D01E9E29C700421E5A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A276CF1E9E29C700421E5A /* main.m */; };
 		40A276D31E9E29C700421E5A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A276D21E9E29C700421E5A /* AppDelegate.m */; };
 		40A276D61E9E29C700421E5A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A276D51E9E29C700421E5A /* ViewController.m */; };
@@ -188,6 +193,7 @@
 		75127A711EAE39E50074143C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75127A6F1EAE39E50074143C /* LaunchScreen.storyboard */; };
 		75127A931EAE3A280074143C /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 75127A921EAE3A280074143C /* index.html */; };
 		75127A991EAE5EE30074143C /* WKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75127A981EAE5EE30074143C /* WKWebViewController.m */; };
+		E101AFB59727A4322C4EF170 /* libPods-IOSRealm.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3558360346F2A65693C95CD4 /* libPods-IOSRealm.a */; };
 		FD98DA538BF055E77D793337 /* libPods-UICollectionViewFlowLayout.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33289B72BF352F7B01A8E128 /* libPods-UICollectionViewFlowLayout.a */; };
 		FF63C56809F689E363C324A8 /* libPods-IOSCoreText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C66CEBBA9ED31E70FCFCB09 /* libPods-IOSCoreText.a */; };
 /* End PBXBuildFile section */
@@ -227,6 +233,7 @@
 		1185BB74CCFB3F9C4AFC7DBB /* Pods-WifiUploadDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WifiUploadDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-WifiUploadDemo/Pods-WifiUploadDemo.release.xcconfig"; sourceTree = "<group>"; };
 		12D43C8C8507263FDC167B9F /* Pods-WifiUploadDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WifiUploadDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WifiUploadDemo/Pods-WifiUploadDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		33289B72BF352F7B01A8E128 /* libPods-UICollectionViewFlowLayout.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UICollectionViewFlowLayout.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3558360346F2A65693C95CD4 /* libPods-IOSRealm.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IOSRealm.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C66CEBBA9ED31E70FCFCB09 /* libPods-IOSCoreText.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IOSCoreText.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4024B9E41EB18C4D00968A33 /* tinder-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tinder-2.png"; sourceTree = "<group>"; };
 		4024B9E51EB18C4D00968A33 /* tinder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tinder.png; sourceTree = "<group>"; };
@@ -395,6 +402,13 @@
 		4074D7BC1EB2DC26003F8D1D /* FileList.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FileList.hpp; sourceTree = "<group>"; };
 		4074D7C11EB2DDEB003F8D1D /* FileObject.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FileObject.mm; sourceTree = "<group>"; };
 		4074D7C21EB2DDEB003F8D1D /* FileObject.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FileObject.hpp; sourceTree = "<group>"; };
+		4074D7CB1EB82491003F8D1D /* IOSRealm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSRealm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4074D7CD1EB82491003F8D1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4074D7CF1EB82492003F8D1D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4074D7D21EB82492003F8D1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4074D7D41EB82492003F8D1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4074D7D71EB82492003F8D1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4074D7D91EB82492003F8D1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40A276CC1E9E29C700421E5A /* mongoose.c mongoose.h MongooseDaemon.h MongooseDaemonDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mongoose.c mongoose.h MongooseDaemon.h MongooseDaemonDemo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40A276CF1E9E29C700421E5A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		40A276D11E9E29C700421E5A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -492,8 +506,10 @@
 		40E63DC71EB03D4600136773 /* JKRShopCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKRShopCell.h; sourceTree = "<group>"; };
 		40E63DC81EB03D4600136773 /* JKRShopCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKRShopCell.m; sourceTree = "<group>"; };
 		40E63DC91EB03D4600136773 /* JKRShopCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JKRShopCell.xib; sourceTree = "<group>"; };
+		4F42370D3938F1D6EDD5297E /* Pods-IOSRealm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSRealm.release.xcconfig"; path = "Pods/Target Support Files/Pods-IOSRealm/Pods-IOSRealm.release.xcconfig"; sourceTree = "<group>"; };
 		53DA42DF7B329D8DF1F5D79B /* libPods-WifiUploadDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WifiUploadDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FF6F11B4C5E31018870632F /* Pods-UICollectionViewFlowLayout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UICollectionViewFlowLayout.release.xcconfig"; path = "Pods/Target Support Files/Pods-UICollectionViewFlowLayout/Pods-UICollectionViewFlowLayout.release.xcconfig"; sourceTree = "<group>"; };
+		7387AA9967F39237A2E069C2 /* Pods-IOSRealm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSRealm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IOSRealm/Pods-IOSRealm.debug.xcconfig"; sourceTree = "<group>"; };
 		750B00B81EA4F99D00ED074A /* IOSSocketServer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSSocketServer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		750B00BB1EA4F99D00ED074A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		750B00BD1EA4F99D00ED074A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -587,6 +603,14 @@
 			files = (
 				4059BE711E9CD37E0067C1F3 /* CFNetwork.framework in Frameworks */,
 				3BEF6FC7D9FC2646019967B2 /* libPods-WifiUploadDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4074D7C81EB82491003F8D1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E101AFB59727A4322C4EF170 /* libPods-IOSRealm.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -827,6 +851,7 @@
 				40E63D821EAF1E5100136773 /* IOSCoreText */,
 				40E63DA51EAF33CA00136773 /* UICollectionViewFlowLayout */,
 				40CA02941EB08957003363E9 /* TinderDemo */,
+				4074D7CC1EB82491003F8D1D /* IOSRealm */,
 				4059BDFF1E972C0A0067C1F3 /* Products */,
 				4059BE2D1E97892F0067C1F3 /* Frameworks */,
 				F071578F376586321FF43817 /* Pods */,
@@ -855,6 +880,7 @@
 				40E63D811EAF1E5000136773 /* IOSCoreText.app */,
 				40E63DA41EAF33CA00136773 /* UICollectionViewFlowLayout.app */,
 				40CA02931EB08957003363E9 /* TinderDemo.app */,
+				4074D7CB1EB82491003F8D1D /* IOSRealm.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -915,6 +941,7 @@
 				53DA42DF7B329D8DF1F5D79B /* libPods-WifiUploadDemo.a */,
 				3C66CEBBA9ED31E70FCFCB09 /* libPods-IOSCoreText.a */,
 				33289B72BF352F7B01A8E128 /* libPods-UICollectionViewFlowLayout.a */,
+				3558360346F2A65693C95CD4 /* libPods-IOSRealm.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1056,6 +1083,19 @@
 				4059BEBC1E9DF3B90067C1F3 /* SGWiFiView.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		4074D7CC1EB82491003F8D1D /* IOSRealm */ = {
+			isa = PBXGroup;
+			children = (
+				4074D7CD1EB82491003F8D1D /* AppDelegate.swift */,
+				4074D7CF1EB82492003F8D1D /* ViewController.swift */,
+				4074D7D11EB82492003F8D1D /* Main.storyboard */,
+				4074D7D41EB82492003F8D1D /* Assets.xcassets */,
+				4074D7D61EB82492003F8D1D /* LaunchScreen.storyboard */,
+				4074D7D91EB82492003F8D1D /* Info.plist */,
+			);
+			path = IOSRealm;
 			sourceTree = "<group>";
 		};
 		40A276CD1E9E29C700421E5A /* mongoose.c mongoose.h MongooseDaemon.h MongooseDaemonDemo */ = {
@@ -1344,6 +1384,8 @@
 				C0C6A0A4E4182E95404EAE19 /* Pods-IOSCoreText.release.xcconfig */,
 				D0FDDB57AF705162EAD2668D /* Pods-UICollectionViewFlowLayout.debug.xcconfig */,
 				5FF6F11B4C5E31018870632F /* Pods-UICollectionViewFlowLayout.release.xcconfig */,
+				7387AA9967F39237A2E069C2 /* Pods-IOSRealm.debug.xcconfig */,
+				4F42370D3938F1D6EDD5297E /* Pods-IOSRealm.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -1471,6 +1513,26 @@
 			name = WifiUploadDemo;
 			productName = WifiUploadDemo;
 			productReference = 4059BE561E9CCFEE0067C1F3 /* WifiUploadDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4074D7CA1EB82491003F8D1D /* IOSRealm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4074D7DC1EB82492003F8D1D /* Build configuration list for PBXNativeTarget "IOSRealm" */;
+			buildPhases = (
+				5E82DD9B69214726C2099CF8 /* [CP] Check Pods Manifest.lock */,
+				4074D7C71EB82491003F8D1D /* Sources */,
+				4074D7C81EB82491003F8D1D /* Frameworks */,
+				4074D7C91EB82491003F8D1D /* Resources */,
+				A82363B1C53A1970FE547D79 /* [CP] Embed Pods Frameworks */,
+				7E311BC20F349174E4D87046 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IOSRealm;
+			productName = IOSRealm;
+			productReference = 4074D7CB1EB82491003F8D1D /* IOSRealm.app */;
 			productType = "com.apple.product-type.application";
 		};
 		40A276CB1E9E29C700421E5A /* mongoose.c mongoose.h MongooseDaemon.h MongooseDaemonDemo */ = {
@@ -1733,6 +1795,11 @@
 						DevelopmentTeam = R6B5BG54J2;
 						ProvisioningStyle = Automatic;
 					};
+					4074D7CA1EB82491003F8D1D = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = R6B5BG54J2;
+						ProvisioningStyle = Automatic;
+					};
 					40A276CB1E9E29C700421E5A = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = R6B5BG54J2;
@@ -1827,6 +1894,7 @@
 				40E63D801EAF1E5000136773 /* IOSCoreText */,
 				40E63DA31EAF33CA00136773 /* UICollectionViewFlowLayout */,
 				40CA02921EB08957003363E9 /* TinderDemo */,
+				4074D7CA1EB82491003F8D1D /* IOSRealm */,
 			);
 		};
 /* End PBXProject section */
@@ -1905,6 +1973,16 @@
 				4059BEC71E9DF58B0067C1F3 /* SGWiFiUpload.bundle in Resources */,
 				4059BE651E9CCFEE0067C1F3 /* Assets.xcassets in Resources */,
 				4059BE631E9CCFEE0067C1F3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4074D7C91EB82491003F8D1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4074D7D81EB82492003F8D1D /* LaunchScreen.storyboard in Resources */,
+				4074D7D51EB82492003F8D1D /* Assets.xcassets in Resources */,
+				4074D7D31EB82492003F8D1D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2057,6 +2135,51 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5E82DD9B69214726C2099CF8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7E311BC20F349174E4D87046 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IOSRealm/Pods-IOSRealm-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A82363B1C53A1970FE547D79 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IOSRealm/Pods-IOSRealm-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B5A461628B463C7FC1909915 /* [CP] Embed Pods Frameworks */ = {
@@ -2277,6 +2400,15 @@
 				4059BEA91E9DF38E0067C1F3 /* HTTPDataResponse.m in Sources */,
 				4059BEA61E9DF38E0067C1F3 /* MultipartMessageHeader.m in Sources */,
 				4059BEA81E9DF38E0067C1F3 /* HTTPAsyncFileResponse.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4074D7C71EB82491003F8D1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4074D7D01EB82492003F8D1D /* ViewController.swift in Sources */,
+				4074D7CE1EB82491003F8D1D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2551,6 +2683,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				4059BE671E9CCFEE0067C1F3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		4074D7D11EB82492003F8D1D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4074D7D21EB82492003F8D1D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4074D7D61EB82492003F8D1D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4074D7D71EB82492003F8D1D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -2976,6 +3124,39 @@
 			};
 			name = Release;
 		};
+		4074D7DA1EB82492003F8D1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7387AA9967F39237A2E069C2 /* Pods-IOSRealm.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = R6B5BG54J2;
+				INFOPLIST_FILE = IOSRealm/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.popoteam.demo.IOSRealm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		4074D7DB1EB82492003F8D1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F42370D3938F1D6EDD5297E /* Pods-IOSRealm.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = R6B5BG54J2;
+				INFOPLIST_FILE = IOSRealm/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.popoteam.demo.IOSRealm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		40A276E01E9E29C700421E5A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -3380,6 +3561,15 @@
 			buildConfigurations = (
 				4059BE6B1E9CCFEE0067C1F3 /* Debug */,
 				4059BE6C1E9CCFEE0067C1F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4074D7DC1EB82492003F8D1D /* Build configuration list for PBXNativeTarget "IOSRealm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4074D7DA1EB82492003F8D1D /* Debug */,
+				4074D7DB1EB82492003F8D1D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

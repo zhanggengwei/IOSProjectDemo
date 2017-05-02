@@ -34,6 +34,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>IOSRealm.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>48</integer>
+		</dict>
 		<key>IOSRequestTools.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -123,6 +128,11 @@
 			<true/>
 		</dict>
 		<key>4059BE551E9CCFEE0067C1F3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4074D7CA1EB82491003F8D1D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

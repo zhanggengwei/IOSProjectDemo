@@ -44,6 +44,7 @@ pod 'ICEVersionUpdate', '~> 1.0.0'
 
 #拼音
 pod 'PinYin4Objc', '~> 1.1.1'
+pod 'Realm'
 target 'WifiUploadDemo' do
 end
 
@@ -51,5 +52,8 @@ target 'IOSCoreText' do
 end
 
 target 'UICollectionViewFlowLayout' do
+end
+
+target 'IOSRealm' do
 end
 
