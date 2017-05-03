@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05A7AF051DDC1203DE3AF2F6 /* libPods-IOSRealm-OC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC76DCEC543891B81506B8AA /* libPods-IOSRealm-OC.a */; };
 		3BEF6FC7D9FC2646019967B2 /* libPods-WifiUploadDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53DA42DF7B329D8DF1F5D79B /* libPods-WifiUploadDemo.a */; };
 		4024B9E61EB18C4D00968A33 /* tinder-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4024B9E41EB18C4D00968A33 /* tinder-2.png */; };
 		4024B9E71EB18C4D00968A33 /* tinder.png in Resources */ = {isa = PBXBuildFile; fileRef = 4024B9E51EB18C4D00968A33 /* tinder.png */; };
@@ -120,6 +121,22 @@
 		4074D8081EB853AD003F8D1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4074D8071EB853AD003F8D1D /* Assets.xcassets */; };
 		4074D80B1EB853AD003F8D1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4074D8091EB853AD003F8D1D /* LaunchScreen.storyboard */; };
 		4074D8121EB881CD003F8D1D /* HTTPRequestInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4074D8101EB881CD003F8D1D /* HTTPRequestInfo.cpp */; };
+		4074D81E1EB97F2F003F8D1D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4074D81D1EB97F2F003F8D1D /* main.m */; };
+		4074D8211EB97F2F003F8D1D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4074D8201EB97F2F003F8D1D /* AppDelegate.m */; };
+		4074D8241EB97F2F003F8D1D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4074D8231EB97F2F003F8D1D /* ViewController.m */; };
+		4074D8271EB97F2F003F8D1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4074D8251EB97F2F003F8D1D /* Main.storyboard */; };
+		4074D8291EB97F2F003F8D1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4074D8281EB97F2F003F8D1D /* Assets.xcassets */; };
+		4074D82C1EB97F2F003F8D1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4074D82A1EB97F2F003F8D1D /* LaunchScreen.storyboard */; };
+		4074D8361EB9A0D6003F8D1D /* HTTPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4074D8351EB9A0D6003F8D1D /* HTTPServer.m */; };
+		4074D8391EB9A9DF003F8D1D /* BLEServerSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 4074D8381EB9A9DF003F8D1D /* BLEServerSocket.m */; };
+		409B7F021EB9ABE300E7B9A2 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 409B7F011EB9ABE300E7B9A2 /* GCDAsyncSocket.m */; };
+		409B7F0B1EB9AE4400E7B9A2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 409B7F0A1EB9AE4400E7B9A2 /* AppDelegate.m */; };
+		409B7F0E1EB9AE4400E7B9A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 409B7F0D1EB9AE4400E7B9A2 /* main.m */; };
+		409B7F111EB9AE4400E7B9A2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 409B7F101EB9AE4400E7B9A2 /* ViewController.m */; };
+		409B7F131EB9AE4400E7B9A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 409B7F121EB9AE4400E7B9A2 /* Assets.xcassets */; };
+		409B7F161EB9AE4400E7B9A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 409B7F141EB9AE4400E7B9A2 /* Main.storyboard */; };
+		409B7F1F1EB9AE6E00E7B9A2 /* BLEServerSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 409B7F1C1EB9AE6E00E7B9A2 /* BLEServerSocket.m */; };
+		409B7F201EB9AE6E00E7B9A2 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 409B7F1E1EB9AE6E00E7B9A2 /* GCDAsyncSocket.m */; };
 		40A276D01E9E29C700421E5A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A276CF1E9E29C700421E5A /* main.m */; };
 		40A276D31E9E29C700421E5A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A276D21E9E29C700421E5A /* AppDelegate.m */; };
 		40A276D61E9E29C700421E5A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A276D51E9E29C700421E5A /* ViewController.m */; };
@@ -237,6 +254,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D3881CEDE93E592AED5FFB8 /* libPods-GCDAsyncSocketDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GCDAsyncSocketDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1185BB74CCFB3F9C4AFC7DBB /* Pods-WifiUploadDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WifiUploadDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-WifiUploadDemo/Pods-WifiUploadDemo.release.xcconfig"; sourceTree = "<group>"; };
 		12D43C8C8507263FDC167B9F /* Pods-WifiUploadDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WifiUploadDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WifiUploadDemo/Pods-WifiUploadDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		33289B72BF352F7B01A8E128 /* libPods-UICollectionViewFlowLayout.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UICollectionViewFlowLayout.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -428,6 +446,35 @@
 		4074D80C1EB853AD003F8D1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4074D8101EB881CD003F8D1D /* HTTPRequestInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HTTPRequestInfo.cpp; sourceTree = "<group>"; };
 		4074D8111EB881CD003F8D1D /* HTTPRequestInfo.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = HTTPRequestInfo.hpp; sourceTree = "<group>"; };
+		4074D81A1EB97F2F003F8D1D /* GCDAsyncSocketDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GCDAsyncSocketDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4074D81D1EB97F2F003F8D1D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4074D81F1EB97F2F003F8D1D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4074D8201EB97F2F003F8D1D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4074D8221EB97F2F003F8D1D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4074D8231EB97F2F003F8D1D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4074D8261EB97F2F003F8D1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4074D8281EB97F2F003F8D1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4074D82B1EB97F2F003F8D1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4074D82D1EB97F2F003F8D1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4074D8341EB9A0D6003F8D1D /* HTTPServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPServer.h; sourceTree = "<group>"; };
+		4074D8351EB9A0D6003F8D1D /* HTTPServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPServer.m; sourceTree = "<group>"; };
+		4074D8371EB9A9DF003F8D1D /* BLEServerSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEServerSocket.h; sourceTree = "<group>"; };
+		4074D8381EB9A9DF003F8D1D /* BLEServerSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLEServerSocket.m; sourceTree = "<group>"; };
+		409B7F001EB9ABE300E7B9A2 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		409B7F011EB9ABE300E7B9A2 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		409B7F071EB9AE4400E7B9A2 /* MAC-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MAC-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		409B7F091EB9AE4400E7B9A2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		409B7F0A1EB9AE4400E7B9A2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		409B7F0D1EB9AE4400E7B9A2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		409B7F0F1EB9AE4400E7B9A2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		409B7F101EB9AE4400E7B9A2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		409B7F121EB9AE4400E7B9A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		409B7F151EB9AE4400E7B9A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		409B7F171EB9AE4400E7B9A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		409B7F1B1EB9AE6E00E7B9A2 /* BLEServerSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEServerSocket.h; sourceTree = "<group>"; };
+		409B7F1C1EB9AE6E00E7B9A2 /* BLEServerSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLEServerSocket.m; sourceTree = "<group>"; };
+		409B7F1D1EB9AE6E00E7B9A2 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		409B7F1E1EB9AE6E00E7B9A2 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
 		40A276CC1E9E29C700421E5A /* mongoose.c mongoose.h MongooseDaemon.h MongooseDaemonDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mongoose.c mongoose.h MongooseDaemon.h MongooseDaemonDemo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40A276CF1E9E29C700421E5A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		40A276D11E9E29C700421E5A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -525,6 +572,7 @@
 		40E63DC71EB03D4600136773 /* JKRShopCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKRShopCell.h; sourceTree = "<group>"; };
 		40E63DC81EB03D4600136773 /* JKRShopCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKRShopCell.m; sourceTree = "<group>"; };
 		40E63DC91EB03D4600136773 /* JKRShopCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JKRShopCell.xib; sourceTree = "<group>"; };
+		46E09AB69E179B0032BA53C3 /* Pods-IOSRealm-OC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSRealm-OC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IOSRealm-OC/Pods-IOSRealm-OC.debug.xcconfig"; sourceTree = "<group>"; };
 		4F42370D3938F1D6EDD5297E /* Pods-IOSRealm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSRealm.release.xcconfig"; path = "Pods/Target Support Files/Pods-IOSRealm/Pods-IOSRealm.release.xcconfig"; sourceTree = "<group>"; };
 		53DA42DF7B329D8DF1F5D79B /* libPods-WifiUploadDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WifiUploadDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FF6F11B4C5E31018870632F /* Pods-UICollectionViewFlowLayout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UICollectionViewFlowLayout.release.xcconfig"; path = "Pods/Target Support Files/Pods-UICollectionViewFlowLayout/Pods-UICollectionViewFlowLayout.release.xcconfig"; sourceTree = "<group>"; };
@@ -567,6 +615,8 @@
 		75127A921EAE3A280074143C /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		75127A971EAE5EE30074143C /* WKWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebViewController.h; sourceTree = "<group>"; };
 		75127A981EAE5EE30074143C /* WKWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewController.m; sourceTree = "<group>"; };
+		8535A4AA5A6D76FDA7FCF222 /* Pods-IOSRealm-OC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSRealm-OC.release.xcconfig"; path = "Pods/Target Support Files/Pods-IOSRealm-OC/Pods-IOSRealm-OC.release.xcconfig"; sourceTree = "<group>"; };
+		AC76DCEC543891B81506B8AA /* libPods-IOSRealm-OC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IOSRealm-OC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1BFA8B5C1E3F574B2A0AD59 /* Pods-IOSCoreText.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSCoreText.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IOSCoreText/Pods-IOSCoreText.debug.xcconfig"; sourceTree = "<group>"; };
 		C0C6A0A4E4182E95404EAE19 /* Pods-IOSCoreText.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSCoreText.release.xcconfig"; path = "Pods/Target Support Files/Pods-IOSCoreText/Pods-IOSCoreText.release.xcconfig"; sourceTree = "<group>"; };
 		D0FDDB57AF705162EAD2668D /* Pods-UICollectionViewFlowLayout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UICollectionViewFlowLayout.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UICollectionViewFlowLayout/Pods-UICollectionViewFlowLayout.debug.xcconfig"; sourceTree = "<group>"; };
@@ -634,6 +684,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		4074D7F61EB853AD003F8D1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05A7AF051DDC1203DE3AF2F6 /* libPods-IOSRealm-OC.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4074D8171EB97F2F003F8D1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		409B7F041EB9AE4400E7B9A2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -879,6 +944,8 @@
 				40CA02941EB08957003363E9 /* TinderDemo */,
 				4074D7CC1EB82491003F8D1D /* IOSRealm */,
 				4074D7FA1EB853AD003F8D1D /* IOSRealm-OC */,
+				4074D81B1EB97F2F003F8D1D /* GCDAsyncSocketDemo */,
+				409B7F081EB9AE4400E7B9A2 /* MAC-App */,
 				4059BDFF1E972C0A0067C1F3 /* Products */,
 				4059BE2D1E97892F0067C1F3 /* Frameworks */,
 				F071578F376586321FF43817 /* Pods */,
@@ -909,6 +976,8 @@
 				40CA02931EB08957003363E9 /* TinderDemo.app */,
 				4074D7CB1EB82491003F8D1D /* IOSRealm.app */,
 				4074D7F91EB853AD003F8D1D /* IOSRealm-OC.app */,
+				4074D81A1EB97F2F003F8D1D /* GCDAsyncSocketDemo.app */,
+				409B7F071EB9AE4400E7B9A2 /* MAC-App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -970,6 +1039,8 @@
 				3C66CEBBA9ED31E70FCFCB09 /* libPods-IOSCoreText.a */,
 				33289B72BF352F7B01A8E128 /* libPods-UICollectionViewFlowLayout.a */,
 				3558360346F2A65693C95CD4 /* libPods-IOSRealm.a */,
+				0D3881CEDE93E592AED5FFB8 /* libPods-GCDAsyncSocketDemo.a */,
+				AC76DCEC543891B81506B8AA /* libPods-IOSRealm-OC.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1146,6 +1217,63 @@
 			isa = PBXGroup;
 			children = (
 				4074D7FC1EB853AD003F8D1D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4074D81B1EB97F2F003F8D1D /* GCDAsyncSocketDemo */ = {
+			isa = PBXGroup;
+			children = (
+				409B7F001EB9ABE300E7B9A2 /* GCDAsyncSocket.h */,
+				409B7F011EB9ABE300E7B9A2 /* GCDAsyncSocket.m */,
+				4074D8371EB9A9DF003F8D1D /* BLEServerSocket.h */,
+				4074D8381EB9A9DF003F8D1D /* BLEServerSocket.m */,
+				4074D81F1EB97F2F003F8D1D /* AppDelegate.h */,
+				4074D8201EB97F2F003F8D1D /* AppDelegate.m */,
+				4074D8221EB97F2F003F8D1D /* ViewController.h */,
+				4074D8231EB97F2F003F8D1D /* ViewController.m */,
+				4074D8251EB97F2F003F8D1D /* Main.storyboard */,
+				4074D8281EB97F2F003F8D1D /* Assets.xcassets */,
+				4074D82A1EB97F2F003F8D1D /* LaunchScreen.storyboard */,
+				4074D82D1EB97F2F003F8D1D /* Info.plist */,
+				4074D81C1EB97F2F003F8D1D /* Supporting Files */,
+				4074D8341EB9A0D6003F8D1D /* HTTPServer.h */,
+				4074D8351EB9A0D6003F8D1D /* HTTPServer.m */,
+			);
+			path = GCDAsyncSocketDemo;
+			sourceTree = "<group>";
+		};
+		4074D81C1EB97F2F003F8D1D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4074D81D1EB97F2F003F8D1D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		409B7F081EB9AE4400E7B9A2 /* MAC-App */ = {
+			isa = PBXGroup;
+			children = (
+				409B7F1B1EB9AE6E00E7B9A2 /* BLEServerSocket.h */,
+				409B7F1C1EB9AE6E00E7B9A2 /* BLEServerSocket.m */,
+				409B7F1D1EB9AE6E00E7B9A2 /* GCDAsyncSocket.h */,
+				409B7F1E1EB9AE6E00E7B9A2 /* GCDAsyncSocket.m */,
+				409B7F091EB9AE4400E7B9A2 /* AppDelegate.h */,
+				409B7F0A1EB9AE4400E7B9A2 /* AppDelegate.m */,
+				409B7F0F1EB9AE4400E7B9A2 /* ViewController.h */,
+				409B7F101EB9AE4400E7B9A2 /* ViewController.m */,
+				409B7F121EB9AE4400E7B9A2 /* Assets.xcassets */,
+				409B7F141EB9AE4400E7B9A2 /* Main.storyboard */,
+				409B7F171EB9AE4400E7B9A2 /* Info.plist */,
+				409B7F0C1EB9AE4400E7B9A2 /* Supporting Files */,
+			);
+			path = "MAC-App";
+			sourceTree = "<group>";
+		};
+		409B7F0C1EB9AE4400E7B9A2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				409B7F0D1EB9AE4400E7B9A2 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -1440,6 +1568,8 @@
 				5FF6F11B4C5E31018870632F /* Pods-UICollectionViewFlowLayout.release.xcconfig */,
 				7387AA9967F39237A2E069C2 /* Pods-IOSRealm.debug.xcconfig */,
 				4F42370D3938F1D6EDD5297E /* Pods-IOSRealm.release.xcconfig */,
+				46E09AB69E179B0032BA53C3 /* Pods-IOSRealm-OC.debug.xcconfig */,
+				8535A4AA5A6D76FDA7FCF222 /* Pods-IOSRealm-OC.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -1593,9 +1723,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4074D80D1EB853AD003F8D1D /* Build configuration list for PBXNativeTarget "IOSRealm-OC" */;
 			buildPhases = (
+				0F9A98FE8CB036C4E3E04BE5 /* [CP] Check Pods Manifest.lock */,
 				4074D7F51EB853AD003F8D1D /* Sources */,
 				4074D7F61EB853AD003F8D1D /* Frameworks */,
 				4074D7F71EB853AD003F8D1D /* Resources */,
+				20A25BDD805DFEBDAA073E5F /* [CP] Embed Pods Frameworks */,
+				7601B4585546E1127919C022 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1604,6 +1737,40 @@
 			name = "IOSRealm-OC";
 			productName = "IOSRealm-OC";
 			productReference = 4074D7F91EB853AD003F8D1D /* IOSRealm-OC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4074D8191EB97F2F003F8D1D /* GCDAsyncSocketDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4074D82E1EB97F2F003F8D1D /* Build configuration list for PBXNativeTarget "GCDAsyncSocketDemo" */;
+			buildPhases = (
+				4074D8161EB97F2F003F8D1D /* Sources */,
+				4074D8171EB97F2F003F8D1D /* Frameworks */,
+				4074D8181EB97F2F003F8D1D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GCDAsyncSocketDemo;
+			productName = GCDAsyncSocketDemo;
+			productReference = 4074D81A1EB97F2F003F8D1D /* GCDAsyncSocketDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		409B7F061EB9AE4400E7B9A2 /* MAC-App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 409B7F181EB9AE4400E7B9A2 /* Build configuration list for PBXNativeTarget "MAC-App" */;
+			buildPhases = (
+				409B7F031EB9AE4400E7B9A2 /* Sources */,
+				409B7F041EB9AE4400E7B9A2 /* Frameworks */,
+				409B7F051EB9AE4400E7B9A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MAC-App";
+			productName = "MAC-App";
+			productReference = 409B7F071EB9AE4400E7B9A2 /* MAC-App.app */;
 			productType = "com.apple.product-type.application";
 		};
 		40A276CB1E9E29C700421E5A /* mongoose.c mongoose.h MongooseDaemon.h MongooseDaemonDemo */ = {
@@ -1876,6 +2043,16 @@
 						DevelopmentTeam = R6B5BG54J2;
 						ProvisioningStyle = Automatic;
 					};
+					4074D8191EB97F2F003F8D1D = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = R6B5BG54J2;
+						ProvisioningStyle = Automatic;
+					};
+					409B7F061EB9AE4400E7B9A2 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = R6B5BG54J2;
+						ProvisioningStyle = Automatic;
+					};
 					40A276CB1E9E29C700421E5A = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = R6B5BG54J2;
@@ -1973,6 +2150,8 @@
 				40CA02921EB08957003363E9 /* TinderDemo */,
 				4074D7CA1EB82491003F8D1D /* IOSRealm */,
 				4074D7F81EB853AD003F8D1D /* IOSRealm-OC */,
+				4074D8191EB97F2F003F8D1D /* GCDAsyncSocketDemo */,
+				409B7F061EB9AE4400E7B9A2 /* MAC-App */,
 			);
 		};
 /* End PBXProject section */
@@ -2071,6 +2250,25 @@
 				4074D80B1EB853AD003F8D1D /* LaunchScreen.storyboard in Resources */,
 				4074D8081EB853AD003F8D1D /* Assets.xcassets in Resources */,
 				4074D8061EB853AD003F8D1D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4074D8181EB97F2F003F8D1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4074D82C1EB97F2F003F8D1D /* LaunchScreen.storyboard in Resources */,
+				4074D8291EB97F2F003F8D1D /* Assets.xcassets in Resources */,
+				4074D8271EB97F2F003F8D1D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		409B7F051EB9AE4400E7B9A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				409B7F131EB9AE4400E7B9A2 /* Assets.xcassets in Resources */,
+				409B7F161EB9AE4400E7B9A2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2195,6 +2393,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0F9A98FE8CB036C4E3E04BE5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		20A25BDD805DFEBDAA073E5F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IOSRealm-OC/Pods-IOSRealm-OC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		210C77C97CBA95E3846BF16D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -2238,6 +2466,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7601B4585546E1127919C022 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IOSRealm-OC/Pods-IOSRealm-OC-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		7E311BC20F349174E4D87046 /* [CP] Copy Pods Resources */ = {
@@ -2507,6 +2750,31 @@
 				4074D8031EB853AD003F8D1D /* ViewController.m in Sources */,
 				4074D8001EB853AD003F8D1D /* AppDelegate.m in Sources */,
 				4074D7FD1EB853AD003F8D1D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4074D8161EB97F2F003F8D1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				409B7F021EB9ABE300E7B9A2 /* GCDAsyncSocket.m in Sources */,
+				4074D8391EB9A9DF003F8D1D /* BLEServerSocket.m in Sources */,
+				4074D8241EB97F2F003F8D1D /* ViewController.m in Sources */,
+				4074D8211EB97F2F003F8D1D /* AppDelegate.m in Sources */,
+				4074D8361EB9A0D6003F8D1D /* HTTPServer.m in Sources */,
+				4074D81E1EB97F2F003F8D1D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		409B7F031EB9AE4400E7B9A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				409B7F111EB9AE4400E7B9A2 /* ViewController.m in Sources */,
+				409B7F201EB9AE6E00E7B9A2 /* GCDAsyncSocket.m in Sources */,
+				409B7F0E1EB9AE4400E7B9A2 /* main.m in Sources */,
+				409B7F0B1EB9AE4400E7B9A2 /* AppDelegate.m in Sources */,
+				409B7F1F1EB9AE6E00E7B9A2 /* BLEServerSocket.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2816,6 +3084,30 @@
 				4074D80A1EB853AD003F8D1D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		4074D8251EB97F2F003F8D1D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4074D8261EB97F2F003F8D1D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4074D82A1EB97F2F003F8D1D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4074D82B1EB97F2F003F8D1D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		409B7F141EB9AE4400E7B9A2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				409B7F151EB9AE4400E7B9A2 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		40A276D71E9E29C700421E5A /* Main.storyboard */ = {
@@ -3274,6 +3566,7 @@
 		};
 		4074D80E1EB853AD003F8D1D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46E09AB69E179B0032BA53C3 /* Pods-IOSRealm-OC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = R6B5BG54J2;
@@ -3287,6 +3580,7 @@
 		};
 		4074D80F1EB853AD003F8D1D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8535A4AA5A6D76FDA7FCF222 /* Pods-IOSRealm-OC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = R6B5BG54J2;
@@ -3295,6 +3589,64 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.popoteam.demo.IOSRealm-OC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		4074D82F1EB97F2F003F8D1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = R6B5BG54J2;
+				INFOPLIST_FILE = GCDAsyncSocketDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.popoteam.demo.GCDAsyncSocketDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4074D8301EB97F2F003F8D1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = R6B5BG54J2;
+				INFOPLIST_FILE = GCDAsyncSocketDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.popoteam.demo.GCDAsyncSocketDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		409B7F191EB9AE4400E7B9A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = R6B5BG54J2;
+				INFOPLIST_FILE = "MAC-App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.popoteam.demo.MAC-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		409B7F1A1EB9AE4400E7B9A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = R6B5BG54J2;
+				INFOPLIST_FILE = "MAC-App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.popoteam.demo.MAC-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
@@ -3725,6 +4077,23 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		4074D82E1EB97F2F003F8D1D /* Build configuration list for PBXNativeTarget "GCDAsyncSocketDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4074D82F1EB97F2F003F8D1D /* Debug */,
+				4074D8301EB97F2F003F8D1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		409B7F181EB9AE4400E7B9A2 /* Build configuration list for PBXNativeTarget "MAC-App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				409B7F191EB9AE4400E7B9A2 /* Debug */,
+				409B7F1A1EB9AE4400E7B9A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		40A276E21E9E29C700421E5A /* Build configuration list for PBXNativeTarget "mongoose.c mongoose.h MongooseDaemon.h MongooseDaemonDemo" */ = {
 			isa = XCConfigurationList;
