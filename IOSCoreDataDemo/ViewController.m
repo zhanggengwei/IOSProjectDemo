@@ -45,10 +45,11 @@
     NSArray<NSEntityDescription *> *array = [self.appdelegate.persistentContainer.viewContext executeFetchRequest:request error:&error];
     
     NSLog(@"%@",[array.firstObject class]);
-    Person * p = array.firstObject;
-    
-    NSLog(@"%@",p.password);
-    
+    for (Person *p in array)
+    {
+        NSLog(@"p.userName == %@,p.password == %@,identify == %ld",p.userName,p.password,p.identify);
+        
+    }    
     if (error) {
         NSLog(@"查询错误，错误信息：%@!",error.localizedDescription);
     }
