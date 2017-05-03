@@ -9,14 +9,17 @@
 #import "ViewController.h"
 #import "BLEServerSocket.h"
 @implementation ViewController
+{
+    BLEServerSocket *serverListen;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    BLEServerSocket *serverListen = [[BLEServerSocket alloc]init];
+    serverListen = [[BLEServerSocket alloc]init];
     [serverListen startServer];
-    NSRunLoop *runloop = [NSRunLoop mainRunLoop];
-    NSLog(@"%@",@"dfdfdf");
-    [runloop run];
+//    NSRunLoop *runloop = [NSRunLoop mainRunLoop];
+//    NSLog(@"%@",@"dfdfdf");
+//    [runloop run];
     
     NSLog(@"%s",__PRETTY_FUNCTION__);
     

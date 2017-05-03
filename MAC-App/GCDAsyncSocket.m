@@ -9,7 +9,8 @@
 //
 
 #import "GCDAsyncSocket.h"
-
+#import <objc/runtime.h>
+#import <objc/message.h>
 #if TARGET_OS_IPHONE
 #import <CFNetwork/CFNetwork.h>
 #endif
@@ -916,6 +917,7 @@ enum GCDAsyncSocketConfig
 	id userData;
 }
 
+
 - (id)init
 {
 	return [self initWithDelegate:nil delegateQueue:NULL socketQueue:NULL];
@@ -1002,6 +1004,7 @@ enum GCDAsyncSocketConfig
 
 - (void)dealloc
 {
+    NSLog(@"%s",__PRETTY_FUNCTION__);
 	LogInfo(@"%@ - %@ (start)", THIS_METHOD, self);
 	
 	// Set dealloc flag.
@@ -1040,6 +1043,7 @@ enum GCDAsyncSocketConfig
 
 - (id)delegate
 {
+    NSLog(@"%s",__PRETTY_FUNCTION__);
 	if (dispatch_get_specific(IsOnSocketQueueOrTargetQueueKey))
 	{
 		return delegate;
@@ -1058,6 +1062,7 @@ enum GCDAsyncSocketConfig
 
 - (void)setDelegate:(id)newDelegate synchronously:(BOOL)synchronously
 {
+    NSLog(@"%s",__PRETTY_FUNCTION__);
 	dispatch_block_t block = ^{
 		delegate = newDelegate;
 	};
@@ -1075,16 +1080,19 @@ enum GCDAsyncSocketConfig
 
 - (void)setDelegate:(id)newDelegate
 {
+    NSLog(@"%s",__PRETTY_FUNCTION__);
 	[self setDelegate:newDelegate synchronously:NO];
 }
 
 - (void)synchronouslySetDelegate:(id)newDelegate
 {
+    NSLog(@"%s",__PRETTY_FUNCTION__);
 	[self setDelegate:newDelegate synchronously:YES];
 }
 
 - (dispatch_queue_t)delegateQueue
 {
+    NSLog(@"%s",__PRETTY_FUNCTION__);
 	if (dispatch_get_specific(IsOnSocketQueueOrTargetQueueKey))
 	{
 		return delegateQueue;
@@ -1103,6 +1111,7 @@ enum GCDAsyncSocketConfig
 
 - (void)setDelegateQueue:(dispatch_queue_t)newDelegateQueue synchronously:(BOOL)synchronously
 {
+    NSLog(@"%s",__PRETTY_FUNCTION__);
 	dispatch_block_t block = ^{
 		
 		#if !OS_OBJECT_USE_OBJC
@@ -1126,16 +1135,19 @@ enum GCDAsyncSocketConfig
 
 - (void)setDelegateQueue:(dispatch_queue_t)newDelegateQueue
 {
+    NSLog(@"%s",__PRETTY_FUNCTION__);
 	[self setDelegateQueue:newDelegateQueue synchronously:NO];
 }
 
 - (void)synchronouslySetDelegateQueue:(dispatch_queue_t)newDelegateQueue
 {
+    NSLog(@"%s",__PRETTY_FUNCTION__);
 	[self setDelegateQueue:newDelegateQueue synchronously:YES];
 }
 
 - (void)getDelegate:(id *)delegatePtr delegateQueue:(dispatch_queue_t *)delegateQueuePtr
 {
+    NSLog(@"%s",__PRETTY_FUNCTION__);
 	if (dispatch_get_specific(IsOnSocketQueueOrTargetQueueKey))
 	{
 		if (delegatePtr) *delegatePtr = delegate;
@@ -1158,6 +1170,7 @@ enum GCDAsyncSocketConfig
 
 - (void)setDelegate:(id)newDelegate delegateQueue:(dispatch_queue_t)newDelegateQueue synchronously:(BOOL)synchronously
 {
+    NSLog(@"%s",__PRETTY_FUNCTION__);
 	dispatch_block_t block = ^{
 		
 		delegate = newDelegate;
@@ -1183,18 +1196,20 @@ enum GCDAsyncSocketConfig
 
 - (void)setDelegate:(id)newDelegate delegateQueue:(dispatch_queue_t)newDelegateQueue
 {
+    NSLog(@"%s",__PRETTY_FUNCTION__);
 	[self setDelegate:newDelegate delegateQueue:newDelegateQueue synchronously:NO];
 }
 
 - (void)synchronouslySetDelegate:(id)newDelegate delegateQueue:(dispatch_queue_t)newDelegateQueue
 {
+    NSLog(@"%s",__PRETTY_FUNCTION__);
 	[self setDelegate:newDelegate delegateQueue:newDelegateQueue synchronously:YES];
 }
 
 - (BOOL)isIPv4Enabled
 {
 	// Note: YES means kIPv4Disabled is OFF
-	
+	NSLog(@"%s",__PRETTY_FUNCTION__);
 	if (dispatch_get_specific(IsOnSocketQueueOrTargetQueueKey))
 	{
 		return ((config & kIPv4Disabled) == 0);
@@ -1213,6 +1228,7 @@ enum GCDAsyncSocketConfig
 
 - (void)setIPv4Enabled:(BOOL)flag
 {
+    NSLog(@"%s",__PRETTY_FUNCTION__);
 	// Note: YES means kIPv4Disabled is OFF
 	
 	dispatch_block_t block = ^{
@@ -1231,6 +1247,7 @@ enum GCDAsyncSocketConfig
 
 - (BOOL)isIPv6Enabled
 {
+    NSLog(@"%s",__PRETTY_FUNCTION__);
 	// Note: YES means kIPv6Disabled is OFF
 	
 	if (dispatch_get_specific(IsOnSocketQueueOrTargetQueueKey))
@@ -1251,6 +1268,7 @@ enum GCDAsyncSocketConfig
 
 - (void)setIPv6Enabled:(BOOL)flag
 {
+    NSLog(@"%s",__PRETTY_FUNCTION__);
 	// Note: YES means kIPv6Disabled is OFF
 	
 	dispatch_block_t block = ^{
@@ -1269,6 +1287,7 @@ enum GCDAsyncSocketConfig
 
 - (BOOL)isIPv4PreferredOverIPv6
 {
+    NSLog(@"%s",__PRETTY_FUNCTION__);
 	// Note: YES means kPreferIPv6 is OFF
 	
 	if (dispatch_get_specific(IsOnSocketQueueOrTargetQueueKey))
@@ -1289,6 +1308,7 @@ enum GCDAsyncSocketConfig
 
 - (void)setIPv4PreferredOverIPv6:(BOOL)flag
 {
+    NSLog(@"%s",__PRETTY_FUNCTION__);
 	// Note: YES means kPreferIPv6 is OFF
 	
 	dispatch_block_t block = ^{
@@ -1307,6 +1327,7 @@ enum GCDAsyncSocketConfig
 
 - (id)userData
 {
+    NSLog(@"%s",__PRETTY_FUNCTION__);
 	__block id result = nil;
 	
 	dispatch_block_t block = ^{
@@ -1324,6 +1345,7 @@ enum GCDAsyncSocketConfig
 
 - (void)setUserData:(id)arbitraryUserData
 {
+    NSLog(@"%s",__PRETTY_FUNCTION__);
 	dispatch_block_t block = ^{
 		
 		if (userData != arbitraryUserData)
@@ -1344,11 +1366,13 @@ enum GCDAsyncSocketConfig
 
 - (BOOL)acceptOnPort:(uint16_t)port error:(NSError **)errPtr
 {
+    NSLog(@"%s",__PRETTY_FUNCTION__);
 	return [self acceptOnInterface:nil port:port error:errPtr];
 }
 
 - (BOOL)acceptOnInterface:(NSString *)inInterface port:(uint16_t)port error:(NSError **)errPtr
 {
+    NSLog(@"%s",__PRETTY_FUNCTION__);
 	LogTrace();
 	
 	// Just in-case interface parameter is immutable.
@@ -1665,6 +1689,7 @@ enum GCDAsyncSocketConfig
 
 - (BOOL)acceptOnUrl:(NSURL *)url error:(NSError **)errPtr;
 {
+    NSLog(@"%s",__PRETTY_FUNCTION__);
 	LogTrace();
 	
 	__block BOOL result = NO;
@@ -1866,6 +1891,7 @@ enum GCDAsyncSocketConfig
 
 - (BOOL)doAccept:(int)parentSocketFD
 {
+    NSLog(@"%s",__PRETTY_FUNCTION__);
 	LogTrace();
 	
 	int socketType;
@@ -2009,6 +2035,7 @@ enum GCDAsyncSocketConfig
 **/
 - (BOOL)preConnectWithInterface:(NSString *)interface error:(NSError **)errPtr
 {
+    NSLog(@"%s",__PRETTY_FUNCTION__);
 	NSAssert(dispatch_get_specific(IsOnSocketQueueOrTargetQueueKey), @"Must be dispatched on socketQueue");
 	
 	if (delegate == nil) // Must have delegate set
@@ -2104,6 +2131,7 @@ enum GCDAsyncSocketConfig
 
 - (BOOL)preConnectWithUrl:(NSURL *)url error:(NSError **)errPtr
 {
+    NSLog(@"%s",__PRETTY_FUNCTION__);
 	NSAssert(dispatch_get_specific(IsOnSocketQueueOrTargetQueueKey), @"Must be dispatched on socketQueue");
 	
 	if (delegate == nil) // Must have delegate set
@@ -2159,6 +2187,7 @@ enum GCDAsyncSocketConfig
 
 - (BOOL)connectToHost:(NSString*)host onPort:(uint16_t)port error:(NSError **)errPtr
 {
+    NSLog(@"%s",__PRETTY_FUNCTION__);
 	return [self connectToHost:host onPort:port withTimeout:-1 error:errPtr];
 }
 
@@ -2167,6 +2196,7 @@ enum GCDAsyncSocketConfig
           withTimeout:(NSTimeInterval)timeout
                 error:(NSError **)errPtr
 {
+    NSLog(@"%s",__PRETTY_FUNCTION__);
 	return [self connectToHost:host onPort:port viaInterface:nil withTimeout:timeout error:errPtr];
 }
 
@@ -2176,6 +2206,7 @@ enum GCDAsyncSocketConfig
           withTimeout:(NSTimeInterval)timeout
                 error:(NSError **)errPtr
 {
+    NSLog(@"%s",__PRETTY_FUNCTION__);
 	LogTrace();
 	
 	// Just in case immutable objects were passed
@@ -2281,11 +2312,13 @@ enum GCDAsyncSocketConfig
 
 - (BOOL)connectToAddress:(NSData *)remoteAddr error:(NSError **)errPtr
 {
+    NSLog(@"%s",__PRETTY_FUNCTION__);
 	return [self connectToAddress:remoteAddr viaInterface:nil withTimeout:-1 error:errPtr];
 }
 
 - (BOOL)connectToAddress:(NSData *)remoteAddr withTimeout:(NSTimeInterval)timeout error:(NSError **)errPtr
 {
+    NSLog(@"%s",__PRETTY_FUNCTION__);
 	return [self connectToAddress:remoteAddr viaInterface:nil withTimeout:timeout error:errPtr];
 }
 
@@ -2294,6 +2327,7 @@ enum GCDAsyncSocketConfig
              withTimeout:(NSTimeInterval)timeout
                    error:(NSError **)errPtr
 {
+    NSLog(@"%s",__PRETTY_FUNCTION__);
 	LogTrace();
 	
 	// Just in case immutable objects were passed
@@ -2396,7 +2430,7 @@ enum GCDAsyncSocketConfig
 - (BOOL)connectToUrl:(NSURL *)url withTimeout:(NSTimeInterval)timeout error:(NSError **)errPtr;
 {
 	LogTrace();
-	
+	NSLog(@"%s",__PRETTY_FUNCTION__);
 	__block BOOL result = NO;
 	__block NSError *err = nil;
 	
@@ -2455,6 +2489,7 @@ enum GCDAsyncSocketConfig
 
 - (void)lookup:(int)aStateIndex didSucceedWithAddress4:(NSData *)address4 address6:(NSData *)address6
 {
+    NSLog(@"%s",__PRETTY_FUNCTION__);
 	LogTrace();
 	
 	NSAssert(dispatch_get_specific(IsOnSocketQueueOrTargetQueueKey), @"Must be dispatched on socketQueue");
@@ -2510,7 +2545,7 @@ enum GCDAsyncSocketConfig
 - (void)lookup:(int)aStateIndex didFail:(NSError *)error
 {
 	LogTrace();
-	
+	NSLog(@"%s",__PRETTY_FUNCTION__);
 	NSAssert(dispatch_get_specific(IsOnSocketQueueOrTargetQueueKey), @"Must be dispatched on socketQueue");
 	
 	
@@ -2530,7 +2565,7 @@ enum GCDAsyncSocketConfig
 - (BOOL)connectWithAddress4:(NSData *)address4 address6:(NSData *)address6 error:(NSError **)errPtr
 {
 	LogTrace();
-	
+	NSLog(@"%s",__PRETTY_FUNCTION__);
 	NSAssert(dispatch_get_specific(IsOnSocketQueueOrTargetQueueKey), @"Must be dispatched on socketQueue");
 	
 	LogVerbose(@"IPv4: %@:%hu", [[self class] hostFromAddress:address4], [[self class] portFromAddress:address4]);
@@ -2651,6 +2686,7 @@ enum GCDAsyncSocketConfig
 
 - (BOOL)connectWithAddressUN:(NSData *)address error:(NSError **)errPtr
 {
+    NSLog(@"%s",__PRETTY_FUNCTION__);
 	LogTrace();
 	
 	NSAssert(dispatch_get_specific(IsOnSocketQueueOrTargetQueueKey), @"Must be dispatched on socketQueue");
@@ -2732,6 +2768,7 @@ enum GCDAsyncSocketConfig
 
 - (void)didConnect:(int)aStateIndex
 {
+    NSLog(@"%s",__PRETTY_FUNCTION__);
 	LogTrace();
 	
 	NSAssert(dispatch_get_specific(IsOnSocketQueueOrTargetQueueKey), @"Must be dispatched on socketQueue");
@@ -2875,7 +2912,7 @@ enum GCDAsyncSocketConfig
 - (void)didNotConnect:(int)aStateIndex error:(NSError *)error
 {
 	LogTrace();
-	
+	NSLog(@"%s",__PRETTY_FUNCTION__);
 	NSAssert(dispatch_get_specific(IsOnSocketQueueOrTargetQueueKey), @"Must be dispatched on socketQueue");
 	
 	
@@ -2893,6 +2930,7 @@ enum GCDAsyncSocketConfig
 
 - (void)startConnectTimeout:(NSTimeInterval)timeout
 {
+    NSLog(@"%s",__PRETTY_FUNCTION__);
 	if (timeout >= 0.0)
 	{
 		connectTimer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, socketQueue);
@@ -2933,6 +2971,7 @@ enum GCDAsyncSocketConfig
 
 - (void)endConnectTimeout
 {
+    NSLog(@"%s",__PRETTY_FUNCTION__);
 	LogTrace();
 	
 	if (connectTimer)
@@ -2962,7 +3001,7 @@ enum GCDAsyncSocketConfig
 - (void)doConnectTimeout
 {
 	LogTrace();
-	
+	NSLog(@"%s",__PRETTY_FUNCTION__);
 	[self endConnectTimeout];
 	[self closeWithError:[self connectTimeoutError]];
 }
@@ -2972,7 +3011,7 @@ enum GCDAsyncSocketConfig
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 - (void)closeWithError:(NSError *)error
-{
+{NSLog(@"%s",__PRETTY_FUNCTION__);
 	LogTrace();
     NSLog(@"%s",__PRETTY_FUNCTION__);
 	NSAssert(dispatch_get_specific(IsOnSocketQueueOrTargetQueueKey), @"Must be dispatched on socketQueue");
@@ -3147,7 +3186,8 @@ enum GCDAsyncSocketConfig
 }
 
 - (void)disconnect
-{
+{NSLog(@"%s",__PRETTY_FUNCTION__);
+
 	dispatch_block_t block = ^{ @autoreleasepool {
 		
 		if (flags & kSocketStarted)
@@ -3166,6 +3206,7 @@ enum GCDAsyncSocketConfig
 
 - (void)disconnectAfterReading
 {
+    NSLog(@"%s",__PRETTY_FUNCTION__);
 	dispatch_async(socketQueue, ^{ @autoreleasepool {
 		
 		if (flags & kSocketStarted)
@@ -3178,6 +3219,7 @@ enum GCDAsyncSocketConfig
 
 - (void)disconnectAfterWriting
 {
+    NSLog(@"%s",__PRETTY_FUNCTION__);
 	dispatch_async(socketQueue, ^{ @autoreleasepool {
 		
 		if (flags & kSocketStarted)
@@ -3190,6 +3232,7 @@ enum GCDAsyncSocketConfig
 
 - (void)disconnectAfterReadingAndWriting
 {
+    NSLog(@"%s",__PRETTY_FUNCTION__);
 	dispatch_async(socketQueue, ^{ @autoreleasepool {
 		
 		if (flags & kSocketStarted)
@@ -3207,6 +3250,7 @@ enum GCDAsyncSocketConfig
 **/
 - (void)maybeClose
 {
+    NSLog(@"%s",__PRETTY_FUNCTION__);
 	NSAssert(dispatch_get_specific(IsOnSocketQueueOrTargetQueueKey), @"Must be dispatched on socketQueue");
 	
 	BOOL shouldClose = NO;
@@ -3248,6 +3292,7 @@ enum GCDAsyncSocketConfig
 
 - (NSError *)badConfigError:(NSString *)errMsg
 {
+    NSLog(@"%s",__PRETTY_FUNCTION__);
 	NSDictionary *userInfo = [NSDictionary dictionaryWithObject:errMsg forKey:NSLocalizedDescriptionKey];
 	
 	return [NSError errorWithDomain:GCDAsyncSocketErrorDomain code:GCDAsyncSocketBadConfigError userInfo:userInfo];
@@ -3255,6 +3300,7 @@ enum GCDAsyncSocketConfig
 
 - (NSError *)badParamError:(NSString *)errMsg
 {
+    NSLog(@"%s",__PRETTY_FUNCTION__);
 	NSDictionary *userInfo = [NSDictionary dictionaryWithObject:errMsg forKey:NSLocalizedDescriptionKey];
 	
 	return [NSError errorWithDomain:GCDAsyncSocketErrorDomain code:GCDAsyncSocketBadParamError userInfo:userInfo];
@@ -3262,6 +3308,7 @@ enum GCDAsyncSocketConfig
 
 + (NSError *)gaiError:(int)gai_error
 {
+    NSLog(@"%s",__PRETTY_FUNCTION__);
 	NSString *errMsg = [NSString stringWithCString:gai_strerror(gai_error) encoding:NSASCIIStringEncoding];
 	NSDictionary *userInfo = [NSDictionary dictionaryWithObject:errMsg forKey:NSLocalizedDescriptionKey];
 	
@@ -3270,6 +3317,7 @@ enum GCDAsyncSocketConfig
 
 - (NSError *)errnoErrorWithReason:(NSString *)reason
 {
+    NSLog(@"%s",__PRETTY_FUNCTION__);
 	NSString *errMsg = [NSString stringWithUTF8String:strerror(errno)];
 	NSDictionary *userInfo = [NSDictionary dictionaryWithObjectsAndKeys:errMsg, NSLocalizedDescriptionKey,
 	                                                                    reason, NSLocalizedFailureReasonErrorKey, nil];
@@ -3279,6 +3327,7 @@ enum GCDAsyncSocketConfig
 
 - (NSError *)errnoError
 {
+    NSLog(@"%s",__PRETTY_FUNCTION__);
 	NSString *errMsg = [NSString stringWithUTF8String:strerror(errno)];
 	NSDictionary *userInfo = [NSDictionary dictionaryWithObject:errMsg forKey:NSLocalizedDescriptionKey];
 	
@@ -3287,6 +3336,7 @@ enum GCDAsyncSocketConfig
 
 - (NSError *)sslError:(OSStatus)ssl_error
 {
+    NSLog(@"%s",__PRETTY_FUNCTION__);
 	NSString *msg = @"Error code definition can be found in Apple's SecureTransport.h";
 	NSDictionary *userInfo = [NSDictionary dictionaryWithObject:msg forKey:NSLocalizedRecoverySuggestionErrorKey];
 	
@@ -3295,6 +3345,7 @@ enum GCDAsyncSocketConfig
 
 - (NSError *)connectTimeoutError
 {
+    NSLog(@"%s",__PRETTY_FUNCTION__);
 	NSString *errMsg = NSLocalizedStringWithDefaultValue(@"GCDAsyncSocketConnectTimeoutError",
 	                                                     @"GCDAsyncSocket", [NSBundle mainBundle],
 	                                                     @"Attempt to connect to host timed out", nil);
