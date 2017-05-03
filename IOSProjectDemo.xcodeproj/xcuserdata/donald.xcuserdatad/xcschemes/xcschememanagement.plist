@@ -79,6 +79,11 @@
 			<key>orderHint</key>
 			<integer>8</integer>
 		</dict>
+		<key>RunLoopDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>56</integer>
+		</dict>
 		<key>TinderDemo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -173,6 +178,11 @@
 			<true/>
 		</dict>
 		<key>409B7F061EB9AE4400E7B9A2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>409B7F241EB9C92100E7B9A2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
