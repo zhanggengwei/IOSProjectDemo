@@ -2974,6 +2974,7 @@ enum GCDAsyncSocketConfig
 - (void)closeWithError:(NSError *)error
 {
 	LogTrace();
+    NSLog(@"%s",__PRETTY_FUNCTION__);
 	NSAssert(dispatch_get_specific(IsOnSocketQueueOrTargetQueueKey), @"Must be dispatched on socketQueue");
 	
 	[self endConnectTimeout];

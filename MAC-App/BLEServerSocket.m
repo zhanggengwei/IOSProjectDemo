@@ -39,6 +39,7 @@
     //创建一个服务监听对象 负责监听有没有客户端连接
     GCDAsyncSocket *serverSocket = [[GCDAsyncSocket alloc]initWithDelegate:self delegateQueue:dispatch_get_global_queue(0, 0)];
     
+    
     //绑定接口并监听
     NSError *error = nil;
     [serverSocket acceptOnPort:9090 error:&error];
@@ -110,7 +111,7 @@
     
     
     
-    [newSocket writeData:[NSData dataWithBytes:"Content-Length:100 dass" length:sizeof("Content-Length:100 dass")] withTimeout:-1 tag:0];
+    [newSocket writeData:[NSData dataWithBytes:response_str length:sizeof(response_str)] withTimeout:-1 tag:0];
     
     [newSocket readDataWithTimeout:-1 tag:0];
     
