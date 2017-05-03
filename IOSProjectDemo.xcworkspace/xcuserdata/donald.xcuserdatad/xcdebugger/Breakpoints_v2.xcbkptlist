@@ -79,38 +79,6 @@
             endingLineNumber = "3191"
             landmarkName = "-disconnect"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[GCDAsyncSocket disconnect]"
-                  moduleName = "MAC-App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/donald/Documents/IOSProjectDemo/MAC-App/GCDAsyncSocket.m"
-                  timestampString = "515489124.809067"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "3191"
-                  endingLineNumber = "3191"
-                  offsetFromSymbolStart = "68">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__28-[GCDAsyncSocket disconnect]_block_invoke"
-                  moduleName = "MAC-App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/donald/Documents/IOSProjectDemo/MAC-App/GCDAsyncSocket.m"
-                  timestampString = "515489124.812669"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "3191"
-                  endingLineNumber = "3191"
-                  offsetFromSymbolStart = "12">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -127,38 +95,6 @@
             endingLineNumber = "3210"
             landmarkName = "-disconnectAfterReading"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[GCDAsyncSocket disconnectAfterReading]"
-                  moduleName = "MAC-App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/donald/Documents/IOSProjectDemo/MAC-App/GCDAsyncSocket.m"
-                  timestampString = "515489124.82892"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "3210"
-                  endingLineNumber = "3210"
-                  offsetFromSymbolStart = "68">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__40-[GCDAsyncSocket disconnectAfterReading]_block_invoke"
-                  moduleName = "MAC-App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/donald/Documents/IOSProjectDemo/MAC-App/GCDAsyncSocket.m"
-                  timestampString = "515489124.832894"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "3210"
-                  endingLineNumber = "3210"
-                  offsetFromSymbolStart = "12">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -175,38 +111,6 @@
             endingLineNumber = "3223"
             landmarkName = "-disconnectAfterWriting"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[GCDAsyncSocket disconnectAfterWriting]"
-                  moduleName = "MAC-App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/donald/Documents/IOSProjectDemo/MAC-App/GCDAsyncSocket.m"
-                  timestampString = "515489124.840559"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "3223"
-                  endingLineNumber = "3223"
-                  offsetFromSymbolStart = "68">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__40-[GCDAsyncSocket disconnectAfterWriting]_block_invoke"
-                  moduleName = "MAC-App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/donald/Documents/IOSProjectDemo/MAC-App/GCDAsyncSocket.m"
-                  timestampString = "515489124.844478"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "3223"
-                  endingLineNumber = "3223"
-                  offsetFromSymbolStart = "12">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -223,38 +127,6 @@
             endingLineNumber = "3236"
             landmarkName = "-disconnectAfterReadingAndWriting"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[GCDAsyncSocket disconnectAfterReadingAndWriting]"
-                  moduleName = "MAC-App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/donald/Documents/IOSProjectDemo/MAC-App/GCDAsyncSocket.m"
-                  timestampString = "515489124.854779"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "3236"
-                  endingLineNumber = "3236"
-                  offsetFromSymbolStart = "68">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__50-[GCDAsyncSocket disconnectAfterReadingAndWriting]_block_invoke"
-                  moduleName = "MAC-App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/donald/Documents/IOSProjectDemo/MAC-App/GCDAsyncSocket.m"
-                  timestampString = "515489124.858392"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "3236"
-                  endingLineNumber = "3236"
-                  offsetFromSymbolStart = "12">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -382,6 +254,38 @@
             startingLineNumber = "1376"
             endingLineNumber = "1376"
             landmarkName = "-acceptOnInterface:port:error:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IOSCoreDataDemo/ViewController.m"
+            timestampString = "515497735.243889"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "-getStatusByUserName:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IOSCoreDataDemo/ViewController.m"
+            timestampString = "515497751.77689"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "-getStatusByUserName:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
