@@ -31,7 +31,7 @@
     [self.appdelegate saveContext];
     
     
-    NSLog(@"%@",[self getStatusByUserName:@""]);
+    [self getStatusByUserName:@""];
     
     // Do any additional setup after loading the view, typically from a nib.
 }
@@ -47,7 +47,7 @@
     NSLog(@"%@",[array.firstObject class]);
     Person * p = array.firstObject;
     
-
+    NSLog(@"%@",p.password);
     
     if (error) {
         NSLog(@"查询错误，错误信息：%@!",error.localizedDescription);
