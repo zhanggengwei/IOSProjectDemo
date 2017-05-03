@@ -12,7 +12,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [[BLEServerSocket new]startServer];
+    BLEServerSocket *serverListen = [[BLEServerSocket alloc]init];
+    [serverListen startServer];
+    
+    NSRunLoop *runloop = [NSRunLoop mainRunLoop];
+    [runloop run];
     
 
     // Do any additional setup after loading the view.

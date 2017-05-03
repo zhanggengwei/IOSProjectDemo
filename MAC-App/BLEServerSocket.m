@@ -99,9 +99,18 @@
     [serverStr appendString:@"[1]在线优惠\n"];
     [serverStr appendString:@"[2]在线打折\n"];
     [serverStr appendString:@"[3]在线充值\n"];
-
+    NSString * htmlString = [NSString stringWithFormat:@"HTTP/1.1 200 OK Connection: close Content-Type: text/html; charset=utf-8 %@",serverStr];
+    char response_str[1024];
     
-    [newSocket writeData:[serverStr dataUsingEncoding:NSUTF8StringEncoding]  withTimeout:-1 tag:0];
+    sprintf(response_str, "%s 200 OK\r\nDate: %s\r\nServer: my lhttp server\r\nContent-Type: %s\r\nContent-Length: %lu\r\n\r\n%s", "HTTP/1.1","2012", "text/html",100,htmlString.UTF8String);
+    
+    
+    
+    
+    
+    
+    
+    [newSocket writeData:[NSData dataWithBytes:"Content-Length:100 dass" length:sizeof("Content-Length:100 dass")] withTimeout:-1 tag:0];
     
     [newSocket readDataWithTimeout:-1 tag:0];
     
