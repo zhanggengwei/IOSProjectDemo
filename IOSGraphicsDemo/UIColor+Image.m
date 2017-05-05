@@ -98,6 +98,17 @@
     UIGraphicsEndImageContext();
     return image;
 }
++ (UIImage *)image:(UIImage *)image rotation:(UIImageOrientation)orientation
+{
+    
+    
+    
+    
+    
+    
+    return nil;
+    
+}
 
 
 @end

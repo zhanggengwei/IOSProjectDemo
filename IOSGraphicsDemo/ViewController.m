@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "UIColor+Image.h"
+#import "UIImage+Corner.h"
 @interface ViewController ()
 
 @end
@@ -17,11 +18,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     UIImageView * imageView = [UIImageView new];
-    imageView.bounds = self.view.bounds;
+    imageView.frame = self.view.bounds;
     [self.view addSubview:imageView];
     
     UIImage * image = [UIColor yellowColor].createGradientImage;
-    imageView.image = image;
+    imageView.image = [UIImage imageNamed:@"二维码.png"].cornerImage;
     
     
     // Do any additional setup after loading the view, typically from a nib.
