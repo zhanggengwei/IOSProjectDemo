@@ -112,6 +112,7 @@ DEPENDENCIES:
   - LBXAlertAction
   - LBXScan
   - MagicalRecord (~> 2.3.0)
+  - MagicalRecord (~> 2.3.2)
   - Mantle (~> 2.0.6)
   - Masonry (~> 0.6.1)
   - MBProgressHUD (= 0.8)
@@ -167,6 +168,6 @@ SPEC CHECKSUMS:
   ZXingObjC: bf15b3814f7a105b6d99f47da2333c93a063650a
   ZYCornerRadius: f0af817be7805b5c63d793042ca7a03f81e14069
 
-PODFILE CHECKSUM: 6dfe4d6e7cb58302d0433c1935da9eee15ed0c55
+PODFILE CHECKSUM: 12b1630ecb0b98011f834368cb54efe93ba0cd6b
 
 COCOAPODS: 1.0.1

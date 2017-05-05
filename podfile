@@ -24,6 +24,7 @@ pod 'IQKeyboardManager'
 pod 'MJRefresh', '~> 3.1.12'
 pod 'DACircularProgress', '~> 2.3.1'
 pod 'pop', '~> 1.0.9'
+pod 'MagicalRecord', '~> 2.3.2'
 
 #log
 #QRCode
@@ -58,6 +59,10 @@ target 'IOSRealm' do
 end
 
 target 'IOSRealm-OC' do
+end
+
+target 'IOSCoreDataDemo'do
+  
 end
 
 

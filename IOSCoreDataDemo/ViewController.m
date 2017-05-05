@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import <MagicalRecord/MagicalRecord.h>
+#import "Student.h"
 #import "AppDelegate.h"
 
 #import <CoreData/CoreData.h>
@@ -21,6 +23,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSLog(@"homeDirectonary ==%@",NSHomeDirectory());
+    
     self.appdelegate = (AppDelegate *)([UIApplication sharedApplication].delegate);
   
     
@@ -30,11 +34,30 @@
     person.userName = arc4random()%2==0?@"man":@"woman";
     [self.appdelegate saveContext];
     
+    [self delteModel:@"47"];
+    
     
     [self getStatusByUserName:@""];
     
+    [Student MR_createEntity];
+    
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
+
+- (void)delteModel:(NSString *)identify
+{
+    NSFetchRequest * request = [[NSFetchRequest alloc]initWithEntityName:@"UserBase"];
+    NSPredicate * predicate = [NSPredicate predicateWithFormat:[NSString stringWithFormat:@"identify == %ld",identify.integerValue]];
+    request.predicate = predicate;
+    
+    NSError * error = nil;
+    NSArray * arr = [self.appdelegate.persistentContainer.viewContext executeFetchRequest:request error:&error];
+    NSLog(@"%@",arr.firstObject);
+    
+    
+}
+
 - (NSArray *)getStatusByUserName:(NSString *)name {
     // 初始化查询请求
     NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"U_table"];
@@ -43,11 +66,10 @@
     // 执行对象管理上下文的查询方法
     NSError *error = nil;
     NSArray<NSEntityDescription *> *array = [self.appdelegate.persistentContainer.viewContext executeFetchRequest:request error:&error];
-    
-    NSLog(@"%@",[array.firstObject class]);
+   
     for (Person *p in array)
     {
-        NSLog(@"p.userName == %@,p.password == %@,identify == %ld",p.userName,p.password,p.identify);
+       // NSLog(@"p.userName == %@,p.password == %@,identify == %ld",p.userName,p.password,p.identify);
         
     }    
     if (error) {
