@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '2927EC48DD64A4110CB89F71B9EA0313'
+               BlueprintIdentifier = 'F2A9972DED1A745342D7595C111B4B27'
                BlueprintName = 'Pods-WifiUploadDemo'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libPods-WifiUploadDemo.a'>

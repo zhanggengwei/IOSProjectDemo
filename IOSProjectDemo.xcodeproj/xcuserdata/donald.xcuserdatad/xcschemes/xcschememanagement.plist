@@ -17,12 +17,17 @@
 		<key>FFMPegDemo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>58</integer>
+			<integer>22</integer>
 		</dict>
 		<key>GCDAsyncSocketDemo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>19</integer>
+		</dict>
+		<key>IJKPlayerDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>23</integer>
 		</dict>
 		<key>IOSC++Demo.xcscheme</key>
 		<dict>
@@ -39,10 +44,20 @@
 			<key>orderHint</key>
 			<integer>13</integer>
 		</dict>
+		<key>IOSGraphicsDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>63</integer>
+		</dict>
 		<key>IOSProjectDemo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>IOSRACProductDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>24</integer>
 		</dict>
 		<key>IOSRealm-OC.xcscheme</key>
 		<dict>
@@ -119,6 +134,11 @@
 			<key>orderHint</key>
 			<integer>12</integer>
 		</dict>
+		<key>sql-liteDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>62</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -193,6 +213,26 @@
 			<true/>
 		</dict>
 		<key>409B7F4A1EBC27B400E7B9A2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>409B7FED1EBC477200E7B9A2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>409B80081EBC483600E7B9A2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>409B80231EBC4B2300E7B9A2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>409B80401EBC511B00E7B9A2</key>
 		<dict>
 			<key>primary</key>
 			<true/>

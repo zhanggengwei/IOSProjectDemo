@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#include <Realm/Realm.h>
 @interface ViewController ()
 
 @end

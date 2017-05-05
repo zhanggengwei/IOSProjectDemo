@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '46BA4EAA9A3CBDC7CBEEC5EA73DA3D79'
+               BlueprintIdentifier = 'EFAC667B665D6F1DAF504A0610A7335F'
                BlueprintName = 'WActionSheet'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libWActionSheet.a'>
