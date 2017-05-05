@@ -14,6 +14,11 @@
 			<key>orderHint</key>
 			<integer>9</integer>
 		</dict>
+		<key>FFMPegDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>58</integer>
+		</dict>
 		<key>GCDAsyncSocketDemo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -67,7 +72,7 @@
 		<key>MAC-App.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>55</integer>
+			<integer>20</integer>
 		</dict>
 		<key>NSURLProtrocalDemo.xcscheme</key>
 		<dict>
@@ -82,7 +87,7 @@
 		<key>RunLoopDemo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>56</integer>
+			<integer>21</integer>
 		</dict>
 		<key>TinderDemo.xcscheme</key>
 		<dict>
@@ -183,6 +188,11 @@
 			<true/>
 		</dict>
 		<key>409B7F241EB9C92100E7B9A2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>409B7F4A1EBC27B400E7B9A2</key>
 		<dict>
 			<key>primary</key>
 			<true/>

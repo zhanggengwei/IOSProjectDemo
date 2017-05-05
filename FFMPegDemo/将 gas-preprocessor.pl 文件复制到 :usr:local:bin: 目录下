@@ -1,0 +1,15 @@
+将 gas-preprocessor.pl 文件复制到 /usr/local/bin/ 目录下
+文件开启可执行权限
+chmod 777 /usr/local/bin/gas-preprocessor.pl
+2、安装 yasm
+1）下载 yasm
+brew install yasm
+2）检测是否已安装 yasm
+
+brew install yasm
+
+./build-ffmpeg.sh
+3）编译一下，你会发下有错误，哈哈，原因是你没有链接编译文件
+好，我们进入 Build Setting ，修改 header search Path 链接到工程的 include 文件当中 操作如下：
+http://upload-images.jianshu.io/upload_images/1073278-1d9f3f402228e59d.png?imageMogr2/auto-orient/strip%7CimageView2/2
+
