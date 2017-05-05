@@ -124,6 +124,11 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
+		<key>dispatch_Queue.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>64</integer>
+		</dict>
 		<key>mongoose.c mongoose.h MongooseDaemon.h MongooseDaemonDemo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -233,6 +238,11 @@
 			<true/>
 		</dict>
 		<key>409B80401EBC511B00E7B9A2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>409B80631EBC77B300E7B9A2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
