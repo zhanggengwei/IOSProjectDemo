@@ -54,6 +54,11 @@
 			<key>orderHint</key>
 			<integer>63</integer>
 		</dict>
+		<key>IOSLoadingDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>68</integer>
+		</dict>
 		<key>IOSProjectDemo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -273,6 +278,11 @@
 			<true/>
 		</dict>
 		<key>409B80B61EC0209A00E7B9A2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>409B80D41EC03DB600E7B9A2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
