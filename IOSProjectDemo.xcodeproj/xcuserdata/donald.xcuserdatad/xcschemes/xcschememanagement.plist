@@ -109,6 +109,11 @@
 			<key>orderHint</key>
 			<integer>21</integer>
 		</dict>
+		<key>TableViewIndexDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>67</integer>
+		</dict>
 		<key>TianMaoCATransitaionDemo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -263,6 +268,11 @@
 			<true/>
 		</dict>
 		<key>409B809B1EC01A8100E7B9A2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>409B80B61EC0209A00E7B9A2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
