@@ -7,7 +7,7 @@
 //
 
 #import "TriangleView.h"
-
+#define PI 3.14159265358979323846
 @implementation TriangleView
 
 
@@ -23,25 +23,24 @@
 
 - (void)drawRect:(CGRect)rect {
     // Drawing code
-    [super drawRect:rect];
-    [[UIColor whiteColor] setFill];
+    
+    [[UIColor whiteColor]setFill];
     UIRectFill(rect);
-    CGContextRef ctx = UIGraphicsGetCurrentContext();
-    CGMutablePathRef path = CGPathCreateMutable();
-    
-    CGPathMoveToPoint(path, NULL,self.frame.size.width * 0.5,0);
-    CGPathAddLineToPoint(path, NULL, self.frame.size.width, self.frame.size.height);
-   
-    
-    CGPathMoveToPoint(path, NULL,self.frame.size.width,self.frame.size.height);
-    CGPathAddLineToPoint(path, NULL, 0, self.frame.size.height);
-    
-    CGPathMoveToPoint(path, NULL, 0, self.frame.size.height);
-    CGPathAddLineToPoint(path, NULL, self.frame.size.width * 0.5, 0);
-    CGPathCloseSubpath(path);
-    CGContextAddPath(ctx, path);
+    //一个不透明类型的Quartz 2D绘画环境,相当于一个画布,你可以在上面任意绘画
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    [[UIColor clearColor]setStroke];
     [[UIColor yellowColor]setFill];
-    CGContextFillPath(ctx);
+    /*画三角形*/
+    //只要三个点就行跟画一条线方式一样，把三点连接起来
+    CGPoint sPoints[3];//坐标点
+    sPoints[0] =CGPointMake(rect.size.width * 0.5,0);//坐标1
+    sPoints[1] =CGPointMake(0, rect.size.height);//坐标2
+    sPoints[2] =CGPointMake(rect.size.width, rect.size.height);//坐标3
+    CGContextAddLines(context, sPoints, 3);//添加线
+    CGContextClosePath(context);//封起来
+    CGContextDrawPath(context, kCGPathFillStroke); //根据坐标绘制路径
+    
+ 
 }
 
 @end
