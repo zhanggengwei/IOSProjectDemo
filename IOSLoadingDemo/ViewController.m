@@ -34,10 +34,40 @@
     animation.fromValue = @0;
     animation.toValue = @1;
     animation.duration = 3;
-    animation.repeatCount = 10000;
-    animation.removedOnCompletion = YES;
-    animation.fillMode = kCAFillModeForwards;
-    [layer addAnimation:animation forKey:@""];
+    
+//    animation.removedOnCompletion = YES;
+//    animation.fillMode = kCAFillModeForwards;
+   
+    
+    
+    CABasicAnimation * disanimation = [CABasicAnimation new];
+    disanimation.keyPath = @"strokeEnd";
+    disanimation.toValue = @0;
+    disanimation.duration = 3;
+    disanimation.beginTime = animation.duration;
+    
+    CAAnimationGroup * group = [CAAnimationGroup new];
+    group.animations = @[animation,disanimation];
+    group.duration = disanimation.duration + animation.duration;
+    group.repeatCount = 10000;
+    
+    
+    
+    
+    [layer addAnimation:group forKey:@""];
+    
+    CABasicAnimation * roteAnimation = [CABasicAnimation new];
+    roteAnimation.toValue = @(2*M_PI);
+    roteAnimation.keyPath = @"transform.rotation.z";
+    roteAnimation.duration = 4;
+    roteAnimation.fillMode = kCAFillModeForwards;
+    roteAnimation.autoreverses = NO;
+    roteAnimation.repeatCount = 1;
+    roteAnimation.beginTime = 10;
+    [view.layer addAnimation:roteAnimation forKey:nil];
+    
+    
+    
     
     
     

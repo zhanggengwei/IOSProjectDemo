@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>7</integer>
 		</dict>
+		<key>AvAudioDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>69</integer>
+		</dict>
 		<key>C++Tools.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -283,6 +288,11 @@
 			<true/>
 		</dict>
 		<key>409B80D41EC03DB600E7B9A2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>409B80FC1EC1C3DC00E7B9A2</key>
 		<dict>
 			<key>primary</key>
 			<true/>

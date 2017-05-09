@@ -222,6 +222,14 @@
 		409B80E41EC03DB600E7B9A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 409B80E31EC03DB600E7B9A2 /* Assets.xcassets */; };
 		409B80E71EC03DB600E7B9A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 409B80E51EC03DB600E7B9A2 /* LaunchScreen.storyboard */; };
 		409B80EE1EC03E5F00E7B9A2 /* TriangleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 409B80ED1EC03E5F00E7B9A2 /* TriangleView.m */; };
+		409B81011EC1C3DD00E7B9A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 409B81001EC1C3DD00E7B9A2 /* main.m */; };
+		409B81041EC1C3DD00E7B9A2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 409B81031EC1C3DD00E7B9A2 /* AppDelegate.m */; };
+		409B81071EC1C3DD00E7B9A2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 409B81061EC1C3DD00E7B9A2 /* ViewController.m */; };
+		409B810A1EC1C3DD00E7B9A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 409B81081EC1C3DD00E7B9A2 /* Main.storyboard */; };
+		409B810C1EC1C3DD00E7B9A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 409B810B1EC1C3DD00E7B9A2 /* Assets.xcassets */; };
+		409B810F1EC1C3DD00E7B9A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 409B810D1EC1C3DD00E7B9A2 /* LaunchScreen.storyboard */; };
+		409B81161EC1C41500E7B9A2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 409B81141EC1C41500E7B9A2 /* AVFoundation.framework */; };
+		409B81171EC1C41500E7B9A2 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 409B81151EC1C41500E7B9A2 /* AVKit.framework */; };
 		40A276D01E9E29C700421E5A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A276CF1E9E29C700421E5A /* main.m */; };
 		40A276D31E9E29C700421E5A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A276D21E9E29C700421E5A /* AppDelegate.m */; };
 		40A276D61E9E29C700421E5A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A276D51E9E29C700421E5A /* ViewController.m */; };
@@ -802,6 +810,18 @@
 		409B80E81EC03DB600E7B9A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		409B80EC1EC03E5F00E7B9A2 /* TriangleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriangleView.h; sourceTree = "<group>"; };
 		409B80ED1EC03E5F00E7B9A2 /* TriangleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriangleView.m; sourceTree = "<group>"; };
+		409B80FD1EC1C3DC00E7B9A2 /* AvAudioDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AvAudioDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		409B81001EC1C3DD00E7B9A2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		409B81021EC1C3DD00E7B9A2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		409B81031EC1C3DD00E7B9A2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		409B81051EC1C3DD00E7B9A2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		409B81061EC1C3DD00E7B9A2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		409B81091EC1C3DD00E7B9A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		409B810B1EC1C3DD00E7B9A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		409B810E1EC1C3DD00E7B9A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		409B81101EC1C3DD00E7B9A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		409B81141EC1C41500E7B9A2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		409B81151EC1C41500E7B9A2 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		40A276CC1E9E29C700421E5A /* mongoose.c mongoose.h MongooseDaemon.h MongooseDaemonDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mongoose.c mongoose.h MongooseDaemon.h MongooseDaemonDemo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40A276CF1E9E29C700421E5A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		40A276D11E9E29C700421E5A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -1124,6 +1144,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		409B80FA1EC1C3DC00E7B9A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				409B81161EC1C41500E7B9A2 /* AVFoundation.framework in Frameworks */,
+				409B81171EC1C41500E7B9A2 /* AVKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		40A276C91E9E29C700421E5A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -1380,6 +1409,7 @@
 				409B809D1EC01A8100E7B9A2 /* TianMaoCATransitaionDemo */,
 				409B80B81EC0209A00E7B9A2 /* TableViewIndexDemo */,
 				409B80D61EC03DB600E7B9A2 /* IOSLoadingDemo */,
+				409B80FE1EC1C3DD00E7B9A2 /* AvAudioDemo */,
 				4059BDFF1E972C0A0067C1F3 /* Products */,
 				4059BE2D1E97892F0067C1F3 /* Frameworks */,
 				F071578F376586321FF43817 /* Pods */,
@@ -1423,6 +1453,7 @@
 				409B809C1EC01A8100E7B9A2 /* TianMaoCATransitaionDemo.app */,
 				409B80B71EC0209A00E7B9A2 /* TableViewIndexDemo.app */,
 				409B80D51EC03DB600E7B9A2 /* IOSLoadingDemo.app */,
+				409B80FD1EC1C3DC00E7B9A2 /* AvAudioDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1478,6 +1509,8 @@
 		4059BE2D1E97892F0067C1F3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				409B81141EC1C41500E7B9A2 /* AVFoundation.framework */,
+				409B81151EC1C41500E7B9A2 /* AVKit.framework */,
 				409B803B1EBC4B5600E7B9A2 /* libsqlite3.tbd */,
 				409B7FE81EBC453200E7B9A2 /* libiconv.tbd */,
 				409B7FE61EBC452000E7B9A2 /* libz.1.2.8.tbd */,
@@ -2195,6 +2228,30 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		409B80FE1EC1C3DD00E7B9A2 /* AvAudioDemo */ = {
+			isa = PBXGroup;
+			children = (
+				409B81021EC1C3DD00E7B9A2 /* AppDelegate.h */,
+				409B81031EC1C3DD00E7B9A2 /* AppDelegate.m */,
+				409B81051EC1C3DD00E7B9A2 /* ViewController.h */,
+				409B81061EC1C3DD00E7B9A2 /* ViewController.m */,
+				409B81081EC1C3DD00E7B9A2 /* Main.storyboard */,
+				409B810B1EC1C3DD00E7B9A2 /* Assets.xcassets */,
+				409B810D1EC1C3DD00E7B9A2 /* LaunchScreen.storyboard */,
+				409B81101EC1C3DD00E7B9A2 /* Info.plist */,
+				409B80FF1EC1C3DD00E7B9A2 /* Supporting Files */,
+			);
+			path = AvAudioDemo;
+			sourceTree = "<group>";
+		};
+		409B80FF1EC1C3DD00E7B9A2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				409B81001EC1C3DD00E7B9A2 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		40A276CD1E9E29C700421E5A /* mongoose.c mongoose.h MongooseDaemon.h MongooseDaemonDemo */ = {
 			isa = PBXGroup;
 			children = (
@@ -2882,6 +2939,23 @@
 			productReference = 409B80D51EC03DB600E7B9A2 /* IOSLoadingDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
+		409B80FC1EC1C3DC00E7B9A2 /* AvAudioDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 409B81131EC1C3DD00E7B9A2 /* Build configuration list for PBXNativeTarget "AvAudioDemo" */;
+			buildPhases = (
+				409B80F91EC1C3DC00E7B9A2 /* Sources */,
+				409B80FA1EC1C3DC00E7B9A2 /* Frameworks */,
+				409B80FB1EC1C3DC00E7B9A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AvAudioDemo;
+			productName = AvAudioDemo;
+			productReference = 409B80FD1EC1C3DC00E7B9A2 /* AvAudioDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
 		40A276CB1E9E29C700421E5A /* mongoose.c mongoose.h MongooseDaemon.h MongooseDaemonDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 40A276E21E9E29C700421E5A /* Build configuration list for PBXNativeTarget "mongoose.c mongoose.h MongooseDaemon.h MongooseDaemonDemo" */;
@@ -3218,6 +3292,11 @@
 						DevelopmentTeam = R6B5BG54J2;
 						ProvisioningStyle = Automatic;
 					};
+					409B80FC1EC1C3DC00E7B9A2 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = R6B5BG54J2;
+						ProvisioningStyle = Automatic;
+					};
 					40A276CB1E9E29C700421E5A = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = R6B5BG54J2;
@@ -3328,6 +3407,7 @@
 				409B809B1EC01A8100E7B9A2 /* TianMaoCATransitaionDemo */,
 				409B80B61EC0209A00E7B9A2 /* TableViewIndexDemo */,
 				409B80D41EC03DB600E7B9A2 /* IOSLoadingDemo */,
+				409B80FC1EC1C3DC00E7B9A2 /* AvAudioDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -3557,6 +3637,16 @@
 				409B80E71EC03DB600E7B9A2 /* LaunchScreen.storyboard in Resources */,
 				409B80E41EC03DB600E7B9A2 /* Assets.xcassets in Resources */,
 				409B80E21EC03DB600E7B9A2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		409B80FB1EC1C3DC00E7B9A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				409B810F1EC1C3DD00E7B9A2 /* LaunchScreen.storyboard in Resources */,
+				409B810C1EC1C3DD00E7B9A2 /* Assets.xcassets in Resources */,
+				409B810A1EC1C3DD00E7B9A2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4227,6 +4317,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		409B80F91EC1C3DC00E7B9A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				409B81071EC1C3DD00E7B9A2 /* ViewController.m in Sources */,
+				409B81041EC1C3DD00E7B9A2 /* AppDelegate.m in Sources */,
+				409B81011EC1C3DD00E7B9A2 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		40A276C81E9E29C700421E5A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -4731,6 +4831,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				409B80E61EC03DB600E7B9A2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		409B81081EC1C3DD00E7B9A2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				409B81091EC1C3DD00E7B9A2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		409B810D1EC1C3DD00E7B9A2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				409B810E1EC1C3DD00E7B9A2 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -5575,6 +5691,32 @@
 			};
 			name = Release;
 		};
+		409B81111EC1C3DD00E7B9A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = R6B5BG54J2;
+				INFOPLIST_FILE = AvAudioDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.popoteam.demo.AvAudioDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		409B81121EC1C3DD00E7B9A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = R6B5BG54J2;
+				INFOPLIST_FILE = AvAudioDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.popoteam.demo.AvAudioDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		40A276E01E9E29C700421E5A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -6100,6 +6242,7 @@
 				409B80B11EC01A8200E7B9A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		409B80CB1EC0209B00E7B9A2 /* Build configuration list for PBXNativeTarget "TableViewIndexDemo" */ = {
 			isa = XCConfigurationList;
@@ -6108,12 +6251,22 @@
 				409B80CD1EC0209B00E7B9A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		409B80E91EC03DB600E7B9A2 /* Build configuration list for PBXNativeTarget "IOSLoadingDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				409B80EA1EC03DB600E7B9A2 /* Debug */,
 				409B80EB1EC03DB600E7B9A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		409B81131EC1C3DD00E7B9A2 /* Build configuration list for PBXNativeTarget "AvAudioDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				409B81111EC1C3DD00E7B9A2 /* Debug */,
+				409B81121EC1C3DD00E7B9A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
