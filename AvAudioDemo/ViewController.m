@@ -122,7 +122,7 @@
      
      */
     
-    AVAudioRecorder recoard = [[AVAudioRecorder alloc]init];
+//    AVAudioRecorder recoard = [[AVAudioRecorder alloc]init];
     
 
     
@@ -131,7 +131,7 @@
     
     // Do any additional setup after loading the view, typically from a nib.
 }
--(void)routeChange:(NSNotification )notification{
+-(void)routeChange:(NSNotification *)notification{
     NSDictionary *dic=notification.userInfo;
     int changeReason= [dic[AVAudioSessionRouteChangeReasonKey] intValue];
     //等于AVAudioSessionRouteChangeReasonOldDeviceUnavailable表示旧输出不可用
