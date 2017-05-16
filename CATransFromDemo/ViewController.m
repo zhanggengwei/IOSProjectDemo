@@ -26,7 +26,7 @@
         
         transform.m34=4.5/-2000;//透视效果
         
-        transform=CATransform3DRotate(transform,M_PI*2-M_PI * 0.1,0,1,0);//获取旋转angle角度后的rotation矩阵。
+        transform=CATransform3DRotate(transform,M_PI,1,0,0);//获取旋转angle角度后的rotation矩阵。
         imageView.layer.transform = transform;
     } completion:^(BOOL finished) {
         

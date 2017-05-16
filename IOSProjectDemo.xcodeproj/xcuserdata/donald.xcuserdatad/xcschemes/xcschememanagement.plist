@@ -34,6 +34,11 @@
 			<key>orderHint</key>
 			<integer>19</integer>
 		</dict>
+		<key>GPUImageDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>70</integer>
+		</dict>
 		<key>IJKPlayerDemo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -293,6 +298,11 @@
 			<true/>
 		</dict>
 		<key>409B80FC1EC1C3DC00E7B9A2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>409B813C1ECAC74100E7B9A2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
