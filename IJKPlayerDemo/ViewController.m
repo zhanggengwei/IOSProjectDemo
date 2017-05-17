@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import <IJKMediaFramework/IJKMediaFramework.h>
+#import <Accelerate/Accelerate.h>
 
 @interface ViewController ()
 
