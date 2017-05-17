@@ -144,6 +144,11 @@
 			<key>orderHint</key>
 			<integer>14</integer>
 		</dict>
+		<key>VideoPlayerDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>71</integer>
+		</dict>
 		<key>WebViewDemo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -303,6 +308,11 @@
 			<true/>
 		</dict>
 		<key>409B813C1ECAC74100E7B9A2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>409B81811ECC1ADD00E7B9A2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
