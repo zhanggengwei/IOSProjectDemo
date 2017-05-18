@@ -109,6 +109,11 @@
 			<key>orderHint</key>
 			<integer>20</integer>
 		</dict>
+		<key>NSQueueDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>72</integer>
+		</dict>
 		<key>NSURLProtrocalDemo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -313,6 +318,11 @@
 			<true/>
 		</dict>
 		<key>409B81811ECC1ADD00E7B9A2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>409B81AE1ECD7F6B00E7B9A2</key>
 		<dict>
 			<key>primary</key>
 			<true/>

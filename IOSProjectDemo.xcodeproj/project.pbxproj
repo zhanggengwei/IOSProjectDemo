@@ -256,6 +256,13 @@
 		409B81911ECC1ADE00E7B9A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 409B81901ECC1ADE00E7B9A2 /* Assets.xcassets */; };
 		409B81941ECC1ADE00E7B9A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 409B81921ECC1ADE00E7B9A2 /* LaunchScreen.storyboard */; };
 		409B819A1ECC217F00E7B9A2 /* 近期活动.png in Resources */ = {isa = PBXBuildFile; fileRef = 409B81991ECC217F00E7B9A2 /* 近期活动.png */; };
+		409B81B31ECD7F6D00E7B9A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 409B81B21ECD7F6D00E7B9A2 /* main.m */; };
+		409B81B61ECD7F6E00E7B9A2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 409B81B51ECD7F6E00E7B9A2 /* AppDelegate.m */; };
+		409B81B91ECD7F6E00E7B9A2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 409B81B81ECD7F6E00E7B9A2 /* ViewController.m */; };
+		409B81BC1ECD7F6E00E7B9A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 409B81BA1ECD7F6E00E7B9A2 /* Main.storyboard */; };
+		409B81BE1ECD7F6E00E7B9A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 409B81BD1ECD7F6E00E7B9A2 /* Assets.xcassets */; };
+		409B81C11ECD7F6E00E7B9A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 409B81BF1ECD7F6E00E7B9A2 /* LaunchScreen.storyboard */; };
+		409B81C81ECD802100E7B9A2 /* TestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 409B81C71ECD802100E7B9A2 /* TestOperation.m */; };
 		40A276D01E9E29C700421E5A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A276CF1E9E29C700421E5A /* main.m */; };
 		40A276D31E9E29C700421E5A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A276D21E9E29C700421E5A /* AppDelegate.m */; };
 		40A276D61E9E29C700421E5A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A276D51E9E29C700421E5A /* ViewController.m */; };
@@ -883,6 +890,18 @@
 		409B81931ECC1ADE00E7B9A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		409B81951ECC1ADE00E7B9A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		409B81991ECC217F00E7B9A2 /* 近期活动.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "近期活动.png"; sourceTree = "<group>"; };
+		409B81AF1ECD7F6B00E7B9A2 /* NSQueueDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSQueueDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		409B81B21ECD7F6D00E7B9A2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		409B81B41ECD7F6D00E7B9A2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		409B81B51ECD7F6E00E7B9A2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		409B81B71ECD7F6E00E7B9A2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		409B81B81ECD7F6E00E7B9A2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		409B81BB1ECD7F6E00E7B9A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		409B81BD1ECD7F6E00E7B9A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		409B81C01ECD7F6E00E7B9A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		409B81C21ECD7F6E00E7B9A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		409B81C61ECD802100E7B9A2 /* TestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestOperation.h; sourceTree = "<group>"; };
+		409B81C71ECD802100E7B9A2 /* TestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestOperation.m; sourceTree = "<group>"; };
 		40A276CC1E9E29C700421E5A /* mongoose.c mongoose.h MongooseDaemon.h MongooseDaemonDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mongoose.c mongoose.h MongooseDaemon.h MongooseDaemonDemo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40A276CF1E9E29C700421E5A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		40A276D11E9E29C700421E5A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -1239,6 +1258,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		409B81AC1ECD7F6B00E7B9A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		40A276C91E9E29C700421E5A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -1498,6 +1524,7 @@
 				409B80FE1EC1C3DD00E7B9A2 /* AvAudioDemo */,
 				409B813E1ECAC74200E7B9A2 /* GPUImageDemo */,
 				409B81831ECC1ADD00E7B9A2 /* VideoPlayerDemo */,
+				409B81B01ECD7F6D00E7B9A2 /* NSQueueDemo */,
 				4059BDFF1E972C0A0067C1F3 /* Products */,
 				4059BE2D1E97892F0067C1F3 /* Frameworks */,
 				F071578F376586321FF43817 /* Pods */,
@@ -1544,6 +1571,7 @@
 				409B80FD1EC1C3DC00E7B9A2 /* AvAudioDemo.app */,
 				409B813D1ECAC74100E7B9A2 /* GPUImageDemo.app */,
 				409B81821ECC1ADD00E7B9A2 /* VideoPlayerDemo.app */,
+				409B81AF1ECD7F6B00E7B9A2 /* NSQueueDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2405,6 +2433,32 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		409B81B01ECD7F6D00E7B9A2 /* NSQueueDemo */ = {
+			isa = PBXGroup;
+			children = (
+				409B81B41ECD7F6D00E7B9A2 /* AppDelegate.h */,
+				409B81B51ECD7F6E00E7B9A2 /* AppDelegate.m */,
+				409B81B71ECD7F6E00E7B9A2 /* ViewController.h */,
+				409B81B81ECD7F6E00E7B9A2 /* ViewController.m */,
+				409B81BA1ECD7F6E00E7B9A2 /* Main.storyboard */,
+				409B81BD1ECD7F6E00E7B9A2 /* Assets.xcassets */,
+				409B81BF1ECD7F6E00E7B9A2 /* LaunchScreen.storyboard */,
+				409B81C21ECD7F6E00E7B9A2 /* Info.plist */,
+				409B81B11ECD7F6D00E7B9A2 /* Supporting Files */,
+				409B81C61ECD802100E7B9A2 /* TestOperation.h */,
+				409B81C71ECD802100E7B9A2 /* TestOperation.m */,
+			);
+			path = NSQueueDemo;
+			sourceTree = "<group>";
+		};
+		409B81B11ECD7F6D00E7B9A2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				409B81B21ECD7F6D00E7B9A2 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		40A276CD1E9E29C700421E5A /* mongoose.c mongoose.h MongooseDaemon.h MongooseDaemonDemo */ = {
 			isa = PBXGroup;
 			children = (
@@ -3143,6 +3197,23 @@
 			productReference = 409B81821ECC1ADD00E7B9A2 /* VideoPlayerDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
+		409B81AE1ECD7F6B00E7B9A2 /* NSQueueDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 409B81C51ECD7F6E00E7B9A2 /* Build configuration list for PBXNativeTarget "NSQueueDemo" */;
+			buildPhases = (
+				409B81AB1ECD7F6B00E7B9A2 /* Sources */,
+				409B81AC1ECD7F6B00E7B9A2 /* Frameworks */,
+				409B81AD1ECD7F6B00E7B9A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NSQueueDemo;
+			productName = NSQueueDemo;
+			productReference = 409B81AF1ECD7F6B00E7B9A2 /* NSQueueDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
 		40A276CB1E9E29C700421E5A /* mongoose.c mongoose.h MongooseDaemon.h MongooseDaemonDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 40A276E21E9E29C700421E5A /* Build configuration list for PBXNativeTarget "mongoose.c mongoose.h MongooseDaemon.h MongooseDaemonDemo" */;
@@ -3494,6 +3565,11 @@
 						DevelopmentTeam = R6B5BG54J2;
 						ProvisioningStyle = Automatic;
 					};
+					409B81AE1ECD7F6B00E7B9A2 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = R6B5BG54J2;
+						ProvisioningStyle = Automatic;
+					};
 					40A276CB1E9E29C700421E5A = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = R6B5BG54J2;
@@ -3607,6 +3683,7 @@
 				409B80FC1EC1C3DC00E7B9A2 /* AvAudioDemo */,
 				409B813C1ECAC74100E7B9A2 /* GPUImageDemo */,
 				409B81811ECC1ADD00E7B9A2 /* VideoPlayerDemo */,
+				409B81AE1ECD7F6B00E7B9A2 /* NSQueueDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -3867,6 +3944,16 @@
 				409B81911ECC1ADE00E7B9A2 /* Assets.xcassets in Resources */,
 				409B819A1ECC217F00E7B9A2 /* 近期活动.png in Resources */,
 				409B818F1ECC1ADE00E7B9A2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		409B81AD1ECD7F6B00E7B9A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				409B81C11ECD7F6E00E7B9A2 /* LaunchScreen.storyboard in Resources */,
+				409B81BE1ECD7F6E00E7B9A2 /* Assets.xcassets in Resources */,
+				409B81BC1ECD7F6E00E7B9A2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4569,6 +4656,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		409B81AB1ECD7F6B00E7B9A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				409B81B91ECD7F6E00E7B9A2 /* ViewController.m in Sources */,
+				409B81B61ECD7F6E00E7B9A2 /* AppDelegate.m in Sources */,
+				409B81B31ECD7F6D00E7B9A2 /* main.m in Sources */,
+				409B81C81ECD802100E7B9A2 /* TestOperation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		40A276C81E9E29C700421E5A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -5121,6 +5219,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				409B81931ECC1ADE00E7B9A2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		409B81BA1ECD7F6E00E7B9A2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				409B81BB1ECD7F6E00E7B9A2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		409B81BF1ECD7F6E00E7B9A2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				409B81C01ECD7F6E00E7B9A2 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -6061,6 +6175,32 @@
 			};
 			name = Release;
 		};
+		409B81C31ECD7F6E00E7B9A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = R6B5BG54J2;
+				INFOPLIST_FILE = NSQueueDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.popoteam.demo.NSQueueDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		409B81C41ECD7F6E00E7B9A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = R6B5BG54J2;
+				INFOPLIST_FILE = NSQueueDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.popoteam.demo.NSQueueDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		40A276E01E9E29C700421E5A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -6629,6 +6769,15 @@
 			buildConfigurations = (
 				409B81971ECC1ADE00E7B9A2 /* Debug */,
 				409B81981ECC1ADE00E7B9A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		409B81C51ECD7F6E00E7B9A2 /* Build configuration list for PBXNativeTarget "NSQueueDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				409B81C31ECD7F6E00E7B9A2 /* Debug */,
+				409B81C41ECD7F6E00E7B9A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
