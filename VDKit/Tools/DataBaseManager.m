@@ -9,6 +9,9 @@
 #import "DataBaseManager.h"
 #import <sqlite3.h>
 
+
+typedef void(^dataCommit)(void);
+
 @implementation DataBaseManager
 {
     NSString * dataBaseName;
@@ -76,7 +79,6 @@
 - (void)openDataBase
 {
     
-
     if(sqlite3_open(dataBasePath.UTF8String, &dataBase)==SQLITE_OK)
     {
         NSLog(@"打开成功");
@@ -85,6 +87,10 @@
     {
         NSLog(@"数据库打开失败");
     }
+    [self transaction:^{
+        
+    }];
+    
 }
 
 - (void)saveObject:(NSObject *)object
@@ -102,7 +108,29 @@
     
 }
 
-- (void)transitication
+- (void)transaction:(dataCommit)commit
+{
+    
+    //[self openDataBase];
+    int  (*Ptr)(void *,int,char **,char **) = &beginCommit;
+    if(sqlite3_exec(dataBase,"BEGIN",*beginCommit, NULL, NULL)==SQLITE_OK)
+    {
+        NSLog(@"beign");
+        
+        
+    }
+    
+    
+    
+}
+
+int beginCommit(void * info,int error,char ** p1,char ** p2)
+{
+    //
+    NSLog(@"事务开始提交");
+    
+    return 1;
+}
 
 
 
