@@ -154,6 +154,11 @@
 			<key>orderHint</key>
 			<integer>14</integer>
 		</dict>
+		<key>VDKit.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>74</integer>
+		</dict>
 		<key>VideoPlayerDemo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -192,6 +197,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>402F5B8F1ED43232003C3DCB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>4041C0771EA9E0AB0013A70C</key>
 		<dict>
 			<key>primary</key>
