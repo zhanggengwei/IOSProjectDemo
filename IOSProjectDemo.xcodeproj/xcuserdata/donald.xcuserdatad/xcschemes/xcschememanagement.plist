@@ -99,6 +99,11 @@
 			<key>orderHint</key>
 			<integer>3</integer>
 		</dict>
+		<key>IOSRunTimeTarget.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>73</integer>
+		</dict>
 		<key>IOSSocketServer.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -323,6 +328,11 @@
 			<true/>
 		</dict>
 		<key>409B81AE1ECD7F6B00E7B9A2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>409B81DB1ED2C90700E7B9A2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
