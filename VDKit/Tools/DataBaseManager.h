@@ -22,11 +22,20 @@
 
 @interface DataBaseManager : NSObject
 
+@property (nonatomic,weak) id<DataBaseManagerProtocal>delegate;
+
 + (instancetype)shareManager;
 
 - (void)openDataBase;
 
 - (void)closeDataBase;
+
+
+- (void)saveObject:(NSObject *)object;
+
+- (void)updateObject:(NSObject *)object;
+
+- (void)deleteObject:(NSInteger)identify;
 
 
 

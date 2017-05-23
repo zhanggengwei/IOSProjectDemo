@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "DataBaseManager.h"
 @interface ViewController ()
 
 @end
@@ -16,6 +16,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [[DataBaseManager shareManager]openDataBase];
+    
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
 
