@@ -12,7 +12,8 @@
 
 - (NSArray *)saveModelColumns
 {
-    return @[@"use_name",@"passWord",@"phone"];
+    return @[@"use_name",@"passWord",@"identify",@"phone",@"userId",@"list"];
+    
 }
 
 - (NSString *)tableName

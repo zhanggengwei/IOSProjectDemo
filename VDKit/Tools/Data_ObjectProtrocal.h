@@ -15,5 +15,4 @@
 - (NSString *)primaryKey;
 
 
-
 @end

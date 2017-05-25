@@ -44,12 +44,18 @@
         /*
          进行表的结构的检查，表结构变化更改结构
          */
+        self.delegate = self;
         
         [self dataBaseInit];
         [self checkTables];
         
     }
     return self;
+}
+
+- (NSArray *) dataBaseTableClassName
+{
+    return @[@"UserInfo",@"Interest"];
 }
 
 - (void)checkTables
@@ -64,7 +70,7 @@
             Class cls = NSClassFromString(className);
             if(cls)
             {
-              [self createTable:[cls new]];
+              [self dataBaseTableCheck:[cls new]];
             }
         }
        
@@ -104,22 +110,22 @@
             NSLog(@"create file failed");
         }
     }
-    
-    _open = [_db open];
-    
-    
-    
 }
 
 - (void)openDataBase
 {
+    if(_open==NO)
+    {
+      [_db open];
+      _open = YES;
+    }
+  
     
 }
 
 - (void)saveObject:(NSObject<Data_ObjectProtrocal> *)object
 {
     
-    [self createTable:object];
     NSArray<NSString *> * columnNames = [object saveModelColumns];
     NSMutableString * insertSql = [NSMutableString stringWithFormat:@"insert into %@ (",NSStringFromClass(object.class)];
     NSMutableString * valuesSql = [NSMutableString stringWithString:@"values ("];
@@ -151,26 +157,40 @@
     }
 }
 
-- (void)createTable:(NSObject<Data_ObjectProtrocal> *)object
+- (NSArray<NSString *> *)getTableColumnNamesWithClass:(Class)cls
 {
-    FMResultSet * result = [_db executeQuery:@"select * from UserInfo"];
+    [self openDataBase];
+    FMResultSet * result = [_db executeQuery:[NSString stringWithFormat: @"select * from %@",NSStringFromClass(cls)]];
+                            
     NSMutableArray * array = [NSMutableArray new];
     int i = 0;
     while (i<result.columnCount)
     {
         [array addObject:[result columnNameForIndex:i++]];
     }
+    return array;
+}
+
+
+- (void)createTable:(NSObject<Data_ObjectProtrocal> *)object
+{
+    [self openDataBase];
+    
+    
+    NSLog(@"%@",[[object valueForKey:@"list"]class]);
+    
+    
     
     if([object respondsToSelector:@selector(saveModelColumns)])
     {
+        
         NSArray<NSString *> * columnNames = [object saveModelColumns];
-        if([array isEqualToArray:columnNames])
-        {
-            NSLog(@"表的结构没有发生变化");
-        }
+        
         NSMutableString * createTableSql = [[NSMutableString alloc]initWithString:[NSString stringWithFormat:@"create table if not exists %@ (",object.class]];
         for (NSString * obj in columnNames)
         {
+            
+            
             
             NSString * lastPrefixx = [obj isEqualToString:columnNames.lastObject]?@")":@",";
             [createTableSql appendString:[NSString stringWithFormat:@"%@ varchar(%d) %@",obj,char_Length,lastPrefixx]];
@@ -184,6 +204,45 @@
             NSLog(@"%@",[_db lastErrorMessage]);
         }
         
+    }
+}
+
+
+
+
+- (void)dataBaseTableCheck:(NSObject<Data_ObjectProtrocal> *)object
+{
+
+    [self openDataBase];
+    BOOL tableExists = [_db tableExists:NSStringFromClass(object.class)];
+    //表存在
+    if(tableExists)
+    {
+         NSArray<NSString *> * columnNames = [object saveModelColumns];
+         NSArray<NSString *> * searchColumnNames = [self getTableColumnNamesWithClass:object.class];
+        if([columnNames isEqualToArray:searchColumnNames])
+        {
+            return;
+        }
+        else
+        {
+            NSMutableArray * array = [NSMutableArray arrayWithArray:columnNames];
+            [array removeObjectsInArray:searchColumnNames];
+            [_db beginTransaction];
+            
+            for (NSString * names in array)
+            {
+                NSString * alterSql = [NSString stringWithFormat:@"alter table %@ add column %@ varchar(%d)",object.class,names,char_Length];
+                [_db executeUpdate:alterSql];
+            }
+            [_db commit];
+            
+            
+        }
+        
+    }else
+    {
+        [self createTable:object];
     }
 }
 
@@ -221,21 +280,10 @@
     }
     NSString * querySql = [NSString stringWithFormat:@"select * from %@ where %@ = %@",NSStringFromClass(cls),primaryKey,identify];
     FMResultSet * result = [_db executeQuery:querySql];
-    
     while (result.next)
     {
         
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     return nil;
 }
 
@@ -254,7 +302,10 @@
 }
 - (void)closeDataBase
 {
-    [_db close];
-    
+    if(_open)
+    {
+        [_db close];
+        _open = false;
+    }
 }
 @end

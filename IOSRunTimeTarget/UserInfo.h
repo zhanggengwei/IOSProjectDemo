@@ -8,6 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import "Data_ObjectProtrocal.h"
+#import "Interest.h"
+#define __showTables	__attribute__((showTables))
+#define  tables(msg) __attribute__((showTables))
+
+//tables
+
 @interface UserInfo : NSObject<Data_ObjectProtrocal>
 
 @property (nonatomic,strong) NSString * use_name;
@@ -15,6 +21,21 @@
 @property (nonatomic,strong) NSString * passWord;
 
 @property (nonatomic,strong) NSString * phone;
+
+@property (nonatomic,strong) NSString * identify;
+
+@property (nonatomic,strong) NSString * userId;
+
+
+@property (nonatomic,strong) NSArray<Interest *>* list;
+
+
+
+//
+
+
+
+
 
 
 

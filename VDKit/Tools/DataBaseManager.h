@@ -22,7 +22,7 @@
 
 @end
 
-@interface DataBaseManager : NSObject
+@interface DataBaseManager : NSObject<DataBaseManagerProtocal>
 
 @property (nonatomic,weak) id<DataBaseManagerProtocal>delegate;
 
