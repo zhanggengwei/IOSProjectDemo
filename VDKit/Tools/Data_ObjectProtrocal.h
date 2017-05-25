@@ -12,8 +12,7 @@
 
 - (NSArray *)saveModelColumns;
 
-- (NSString *)tableName;
-
+- (NSString *)primaryKey;
 
 
 

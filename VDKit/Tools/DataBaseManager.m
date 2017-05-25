@@ -212,8 +212,20 @@
 
 - (NSObject<Data_ObjectProtrocal> *)queryModel:(Class)cls withIdenftify:(NSString *)identify
 {
+ 
+    NSObject<Data_ObjectProtrocal> * model = [cls new];
+    NSString * primaryKey = nil;
+    if([model respondsToSelector:@selector(primaryKey)])
+    {
+        primaryKey = [model primaryKey];
+    }
+    NSString * querySql = [NSString stringWithFormat:@"select * from %@ where %@ = %@",NSStringFromClass(cls),primaryKey,identify];
+    FMResultSet * result = [_db executeQuery:querySql];
     
-    
+    while (result.next)
+    {
+        
+    }
     
     
     
