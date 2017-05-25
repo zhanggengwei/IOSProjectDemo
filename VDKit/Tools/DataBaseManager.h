@@ -20,8 +20,6 @@
 - (NSArray *) dataBaseTableClassName;
 
 
-
-
 @end
 
 @interface DataBaseManager : NSObject
@@ -39,6 +37,12 @@
 - (void)updateObject:(NSObject<Data_ObjectProtrocal> *)object;
 
 - (void)deleteObject:(NSInteger)identify;
+
+
+- (NSObject<Data_ObjectProtrocal> *)queryModel:(Class)cls withIdenftify:(NSString *)identify;
+
+
+
 
 
 

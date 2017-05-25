@@ -23,8 +23,6 @@
     FMDatabase * _db;
     FMDatabasePool * _dbPool;
     BOOL _open;
-    
-    
 }
 
 + (instancetype)shareManager
@@ -211,6 +209,25 @@
         [self closeDataBase];
     }
 }
+
+- (NSObject<Data_ObjectProtrocal> *)queryModel:(Class)cls withIdenftify:(NSString *)identify
+{
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    return nil;
+}
+
+
 - (void)updateObject:(NSObject *)object
 {
     
