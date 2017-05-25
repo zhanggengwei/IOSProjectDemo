@@ -11,6 +11,7 @@
 #import "Data_ObjectProtrocal.h"
 #import <objc/runtime.h>
 #import <objc/message.h>
+#import <string.h>
 
 #define char_Length 100
 
@@ -175,12 +176,8 @@
 - (void)createTable:(NSObject<Data_ObjectProtrocal> *)object
 {
     [self openDataBase];
-    
-    
-    NSLog(@"%@",[[object valueForKey:@"list"]class]);
-    
-    
-    
+   
+
     if([object respondsToSelector:@selector(saveModelColumns)])
     {
         
@@ -189,8 +186,6 @@
         NSMutableString * createTableSql = [[NSMutableString alloc]initWithString:[NSString stringWithFormat:@"create table if not exists %@ (",object.class]];
         for (NSString * obj in columnNames)
         {
-            
-            
             
             NSString * lastPrefixx = [obj isEqualToString:columnNames.lastObject]?@")":@",";
             [createTableSql appendString:[NSString stringWithFormat:@"%@ varchar(%d) %@",obj,char_Length,lastPrefixx]];
