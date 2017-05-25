@@ -56,7 +56,7 @@
 
 - (NSArray *) dataBaseTableClassName
 {
-    return @[@"UserInfo",@"Interest"];
+    return @[@"UserInfo",@"Interest",@"Job"];
 }
 
 - (void)checkTables
@@ -76,6 +76,7 @@
         }
        
     }
+  
 }
 
 
@@ -137,7 +138,7 @@
             {
                 continue;
             }
-            if([keys isEqualToString:@"NSArray"])
+            if([obj isKindOfClass:[NSArray class]])
             {
                 [self saveObjectList:obj];
                 

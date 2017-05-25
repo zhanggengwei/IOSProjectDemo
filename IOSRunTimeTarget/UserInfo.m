@@ -17,7 +17,7 @@
 
 - (NSDictionary *)saveInnerModels
 {
-    return @{@"NSArray":@"list"};
+    return @{@"Interest":@"list",@"Job":@"job"};
 }
 
 - (NSString *)tableName

@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "Data_ObjectProtrocal.h"
 #import "Interest.h"
+#import "Job.h"
 
 
 //tables
@@ -26,7 +27,10 @@
 @property (nonatomic,strong) NSString * userId;
 
 
-@property (nonatomic,strong) NSArray<Interest *>* list;
+@property (nonatomic,strong) Interest * list;
+
+@property (nonatomic,strong) Job * job;
+
 
 
 

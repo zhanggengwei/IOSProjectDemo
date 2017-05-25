@@ -23,6 +23,10 @@
     UserInfo * info = [UserInfo new];
     Interest * interest = [Interest new];
     info.list = @[interest];
+    
+    Job * job = [Job new];
+    info.job = job;
+    
     [shareManager saveObject:info];
     
     
