@@ -69,3 +69,7 @@ target 'IOSCoreDataDemo'do
 end
 
 
+target 'VDKit' do
+end
+
+

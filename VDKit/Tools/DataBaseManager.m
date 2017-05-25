@@ -7,16 +7,24 @@
 //
 
 #import "DataBaseManager.h"
-#import <sqlite3.h>
+#import <FMDB.h>
+#import "Data_ObjectProtrocal.h"
+#import <objc/runtime.h>
+#import <objc/message.h>
+
+#define char_Length 100
 
 
-typedef void(^dataCommit)(void);
 
 @implementation DataBaseManager
 {
     NSString * dataBaseName;
     NSString * dataBasePath;
-    sqlite3 *  dataBase;
+    FMDatabase * _db;
+    FMDatabasePool * _dbPool;
+    BOOL _open;
+    
+    
 }
 
 + (instancetype)shareManager
@@ -34,11 +42,43 @@ typedef void(^dataCommit)(void);
         dataBasePath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask,YES).firstObject stringByAppendingString:@"/table.db"];
         NSLog(@"dataBasePath == %@",dataBasePath);
         dataBaseName = @"table.db";
+        _db = [[FMDatabase alloc]initWithPath:dataBasePath];
+        /*
+            进行表的结构的检查，表结构变化更改结构
+         
+         
+         
+         
+         
+         */
+        
         [self dataBaseInit];
+        [self checkTables];
         
     }
     return self;
 }
+
+- (void)checkTables
+{
+    
+    if([self.delegate respondsToSelector:@selector(dataBaseTableClassName)])
+    {
+        NSArray * classArray = [self.delegate dataBaseTableClassName];
+        
+        
+        
+    }
+
+    
+    
+    
+    
+    
+    
+    
+}
+
 
 - (void)dataBaseInit
 {
@@ -73,30 +113,66 @@ typedef void(^dataCommit)(void);
         }
     }
     
+    _open = [_db open];
+    
+    
     
 }
 
 - (void)openDataBase
 {
     
-    if(sqlite3_open(dataBasePath.UTF8String, &dataBase)==SQLITE_OK)
+}
+
+- (void)saveObject:(NSObject<Data_ObjectProtrocal> *)object
+{
+
+    
+    NSLock * lock = [NSLock new];
+    [lock lock];
+    
+    FMResultSet * result = [_db executeQuery:@"select * from UserInfo"];
+    
+    NSMutableArray * array = [NSMutableArray new];
+    int i = 0;
+    while (i<result.columnCount)
     {
-        NSLog(@"打开成功");
+        [array addObject:[result columnNameForIndex:i++]];
     }
-    else
+    
+    if([object respondsToSelector:@selector(saveModelColumns)])
     {
-        NSLog(@"数据库打开失败");
-    }
-    [self transaction:^{
+        NSArray<NSString *> * columnNames = [object saveModelColumns];
+        if([array isEqualToArray:columnNames])
+        {
+            NSLog(@"表的结构没有发生变化");
+        }
+        NSMutableString * createTableSql = [[NSMutableString alloc]initWithString:[NSString stringWithFormat:@"create table if not exists %@ (",object.class]];
+        for (NSString * obj in columnNames)
+        {
+            
+            NSString * lastPrefixx = [obj isEqualToString:columnNames.lastObject]?@")":@",";
+            [createTableSql appendString:[NSString stringWithFormat:@"%@ varchar(%d) %@",obj,char_Length,lastPrefixx]];
+        }
+        BOOL createTable = [_db executeUpdate:createTableSql];
+        if(createTable)
+        {
+            NSLog(@"create table sucessed ");
+        }else
+        {
+            NSLog(@"%@",[_db lastErrorMessage]);
+        }
         
-    }];
+    }
+    
+    [lock unlock];
+    
+    
+    
     
 }
 
-- (void)saveObject:(NSObject *)object
-{
-   
-}
+
 
 - (void)updateObject:(NSObject *)object
 {
@@ -108,29 +184,18 @@ typedef void(^dataCommit)(void);
     
 }
 
-- (void)transaction:(dataCommit)commit
+
+- (void)logErrorMessage
 {
-    
-    //[self openDataBase];
-    int  (*Ptr)(void *,int,char **,char **) = &beginCommit;
-    if(sqlite3_exec(dataBase,"BEGIN",*beginCommit, NULL, NULL)==SQLITE_OK)
-    {
-        NSLog(@"beign");
-        
-        
-    }
-    
-    
     
 }
 
-int beginCommit(void * info,int error,char ** p1,char ** p2)
+
+- (void)closeDataBase
 {
-    //
-    NSLog(@"事务开始提交");
     
-    return 1;
 }
+
 
 
 

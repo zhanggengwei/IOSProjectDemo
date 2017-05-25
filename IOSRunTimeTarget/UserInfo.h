@@ -7,10 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
-
-@interface UserInfo : NSObject
+#import "Data_ObjectProtrocal.h"
+@interface UserInfo : NSObject<Data_ObjectProtrocal>
 
 @property (nonatomic,strong) NSString * use_name;
+
+@property (nonatomic,strong) NSString * passWord;
+
+@property (nonatomic,strong) NSString * phone;
+
 
 
 @end

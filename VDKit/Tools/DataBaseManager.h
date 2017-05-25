@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "Data_ObjectProtrocal.h"
 
 
 @protocol DataBaseManagerProtocal <NSObject>
@@ -16,6 +16,10 @@
 - (NSString *)dataBaseName;
 
 - (NSString *)dataBaseUrl;
+
+- (NSArray *) dataBaseTableClassName;
+
+
 
 
 @end
@@ -30,12 +34,12 @@
 
 - (void)closeDataBase;
 
+- (void)saveObject:(NSObject<Data_ObjectProtrocal> *)object;
 
-- (void)saveObject:(NSObject *)object;
-
-- (void)updateObject:(NSObject *)object;
+- (void)updateObject:(NSObject<Data_ObjectProtrocal> *)object;
 
 - (void)deleteObject:(NSInteger)identify;
+
 
 
 

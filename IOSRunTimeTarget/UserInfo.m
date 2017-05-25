@@ -7,17 +7,17 @@
 //
 
 #import "UserInfo.h"
-#import "NSObject+NSObject_Serialization.h"
 @implementation UserInfo
 
-- (instancetype)init
+
+- (NSArray *)saveModelColumns
 {
-   
-    if(self=[super init])
-    {
-        
-    }
-    return self;
+    return @[@"use_name",@"passWord",@"phone"];
+}
+
+- (NSString *)tableName
+{
+    return @"UserInfo";
 }
 
 @end

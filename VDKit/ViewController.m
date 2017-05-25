@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "DataBaseManager.h"
+#import "UserInfo.h"
 @interface ViewController ()
 
 @end
@@ -16,7 +17,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [[DataBaseManager shareManager]openDataBase];
+    
+    DataBaseManager  * shareManager = [DataBaseManager shareManager];
+    [shareManager openDataBase];
+    UserInfo * info = [UserInfo new];
+    [shareManager saveObject:info];
+    
     
     
     // Do any additional setup after loading the view, typically from a nib.
