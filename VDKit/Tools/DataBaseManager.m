@@ -117,8 +117,7 @@
 {
     if(_open==NO)
     {
-      [_db open];
-      _open = YES;
+        _open = [_db open];
     }
   
     
@@ -126,7 +125,31 @@
 
 - (void)saveObject:(NSObject<Data_ObjectProtrocal> *)object
 {
-    
+
+    if([object respondsToSelector:@selector(saveInnerModels)])
+    {
+        NSDictionary * dict = [object saveInnerModels];
+        
+        for (NSString * keys in dict.allKeys)
+        {
+            id obj =[object valueForKey:dict[keys]];
+            if(!obj)
+            {
+                continue;
+            }
+            if([keys isEqualToString:@"NSArray"])
+            {
+                [self saveObjectList:obj];
+                
+            }else
+            {
+                [self saveObject:obj];
+            }
+            
+        }
+        
+    }
+    [self openDataBase];
     NSArray<NSString *> * columnNames = [object saveModelColumns];
     NSMutableString * insertSql = [NSMutableString stringWithFormat:@"insert into %@ (",NSStringFromClass(object.class)];
     NSMutableString * valuesSql = [NSMutableString stringWithString:@"values ("];
@@ -156,6 +179,9 @@
     {
         NSLog(@"save failed");
     }
+    
+    [self closeDataBase];
+    
 }
 
 - (NSArray<NSString *> *)getTableColumnNamesWithClass:(Class)cls
@@ -176,20 +202,14 @@
 - (void)createTable:(NSObject<Data_ObjectProtrocal> *)object
 {
     [self openDataBase];
-   
-
     if([object respondsToSelector:@selector(saveModelColumns)])
     {
         NSArray<NSString *> * columnNames = [object saveModelColumns];
         NSMutableString * createTableSql = [[NSMutableString alloc]initWithString:[NSString stringWithFormat:@"create table if not exists %@ (",object.class]];
         for (NSString * obj in columnNames)
         {
-            
-            
            Ivar var = class_getInstanceVariable(object.class,"_list");
             NSLog(@"var ==%s",ivar_getTypeEncoding(var));
-            
-            
             NSString * lastPrefixx = [obj isEqualToString:columnNames.lastObject]?@")":@",";
             [createTableSql appendString:[NSString stringWithFormat:@"%@ varchar(%d) %@",obj,char_Length,lastPrefixx]];
         }
@@ -203,6 +223,7 @@
         }
         
     }
+    [self closeDataBase];
 }
 
 
@@ -235,6 +256,7 @@
                 [_db executeUpdate:alterSql];
             }
             [_db commit];
+            [self closeDataBase];
             
             
         }
@@ -248,7 +270,7 @@
 - (void)saveObjectList:(NSArray<NSObject<Data_ObjectProtrocal> *> *)objectList
 {
     
-    [_db open];
+    [self openDataBase];
     [_db beginTransaction];
     @try
     {
@@ -256,6 +278,7 @@
         {
             [self saveObject:model];
         }
+        [_db commit];
     }
     @catch (NSException *exception)
     {
@@ -263,11 +286,11 @@
     }
     @finally
     {
-        [_db commit];
+      
         [self closeDataBase];
     }
 }
-
+//根据主键查询
 - (NSObject<Data_ObjectProtrocal> *)queryModel:(Class)cls withIdenftify:(NSString *)identify
 {
  
@@ -276,6 +299,10 @@
     if([model respondsToSelector:@selector(primaryKey)])
     {
         primaryKey = [model primaryKey];
+    }else
+    {
+        NSLog(@"");
+        return nil;
     }
     NSString * querySql = [NSString stringWithFormat:@"select * from %@ where %@ = %@",NSStringFromClass(cls),primaryKey,identify];
     FMResultSet * result = [_db executeQuery:querySql];
@@ -303,8 +330,7 @@
 {
     if(_open)
     {
-        [_db close];
-        _open = false;
+        //_open = [_db close];
     }
 }
 @end

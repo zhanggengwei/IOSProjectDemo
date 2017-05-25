@@ -21,6 +21,8 @@
     DataBaseManager  * shareManager = [DataBaseManager shareManager];
     [shareManager openDataBase];
     UserInfo * info = [UserInfo new];
+    Interest * interest = [Interest new];
+    info.list = @[interest];
     [shareManager saveObject:info];
     
     

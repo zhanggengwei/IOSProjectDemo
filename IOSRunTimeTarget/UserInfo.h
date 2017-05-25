@@ -9,8 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "Data_ObjectProtrocal.h"
 #import "Interest.h"
-#define __showTables	__attribute__((showTables))
-#define  tables(msg) __attribute__((showTables))
+
 
 //tables
 

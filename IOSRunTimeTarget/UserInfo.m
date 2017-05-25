@@ -12,13 +12,23 @@
 
 - (NSArray *)saveModelColumns
 {
-    return @[@"use_name",@"passWord",@"identify",@"phone",@"userId",@"list"];
-    
+    return @[@"use_name",@"passWord",@"identify",@"phone",@"userId"];
+}
+
+- (NSDictionary *)saveInnerModels
+{
+    return @{@"NSArray":@"list"};
 }
 
 - (NSString *)tableName
 {
     return @"UserInfo";
+}
+
+- (NSString *)primaryKey
+{
+    return @"identify";
+    
 }
 
 @end

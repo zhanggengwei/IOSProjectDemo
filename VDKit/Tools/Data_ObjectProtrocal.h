@@ -12,6 +12,12 @@
 
 - (NSArray *)saveModelColumns;
 
+- (NSDictionary *)saveInnerModels;
+
+
+
+
+
 - (NSString *)primaryKey;
 
 
