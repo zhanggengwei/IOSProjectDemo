@@ -180,12 +180,15 @@
 
     if([object respondsToSelector:@selector(saveModelColumns)])
     {
-        
         NSArray<NSString *> * columnNames = [object saveModelColumns];
-        
         NSMutableString * createTableSql = [[NSMutableString alloc]initWithString:[NSString stringWithFormat:@"create table if not exists %@ (",object.class]];
         for (NSString * obj in columnNames)
         {
+            
+            
+           Ivar var = class_getInstanceVariable(object.class,"_list");
+            NSLog(@"var ==%s",ivar_getTypeEncoding(var));
+            
             
             NSString * lastPrefixx = [obj isEqualToString:columnNames.lastObject]?@")":@",";
             [createTableSql appendString:[NSString stringWithFormat:@"%@ varchar(%d) %@",obj,char_Length,lastPrefixx]];
@@ -221,6 +224,7 @@
         }
         else
         {
+            
             NSMutableArray * array = [NSMutableArray arrayWithArray:columnNames];
             [array removeObjectsInArray:searchColumnNames];
             [_db beginTransaction];

@@ -38,7 +38,6 @@
 
 - (void)deleteObject:(NSInteger)identify;
 
-
 - (NSObject<Data_ObjectProtrocal> *)queryModel:(Class)cls withIdenftify:(NSString *)identify;
 
 
