@@ -38,18 +38,13 @@
 {
     if(self = [super init])
     {
-      
+        
         dataBasePath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask,YES).firstObject stringByAppendingString:@"/table.db"];
         NSLog(@"dataBasePath == %@",dataBasePath);
         dataBaseName = @"table.db";
         _db = [[FMDatabase alloc]initWithPath:dataBasePath];
         /*
-            进行表的结构的检查，表结构变化更改结构
-         
-         
-         
-         
-         
+         进行表的结构的检查，表结构变化更改结构
          */
         
         [self dataBaseInit];
@@ -64,19 +59,18 @@
     
     if([self.delegate respondsToSelector:@selector(dataBaseTableClassName)])
     {
-        NSArray * classArray = [self.delegate dataBaseTableClassName];
-        
-        
-        
+         NSArray * classArray = [self.delegate dataBaseTableClassName];
+        for (NSString * className in classArray)
+        {
+            //表结构的初始化
+            Class cls = NSClassFromString(className);
+            if(cls)
+            {
+              [self createTable:[cls new]];
+            }
+        }
+       
     }
-
-    
-    
-    
-    
-    
-    
-    
 }
 
 
@@ -126,13 +120,42 @@
 
 - (void)saveObject:(NSObject<Data_ObjectProtrocal> *)object
 {
+    
+    [self createTable:object];
+    NSArray<NSString *> * columnNames = [object saveModelColumns];
+    NSMutableString * insertSql = [NSMutableString stringWithFormat:@"insert into %@ (",NSStringFromClass(object.class)];
+    NSMutableString * valuesSql = [NSMutableString stringWithString:@"values ("];
+    NSMutableArray * valuesArr = [NSMutableArray new];
+    for (int i = 0; i < columnNames.count; i++)
+    {
+        NSString * value = [object valueForKey:columnNames[i]];
+        [valuesArr addObject:value==nil?@"NULL":value];
+        NSString * suffix = nil;
+        if(i==columnNames.count-1)
+        {
+            suffix = @")";
+        }
+        else
+        {
+            suffix = @",";
+        }
+        [insertSql  appendString:[NSString stringWithFormat:@"%@%@",columnNames[i],suffix]];
+        [valuesSql appendString:[NSString stringWithFormat:@"?%@",suffix]];
+    }
+    [insertSql appendString:valuesSql];
+    BOOL sucessed = [_db executeUpdate:insertSql values:valuesArr error:nil];
+    if(sucessed)
+    {
+        NSLog(@"save sucess");
+    }else
+    {
+        NSLog(@"save failed");
+    }
+}
 
-    
-    NSLock * lock = [NSLock new];
-    [lock lock];
-    
+- (void)createTable:(NSObject<Data_ObjectProtrocal> *)object
+{
     FMResultSet * result = [_db executeQuery:@"select * from UserInfo"];
-    
     NSMutableArray * array = [NSMutableArray new];
     int i = 0;
     while (i<result.columnCount)
@@ -164,39 +187,45 @@
         }
         
     }
-    
-    [lock unlock];
-    
-    
-    
-    
 }
 
-
-
+- (void)saveObjectList:(NSArray<NSObject<Data_ObjectProtrocal> *> *)objectList
+{
+    
+    [_db open];
+    [_db beginTransaction];
+    @try
+    {
+        for (NSObject<Data_ObjectProtrocal> * model in objectList)
+        {
+            [self saveObject:model];
+        }
+    }
+    @catch (NSException *exception)
+    {
+        [_db rollback];
+    }
+    @finally
+    {
+        [_db commit];
+        [self closeDataBase];
+    }
+}
 - (void)updateObject:(NSObject *)object
 {
     
 }
-
 - (void)deleteObject:(NSInteger)identify
 {
     
 }
-
-
 - (void)logErrorMessage
 {
     
 }
-
-
 - (void)closeDataBase
 {
+    [_db close];
     
 }
-
-
-
-
 @end
