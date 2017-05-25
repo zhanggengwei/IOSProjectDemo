@@ -315,6 +315,59 @@
 }
 
 
+- (NSObject<Data_ObjectProtrocal > * )queryList:(Class)cls
+{
+    
+    [self openDataBase];
+     NSString * querySql = [NSString stringWithFormat:@"select * from %@",NSStringFromClass(cls)];
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    return nil;
+}
+
+- (void)deleteTables
+{
+    NSArray * delTables = [self dataBaseTableClassName];
+    [self openDataBase];
+    [_db beginTransaction];
+    @try
+    {
+        
+        for (NSString * name in delTables)
+        {
+            NSString * delSql = [NSString stringWithFormat:@"delete table %@",name];
+            [_db executeUpdate:delSql];
+            
+        }
+        [_db commit];
+    }
+    @catch (NSException *exception)
+    {
+        
+    }
+    @finally
+    {
+        [self closeDataBase];
+        
+    }
+    
+   
+    
+    
+    
+    
+}
+
+
+
 - (void)updateObject:(NSObject *)object
 {
     
