@@ -104,6 +104,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-IOSRACProductDemo.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-IOSRealm-OC.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -218,6 +223,11 @@
 			<true/>
 		</dict>
 		<key>20022A217ED9B09C1888EF8C22CC0E69</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>212329CCC350FEC4A428F77FF3AA2E0E</key>
 		<dict>
 			<key>primary</key>
 			<true/>

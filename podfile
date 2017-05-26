@@ -73,3 +73,8 @@ target 'VDKit' do
 end
 
 
+target 'IOSRACProductDemo' do
+    
+end
+
+
