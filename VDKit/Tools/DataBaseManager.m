@@ -189,7 +189,8 @@
 {
     [self openDataBase];
     FMResultSet * result = [_db executeQuery:[NSString stringWithFormat: @"select * from %@",NSStringFromClass(cls)]];
-                            
+    
+               
     NSMutableArray * array = [NSMutableArray new];
     int i = 0;
     while (i<result.columnCount)
@@ -313,13 +314,38 @@
     }
     return nil;
 }
+/*
+    NSString 
+    NSNumber
+    Date
+    long
+    long long 
+    UInt8
+    UInt16
+    UInt32
+    UInt64
+    int
+    BOOL
+    double 
+    float
+    int8_t
+    NSInteger
+ 
+ */
 
 
-- (NSObject<Data_ObjectProtrocal > * )queryList:(Class)cls
+- (NSArray<NSObject<Data_ObjectProtrocal > *>* )queryList:(Class)cls
 {
-    
-    [self openDataBase];
      NSString * querySql = [NSString stringWithFormat:@"select * from %@",NSStringFromClass(cls)];
+    NSArray<NSString *> *columns = [[cls new]saveModelColumns];
+    FMResultSet *set = [_db executeQuery:querySql];
+    while (set.next)
+    {
+        
+    }
+    
+    
+    
     
     
     

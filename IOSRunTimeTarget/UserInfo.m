@@ -12,7 +12,7 @@
 
 - (NSArray *)saveModelColumns
 {
-    return @[@"use_name",@"passWord",@"identify",@"phone",@"userId"];
+    return @[@"use_name",@"passWord",@"userId",@"date",@"phone",@"isFriend"];
 }
 
 - (NSDictionary *)saveInnerModels

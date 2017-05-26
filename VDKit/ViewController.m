@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "DataBaseManager.h"
 #import "UserInfo.h"
+#import "Object_Info.h"
 @interface ViewController ()
 
 @end
@@ -18,6 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+  
     DataBaseManager  * shareManager = [DataBaseManager shareManager];
     [shareManager openDataBase];
     UserInfo * info = [UserInfo new];
@@ -28,6 +30,10 @@
     info.job = job;
     
     [shareManager saveObject:info];
+    
+    
+    
+    [[Object_Info alloc]initWithClass:NSClassFromString(@"Model")];
     
     
     

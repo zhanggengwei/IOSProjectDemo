@@ -16,28 +16,21 @@
 
 @interface UserInfo : NSObject<Data_ObjectProtrocal>
 
-@property (nonatomic,strong) NSString * use_name;
+@property (nonatomic,copy) NSString * use_name;
 
-@property (nonatomic,strong) NSString * passWord;
+@property (nonatomic,copy) NSString * passWord;
 
-@property (nonatomic,strong) NSString * phone;
+@property (nonatomic,strong) NSDate * date;
 
-@property (nonatomic,strong) NSString * identify;
+@property (nonatomic,strong) NSNumber * phone;
 
-@property (nonatomic,strong) NSString * userId;
-
+@property (nonatomic,assign) BOOL  isFriend;
 
 @property (nonatomic,strong) Interest * list;
 
 @property (nonatomic,strong) Job * job;
 
-
-
-
-//
-
-
-
+@property (nonatomic,assign) NSInteger userId;
 
 
 

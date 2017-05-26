@@ -26,6 +26,8 @@
 		402F5BB71ED68D6B003C3DCB /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 409B81F71ED2CA4600E7B9A2 /* UserInfo.m */; };
 		402F5BBA1ED6C1AC003C3DCB /* Interest.m in Sources */ = {isa = PBXBuildFile; fileRef = 402F5BB91ED6C1AC003C3DCB /* Interest.m */; };
 		402F5BBD1ED6DDFF003C3DCB /* Job.m in Sources */ = {isa = PBXBuildFile; fileRef = 402F5BBC1ED6DDFF003C3DCB /* Job.m */; };
+		402F5BC31ED7C708003C3DCB /* Object_Info.m in Sources */ = {isa = PBXBuildFile; fileRef = 402F5BC21ED7C708003C3DCB /* Object_Info.m */; };
+		402F5BC61ED7D836003C3DCB /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 402F5BC51ED7D836003C3DCB /* Model.m */; };
 		4031504D1EB1E3F0009533C2 /* AnimateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4031504C1EB1E3EF009533C2 /* AnimateViewController.swift */; };
 		4031504F1EB1E55F009533C2 /* 近期活动.png in Resources */ = {isa = PBXBuildFile; fileRef = 4031504E1EB1E55F009533C2 /* 近期活动.png */; };
 		403150511EB1EB68009533C2 /* 二维码.png in Resources */ = {isa = PBXBuildFile; fileRef = 403150501EB1EB68009533C2 /* 二维码.png */; };
@@ -430,6 +432,10 @@
 		402F5BB91ED6C1AC003C3DCB /* Interest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Interest.m; sourceTree = "<group>"; };
 		402F5BBB1ED6DDFF003C3DCB /* Job.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Job.h; sourceTree = "<group>"; };
 		402F5BBC1ED6DDFF003C3DCB /* Job.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Job.m; sourceTree = "<group>"; };
+		402F5BC11ED7C708003C3DCB /* Object_Info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Object_Info.h; sourceTree = "<group>"; };
+		402F5BC21ED7C708003C3DCB /* Object_Info.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Object_Info.m; sourceTree = "<group>"; };
+		402F5BC41ED7D836003C3DCB /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		402F5BC51ED7D836003C3DCB /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
 		4031504C1EB1E3EF009533C2 /* AnimateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimateViewController.swift; sourceTree = "<group>"; };
 		4031504E1EB1E55F009533C2 /* 近期活动.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "近期活动.png"; sourceTree = "<group>"; };
 		403150501EB1EB68009533C2 /* 二维码.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "二维码.png"; sourceTree = "<group>"; };
@@ -1440,6 +1446,8 @@
 				409B81F71ED2CA4600E7B9A2 /* UserInfo.m */,
 				402F5BBB1ED6DDFF003C3DCB /* Job.h */,
 				402F5BBC1ED6DDFF003C3DCB /* Job.m */,
+				402F5BC41ED7D836003C3DCB /* Model.h */,
+				402F5BC51ED7D836003C3DCB /* Model.m */,
 				402F5B9B1ED43232003C3DCB /* Main.storyboard */,
 				402F5B9E1ED43232003C3DCB /* Assets.xcassets */,
 				402F5BA01ED43232003C3DCB /* LaunchScreen.storyboard */,
@@ -1463,6 +1471,8 @@
 				402F5BAA1ED43280003C3DCB /* DataBaseManager.h */,
 				402F5BAB1ED43280003C3DCB /* DataBaseManager.m */,
 				402F5BAF1ED68205003C3DCB /* Data_ObjectProtrocal.h */,
+				402F5BC11ED7C708003C3DCB /* Object_Info.h */,
+				402F5BC21ED7C708003C3DCB /* Object_Info.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -4618,10 +4628,12 @@
 				402F5BB71ED68D6B003C3DCB /* UserInfo.m in Sources */,
 				402F5BAC1ED43280003C3DCB /* DataBaseManager.m in Sources */,
 				402F5B9A1ED43232003C3DCB /* ViewController.m in Sources */,
+				402F5BC61ED7D836003C3DCB /* Model.m in Sources */,
 				402F5B971ED43232003C3DCB /* AppDelegate.m in Sources */,
 				402F5B941ED43232003C3DCB /* main.m in Sources */,
 				402F5BBA1ED6C1AC003C3DCB /* Interest.m in Sources */,
 				402F5BBD1ED6DDFF003C3DCB /* Job.m in Sources */,
+				402F5BC31ED7C708003C3DCB /* Object_Info.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
