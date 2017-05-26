@@ -25,7 +25,17 @@
     
     [[self.button rac_signalForControlEvents:UIControlEventTouchUpInside]subscribeNext:^(id x) {
         NSLog(@"button");
+        self.button.selected = !self.button.selected;
+        
     }];
+    
+    //代替KVO
+    [RACObserve(_button, selected) subscribeNext:^(id x) {
+        
+        NSLog(@"click %@",x);
+        
+    }];
+    
     
     
     
