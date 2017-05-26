@@ -10,17 +10,20 @@
 #import <string.h>
 
 @implementation Object_Info
+{
+    NSMutableDictionary * tempDict;
+}
 - (instancetype)initWithClass:(Class)cls
 {
     if(self = [super init])
     {
-        _list = [NSArray new];
-        [self loadPropertyWith:cls];
+        tempDict = [NSMutableDictionary new];
+        [self loadVar:cls];
     }
     return self;
 }
 
-- (void)loadPropertyWith:(Class)cls
+- (void)loadVar:(Class)cls
 {
     
     unsigned int count = 0;
@@ -28,9 +31,10 @@
     
     for (int i = 0; i < count; i++)
     {
-      _list = [_list arrayByAddingObject:[[Object_Item alloc]initWithVar:list[i]]];
+        Object_Item * item = [[Object_Item alloc]initWithVar:list[i]];
+        [tempDict setObject:item forKey:item.name ];
     }
-    
+    _dict = [NSDictionary dictionaryWithDictionary:tempDict];
     free(list);
 
 }
@@ -55,38 +59,39 @@
 {
     const char * name = ivar_getName(_var);
     const char * type = ivar_getTypeEncoding(_var);
-    _name = [NSString stringWithFormat:@"%s",name];
+    _name = [[NSString stringWithFormat:@"%s",name] substringFromIndex:1];
+    
     switch (*type)
     {
         case 'S':
         case 'I':
         case 'i':
         case 'C':
-            _type = @"Int";
-        case 'c':
-            _type = @"Int";
+            _type = @"intValue";
             break;
         case 'B':
-            _type = @"bool";
+            _type = @"boolValue";
             break;
         case 'Q':
-            _type = @"unsignedLongLongInt";
+            _type = @"integerValue";
             break;
-        case 'q':
-            _type = @"longLongInt";
-            break;
+        case 'f':
+            _type = @"floatValue";
         case 'd':
         case 'D':
-            _type = @"double";
+            _type = @"doubleValue";
             break;
         case '@':
         {
-            if(strcmp("NSString", type)==0)
+            if(strcmp("@\"NSString\"", type)==0)
             {
                 _type = @"string";
-            }else if (strcmp("NSDate", type)==0)
+            }else if (strcmp("@\"NSDate\"", type)==0)
             {
                 _type = @"date";
+            }else if(strcmp("@\"NSNumber\"", type)==0)
+            {
+                _type = @"number";
             }
             
             break;

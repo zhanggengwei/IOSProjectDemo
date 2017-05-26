@@ -12,6 +12,7 @@
 #import <objc/runtime.h>
 #import <objc/message.h>
 #import <string.h>
+#import "Object_Info.h"
 
 #define char_Length 100
 
@@ -64,19 +65,19 @@
     
     if([self.delegate respondsToSelector:@selector(dataBaseTableClassName)])
     {
-         NSArray * classArray = [self.delegate dataBaseTableClassName];
+        NSArray * classArray = [self.delegate dataBaseTableClassName];
         for (NSString * className in classArray)
         {
             //表结构的初始化
             Class cls = NSClassFromString(className);
             if(cls)
             {
-              [self dataBaseTableCheck:[cls new]];
+                [self dataBaseTableCheck:[cls new]];
             }
         }
-       
+        
     }
-  
+    
 }
 
 
@@ -120,13 +121,13 @@
     {
         _open = [_db open];
     }
-  
+    
     
 }
 
 - (void)saveObject:(NSObject<Data_ObjectProtrocal> *)object
 {
-
+    
     if([object respondsToSelector:@selector(saveInnerModels)])
     {
         NSDictionary * dict = [object saveInnerModels];
@@ -190,7 +191,7 @@
     [self openDataBase];
     FMResultSet * result = [_db executeQuery:[NSString stringWithFormat: @"select * from %@",NSStringFromClass(cls)]];
     
-               
+    
     NSMutableArray * array = [NSMutableArray new];
     int i = 0;
     while (i<result.columnCount)
@@ -210,7 +211,7 @@
         NSMutableString * createTableSql = [[NSMutableString alloc]initWithString:[NSString stringWithFormat:@"create table if not exists %@ (",object.class]];
         for (NSString * obj in columnNames)
         {
-           Ivar var = class_getInstanceVariable(object.class,"_list");
+            Ivar var = class_getInstanceVariable(object.class,"_list");
             NSLog(@"var ==%s",ivar_getTypeEncoding(var));
             NSString * lastPrefixx = [obj isEqualToString:columnNames.lastObject]?@")":@",";
             [createTableSql appendString:[NSString stringWithFormat:@"%@ varchar(%d) %@",obj,char_Length,lastPrefixx]];
@@ -233,14 +234,14 @@
 
 - (void)dataBaseTableCheck:(NSObject<Data_ObjectProtrocal> *)object
 {
-
+    
     [self openDataBase];
     BOOL tableExists = [_db tableExists:NSStringFromClass(object.class)];
     //表存在
     if(tableExists)
     {
-         NSArray<NSString *> * columnNames = [object saveModelColumns];
-         NSArray<NSString *> * searchColumnNames = [self getTableColumnNamesWithClass:object.class];
+        NSArray<NSString *> * columnNames = [object saveModelColumns];
+        NSArray<NSString *> * searchColumnNames = [self getTableColumnNamesWithClass:object.class];
         if([columnNames isEqualToArray:searchColumnNames])
         {
             return;
@@ -288,14 +289,14 @@
     }
     @finally
     {
-      
+        
         [self closeDataBase];
     }
 }
 //根据主键查询
 - (NSObject<Data_ObjectProtrocal> *)queryModel:(Class)cls withIdenftify:(NSString *)identify
 {
- 
+    
     NSObject<Data_ObjectProtrocal> * model = [cls new];
     NSString * primaryKey = nil;
     if([model respondsToSelector:@selector(primaryKey)])
@@ -315,48 +316,58 @@
     return nil;
 }
 /*
-    NSString 
-    NSNumber
-    Date
-    long
-    long long 
-    UInt8
-    UInt16
-    UInt32
-    UInt64
-    int
-    BOOL
-    double 
-    float
-    int8_t
-    NSInteger
+ NSString
+ NSNumber
+ Date
+ long
+ long long
+ UInt8
+ UInt16
+ UInt32
+ UInt64
+ int
+ BOOL
+ double
+ float
+ int8_t
+ NSInteger
  
  */
 
 
 - (NSArray<NSObject<Data_ObjectProtrocal > *>* )queryList:(Class)cls
 {
-     NSString * querySql = [NSString stringWithFormat:@"select * from %@",NSStringFromClass(cls)];
+    NSString * querySql = [NSString stringWithFormat:@"select * from %@",NSStringFromClass(cls)];
     NSArray<NSString *> *columns = [[cls new]saveModelColumns];
     FMResultSet *set = [_db executeQuery:querySql];
+    Object_Info * info = [[Object_Info alloc]initWithClass:cls];
+    NSMutableArray * array = [NSMutableArray new];
     while (set.next)
     {
-        
+        NSObject<Data_ObjectProtrocal> * obj = [cls new];
+        for (NSString * name in columns)
+        {
+            Object_Item * item = [info.dict objectForKey:name];
+            
+            if([item.type isEqualToString:@"date"])
+            {
+                [obj setValue:[set dateForColumn:name] forKey:name];
+            }
+            else
+            {
+                 NSString * value =  [set stringForColumn:name];
+                if([item.type isEqualToString:@"numer"])
+                {
+                    [obj setValue:[NSNumber numberWithInteger:value.integerValue] forKey:name];
+                    
+                }else{
+                 [obj setValue:value forKey:name];
+                }
+            }
+        }
+        [array addObject:obj];
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    return nil;
+    return array;
 }
 
 - (void)deleteTables
@@ -369,7 +380,7 @@
         
         for (NSString * name in delTables)
         {
-            NSString * delSql = [NSString stringWithFormat:@"delete table %@",name];
+            NSString * delSql = [NSString stringWithFormat:@"delete FROM %@",name];
             [_db executeUpdate:delSql];
             
         }
@@ -382,18 +393,8 @@
     @finally
     {
         [self closeDataBase];
-        
     }
-    
-   
-    
-    
-    
-    
 }
-
-
-
 - (void)updateObject:(NSObject *)object
 {
     

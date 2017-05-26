@@ -22,20 +22,8 @@
   
     DataBaseManager  * shareManager = [DataBaseManager shareManager];
     [shareManager openDataBase];
-    UserInfo * info = [UserInfo new];
-    Interest * interest = [Interest new];
-    info.list = @[interest];
-    
-    Job * job = [Job new];
-    info.job = job;
-    
-    [shareManager saveObject:info];
-    
-    
-    
-    [[Object_Info alloc]initWithClass:NSClassFromString(@"Model")];
-    
-    
+    NSArray * arr = [shareManager queryList:[UserInfo class]];
+    NSLog(@"arr =%@",arr);
     
     // Do any additional setup after loading the view, typically from a nib.
 }

@@ -41,7 +41,7 @@
 - (NSObject<Data_ObjectProtrocal> *)queryModel:(Class)cls withIdenftify:(NSString *)identify;
 
 
-
+- (NSArray<NSObject<Data_ObjectProtrocal > *>* )queryList:(Class)cls;
 
 
 

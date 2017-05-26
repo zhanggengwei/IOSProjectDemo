@@ -34,7 +34,7 @@ typedef NS_ENUM(NSUInteger,VDTypeEncoding)
 
 @interface Object_Info : NSObject
 
-@property (nonatomic,strong,readonly) NSArray<Object_Item *> * list;
+@property (nonatomic,strong,readonly) NSDictionary<NSString *,Object_Item *> * dict;
 
 - (instancetype)initWithClass:(Class)cls;
 

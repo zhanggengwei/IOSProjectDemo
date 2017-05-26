@@ -10,6 +10,16 @@
 @implementation UserInfo
 
 
+- (instancetype)init
+{
+    self = [super init];
+    if(self)
+    {
+    }
+    return self;
+}
+
+
 - (NSArray *)saveModelColumns
 {
     return @[@"use_name",@"passWord",@"userId",@"date",@"phone",@"isFriend"];
