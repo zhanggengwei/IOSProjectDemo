@@ -280,7 +280,6 @@
 		409B81C81ECD802100E7B9A2 /* TestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 409B81C71ECD802100E7B9A2 /* TestOperation.m */; };
 		409B81E01ED2C90B00E7B9A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 409B81DF1ED2C90B00E7B9A2 /* main.m */; };
 		409B81E31ED2C90B00E7B9A2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 409B81E21ED2C90B00E7B9A2 /* AppDelegate.m */; };
-		409B81E61ED2C90B00E7B9A2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 409B81E51ED2C90B00E7B9A2 /* ViewController.m */; };
 		409B81E91ED2C90B00E7B9A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 409B81E71ED2C90B00E7B9A2 /* Main.storyboard */; };
 		409B81EB1ED2C90B00E7B9A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 409B81EA1ED2C90B00E7B9A2 /* Assets.xcassets */; };
 		409B81EE1ED2C90B00E7B9A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 409B81EC1ED2C90B00E7B9A2 /* LaunchScreen.storyboard */; };
@@ -5014,7 +5013,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				409B81F51ED2C98400E7B9A2 /* NSObject+NSObject_Serialization.m in Sources */,
-				409B81E61ED2C90B00E7B9A2 /* ViewController.m in Sources */,
 				409B81E31ED2C90B00E7B9A2 /* AppDelegate.m in Sources */,
 				409B81F81ED2CA4600E7B9A2 /* UserInfo.m in Sources */,
 				409B81E01ED2C90B00E7B9A2 /* main.m in Sources */,
