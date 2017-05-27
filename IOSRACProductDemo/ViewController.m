@@ -8,12 +8,13 @@
 
 #import "ViewController.h"
 #import <ReactiveCocoa/ReactiveCocoa.h>
+#import "CustomButton.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *textFile1;
 @property (weak, nonatomic) IBOutlet UITextField *textField2;
 @property (weak, nonatomic) IBOutlet UITextField *textField3;
-@property (weak, nonatomic) IBOutlet UIButton *btn;
+@property (weak, nonatomic) IBOutlet CustomButton *btn;
 @end
 
 @implementation ViewController
@@ -40,7 +41,6 @@
     
     
     RACSignal * signal2 =   [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
-        
         [subscriber sendNext:@"you are good"];
         [subscriber sendNext:@"byz"];
         
@@ -70,7 +70,11 @@
         NSLog(@"任务完成");
         
     }];
-   
+    NSLog(@"-----");
+
+  
+    
+    
   
     
     
@@ -83,6 +87,11 @@
     
     
     // Do any additional setup after loading the view, typically from a nib.
+}
+
+- (void)buttonClick:(id)sender
+{
+    NSLog(@"button did clicked");
 }
 
 

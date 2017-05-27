@@ -28,6 +28,7 @@
 		402F5BBD1ED6DDFF003C3DCB /* Job.m in Sources */ = {isa = PBXBuildFile; fileRef = 402F5BBC1ED6DDFF003C3DCB /* Job.m */; };
 		402F5BC31ED7C708003C3DCB /* Object_Info.m in Sources */ = {isa = PBXBuildFile; fileRef = 402F5BC21ED7C708003C3DCB /* Object_Info.m */; };
 		402F5BC61ED7D836003C3DCB /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 402F5BC51ED7D836003C3DCB /* Model.m */; };
+		402F5BCA1ED95657003C3DCB /* CustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 402F5BC91ED95657003C3DCB /* CustomButton.m */; };
 		4031504D1EB1E3F0009533C2 /* AnimateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4031504C1EB1E3EF009533C2 /* AnimateViewController.swift */; };
 		4031504F1EB1E55F009533C2 /* 近期活动.png in Resources */ = {isa = PBXBuildFile; fileRef = 4031504E1EB1E55F009533C2 /* 近期活动.png */; };
 		403150511EB1EB68009533C2 /* 二维码.png in Resources */ = {isa = PBXBuildFile; fileRef = 403150501EB1EB68009533C2 /* 二维码.png */; };
@@ -436,6 +437,9 @@
 		402F5BC21ED7C708003C3DCB /* Object_Info.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Object_Info.m; sourceTree = "<group>"; };
 		402F5BC41ED7D836003C3DCB /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
 		402F5BC51ED7D836003C3DCB /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
+		402F5BC71ED9561E003C3DCB /* UIButtonProtrocal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIButtonProtrocal.h; sourceTree = "<group>"; };
+		402F5BC81ED95657003C3DCB /* CustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomButton.h; sourceTree = "<group>"; };
+		402F5BC91ED95657003C3DCB /* CustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomButton.m; sourceTree = "<group>"; };
 		4031504C1EB1E3EF009533C2 /* AnimateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimateViewController.swift; sourceTree = "<group>"; };
 		4031504E1EB1E55F009533C2 /* 近期活动.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "近期活动.png"; sourceTree = "<group>"; };
 		403150501EB1EB68009533C2 /* 二维码.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "二维码.png"; sourceTree = "<group>"; };
@@ -2294,11 +2298,14 @@
 				409B800F1EBC483600E7B9A2 /* AppDelegate.m */,
 				409B80111EBC483600E7B9A2 /* ViewController.h */,
 				409B80121EBC483600E7B9A2 /* ViewController.m */,
+				402F5BC81ED95657003C3DCB /* CustomButton.h */,
+				402F5BC91ED95657003C3DCB /* CustomButton.m */,
 				409B80141EBC483600E7B9A2 /* Main.storyboard */,
 				409B80171EBC483600E7B9A2 /* Assets.xcassets */,
 				409B80191EBC483600E7B9A2 /* LaunchScreen.storyboard */,
 				409B801C1EBC483600E7B9A2 /* Info.plist */,
 				409B800B1EBC483600E7B9A2 /* Supporting Files */,
+				402F5BC71ED9561E003C3DCB /* UIButtonProtrocal.h */,
 			);
 			path = IOSRACProductDemo;
 			sourceTree = "<group>";
@@ -4885,6 +4892,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				402F5BCA1ED95657003C3DCB /* CustomButton.m in Sources */,
 				409B80131EBC483600E7B9A2 /* ViewController.m in Sources */,
 				409B80101EBC483600E7B9A2 /* AppDelegate.m in Sources */,
 				409B800D1EBC483600E7B9A2 /* main.m in Sources */,
