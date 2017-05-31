@@ -147,6 +147,7 @@
 		4074D8391EB9A9DF003F8D1D /* BLEServerSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 4074D8381EB9A9DF003F8D1D /* BLEServerSocket.m */; };
 		4084F1851EDE98B700F4A917 /* DataViewBindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4084F1841EDE98B700F4A917 /* DataViewBindViewController.m */; };
 		4084F1881EDE98E700F4A917 /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4084F1871EDE98E700F4A917 /* UserInfo.m */; };
+		4084F18B1EDEC4FD00F4A917 /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4084F18A1EDEC4FD00F4A917 /* UserInfo.m */; };
 		409B7F021EB9ABE300E7B9A2 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 409B7F011EB9ABE300E7B9A2 /* GCDAsyncSocket.m */; };
 		409B7F0B1EB9AE4400E7B9A2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 409B7F0A1EB9AE4400E7B9A2 /* AppDelegate.m */; };
 		409B7F0E1EB9AE4400E7B9A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 409B7F0D1EB9AE4400E7B9A2 /* main.m */; };
@@ -642,6 +643,8 @@
 		4084F1841EDE98B700F4A917 /* DataViewBindViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataViewBindViewController.m; sourceTree = "<group>"; };
 		4084F1861EDE98E700F4A917 /* UserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfo.h; sourceTree = "<group>"; };
 		4084F1871EDE98E700F4A917 /* UserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfo.m; sourceTree = "<group>"; };
+		4084F1891EDEC4FD00F4A917 /* UserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfo.h; sourceTree = "<group>"; };
+		4084F18A1EDEC4FD00F4A917 /* UserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfo.m; sourceTree = "<group>"; };
 		409B7F001EB9ABE300E7B9A2 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
 		409B7F011EB9ABE300E7B9A2 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
 		409B7F071EB9AE4400E7B9A2 /* MAC-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MAC-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1962,6 +1965,8 @@
 				4074D8091EB853AD003F8D1D /* LaunchScreen.storyboard */,
 				4074D80C1EB853AD003F8D1D /* Info.plist */,
 				4074D7FB1EB853AD003F8D1D /* Supporting Files */,
+				4084F1891EDEC4FD00F4A917 /* UserInfo.h */,
+				4084F18A1EDEC4FD00F4A917 /* UserInfo.m */,
 			);
 			path = "IOSRealm-OC";
 			sourceTree = "<group>";
@@ -4837,6 +4842,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4084F18B1EDEC4FD00F4A917 /* UserInfo.m in Sources */,
 				4074D8031EB853AD003F8D1D /* ViewController.m in Sources */,
 				4074D8001EB853AD003F8D1D /* AppDelegate.m in Sources */,
 				4074D7FD1EB853AD003F8D1D /* main.m in Sources */,
