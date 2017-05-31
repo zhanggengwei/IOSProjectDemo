@@ -14,21 +14,19 @@
 - (void)awakeFromNib
 {
     [super awakeFromNib];
-    self.delegate = self;
+ 
     
+    //这样子不带协议是无法代替代理的,虽然能达到效果,这个方法表示某个selector被调用时执行一段代码.带有协议参数的表示该selector实现了某个协议，所以可以用它来实现Delegate。
+    //    [[self rac_signalForSelector:@selector(tableView:didSelectRowAtIndexPath:)] subscribeNext:^(RACTuple* x) {
     
-    [[self rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
-        [[self rac_signalForSelector:@selector(printMessage:)]subscribeNext:^(id x) {
-            
-            NSLog(@"test");
-        }];
-        
-        NSLog(@"%@ signale",[self rac_signalForSelector:@selector(printMessage:)]);
-        
-        
-        
-    }];
+    //        NSLog(@"%@",[x class]);
     
+    //        NSLog(@"%@",x);
+    //    }];
+    
+    //这里是个坑,必须将代理最后设置,否则信号是无法订阅到的
+   
+
 }
 
 - (instancetype)init
@@ -38,11 +36,6 @@
         self.delegate = self;
     }
     return self;
-}
-
-- (void)printMessage:(id)sender
-{
-    NSLog(@"%s",__PRETTY_FUNCTION__);
 }
 
 
