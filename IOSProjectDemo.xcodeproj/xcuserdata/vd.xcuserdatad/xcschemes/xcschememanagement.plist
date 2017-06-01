@@ -9,6 +9,36 @@
 			<key>orderHint</key>
 			<integer>10</integer>
 		</dict>
+		<key>AvAudioDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>62</integer>
+		</dict>
+		<key>CATransFromDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>58</integer>
+		</dict>
+		<key>FFMPegDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>52</integer>
+		</dict>
+		<key>GCDAsyncSocketDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>49</integer>
+		</dict>
+		<key>GPUImageDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>63</integer>
+		</dict>
+		<key>IJKPlayerDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>53</integer>
+		</dict>
 		<key>IOSC++Demo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -24,20 +54,60 @@
 			<key>orderHint</key>
 			<integer>15</integer>
 		</dict>
+		<key>IOSGraphicsDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>56</integer>
+		</dict>
+		<key>IOSLoadingDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>61</integer>
+		</dict>
 		<key>IOSProjectDemo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>IOSRACProductDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>54</integer>
+		</dict>
+		<key>IOSRealm-OC.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>48</integer>
+		</dict>
+		<key>IOSRealm.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>47</integer>
 		</dict>
 		<key>IOSRequestTools.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>3</integer>
 		</dict>
+		<key>IOSRunTimeTarget.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>66</integer>
+		</dict>
 		<key>IOSSocketServer.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>7</integer>
+		</dict>
+		<key>MAC-App.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>50</integer>
+		</dict>
+		<key>NSQueueDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>65</integer>
 		</dict>
 		<key>NSURLProtrocalDemo.xcscheme</key>
 		<dict>
@@ -49,6 +119,21 @@
 			<key>orderHint</key>
 			<integer>11</integer>
 		</dict>
+		<key>RunLoopDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>51</integer>
+		</dict>
+		<key>TableViewIndexDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>60</integer>
+		</dict>
+		<key>TianMaoCATransitaionDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>59</integer>
+		</dict>
 		<key>TinderDemo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -58,6 +143,16 @@
 		<dict>
 			<key>orderHint</key>
 			<integer>16</integer>
+		</dict>
+		<key>VDKit.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>67</integer>
+		</dict>
+		<key>VideoPlayerDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>64</integer>
 		</dict>
 		<key>WebViewDemo.xcscheme</key>
 		<dict>
@@ -69,6 +164,11 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
+		<key>dispatch_Queue.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>57</integer>
+		</dict>
 		<key>mongoose.c mongoose.h MongooseDaemon.h MongooseDaemonDemo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -79,9 +179,19 @@
 			<key>orderHint</key>
 			<integer>14</integer>
 		</dict>
+		<key>sql-liteDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>55</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>402F5B8F1ED43232003C3DCB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>4041C0771EA9E0AB0013A70C</key>
 		<dict>
 			<key>primary</key>
@@ -113,6 +223,106 @@
 			<true/>
 		</dict>
 		<key>4059BE551E9CCFEE0067C1F3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4074D7CA1EB82491003F8D1D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4074D7F81EB853AD003F8D1D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4074D8191EB97F2F003F8D1D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>409B7F061EB9AE4400E7B9A2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>409B7F241EB9C92100E7B9A2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>409B7F4A1EBC27B400E7B9A2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>409B7FED1EBC477200E7B9A2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>409B80081EBC483600E7B9A2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>409B80231EBC4B2300E7B9A2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>409B80401EBC511B00E7B9A2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>409B80631EBC77B300E7B9A2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>409B807E1EBC7F9300E7B9A2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>409B809B1EC01A8100E7B9A2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>409B80B61EC0209A00E7B9A2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>409B80D41EC03DB600E7B9A2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>409B80FC1EC1C3DC00E7B9A2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>409B813C1ECAC74100E7B9A2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>409B81811ECC1ADD00E7B9A2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>409B81AE1ECD7F6B00E7B9A2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>409B81DB1ED2C90700E7B9A2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
