@@ -20,6 +20,16 @@
     
     [self creatDataBaseWithName:@"data.realm"];
     
+    @autoreleasepool {
+        
+        
+        
+        
+    };
+    NSAutoreleasePool * pool = [NSAutoreleasePool new];
+    
+    [pool drain];
+    
     
     
     
