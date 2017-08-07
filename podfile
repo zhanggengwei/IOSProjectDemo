@@ -43,7 +43,7 @@ pod 'AMapLocation', '~> 2.1.1'
 
 #Versions
 pod 'ICEVersionUpdate', '~> 1.0.0'
-
+pod 'JPush', '~> 3.0.5'
 #AlertView
 
 #拼音
@@ -74,7 +74,10 @@ end
 
 
 target 'IOSRACProductDemo' do
-    
+end
+
+target 'PushDemo' do
+ 
 end
 
 
