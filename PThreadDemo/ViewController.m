@@ -89,6 +89,8 @@ void * function(void * p)
     //pthread_detach(threadId);
     // Do any additional setup after loading the view, typically from a nib.
 }
+- (IBAction)buttonAction1:(id)sender {
+}
 
 
 

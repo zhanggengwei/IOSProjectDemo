@@ -119,6 +119,8 @@
     
     // Do any additional setup after loading the view, typically from a nib.
 }
+- (IBAction)recoarderAction:(id)sender {
+}
 
 - (void)buttonClick:(id)sender
 {

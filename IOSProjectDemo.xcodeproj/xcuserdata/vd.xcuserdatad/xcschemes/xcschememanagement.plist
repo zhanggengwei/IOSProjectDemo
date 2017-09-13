@@ -102,7 +102,12 @@
 		<key>IOSVideoDemo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>77</integer>
+			<integer>37</integer>
+		</dict>
+		<key>IOSVideoPlayerDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>79</integer>
 		</dict>
 		<key>MAC-App.xcscheme</key>
 		<dict>
@@ -158,6 +163,11 @@
 		<dict>
 			<key>orderHint</key>
 			<integer>35</integer>
+		</dict>
+		<key>VideoDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>78</integer>
 		</dict>
 		<key>VideoPlayerDemo.xcscheme</key>
 		<dict>
@@ -408,6 +418,36 @@
 			<true/>
 		</dict>
 		<key>753CA0961F263F1600F313EE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>754F46221F67D42E00D3147D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>754F463A1F67D42F00D3147D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>754F46451F67D42F00D3147D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>754F46A71F69065100D3147D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>754F46BF1F69065100D3147D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>754F46CA1F69065200D3147D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

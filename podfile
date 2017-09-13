@@ -80,4 +80,7 @@ target 'PushDemo' do
  
 end
 
+target 'IOSVideoPlayerDemo' do
+end
+
 

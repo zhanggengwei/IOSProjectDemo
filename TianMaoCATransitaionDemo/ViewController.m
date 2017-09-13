@@ -31,6 +31,8 @@
     
     // Do any additional setup after loading the view, typically from a nib.
 }
+- (IBAction)action:(id)sender {
+}
 
 - (void)buttonAction
 {

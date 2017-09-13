@@ -347,6 +347,7 @@
 		40E63DCB1EB03D4600136773 /* JKRShop.m in Sources */ = {isa = PBXBuildFile; fileRef = 40E63DC61EB03D4600136773 /* JKRShop.m */; };
 		40E63DCC1EB03D4600136773 /* JKRShopCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 40E63DC81EB03D4600136773 /* JKRShopCell.m */; };
 		40E63DCD1EB03D4600136773 /* JKRShopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40E63DC91EB03D4600136773 /* JKRShopCell.xib */; };
+		6973BBBC87CBE137F1211662 /* libPods-IOSVideoPlayerDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 916648CAA545130D8BB0E910 /* libPods-IOSVideoPlayerDemo.a */; };
 		750B00BC1EA4F99D00ED074A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 750B00BB1EA4F99D00ED074A /* main.m */; };
 		750B00BF1EA4F99D00ED074A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 750B00BE1EA4F99D00ED074A /* AppDelegate.mm */; };
 		750B00C21EA4F99D00ED074A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 750B00C11EA4F99D00ED074A /* ViewController.m */; };
@@ -378,6 +379,40 @@
 		753CA0911F263F1600F313EE /* IOSVideoDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 753CA0901F263F1600F313EE /* IOSVideoDemoTests.m */; };
 		753CA09C1F263F1600F313EE /* IOSVideoDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 753CA09B1F263F1600F313EE /* IOSVideoDemoUITests.m */; };
 		753CA0A91F26404000F313EE /* ZGRecoardVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 753CA0A81F26404000F313EE /* ZGRecoardVideoViewController.m */; };
+		754F46271F67D42F00D3147D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 754F46261F67D42F00D3147D /* main.m */; };
+		754F462A1F67D42F00D3147D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 754F46291F67D42F00D3147D /* AppDelegate.m */; };
+		754F462D1F67D42F00D3147D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 754F462C1F67D42F00D3147D /* ViewController.m */; };
+		754F46301F67D42F00D3147D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 754F462E1F67D42F00D3147D /* Main.storyboard */; };
+		754F46321F67D42F00D3147D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 754F46311F67D42F00D3147D /* Assets.xcassets */; };
+		754F46351F67D42F00D3147D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 754F46331F67D42F00D3147D /* LaunchScreen.storyboard */; };
+		754F46401F67D42F00D3147D /* VideoDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 754F463F1F67D42F00D3147D /* VideoDemoTests.m */; };
+		754F464B1F67D42F00D3147D /* VideoDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 754F464A1F67D42F00D3147D /* VideoDemoUITests.m */; };
+		754F46A11F68C1CA00D3147D /* VDImagePickeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 754F46A01F68C1CA00D3147D /* VDImagePickeViewController.m */; };
+		754F46AC1F69065100D3147D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 754F46AB1F69065100D3147D /* main.m */; };
+		754F46AF1F69065100D3147D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 754F46AE1F69065100D3147D /* AppDelegate.m */; };
+		754F46B21F69065100D3147D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 754F46B11F69065100D3147D /* ViewController.m */; };
+		754F46B51F69065100D3147D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 754F46B31F69065100D3147D /* Main.storyboard */; };
+		754F46B71F69065100D3147D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 754F46B61F69065100D3147D /* Assets.xcassets */; };
+		754F46BA1F69065100D3147D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 754F46B81F69065100D3147D /* LaunchScreen.storyboard */; };
+		754F46C51F69065200D3147D /* IOSVideoPlayerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 754F46C41F69065200D3147D /* IOSVideoPlayerDemoTests.m */; };
+		754F46D01F69065200D3147D /* IOSVideoPlayerDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 754F46CF1F69065200D3147D /* IOSVideoPlayerDemoUITests.m */; };
+		754F46E01F69077000D3147D /* VDLoadingVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 754F46DF1F69077000D3147D /* VDLoadingVideoView.m */; };
+		754F46E31F690CBB00D3147D /* VDBrightnessView.m in Sources */ = {isa = PBXBuildFile; fileRef = 754F46E21F690CBB00D3147D /* VDBrightnessView.m */; };
+		754F46EB1F69105B00D3147D /* VDPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 754F46EA1F69105B00D3147D /* VDPlayerView.m */; };
+		754F46EE1F6910FA00D3147D /* VDPlayerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 754F46ED1F6910FA00D3147D /* VDPlayerModel.m */; };
+		754F46FE1F6911CC00D3147D /* UIAlertController+ZFPlayerRotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 754F46F11F6911CC00D3147D /* UIAlertController+ZFPlayerRotation.m */; };
+		754F46FF1F6911CC00D3147D /* UIImageView+ZFCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 754F46F31F6911CC00D3147D /* UIImageView+ZFCache.m */; };
+		754F47001F6911CC00D3147D /* UINavigationController+ZFPlayerRotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 754F46F51F6911CC00D3147D /* UINavigationController+ZFPlayerRotation.m */; };
+		754F47011F6911CC00D3147D /* UITabBarController+ZFPlayerRotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 754F46F71F6911CC00D3147D /* UITabBarController+ZFPlayerRotation.m */; };
+		754F47021F6911CC00D3147D /* UIView+CustomControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 754F46F91F6911CC00D3147D /* UIView+CustomControlView.m */; };
+		754F47031F6911CC00D3147D /* UIViewController+ZFPlayerRotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 754F46FB1F6911CC00D3147D /* UIViewController+ZFPlayerRotation.m */; };
+		754F47041F6911CC00D3147D /* UIWindow+CurrentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 754F46FD1F6911CC00D3147D /* UIWindow+CurrentViewController.m */; };
+		754F47071F6914A600D3147D /* VDPlayerControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 754F47061F6914A600D3147D /* VDPlayerControlView.m */; };
+		754F470C1F6914E800D3147D /* ASValuePopUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 754F470A1F6914E800D3147D /* ASValuePopUpView.m */; };
+		754F470D1F6914E800D3147D /* ASValueTrackingSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 754F470B1F6914E800D3147D /* ASValueTrackingSlider.m */; };
+		754F47101F691BE500D3147D /* MoviePlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 754F470F1F691BE500D3147D /* MoviePlayerViewController.m */; };
+		754F47131F691C4500D3147D /* UINavigationController+ZFFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 754F47121F691C4500D3147D /* UINavigationController+ZFFullscreenPopGesture.m */; };
+		754F47151F691CF800D3147D /* ZFPlayer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 754F47141F691CF800D3147D /* ZFPlayer.bundle */; };
 		75B2E5691F278BAF003240B9 /* RCRecoarder.m in Sources */ = {isa = PBXBuildFile; fileRef = 75B2E5681F278BAF003240B9 /* RCRecoarder.m */; };
 		75B2E56C1F2795D4003240B9 /* RCAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 75B2E56B1F2795D4003240B9 /* RCAudioPlayer.m */; };
 		75CAC39F1F24C00F00065347 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CAC39E1F24C00F00065347 /* main.m */; };
@@ -447,6 +482,34 @@
 			proxyType = 1;
 			remoteGlobalIDString = 753CA0731F263F1500F313EE;
 			remoteInfo = IOSVideoDemo;
+		};
+		754F463C1F67D42F00D3147D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4059BDF61E972C0A0067C1F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 754F46221F67D42E00D3147D;
+			remoteInfo = VideoDemo;
+		};
+		754F46471F67D42F00D3147D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4059BDF61E972C0A0067C1F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 754F46221F67D42E00D3147D;
+			remoteInfo = VideoDemo;
+		};
+		754F46C11F69065100D3147D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4059BDF61E972C0A0067C1F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 754F46A71F69065100D3147D;
+			remoteInfo = IOSVideoPlayerDemo;
+		};
+		754F46CC1F69065200D3147D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4059BDF61E972C0A0067C1F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 754F46A71F69065100D3147D;
+			remoteInfo = IOSVideoPlayerDemo;
 		};
 		75CAC3B41F24C00F00065347 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -1129,9 +1192,11 @@
 		40E63DC71EB03D4600136773 /* JKRShopCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKRShopCell.h; sourceTree = "<group>"; };
 		40E63DC81EB03D4600136773 /* JKRShopCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKRShopCell.m; sourceTree = "<group>"; };
 		40E63DC91EB03D4600136773 /* JKRShopCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JKRShopCell.xib; sourceTree = "<group>"; };
+		451A84987FCF3EBB87B6DA30 /* Pods-IOSVideoPlayerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSVideoPlayerDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IOSVideoPlayerDemo/Pods-IOSVideoPlayerDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		46E09AB69E179B0032BA53C3 /* Pods-IOSRealm-OC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSRealm-OC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IOSRealm-OC/Pods-IOSRealm-OC.debug.xcconfig"; sourceTree = "<group>"; };
 		4F42370D3938F1D6EDD5297E /* Pods-IOSRealm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSRealm.release.xcconfig"; path = "Pods/Target Support Files/Pods-IOSRealm/Pods-IOSRealm.release.xcconfig"; sourceTree = "<group>"; };
 		53DA42DF7B329D8DF1F5D79B /* libPods-WifiUploadDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WifiUploadDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EFB936D989F6B0ED593BE9A /* Pods-IOSVideoPlayerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSVideoPlayerDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-IOSVideoPlayerDemo/Pods-IOSVideoPlayerDemo.release.xcconfig"; sourceTree = "<group>"; };
 		5FF6F11B4C5E31018870632F /* Pods-UICollectionViewFlowLayout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UICollectionViewFlowLayout.release.xcconfig"; path = "Pods/Target Support Files/Pods-UICollectionViewFlowLayout/Pods-UICollectionViewFlowLayout.release.xcconfig"; sourceTree = "<group>"; };
 		64FBC4AFF89B38EBD15A4D2C /* libPods-IOSCoreDataDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IOSCoreDataDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7387AA9967F39237A2E069C2 /* Pods-IOSRealm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSRealm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IOSRealm/Pods-IOSRealm.debug.xcconfig"; sourceTree = "<group>"; };
@@ -1191,6 +1256,75 @@
 		753CA09D1F263F1600F313EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		753CA0A71F26404000F313EE /* ZGRecoardVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGRecoardVideoViewController.h; sourceTree = "<group>"; };
 		753CA0A81F26404000F313EE /* ZGRecoardVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGRecoardVideoViewController.m; sourceTree = "<group>"; };
+		754F46231F67D42E00D3147D /* VideoDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		754F46261F67D42F00D3147D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		754F46281F67D42F00D3147D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		754F46291F67D42F00D3147D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		754F462B1F67D42F00D3147D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		754F462C1F67D42F00D3147D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		754F462F1F67D42F00D3147D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		754F46311F67D42F00D3147D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		754F46341F67D42F00D3147D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		754F46361F67D42F00D3147D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		754F463B1F67D42F00D3147D /* VideoDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		754F463F1F67D42F00D3147D /* VideoDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoDemoTests.m; sourceTree = "<group>"; };
+		754F46411F67D42F00D3147D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		754F46461F67D42F00D3147D /* VideoDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		754F464A1F67D42F00D3147D /* VideoDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoDemoUITests.m; sourceTree = "<group>"; };
+		754F464C1F67D42F00D3147D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		754F469F1F68C1CA00D3147D /* VDImagePickeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDImagePickeViewController.h; sourceTree = "<group>"; };
+		754F46A01F68C1CA00D3147D /* VDImagePickeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDImagePickeViewController.m; sourceTree = "<group>"; };
+		754F46A81F69065100D3147D /* IOSVideoPlayerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSVideoPlayerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		754F46AB1F69065100D3147D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		754F46AD1F69065100D3147D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		754F46AE1F69065100D3147D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		754F46B01F69065100D3147D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		754F46B11F69065100D3147D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		754F46B41F69065100D3147D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		754F46B61F69065100D3147D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		754F46B91F69065100D3147D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		754F46BB1F69065100D3147D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		754F46C01F69065100D3147D /* IOSVideoPlayerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOSVideoPlayerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		754F46C41F69065200D3147D /* IOSVideoPlayerDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOSVideoPlayerDemoTests.m; sourceTree = "<group>"; };
+		754F46C61F69065200D3147D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		754F46CB1F69065200D3147D /* IOSVideoPlayerDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOSVideoPlayerDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		754F46CF1F69065200D3147D /* IOSVideoPlayerDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOSVideoPlayerDemoUITests.m; sourceTree = "<group>"; };
+		754F46D11F69065200D3147D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		754F46DE1F69077000D3147D /* VDLoadingVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDLoadingVideoView.h; sourceTree = "<group>"; };
+		754F46DF1F69077000D3147D /* VDLoadingVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDLoadingVideoView.m; sourceTree = "<group>"; };
+		754F46E11F690CBB00D3147D /* VDBrightnessView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDBrightnessView.h; sourceTree = "<group>"; };
+		754F46E21F690CBB00D3147D /* VDBrightnessView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDBrightnessView.m; sourceTree = "<group>"; };
+		754F46E71F690E2500D3147D /* Marchos.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Marchos.h; sourceTree = "<group>"; };
+		754F46E81F690FBD00D3147D /* VDPlayerControlViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDPlayerControlViewDelegate.h; sourceTree = "<group>"; };
+		754F46E91F69105A00D3147D /* VDPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDPlayerView.h; sourceTree = "<group>"; };
+		754F46EA1F69105B00D3147D /* VDPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDPlayerView.m; sourceTree = "<group>"; };
+		754F46EC1F6910FA00D3147D /* VDPlayerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDPlayerModel.h; sourceTree = "<group>"; };
+		754F46ED1F6910FA00D3147D /* VDPlayerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDPlayerModel.m; sourceTree = "<group>"; };
+		754F46F01F6911CC00D3147D /* UIAlertController+ZFPlayerRotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+ZFPlayerRotation.h"; sourceTree = "<group>"; };
+		754F46F11F6911CC00D3147D /* UIAlertController+ZFPlayerRotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+ZFPlayerRotation.m"; sourceTree = "<group>"; };
+		754F46F21F6911CC00D3147D /* UIImageView+ZFCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+ZFCache.h"; sourceTree = "<group>"; };
+		754F46F31F6911CC00D3147D /* UIImageView+ZFCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+ZFCache.m"; sourceTree = "<group>"; };
+		754F46F41F6911CC00D3147D /* UINavigationController+ZFPlayerRotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+ZFPlayerRotation.h"; sourceTree = "<group>"; };
+		754F46F51F6911CC00D3147D /* UINavigationController+ZFPlayerRotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+ZFPlayerRotation.m"; sourceTree = "<group>"; };
+		754F46F61F6911CC00D3147D /* UITabBarController+ZFPlayerRotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+ZFPlayerRotation.h"; sourceTree = "<group>"; };
+		754F46F71F6911CC00D3147D /* UITabBarController+ZFPlayerRotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+ZFPlayerRotation.m"; sourceTree = "<group>"; };
+		754F46F81F6911CC00D3147D /* UIView+CustomControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CustomControlView.h"; sourceTree = "<group>"; };
+		754F46F91F6911CC00D3147D /* UIView+CustomControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CustomControlView.m"; sourceTree = "<group>"; };
+		754F46FA1F6911CC00D3147D /* UIViewController+ZFPlayerRotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ZFPlayerRotation.h"; sourceTree = "<group>"; };
+		754F46FB1F6911CC00D3147D /* UIViewController+ZFPlayerRotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ZFPlayerRotation.m"; sourceTree = "<group>"; };
+		754F46FC1F6911CC00D3147D /* UIWindow+CurrentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+CurrentViewController.h"; sourceTree = "<group>"; };
+		754F46FD1F6911CC00D3147D /* UIWindow+CurrentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+CurrentViewController.m"; sourceTree = "<group>"; };
+		754F47051F6914A600D3147D /* VDPlayerControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDPlayerControlView.h; sourceTree = "<group>"; };
+		754F47061F6914A600D3147D /* VDPlayerControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDPlayerControlView.m; sourceTree = "<group>"; };
+		754F47081F6914E800D3147D /* ASValuePopUpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASValuePopUpView.h; sourceTree = "<group>"; };
+		754F47091F6914E800D3147D /* ASValueTrackingSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASValueTrackingSlider.h; sourceTree = "<group>"; };
+		754F470A1F6914E800D3147D /* ASValuePopUpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASValuePopUpView.m; sourceTree = "<group>"; };
+		754F470B1F6914E800D3147D /* ASValueTrackingSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASValueTrackingSlider.m; sourceTree = "<group>"; };
+		754F470E1F691BE500D3147D /* MoviePlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoviePlayerViewController.h; sourceTree = "<group>"; };
+		754F470F1F691BE500D3147D /* MoviePlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoviePlayerViewController.m; sourceTree = "<group>"; };
+		754F47111F691C4500D3147D /* UINavigationController+ZFFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+ZFFullscreenPopGesture.h"; sourceTree = "<group>"; };
+		754F47121F691C4500D3147D /* UINavigationController+ZFFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+ZFFullscreenPopGesture.m"; sourceTree = "<group>"; };
+		754F47141F691CF800D3147D /* ZFPlayer.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ZFPlayer.bundle; sourceTree = "<group>"; };
 		75539CAB3515428D84C4562E /* Pods-IOSCoreDataDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSCoreDataDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IOSCoreDataDemo/Pods-IOSCoreDataDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		75B2E5671F278BAF003240B9 /* RCRecoarder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCRecoarder.h; sourceTree = "<group>"; };
 		75B2E5681F278BAF003240B9 /* RCRecoarder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCRecoarder.m; sourceTree = "<group>"; };
@@ -1223,6 +1357,7 @@
 		7FC2535502E4AB12D38A6A8A /* Pods-VDKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VDKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VDKit/Pods-VDKit.debug.xcconfig"; sourceTree = "<group>"; };
 		8535A4AA5A6D76FDA7FCF222 /* Pods-IOSRealm-OC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSRealm-OC.release.xcconfig"; path = "Pods/Target Support Files/Pods-IOSRealm-OC/Pods-IOSRealm-OC.release.xcconfig"; sourceTree = "<group>"; };
 		881385F51A57E280B42C0BFF /* Pods-PushDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-PushDemo/Pods-PushDemo.release.xcconfig"; sourceTree = "<group>"; };
+		916648CAA545130D8BB0E910 /* libPods-IOSVideoPlayerDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IOSVideoPlayerDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC76DCEC543891B81506B8AA /* libPods-IOSRealm-OC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IOSRealm-OC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B020FE5A8480ECACBCC36E56 /* libPods-VDKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VDKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1BFA8B5C1E3F574B2A0AD59 /* Pods-IOSCoreText.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSCoreText.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IOSCoreText/Pods-IOSCoreText.debug.xcconfig"; sourceTree = "<group>"; };
@@ -1573,6 +1708,49 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		754F46201F67D42E00D3147D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		754F46381F67D42F00D3147D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		754F46431F67D42F00D3147D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		754F46A51F69065100D3147D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6973BBBC87CBE137F1211662 /* libPods-IOSVideoPlayerDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		754F46BD1F69065100D3147D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		754F46C81F69065200D3147D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		75CAC3981F24C00E00065347 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -1831,6 +2009,12 @@
 				753CA0751F263F1500F313EE /* IOSVideoDemo */,
 				753CA08F1F263F1600F313EE /* IOSVideoDemoTests */,
 				753CA09A1F263F1600F313EE /* IOSVideoDemoUITests */,
+				754F46241F67D42F00D3147D /* VideoDemo */,
+				754F463E1F67D42F00D3147D /* VideoDemoTests */,
+				754F46491F67D42F00D3147D /* VideoDemoUITests */,
+				754F46A91F69065100D3147D /* IOSVideoPlayerDemo */,
+				754F46C31F69065200D3147D /* IOSVideoPlayerDemoTests */,
+				754F46CE1F69065200D3147D /* IOSVideoPlayerDemoUITests */,
 				4059BDFF1E972C0A0067C1F3 /* Products */,
 				4059BE2D1E97892F0067C1F3 /* Frameworks */,
 				F071578F376586321FF43817 /* Pods */,
@@ -1886,6 +2070,12 @@
 				753CA0741F263F1500F313EE /* IOSVideoDemo.app */,
 				753CA08C1F263F1600F313EE /* IOSVideoDemoTests.xctest */,
 				753CA0971F263F1600F313EE /* IOSVideoDemoUITests.xctest */,
+				754F46231F67D42E00D3147D /* VideoDemo.app */,
+				754F463B1F67D42F00D3147D /* VideoDemoTests.xctest */,
+				754F46461F67D42F00D3147D /* VideoDemoUITests.xctest */,
+				754F46A81F69065100D3147D /* IOSVideoPlayerDemo.app */,
+				754F46C01F69065100D3147D /* IOSVideoPlayerDemoTests.xctest */,
+				754F46CB1F69065200D3147D /* IOSVideoPlayerDemoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1975,6 +2165,7 @@
 				B020FE5A8480ECACBCC36E56 /* libPods-VDKit.a */,
 				C72452CF0156EB88302C1985 /* libPods-IOSRACProductDemo.a */,
 				F7C03D686AF9944768771BE7 /* libPods-PushDemo.a */,
+				916648CAA545130D8BB0E910 /* libPods-IOSVideoPlayerDemo.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -3145,6 +3336,135 @@
 			path = IOSVideoDemoUITests;
 			sourceTree = "<group>";
 		};
+		754F46241F67D42F00D3147D /* VideoDemo */ = {
+			isa = PBXGroup;
+			children = (
+				754F46281F67D42F00D3147D /* AppDelegate.h */,
+				754F46291F67D42F00D3147D /* AppDelegate.m */,
+				754F462B1F67D42F00D3147D /* ViewController.h */,
+				754F462C1F67D42F00D3147D /* ViewController.m */,
+				754F469F1F68C1CA00D3147D /* VDImagePickeViewController.h */,
+				754F46A01F68C1CA00D3147D /* VDImagePickeViewController.m */,
+				754F462E1F67D42F00D3147D /* Main.storyboard */,
+				754F46311F67D42F00D3147D /* Assets.xcassets */,
+				754F46331F67D42F00D3147D /* LaunchScreen.storyboard */,
+				754F46361F67D42F00D3147D /* Info.plist */,
+				754F46251F67D42F00D3147D /* Supporting Files */,
+			);
+			path = VideoDemo;
+			sourceTree = "<group>";
+		};
+		754F46251F67D42F00D3147D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				754F46261F67D42F00D3147D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		754F463E1F67D42F00D3147D /* VideoDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				754F463F1F67D42F00D3147D /* VideoDemoTests.m */,
+				754F46411F67D42F00D3147D /* Info.plist */,
+			);
+			path = VideoDemoTests;
+			sourceTree = "<group>";
+		};
+		754F46491F67D42F00D3147D /* VideoDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				754F464A1F67D42F00D3147D /* VideoDemoUITests.m */,
+				754F464C1F67D42F00D3147D /* Info.plist */,
+			);
+			path = VideoDemoUITests;
+			sourceTree = "<group>";
+		};
+		754F46A91F69065100D3147D /* IOSVideoPlayerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				754F47141F691CF800D3147D /* ZFPlayer.bundle */,
+				754F47081F6914E800D3147D /* ASValuePopUpView.h */,
+				754F47091F6914E800D3147D /* ASValueTrackingSlider.h */,
+				754F470A1F6914E800D3147D /* ASValuePopUpView.m */,
+				754F470B1F6914E800D3147D /* ASValueTrackingSlider.m */,
+				754F47051F6914A600D3147D /* VDPlayerControlView.h */,
+				754F47061F6914A600D3147D /* VDPlayerControlView.m */,
+				754F46EF1F6911CC00D3147D /* Category */,
+				754F46DE1F69077000D3147D /* VDLoadingVideoView.h */,
+				754F46DF1F69077000D3147D /* VDLoadingVideoView.m */,
+				754F46AD1F69065100D3147D /* AppDelegate.h */,
+				754F46AE1F69065100D3147D /* AppDelegate.m */,
+				754F46B01F69065100D3147D /* ViewController.h */,
+				754F46B11F69065100D3147D /* ViewController.m */,
+				754F46E11F690CBB00D3147D /* VDBrightnessView.h */,
+				754F46E21F690CBB00D3147D /* VDBrightnessView.m */,
+				754F46E71F690E2500D3147D /* Marchos.h */,
+				754F46E81F690FBD00D3147D /* VDPlayerControlViewDelegate.h */,
+				754F46E91F69105A00D3147D /* VDPlayerView.h */,
+				754F46EA1F69105B00D3147D /* VDPlayerView.m */,
+				754F46EC1F6910FA00D3147D /* VDPlayerModel.h */,
+				754F46ED1F6910FA00D3147D /* VDPlayerModel.m */,
+				754F470E1F691BE500D3147D /* MoviePlayerViewController.h */,
+				754F470F1F691BE500D3147D /* MoviePlayerViewController.m */,
+				754F46B31F69065100D3147D /* Main.storyboard */,
+				754F46B61F69065100D3147D /* Assets.xcassets */,
+				754F46B81F69065100D3147D /* LaunchScreen.storyboard */,
+				754F46BB1F69065100D3147D /* Info.plist */,
+				754F46AA1F69065100D3147D /* Supporting Files */,
+			);
+			path = IOSVideoPlayerDemo;
+			sourceTree = "<group>";
+		};
+		754F46AA1F69065100D3147D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				754F46AB1F69065100D3147D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		754F46C31F69065200D3147D /* IOSVideoPlayerDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				754F46C41F69065200D3147D /* IOSVideoPlayerDemoTests.m */,
+				754F46C61F69065200D3147D /* Info.plist */,
+			);
+			path = IOSVideoPlayerDemoTests;
+			sourceTree = "<group>";
+		};
+		754F46CE1F69065200D3147D /* IOSVideoPlayerDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				754F46CF1F69065200D3147D /* IOSVideoPlayerDemoUITests.m */,
+				754F46D11F69065200D3147D /* Info.plist */,
+			);
+			path = IOSVideoPlayerDemoUITests;
+			sourceTree = "<group>";
+		};
+		754F46EF1F6911CC00D3147D /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				754F47111F691C4500D3147D /* UINavigationController+ZFFullscreenPopGesture.h */,
+				754F47121F691C4500D3147D /* UINavigationController+ZFFullscreenPopGesture.m */,
+				754F46F01F6911CC00D3147D /* UIAlertController+ZFPlayerRotation.h */,
+				754F46F11F6911CC00D3147D /* UIAlertController+ZFPlayerRotation.m */,
+				754F46F21F6911CC00D3147D /* UIImageView+ZFCache.h */,
+				754F46F31F6911CC00D3147D /* UIImageView+ZFCache.m */,
+				754F46F41F6911CC00D3147D /* UINavigationController+ZFPlayerRotation.h */,
+				754F46F51F6911CC00D3147D /* UINavigationController+ZFPlayerRotation.m */,
+				754F46F61F6911CC00D3147D /* UITabBarController+ZFPlayerRotation.h */,
+				754F46F71F6911CC00D3147D /* UITabBarController+ZFPlayerRotation.m */,
+				754F46F81F6911CC00D3147D /* UIView+CustomControlView.h */,
+				754F46F91F6911CC00D3147D /* UIView+CustomControlView.m */,
+				754F46FA1F6911CC00D3147D /* UIViewController+ZFPlayerRotation.h */,
+				754F46FB1F6911CC00D3147D /* UIViewController+ZFPlayerRotation.m */,
+				754F46FC1F6911CC00D3147D /* UIWindow+CurrentViewController.h */,
+				754F46FD1F6911CC00D3147D /* UIWindow+CurrentViewController.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		75CAC39C1F24C00E00065347 /* PushDemo */ = {
 			isa = PBXGroup;
 			children = (
@@ -3209,6 +3529,8 @@
 				D59039BD98D2A49C0D43D26B /* Pods-IOSRACProductDemo.release.xcconfig */,
 				25FB9455B423B87B8B4C176D /* Pods-PushDemo.debug.xcconfig */,
 				881385F51A57E280B42C0BFF /* Pods-PushDemo.release.xcconfig */,
+				451A84987FCF3EBB87B6DA30 /* Pods-IOSVideoPlayerDemo.debug.xcconfig */,
+				5EFB936D989F6B0ED593BE9A /* Pods-IOSVideoPlayerDemo.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -3977,6 +4299,115 @@
 			productReference = 753CA0971F263F1600F313EE /* IOSVideoDemoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		754F46221F67D42E00D3147D /* VideoDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 754F46531F67D42F00D3147D /* Build configuration list for PBXNativeTarget "VideoDemo" */;
+			buildPhases = (
+				754F461F1F67D42E00D3147D /* Sources */,
+				754F46201F67D42E00D3147D /* Frameworks */,
+				754F46211F67D42E00D3147D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VideoDemo;
+			productName = VideoDemo;
+			productReference = 754F46231F67D42E00D3147D /* VideoDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		754F463A1F67D42F00D3147D /* VideoDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 754F46541F67D42F00D3147D /* Build configuration list for PBXNativeTarget "VideoDemoTests" */;
+			buildPhases = (
+				754F46371F67D42F00D3147D /* Sources */,
+				754F46381F67D42F00D3147D /* Frameworks */,
+				754F46391F67D42F00D3147D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				754F463D1F67D42F00D3147D /* PBXTargetDependency */,
+			);
+			name = VideoDemoTests;
+			productName = VideoDemoTests;
+			productReference = 754F463B1F67D42F00D3147D /* VideoDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		754F46451F67D42F00D3147D /* VideoDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 754F46551F67D42F00D3147D /* Build configuration list for PBXNativeTarget "VideoDemoUITests" */;
+			buildPhases = (
+				754F46421F67D42F00D3147D /* Sources */,
+				754F46431F67D42F00D3147D /* Frameworks */,
+				754F46441F67D42F00D3147D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				754F46481F67D42F00D3147D /* PBXTargetDependency */,
+			);
+			name = VideoDemoUITests;
+			productName = VideoDemoUITests;
+			productReference = 754F46461F67D42F00D3147D /* VideoDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		754F46A71F69065100D3147D /* IOSVideoPlayerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 754F46D21F69065200D3147D /* Build configuration list for PBXNativeTarget "IOSVideoPlayerDemo" */;
+			buildPhases = (
+				D02316C0C96E389A704315D1 /* [CP] Check Pods Manifest.lock */,
+				754F46A41F69065100D3147D /* Sources */,
+				754F46A51F69065100D3147D /* Frameworks */,
+				754F46A61F69065100D3147D /* Resources */,
+				842F771188E37C6CC8FAE914 /* [CP] Embed Pods Frameworks */,
+				A8E850C8A270DF6C0473404E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IOSVideoPlayerDemo;
+			productName = IOSVideoPlayerDemo;
+			productReference = 754F46A81F69065100D3147D /* IOSVideoPlayerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		754F46BF1F69065100D3147D /* IOSVideoPlayerDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 754F46D51F69065200D3147D /* Build configuration list for PBXNativeTarget "IOSVideoPlayerDemoTests" */;
+			buildPhases = (
+				754F46BC1F69065100D3147D /* Sources */,
+				754F46BD1F69065100D3147D /* Frameworks */,
+				754F46BE1F69065100D3147D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				754F46C21F69065100D3147D /* PBXTargetDependency */,
+			);
+			name = IOSVideoPlayerDemoTests;
+			productName = IOSVideoPlayerDemoTests;
+			productReference = 754F46C01F69065100D3147D /* IOSVideoPlayerDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		754F46CA1F69065200D3147D /* IOSVideoPlayerDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 754F46D81F69065200D3147D /* Build configuration list for PBXNativeTarget "IOSVideoPlayerDemoUITests" */;
+			buildPhases = (
+				754F46C71F69065200D3147D /* Sources */,
+				754F46C81F69065200D3147D /* Frameworks */,
+				754F46C91F69065200D3147D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				754F46CD1F69065200D3147D /* PBXTargetDependency */,
+			);
+			name = IOSVideoPlayerDemoUITests;
+			productName = IOSVideoPlayerDemoUITests;
+			productReference = 754F46CB1F69065200D3147D /* IOSVideoPlayerDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		75CAC39A1F24C00E00065347 /* PushDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 75CAC3CB1F24C00F00065347 /* Build configuration list for PBXNativeTarget "PushDemo" */;
@@ -4187,8 +4618,8 @@
 					};
 					40A276CB1E9E29C700421E5A = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = R6B5BG54J2;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = TJ7XWRA893;
+						ProvisioningStyle = Manual;
 					};
 					40CA02921EB08957003363E9 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -4261,6 +4692,35 @@
 						CreatedOnToolsVersion = 8.3.1;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 753CA0731F263F1500F313EE;
+					};
+					754F46221F67D42E00D3147D = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = TJ7XWRA893;
+						ProvisioningStyle = Automatic;
+					};
+					754F463A1F67D42F00D3147D = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 754F46221F67D42E00D3147D;
+					};
+					754F46451F67D42F00D3147D = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 754F46221F67D42E00D3147D;
+					};
+					754F46A71F69065100D3147D = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+					};
+					754F46BF1F69065100D3147D = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 754F46A71F69065100D3147D;
+					};
+					754F46CA1F69065200D3147D = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 754F46A71F69065100D3147D;
 					};
 					75CAC39A1F24C00E00065347 = {
 						CreatedOnToolsVersion = 8.3.1;
@@ -4343,6 +4803,12 @@
 				753CA0731F263F1500F313EE /* IOSVideoDemo */,
 				753CA08B1F263F1600F313EE /* IOSVideoDemoTests */,
 				753CA0961F263F1600F313EE /* IOSVideoDemoUITests */,
+				754F46221F67D42E00D3147D /* VideoDemo */,
+				754F463A1F67D42F00D3147D /* VideoDemoTests */,
+				754F46451F67D42F00D3147D /* VideoDemoUITests */,
+				754F46A71F69065100D3147D /* IOSVideoPlayerDemo */,
+				754F46BF1F69065100D3147D /* IOSVideoPlayerDemoTests */,
+				754F46CA1F69065200D3147D /* IOSVideoPlayerDemoUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -4778,6 +5244,55 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		754F46211F67D42E00D3147D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				754F46351F67D42F00D3147D /* LaunchScreen.storyboard in Resources */,
+				754F46321F67D42F00D3147D /* Assets.xcassets in Resources */,
+				754F46301F67D42F00D3147D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		754F46391F67D42F00D3147D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		754F46441F67D42F00D3147D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		754F46A61F69065100D3147D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				754F47151F691CF800D3147D /* ZFPlayer.bundle in Resources */,
+				754F46BA1F69065100D3147D /* LaunchScreen.storyboard in Resources */,
+				754F46B71F69065100D3147D /* Assets.xcassets in Resources */,
+				754F46B51F69065100D3147D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		754F46BE1F69065100D3147D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		754F46C91F69065200D3147D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		75CAC3991F24C00E00065347 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -4811,13 +5326,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IOSRealm-OC-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		0FC214D64886C4869930D7A6 /* [CP] Embed Pods Frameworks */ = {
@@ -4841,13 +5359,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IOSCoreDataDemo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		20A25BDD805DFEBDAA073E5F /* [CP] Embed Pods Frameworks */ = {
@@ -4871,13 +5392,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IOSCoreText-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		39D515B8FE0F8C5942A5FA10 /* [CP] Check Pods Manifest.lock */ = {
@@ -4886,13 +5410,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UICollectionViewFlowLayout-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5211B4D43AF230F046C5092E /* [CP] Check Pods Manifest.lock */ = {
@@ -4901,13 +5428,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IOSRACProductDemo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5E82DD9B69214726C2099CF8 /* [CP] Check Pods Manifest.lock */ = {
@@ -4916,13 +5446,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IOSRealm-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		6482020770B55FEE3B83F286 /* [CP] Copy Pods Resources */ = {
@@ -4931,9 +5464,25 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PushDemo/Pods-PushDemo-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyBoardManager/Resources/IQKeyboardManager.bundle",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/PinYin4Objc/PinYin4Objc/Resources/unicode_to_hanyu_pinyin.txt",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/RongCloud.bundle",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/en.lproj",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/zh-Hans.lproj",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/Emoji.plist",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/RCConfig.plist",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/JrmfIMLib/JResource.bundle",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/JrmfIMLib/en.lproj",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/JrmfIMLib/zh-Hans.lproj",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/JrmfIMLib/jrmf.cer",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/AlipaySDK/AlipaySDK.bundle",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/BQMM.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -4946,9 +5495,25 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-IOSRACProductDemo/Pods-IOSRACProductDemo-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyBoardManager/Resources/IQKeyboardManager.bundle",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/PinYin4Objc/PinYin4Objc/Resources/unicode_to_hanyu_pinyin.txt",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/RongCloud.bundle",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/en.lproj",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/zh-Hans.lproj",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/Emoji.plist",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/RCConfig.plist",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/JrmfIMLib/JResource.bundle",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/JrmfIMLib/en.lproj",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/JrmfIMLib/zh-Hans.lproj",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/JrmfIMLib/jrmf.cer",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/AlipaySDK/AlipaySDK.bundle",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/BQMM.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -4961,9 +5526,25 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-VDKit/Pods-VDKit-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyBoardManager/Resources/IQKeyboardManager.bundle",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/PinYin4Objc/PinYin4Objc/Resources/unicode_to_hanyu_pinyin.txt",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/RongCloud.bundle",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/en.lproj",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/zh-Hans.lproj",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/Emoji.plist",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/RCConfig.plist",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/JrmfIMLib/JResource.bundle",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/JrmfIMLib/en.lproj",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/JrmfIMLib/zh-Hans.lproj",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/JrmfIMLib/jrmf.cer",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/AlipaySDK/AlipaySDK.bundle",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/BQMM.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -4976,9 +5557,25 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-IOSRealm-OC/Pods-IOSRealm-OC-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyBoardManager/Resources/IQKeyboardManager.bundle",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/PinYin4Objc/PinYin4Objc/Resources/unicode_to_hanyu_pinyin.txt",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/RongCloud.bundle",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/en.lproj",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/zh-Hans.lproj",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/Emoji.plist",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/RCConfig.plist",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/JrmfIMLib/JResource.bundle",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/JrmfIMLib/en.lproj",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/JrmfIMLib/zh-Hans.lproj",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/JrmfIMLib/jrmf.cer",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/AlipaySDK/AlipaySDK.bundle",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/BQMM.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -4991,13 +5588,44 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-IOSRealm/Pods-IOSRealm-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyBoardManager/Resources/IQKeyboardManager.bundle",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/PinYin4Objc/PinYin4Objc/Resources/unicode_to_hanyu_pinyin.txt",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/RongCloud.bundle",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/en.lproj",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/zh-Hans.lproj",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/Emoji.plist",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/RCConfig.plist",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/JrmfIMLib/JResource.bundle",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/JrmfIMLib/en.lproj",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/JrmfIMLib/zh-Hans.lproj",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/JrmfIMLib/jrmf.cer",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/AlipaySDK/AlipaySDK.bundle",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/BQMM.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IOSRealm/Pods-IOSRealm-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		842F771188E37C6CC8FAE914 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IOSVideoPlayerDemo/Pods-IOSVideoPlayerDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8AB2B8583361BC5A247CE299 /* [CP] Check Pods Manifest.lock */ = {
@@ -5006,13 +5634,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PushDemo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A344583902326E65D7BCA959 /* [CP] Check Pods Manifest.lock */ = {
@@ -5021,13 +5652,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VDKit-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A77160D02FFEBFAE8FCA3489 /* [CP] Embed Pods Frameworks */ = {
@@ -5060,6 +5694,37 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IOSRealm/Pods-IOSRealm-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		A8E850C8A270DF6C0473404E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-IOSVideoPlayerDemo/Pods-IOSVideoPlayerDemo-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyBoardManager/Resources/IQKeyboardManager.bundle",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/PinYin4Objc/PinYin4Objc/Resources/unicode_to_hanyu_pinyin.txt",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/RongCloud.bundle",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/en.lproj",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/zh-Hans.lproj",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/Emoji.plist",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/RCConfig.plist",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/JrmfIMLib/JResource.bundle",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/JrmfIMLib/en.lproj",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/JrmfIMLib/zh-Hans.lproj",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/JrmfIMLib/jrmf.cer",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/AlipaySDK/AlipaySDK.bundle",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/BQMM.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IOSVideoPlayerDemo/Pods-IOSVideoPlayerDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B13CC52434BC128F59E6F90E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -5090,15 +5755,49 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IOSCoreText/Pods-IOSCoreText-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D02316C0C96E389A704315D1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IOSVideoPlayerDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		DD25D4787103DEFC745E5AC6 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-UICollectionViewFlowLayout/Pods-UICollectionViewFlowLayout-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyBoardManager/Resources/IQKeyboardManager.bundle",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/PinYin4Objc/PinYin4Objc/Resources/unicode_to_hanyu_pinyin.txt",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/RongCloud.bundle",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/en.lproj",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/zh-Hans.lproj",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/Emoji.plist",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/RCConfig.plist",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/JrmfIMLib/JResource.bundle",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/JrmfIMLib/en.lproj",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/JrmfIMLib/zh-Hans.lproj",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/JrmfIMLib/jrmf.cer",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/AlipaySDK/AlipaySDK.bundle",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/BQMM.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -5126,13 +5825,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WifiUploadDemo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EA7E0950801F4D3393FB2004 /* [CP] Copy Pods Resources */ = {
@@ -5141,9 +5843,25 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-IOSCoreDataDemo/Pods-IOSCoreDataDemo-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyBoardManager/Resources/IQKeyboardManager.bundle",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/PinYin4Objc/PinYin4Objc/Resources/unicode_to_hanyu_pinyin.txt",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/RongCloud.bundle",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/en.lproj",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/zh-Hans.lproj",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/Emoji.plist",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/RCConfig.plist",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/JrmfIMLib/JResource.bundle",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/JrmfIMLib/en.lproj",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/JrmfIMLib/zh-Hans.lproj",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/JrmfIMLib/jrmf.cer",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/AlipaySDK/AlipaySDK.bundle",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/BQMM.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -5171,9 +5889,25 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WifiUploadDemo/Pods-WifiUploadDemo-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyBoardManager/Resources/IQKeyboardManager.bundle",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/PinYin4Objc/PinYin4Objc/Resources/unicode_to_hanyu_pinyin.txt",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/RongCloud.bundle",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/en.lproj",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/zh-Hans.lproj",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/Emoji.plist",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/RCConfig.plist",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/JrmfIMLib/JResource.bundle",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/JrmfIMLib/en.lproj",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/JrmfIMLib/zh-Hans.lproj",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/JrmfIMLib/jrmf.cer",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/AlipaySDK/AlipaySDK.bundle",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/BQMM.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -5201,9 +5935,25 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-IOSCoreText/Pods-IOSCoreText-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyBoardManager/Resources/IQKeyboardManager.bundle",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/PinYin4Objc/PinYin4Objc/Resources/unicode_to_hanyu_pinyin.txt",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/RongCloud.bundle",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/en.lproj",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/zh-Hans.lproj",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/Emoji.plist",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/RCConfig.plist",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/JrmfIMLib/JResource.bundle",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/JrmfIMLib/en.lproj",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/JrmfIMLib/zh-Hans.lproj",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/JrmfIMLib/jrmf.cer",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/AlipaySDK/AlipaySDK.bundle",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/BQMM.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -5727,6 +6477,75 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		754F461F1F67D42E00D3147D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				754F462D1F67D42F00D3147D /* ViewController.m in Sources */,
+				754F462A1F67D42F00D3147D /* AppDelegate.m in Sources */,
+				754F46271F67D42F00D3147D /* main.m in Sources */,
+				754F46A11F68C1CA00D3147D /* VDImagePickeViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		754F46371F67D42F00D3147D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				754F46401F67D42F00D3147D /* VideoDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		754F46421F67D42F00D3147D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				754F464B1F67D42F00D3147D /* VideoDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		754F46A41F69065100D3147D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				754F46B21F69065100D3147D /* ViewController.m in Sources */,
+				754F46E01F69077000D3147D /* VDLoadingVideoView.m in Sources */,
+				754F47071F6914A600D3147D /* VDPlayerControlView.m in Sources */,
+				754F47011F6911CC00D3147D /* UITabBarController+ZFPlayerRotation.m in Sources */,
+				754F47001F6911CC00D3147D /* UINavigationController+ZFPlayerRotation.m in Sources */,
+				754F46EE1F6910FA00D3147D /* VDPlayerModel.m in Sources */,
+				754F47021F6911CC00D3147D /* UIView+CustomControlView.m in Sources */,
+				754F470D1F6914E800D3147D /* ASValueTrackingSlider.m in Sources */,
+				754F46EB1F69105B00D3147D /* VDPlayerView.m in Sources */,
+				754F46AF1F69065100D3147D /* AppDelegate.m in Sources */,
+				754F46E31F690CBB00D3147D /* VDBrightnessView.m in Sources */,
+				754F46FF1F6911CC00D3147D /* UIImageView+ZFCache.m in Sources */,
+				754F46FE1F6911CC00D3147D /* UIAlertController+ZFPlayerRotation.m in Sources */,
+				754F46AC1F69065100D3147D /* main.m in Sources */,
+				754F47101F691BE500D3147D /* MoviePlayerViewController.m in Sources */,
+				754F470C1F6914E800D3147D /* ASValuePopUpView.m in Sources */,
+				754F47041F6911CC00D3147D /* UIWindow+CurrentViewController.m in Sources */,
+				754F47031F6911CC00D3147D /* UIViewController+ZFPlayerRotation.m in Sources */,
+				754F47131F691C4500D3147D /* UINavigationController+ZFFullscreenPopGesture.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		754F46BC1F69065100D3147D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				754F46C51F69065200D3147D /* IOSVideoPlayerDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		754F46C71F69065200D3147D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				754F46D01F69065200D3147D /* IOSVideoPlayerDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		75CAC3971F24C00E00065347 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -5785,6 +6604,26 @@
 			isa = PBXTargetDependency;
 			target = 753CA0731F263F1500F313EE /* IOSVideoDemo */;
 			targetProxy = 753CA0981F263F1600F313EE /* PBXContainerItemProxy */;
+		};
+		754F463D1F67D42F00D3147D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 754F46221F67D42E00D3147D /* VideoDemo */;
+			targetProxy = 754F463C1F67D42F00D3147D /* PBXContainerItemProxy */;
+		};
+		754F46481F67D42F00D3147D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 754F46221F67D42E00D3147D /* VideoDemo */;
+			targetProxy = 754F46471F67D42F00D3147D /* PBXContainerItemProxy */;
+		};
+		754F46C21F69065100D3147D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 754F46A71F69065100D3147D /* IOSVideoPlayerDemo */;
+			targetProxy = 754F46C11F69065100D3147D /* PBXContainerItemProxy */;
+		};
+		754F46CD1F69065200D3147D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 754F46A71F69065100D3147D /* IOSVideoPlayerDemo */;
+			targetProxy = 754F46CC1F69065200D3147D /* PBXContainerItemProxy */;
 		};
 		75CAC3B51F24C00F00065347 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -6379,6 +7218,38 @@
 			isa = PBXVariantGroup;
 			children = (
 				753CA0851F263F1600F313EE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		754F462E1F67D42F00D3147D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				754F462F1F67D42F00D3147D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		754F46331F67D42F00D3147D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				754F46341F67D42F00D3147D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		754F46B31F69065100D3147D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				754F46B41F69065100D3147D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		754F46B81F69065100D3147D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				754F46B91F69065100D3147D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -7035,7 +7906,7 @@
 				INFOPLIST_FILE = dispatch_Queue/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.popoteam.demo.dispatch-Queue";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kdyz.doctor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -7048,7 +7919,7 @@
 				INFOPLIST_FILE = dispatch_Queue/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.popoteam.demo.dispatch-Queue";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kdyz.doctor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -7293,12 +8164,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = R6B5BG54J2;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = TJ7XWRA893;
 				INFOPLIST_FILE = "mongoose.c mongoose.h MongooseDaemon.h MongooseDaemonDemo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.popoteam.demo.mongoose-c-mongoose-h-MongooseDaemon-h-MongooseDaemonDemo";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kdyz.doctor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e9e54f7d-ad1f-463e-bbbc-02f5eaaf531b";
+				PROVISIONING_PROFILE_SPECIFIER = kdyz_doctor_dev;
 			};
 			name = Debug;
 		};
@@ -7306,12 +8180,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = R6B5BG54J2;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = TJ7XWRA893;
 				INFOPLIST_FILE = "mongoose.c mongoose.h MongooseDaemon.h MongooseDaemonDemo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.popoteam.demo.mongoose-c-mongoose-h-MongooseDaemon-h-MongooseDaemonDemo";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kdyz.doctor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e9e54f7d-ad1f-463e-bbbc-02f5eaaf531b";
+				PROVISIONING_PROFILE_SPECIFIER = kdyz_doctor_dev;
 			};
 			name = Release;
 		};
@@ -7709,6 +8586,170 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.VD.IOSVideoDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = IOSVideoDemo;
+			};
+			name = Release;
+		};
+		754F464D1F67D42F00D3147D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				DEVELOPMENT_TEAM = TJ7XWRA893;
+				INFOPLIST_FILE = VideoDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kdyz.patient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		754F464E1F67D42F00D3147D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				DEVELOPMENT_TEAM = TJ7XWRA893;
+				INFOPLIST_FILE = VideoDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kdyz.patient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		754F464F1F67D42F00D3147D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				INFOPLIST_FILE = VideoDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.VD.VideoDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VideoDemo.app/VideoDemo";
+			};
+			name = Debug;
+		};
+		754F46501F67D42F00D3147D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				INFOPLIST_FILE = VideoDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.VD.VideoDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VideoDemo.app/VideoDemo";
+			};
+			name = Release;
+		};
+		754F46511F67D42F00D3147D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				INFOPLIST_FILE = VideoDemoUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.VD.VideoDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = VideoDemo;
+			};
+			name = Debug;
+		};
+		754F46521F67D42F00D3147D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				INFOPLIST_FILE = VideoDemoUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.VD.VideoDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = VideoDemo;
+			};
+			name = Release;
+		};
+		754F46D31F69065200D3147D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 451A84987FCF3EBB87B6DA30 /* Pods-IOSVideoPlayerDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				INFOPLIST_FILE = IOSVideoPlayerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.VD.IOSVideoPlayerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		754F46D41F69065200D3147D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EFB936D989F6B0ED593BE9A /* Pods-IOSVideoPlayerDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				INFOPLIST_FILE = IOSVideoPlayerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.VD.IOSVideoPlayerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		754F46D61F69065200D3147D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				INFOPLIST_FILE = IOSVideoPlayerDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.VD.IOSVideoPlayerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IOSVideoPlayerDemo.app/IOSVideoPlayerDemo";
+			};
+			name = Debug;
+		};
+		754F46D71F69065200D3147D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				INFOPLIST_FILE = IOSVideoPlayerDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.VD.IOSVideoPlayerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IOSVideoPlayerDemo.app/IOSVideoPlayerDemo";
+			};
+			name = Release;
+		};
+		754F46D91F69065200D3147D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				INFOPLIST_FILE = IOSVideoPlayerDemoUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.VD.IOSVideoPlayerDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = IOSVideoPlayerDemo;
+			};
+			name = Debug;
+		};
+		754F46DA1F69065200D3147D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				INFOPLIST_FILE = IOSVideoPlayerDemoUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.VD.IOSVideoPlayerDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = IOSVideoPlayerDemo;
 			};
 			name = Release;
 		};
@@ -8197,6 +9238,60 @@
 			buildConfigurations = (
 				753CA0A21F263F1600F313EE /* Debug */,
 				753CA0A31F263F1600F313EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		754F46531F67D42F00D3147D /* Build configuration list for PBXNativeTarget "VideoDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				754F464D1F67D42F00D3147D /* Debug */,
+				754F464E1F67D42F00D3147D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		754F46541F67D42F00D3147D /* Build configuration list for PBXNativeTarget "VideoDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				754F464F1F67D42F00D3147D /* Debug */,
+				754F46501F67D42F00D3147D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		754F46551F67D42F00D3147D /* Build configuration list for PBXNativeTarget "VideoDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				754F46511F67D42F00D3147D /* Debug */,
+				754F46521F67D42F00D3147D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		754F46D21F69065200D3147D /* Build configuration list for PBXNativeTarget "IOSVideoPlayerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				754F46D31F69065200D3147D /* Debug */,
+				754F46D41F69065200D3147D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		754F46D51F69065200D3147D /* Build configuration list for PBXNativeTarget "IOSVideoPlayerDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				754F46D61F69065200D3147D /* Debug */,
+				754F46D71F69065200D3147D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		754F46D81F69065200D3147D /* Build configuration list for PBXNativeTarget "IOSVideoPlayerDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				754F46D91F69065200D3147D /* Debug */,
+				754F46DA1F69065200D3147D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

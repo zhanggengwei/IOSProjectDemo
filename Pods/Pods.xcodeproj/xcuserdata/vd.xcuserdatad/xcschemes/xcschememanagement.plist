@@ -119,6 +119,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-IOSVideoPlayerDemo.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-PushDemo.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -213,6 +218,11 @@
 			<true/>
 		</dict>
 		<key>0659B71386995AC7EE2A305F0A360EB1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>091EA5C880115735C19FBA92108DA22E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
