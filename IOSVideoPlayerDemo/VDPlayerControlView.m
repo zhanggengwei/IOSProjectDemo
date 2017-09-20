@@ -740,6 +740,9 @@ static const CGFloat VDPlayerControlBarAutoFadeOutTimeInterval = 0.35f;
         _fullScreenBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         [_fullScreenBtn setImage:VDPlayerImage(@"ZFPlayer_fullscreen") forState:UIControlStateNormal];
         [_fullScreenBtn setImage:VDPlayerImage(@"ZFPlayer_shrinkscreen") forState:UIControlStateSelected];
+        
+        NSLog(@"image ==%@",VDPlayerImage(@"ZFPlayer_shrinkscreen"));
+              
         [_fullScreenBtn addTarget:self action:@selector(fullScreenBtnClick:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _fullScreenBtn;

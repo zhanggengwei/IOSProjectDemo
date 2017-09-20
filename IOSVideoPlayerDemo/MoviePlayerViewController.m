@@ -39,7 +39,6 @@
 @property (nonatomic, assign) BOOL isPlaying;
 @property (nonatomic, strong) VDPlayerModel *playerModel;
 @property (nonatomic, strong) UIView *bottomView;
-@property (weak, nonatomic) IBOutlet UIButton *backBtn;
 @end
 
 @implementation MoviePlayerViewController
@@ -70,7 +69,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.playerFatherView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH,300)];
+    self.playerFatherView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH,SCREEN_WIDTH * 9/16.0)];
     [self.view addSubview:self.playerFatherView];
     
     self.zf_prefersNavigationBarHidden = YES;
@@ -123,14 +122,14 @@
 - (void)zf_playerControlViewWillShow:(UIView *)controlView isFullscreen:(BOOL)fullscreen {
     //    self.backBtn.hidden = YES;
     [UIView animateWithDuration:0.25 animations:^{
-        self.backBtn.alpha = 0;
+        //self.backBtn.alpha = 0;
     }];
 }
 
 - (void)zf_playerControlViewWillHidden:(UIView *)controlView isFullscreen:(BOOL)fullscreen {
     //    self.backBtn.hidden = fullscreen;
     [UIView animateWithDuration:0.25 animations:^{
-        self.backBtn.alpha = !fullscreen;
+        //self.backBtn.alpha = !fullscreen;
     }];
 }
 
@@ -141,7 +140,7 @@
         _playerModel                  = [[VDPlayerModel alloc] init];
         _playerModel.title            = @"这里设置视频标题";
         _playerModel.videoURL         = self.videoURL;
-        _playerModel.placeholderImage = [UIImage imageNamed:@"loading_bgView1"];
+        //_playerModel.placeholderImage = [UIImage imageNamed:@"loading_bgView1"];
         _playerModel.fatherView       = self.playerFatherView;
         //        _playerModel.resolutionDic = @{@"高清" : self.videoURL.absoluteString,
         //                                       @"标清" : self.videoURL.absoluteString};

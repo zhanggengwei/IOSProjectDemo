@@ -35,7 +35,7 @@
 {
     MoviePlayerViewController * controller = [MoviePlayerViewController new];
     controller.videoURL = [NSURL URLWithString:@"http://baobab.wdjcdn.com/1456459181808howtoloseweight_x264.mp4"];
-    [self presentViewController:controller animated:YES completion:^{
+    [self presentViewController:[[UINavigationController alloc] initWithRootViewController:controller] animated:YES completion:^{
         
     }];
     

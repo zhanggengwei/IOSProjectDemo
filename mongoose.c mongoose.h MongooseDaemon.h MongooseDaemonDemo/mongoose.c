@@ -2610,6 +2610,7 @@ compare_dir_entries(const void *p1, const void *p2)
 static void
 send_directory(struct mg_connection *conn, const char *dir)
 {
+    
 	struct dirent	*dp;
 	DIR		*dirp;
 	struct de	*entries = NULL;
@@ -2626,12 +2627,12 @@ send_directory(struct mg_connection *conn, const char *dir)
 	    "HTTP/1.1 200 OK\r\n"
 	    "Connection: close\r\n"
 	    "Content-Type: text/html; charset=utf-8\r\n\r\n");
-
+    
 	sort_direction = conn->request_info.query_string != NULL &&
 	    conn->request_info.query_string[1] == 'd' ? 'a' : 'd';
 
 	while ((dp = readdir(dirp)) != NULL) {
-
+       
 		/* Do not show current dir and passwords file */
 		if (!strcmp(dp->d_name, ".") ||
 		    !strcmp(dp->d_name, "..") ||
